@@ -1,0 +1,5 @@
+!#/bin/bash
+
+cd /home/mo/Documents/myscripts/userscripts/
+
+xfce4-terminal --zoom=3 --command='bash' 

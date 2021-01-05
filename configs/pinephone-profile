@@ -1,0 +1,23 @@
+alias u='sudo apk update && sudo apk upgrade && flatpak upgrade'
+
+alias sr='apk search'
+
+alias r='sudo reboot'
+alias pr='sudo apk del'
+alias i='sudo apk add'
+alias srp='source ~/.profile'
+alias m='mousepad'
+
+alias mp='mousepad ~/.profile &'
+
+alias gac='cd ~/Documents/phone && git add . && git commit -m'
+
+alias gpm='cd ~/Documents/phone && git push -u origin main'
+
+alias cpp='cp ~/.profile ~/Documents/phone/configs/pinephone-profile'
+
+alias al='ash -l'
+
+alias lb='flatpak run org.libreoffice.LibreOffice'
+
+alias rn='ranger'

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Family
+Exec=firefox -profile "/home/jonathan/Documents/laptop/myscripts/firefox-profiles/fam" https://m.facebook.com/messages/
+Icon=/home/jonathan/Documents/laptop/myscripts/icons/messenger2.png
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true

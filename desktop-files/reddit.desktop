@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Reddit
+Exec=firefox --new-window https://www.reddit.com/
+Icon=/home/jonathan/Documents/laptop/myscripts/icons/reddit.png
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true

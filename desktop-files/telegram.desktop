@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Telegram
+Exec=firefox -new-window web.telegram.org web.telegram.org 
+Icon=/home/jonathan/Documents/laptop/myscripts/icons/telegram.png
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true

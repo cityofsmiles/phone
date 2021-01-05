@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#sudo apk add flatpak
+
+sudo pacman -Sy flatpak
+
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    
+sudo pacman -Sy yay bash xfce4-screenshooter mousepad chromium nano ranger texstudio texlive-most # texlive-science texlive-publishers texlive-pictures texlive-latexextra texlive-humanities texlive-fontsextra 
+
+#sudo apk add bash xfce4-terminal xfce4-screenshooter mousepad chromium texmaker texlive-full nano ranger
