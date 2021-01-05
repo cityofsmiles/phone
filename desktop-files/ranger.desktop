@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Ranger
 Exec=xfce4-terminal -e ranger
-Icon=/home/jonathan/Documents/laptop/myscripts/icons/ranger.png
+Icon=/home/jonathan/Documents/phone/icons/ranger.png
 Terminal=false
 Type=Application
 StartupNotify=true

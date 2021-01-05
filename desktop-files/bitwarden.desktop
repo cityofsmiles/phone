@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Bitwarden
-Exec=firefox -profile "/home/jonathan/Documents/laptop/myscripts/firefox-profiles/personalpine" --kiosk -new-window https://vault.bitwarden.com
-Icon=/home/jonathan/Documents/laptop/myscripts/icons/bitwarden.png
+Exec=firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/personalpine" --kiosk -new-window https://vault.bitwarden.com
+Icon=/home/jonathan/Documents/phone/icons/bitwarden.png
 Terminal=false
 Type=Application
 StartupNotify=true

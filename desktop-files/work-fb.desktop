@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Work
-Exec=firefox -profile "/home/jonathan/Documents/laptop/myscripts/firefox-profiles/workpine" https://m.facebook.com/messages/
-Icon=/home/jonathan/Documents/laptop/myscripts/icons/messenger2.png
+Exec=firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/workpine" https://m.facebook.com/messages/
+Icon=/home/jonathan/Documents/phone/icons/messenger2.png
 Terminal=false
 Type=Application
 StartupNotify=true

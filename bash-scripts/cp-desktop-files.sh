@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp /home/jonathan/Documents/laptop/myscripts/desktop-files/* /home/jonathan/.local/share/applications
+cp /home/jonathan/Documents/phone/desktop-files/* /home/jonathan/.local/share/applications

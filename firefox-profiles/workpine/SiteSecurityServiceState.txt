@@ -1,0 +1,6 @@
+m.facebook.com:HSTS	0	18632	1625409928966,1,1,2
+firefox.settings.services.mozilla.com:HSTS	0	18632	1641393751237,1,0,2
+static.xx.fbcdn.net:HSTS	0	18632	1641393927942,1,1,2
+shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	0	18632	1641393716651,1,1,2
+facebook.com:HSTS	0	18632	1625409839466,1,1,2
+aus5.mozilla.org:HSTS	0	18632	1641393729197,1,0,2

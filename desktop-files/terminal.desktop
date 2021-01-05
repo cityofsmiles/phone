@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Terminal
 Exec=xfce4-terminal -e 'ash -l'
-Icon=/home/jonathan/Documents/laptop/myscripts/icons/terminal.png
+Icon=/home/jonathan/Documents/phone/icons/terminal.png
 Terminal=false
 Type=Application
 StartupNotify=true
