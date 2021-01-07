@@ -7,6 +7,7 @@ alias pr='sudo apk del'
 alias i='sudo apk add'
 alias srp='source ~/.profile'
 alias m='mousepad'
+alias la='ls -a'
 
 alias mp='mousepad ~/.profile &'
 
@@ -21,3 +22,12 @@ alias al='ash -l'
 alias lb='flatpak run org.libreoffice.LibreOffice'
 
 alias rn='ranger'
+
+alias up='cd ..'
+
+alias gacpm='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
+
+alias cpcn='cp /home/jonathan
+/Documents/phone/configs/rc.conf /home/jonathan/.co
+nfig/ranger/rc.conf'
+
