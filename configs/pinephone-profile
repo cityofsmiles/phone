@@ -9,7 +9,7 @@ alias srp='source ~/.profile'
 alias m='mousepad'
 alias la='ls -a'
 
-alias mp='mousepad ~/.profile &'
+alias mp='mousepad ~/Documents/phone/configs/pinephone-profile &'
 
 alias gac='cd ~/Documents/phone && git add . && git commit -m'
 
@@ -28,4 +28,9 @@ alias up='cd ..'
 alias gacpm='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
 
 alias cprc='cp /home/jonathan/Documents/phone/configs/rc.conf /home/jonathan/.config/ranger/rc.conf'
+
+alias mr='mousepad /home/jonathan/Documents/phone/configs/rc.conf &'
+
+
+
 
