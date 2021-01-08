@@ -15,7 +15,7 @@ alias gac='cd ~/Documents/phone && git add . && git commit -m'
 
 alias gpm='cd ~/Documents/phone && git push -u origin main'
 
-alias cpp='cp ~/.profile ~/Documents/phone/configs/pinephone-profile'
+alias cpp='cp ~/Documents/phone/configs/pinephone-profile ~/.profile'
 
 alias al='ash -l'
 
@@ -27,7 +27,5 @@ alias up='cd ..'
 
 alias gacpm='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
 
-alias cpcn='cp /home/jonathan
-/Documents/phone/configs/rc.conf /home/jonathan/.co
-nfig/ranger/rc.conf'
+alias cprc='cp /home/jonathan/Documents/phone/configs/rc.conf /home/jonathan/.config/ranger/rc.conf'
 
