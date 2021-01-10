@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Telegram
-Exec=firefox -new-window web.telegram.org web.telegram.org 
+Exec=firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/telegram" web.telegram.org web.telegram.org 
 Icon=/home/jonathan/Documents/phone/icons/telegram.png
 Terminal=false
 Type=Application
