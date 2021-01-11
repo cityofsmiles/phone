@@ -2,7 +2,7 @@ alias u='sudo apk update && sudo apk upgrade && flatpak upgrade'
 
 alias sr='apk search'
 
-alias r='sudo reboot'
+alias rb='sudo reboot'
 alias pr='sudo apk del'
 alias i='sudo apk add'
 alias srp='source ~/.profile'
@@ -25,7 +25,7 @@ alias rn='ranger'
 
 alias up='cd ..'
 
-alias gacpm='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
+alias gacp='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
 
 alias cprc='cp /home/jonathan/Documents/phone/configs/rc.conf /home/jonathan/.config/ranger/rc.conf'
 
