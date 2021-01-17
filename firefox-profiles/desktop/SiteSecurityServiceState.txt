@@ -3,11 +3,11 @@ facebook.com:HSTS	0	18628	1625037865930,1,1,2
 m.facebook.com:HSTS	0	18628	1625037768883,1,1,2
 external.xx.fbcdn.net:HSTS	0	18628	1641023442822,1,1,2
 vesta-1.web.telegram.org:HSTS	1	18629	1645316927657,1,0,2
-firefox.settings.services.mozilla.com:HSTS	1	18629	1641085154756,1,0,2
+firefox.settings.services.mozilla.com:HSTS	2	18639	1641952719549,1,0,2
 services.addons.mozilla.org:HSTS	0	18628	1641022033870,1,0,2
 t.me:HSTS	0	18628	1645258550140,1,0,2
 pixel.facebook.com:HSTS	0	18628	1625037827292,1,0,2
-www.facebook.com:HSTS	0	18628	1625042455551,1,0,2
+www.facebook.com:HSTS	1	18639	1625968717512,1,0,2
 venus.web.telegram.org:HSTS	0	18628	1645258563322,1,0,2
 static.xx.fbcdn.net:HSTS	0	18628	1641023294088,1,1,2
 flora.web.telegram.org:HSTS	1	18629	1645317193288,1,0,2
