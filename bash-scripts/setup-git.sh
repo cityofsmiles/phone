@@ -12,5 +12,5 @@ git remote -v
 
 git remote set-url origin git@github.com:cityofsmiles/phone.git
 
-git auth login
+gh auth login
 
