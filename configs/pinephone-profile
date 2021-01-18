@@ -31,7 +31,7 @@ alias cprc='cp /home/jonathan/Documents/phone/configs/rc.conf /home/jonathan/.co
 
 alias mr='mousepad /home/jonathan/Documents/phone/configs/rc.conf &'
 
-alias cpcn='sudo cp ~/Documents/phone/bash-scripts/mount-sd.sh /etc/local.d/mount-sd.start'
+alias cpcn='sudo cp ~/Documents/phone/bash-scripts/mount-sd.sh /etc/local.d/mount-sd.start; cp ~/Documents/phone/configs/pinephone-profile ~/.profile; cp /home/jonathan/Documents/phone/configs/rc.conf /home/jonathan/.config/ranger/rc.conf'
 
 
 #sudo mount /dev/mmcblk0p1 /mnt/sdcard
