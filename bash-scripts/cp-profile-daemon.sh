@@ -6,6 +6,10 @@ do
 
 cp ~/Documents/phone/configs/pinephone-profile ~/.profile &&
 
-notify-send "Copied profile."
+source ~/.profile &&
+
+echo "Copied profile."
+
+exit
 
 done
