@@ -37,9 +37,9 @@ alias po='sudo poweroff'
 
 alias sc='cd ~/Documents/phone/bash-scripts/'
 
-alias ln='cd ~/Documents/phone/pmos-startup-scripts'
+alias st='cd ~/Documents/phone/pmos-startup-scripts'
 
-alias dc='cd ~/Documents/'
+alias dc='cd ~/Documents'
 
 
 
