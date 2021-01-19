@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Daemons
-Exec=xfce4-terminal -e "sh ~/Documents/phone/bash-scripts/launch-daemons.sh"
-Icon=~/Documents/phone/icons/daemon.png
-Terminal=false
-Type=Application
-StartupNotify=true
-DBusActivatable=true
-X-GNOME-UsesNotifications=true

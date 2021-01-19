@@ -3,7 +3,9 @@ alias u='sudo apk update && sudo apk upgrade && flatpak upgrade'
 alias sr='apk search'
 alias rb='sudo reboot'
 alias pr='sudo apk del'
+
 alias i='sudo apk add'
+
 alias srp='source ~/.profile'
 
 alias m='sh ~/Documents/phone/bash-scripts/mousepad.sh'
@@ -12,6 +14,8 @@ alias la='ls -a'
 alias ch='cd ~'
 
 alias mp='mousepad ~/Documents/phone/configs/pinephone-profile && cp ~/Documents/phone/configs/pinephone-profile ~/.profile && source ~/.profile'
+
+alias tp='texmaker ~/Documents/phone/configs/pinephone-profile && cp ~/Documents/phone/configs/pinephone-profile ~/.profile && source ~/.profile'
 
 alias gac='cd ~/Documents/phone && git add . && git commit -m'
 
@@ -32,6 +36,9 @@ alias gacp='sh ~/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
 alias cprc='cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
+
+alias tr='texmaker ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
+
 
 alias cpcn='sh ~/Documents/phone/bash-scripts/cp-configs-startups.sh'
 
