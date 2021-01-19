@@ -6,7 +6,7 @@ alias rb='sudo reboot'
 alias pr='sudo apk del'
 alias i='sudo apk add'
 alias srp='source ~/.profile'
-alias m='mousepad'
+alias m='sh ~/Documents/phone/bash-scripts/mousepad.sh'
 alias la='ls -a'
 
 alias mp='mousepad ~/Documents/phone/configs/pinephone-profile &'
@@ -25,16 +25,21 @@ alias rn='ranger'
 
 alias up='cd ..'
 
-alias gacp='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
+alias gacp='sh ~/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
 
-alias cprc='cp /home/jonathan/Documents/phone/configs/rc.conf /home/jonathan/.config/ranger/rc.conf'
+alias cprc='cp ~/Documents/phone/configs/rc.conf /home/jonathan/.config/ranger/rc.conf'
 
-alias mr='mousepad /home/jonathan/Documents/phone/configs/rc.conf &'
+alias mr='mousepad ~/Documents/phone/configs/rc.conf &'
 
 alias cpcn='sh ~/Documents/phone/bash-scripts/cp-configs-startups.sh'
 
+alias po='sudo poweroff'
 
+alias sc='cd ~/Documents/phone/bash-scripts/'
 
+alias ln='cd ~/Documents/phone/pmos-startup-scripts'
+
+alias dc='cd ~/Documents/'
 
 
 
