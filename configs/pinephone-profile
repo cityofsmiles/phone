@@ -3,6 +3,7 @@ alias u='sudo apk update && sudo apk upgrade && flatpak upgrade'
 alias sr='apk search'
 alias rb='sudo reboot'
 alias pr='sudo apk del'
+alias info='apk info'
 
 alias i='sudo apk add'
 
@@ -50,5 +51,5 @@ alias st='cd ~/Documents/phone/pmos-startup-scripts'
 
 alias dc='cd ~/Documents'
 
-
+alias t='texmaker'
 
