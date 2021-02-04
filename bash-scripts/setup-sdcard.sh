@@ -1,14 +1,18 @@
 #!/bin/sh
 
+sudo chown /dev/mmcblk0
+
+sudo mkdir /mnt/sdcard
+
 sudo mount /dev/mmcblk0p1 /mnt/sdcard
 
-mkdir -p /mnt/sdcard/Documents 
+sudo mkdir -p /mnt/sdcard/Documents 
 
-mkdir -p /mnt/sdcard/Downloads
+sudo mkdir -p /mnt/sdcard/Downloads
 
-rmdir ~/Documents
+rm -r ~/Documents
 
-rmdir ~/Downloads
+rm -r ~/Downloads
 
 ln -s /mnt/sdcard/Documents ~/Documents
 

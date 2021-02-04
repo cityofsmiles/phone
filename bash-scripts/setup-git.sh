@@ -6,7 +6,7 @@ git config --global user.name "cityofsmiles"
 
 git config --global pull.rebase false
 
-cd /home/jonathan/Documents/phone
+cd ~/Documents/phone
 
 git remote -v
 

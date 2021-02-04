@@ -1,7 +1,7 @@
 #!/bin/sh
 
-mkdir -p /home/jonathan/Documents/excel/20-21
+sudo mkdir -p ~/Documents/excel/20-21
 
-mkdir -p /home/jonathan/Documents/latex/20-21
+sudo mkdir -p ~/Documents/latex/20-21
 
-mkdir -p /home/jonathan/Documents/laptop
+sudo mkdir -p ~/Documents/laptop
