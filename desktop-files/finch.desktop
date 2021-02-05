@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Ranger
-Exec=xfce4-terminal -e ranger
-Icon=/home/manjaro/Documents/phone/icons/ranger.png
+Name=Finch
+Exec=xfce4-terminal -e finch
+Icon=/home/manjaro/Documents/phone/icons/pidgin.png
 Terminal=false
 Type=Application
 StartupNotify=true
