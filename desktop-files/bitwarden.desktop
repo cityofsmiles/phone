@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Bitwarden
-Exec=firefox -profile "~/Documents/phone/firefox-profiles/personalpine" --kiosk -new-window https://vault.bitwarden.com
+Exec=firefox -profile "/home/manjaro/Documents/phone/firefox-profiles/bitwarden" --kiosk -new-window https://vault.bitwarden.com
 Icon=/home/manjaro/Documents/phone/icons/bitwarden.png
 Terminal=false
 Type=Application

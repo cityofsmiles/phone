@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Personal
-Exec=firefox -profile "~/Documents/phone/firefox-profiles/fb-personal" -new-window https://m.facebook.com/messages/
-Icon=/home/manjaro/Documents/phone/icons/messenger.png
-Terminal=false
-Type=Application
-StartupNotify=true
-DBusActivatable=true
-X-GNOME-UsesNotifications=true
