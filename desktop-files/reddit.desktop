@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Reddit
-Exec=firefox --new-window https://www.reddit.com/
+Exec=firefox -profile "/home/manjaro/Documents/phone/firefox-profiles/reddit"  --new-window https://www.reddit.com/
 Icon=/home/manjaro/Documents/phone/icons/reddit.png
 Terminal=false
 Type=Application

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Finch
-Exec=xfce4-terminal -e finch
+Exec=xfce4-terminal -e finch --hide-borders --hide-menubar 
 Icon=/home/manjaro/Documents/phone/icons/pidgin.png
 Terminal=false
 Type=Application
