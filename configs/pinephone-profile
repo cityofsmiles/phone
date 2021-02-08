@@ -53,3 +53,4 @@ alias dc='cd ~/Documents'
 
 alias t='texmaker'
 
+export PATH=/home/jonathan/Documents/phone/userscripts:$PATH
