@@ -1,4 +1,4 @@
-alias u='sudo apk update && sudo apk upgrade && flatpak upgrade'
+alias u='sudo apk update && sudo apk upgrade && sudo flatpak upgrade'
 
 alias sr='apk search'
 alias rb='sudo reboot'
