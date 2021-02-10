@@ -1,0 +1,4 @@
+#!/bin/sh
+
+firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/desktop" https://www.facebook.com/messages/
+

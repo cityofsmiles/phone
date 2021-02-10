@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xfce4-terminal --zoom=4 --command='sudo apk update & sudo apk upgrade'

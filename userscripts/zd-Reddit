@@ -1,0 +1,3 @@
+#!/bin/sh
+
+firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/reddit" www.reddit.com

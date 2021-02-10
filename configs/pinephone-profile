@@ -30,6 +30,8 @@ alias lb='flatpak run org.libreoffice.LibreOffice'
 
 alias rn='ranger'
 
+alias r='ranger'
+
 alias up='cd ..'
 
 alias gacp='sh ~/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
@@ -54,3 +56,5 @@ alias dc='cd ~/Documents'
 alias t='texmaker'
 
 export PATH=/home/jonathan/Documents/phone/userscripts:$PATH
+
+export EDITOR='/usr/bin/mousepad'
