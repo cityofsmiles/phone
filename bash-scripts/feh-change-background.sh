@@ -8,5 +8,5 @@ do
 feh --bg-scale --randomize ~/Documents/phone/wallpapers/*
 
 #   feh --bg-scale "${img[$RANDOM % ${#img[@]} ]}"
-sleep 1m
+sleep 10m
 done
