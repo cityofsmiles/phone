@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#sudo cp -r ~/Documents/phone/pmos-startup-scripts/* /etc/local.d/
+sudo cp -r ~/Documents/phone/pmos-startup-scripts/* /etc/local.d/
 
 cp ~/Documents/phone/configs/pinephone-profile ~/.profile; 
 

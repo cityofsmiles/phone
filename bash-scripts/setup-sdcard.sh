@@ -1,12 +1,12 @@
 #!/bin/sh
 
-#sudo chown -R jonathan /dev/mmcblk0
-
-sudo chown -R jonathan /mnt/sdcard
+sudo chown -R jonathan /dev/mmcblk0
 
 sudo mkdir /mnt/sdcard
 
 sudo mount /dev/mmcblk0p1 /mnt/sdcard
+
+sudo chown -R jonathan /mnt/sdcard
 
 sudo mkdir -p /mnt/sdcard/Documents 
 
@@ -29,4 +29,4 @@ ln -s /mnt/sdcard/Documents ~/Documents
 
 ln -s /mnt/sdcard/Downloads ~/Downloads
 
-
+cp -r ~/phone ~/Documents
