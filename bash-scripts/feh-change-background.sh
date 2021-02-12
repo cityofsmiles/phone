@@ -5,8 +5,8 @@
 while true
 do
 
-feh --bg-fill --randomize ~/Documents/phone/wallpapers/*
+feh --bg-scale --randomize ~/Documents/phone/wallpapers/*
 
 #   feh --bg-scale "${img[$RANDOM % ${#img[@]} ]}"
-#sleep 10m
+sleep 1m
 done
