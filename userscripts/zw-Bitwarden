@@ -1,3 +1,6 @@
 #!/bin/sh
 
-flatpak run com.bitwarden.desktop
+#flatpak run com.bitwarden.desktop
+
+firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/bitwarden" --kiosk https://vault.bitwarden.com/
+
