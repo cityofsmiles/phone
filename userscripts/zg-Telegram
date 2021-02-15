@@ -1,0 +1,5 @@
+#!/bin/sh
+
+firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/fb-personal" https://web.telegram.org 
+
+

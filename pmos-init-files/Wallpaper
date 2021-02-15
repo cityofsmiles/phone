@@ -1,7 +1,7 @@
 #!/sbin/openrc-run
 
 name="Wallpaper daemon"
-command="/home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh"
+command="/home/jonathan/.local/run/feh-change-background.sh"
 pidfile="/home/jonathan/Documents/phone/bash-scripts/wallpaper.pid"
 command_background=true
 
