@@ -1,3 +1,5 @@
 #!/bin/sh
 
+sh /home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh &
+
 xfce4-terminal --zoom=4 --command='ash -l -c "sudo apk update && sudo apk upgrade && sudo flatpak upgrade && sleep 5s"'
