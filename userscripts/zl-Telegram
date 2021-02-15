@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sh /home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh &
+
 #telegram-desktop
 
 firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/reddit" web.telegram.org 
