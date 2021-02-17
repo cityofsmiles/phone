@@ -1,16 +1,18 @@
 #!/bin/sh
 
-sudo chown -R jonathan /dev/mmcblk0
+source ./config.sh
+
+sudo chown -R $user_pine /dev/mmcblk0
 
 sudo mkdir /mnt/sdcard
 
 sudo mount /dev/mmcblk0p1 /mnt/sdcard
 
-sudo chown -R jonathan /mnt/sdcard
-
 sudo mkdir -p /mnt/sdcard/Documents 
 
 sudo mkdir -p /mnt/sdcard/Downloads
+
+sudo chown -R $user_pine /mnt/sdcard
 
 #sudo mkdir -p /media/mmcblk0p1/Documents 
 
