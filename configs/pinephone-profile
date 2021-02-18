@@ -58,3 +58,6 @@ alias t='texmaker'
 export PATH=/home/jonathan/Documents/phone/userscripts:$PATH
 
 export EDITOR='/usr/bin/mousepad'
+
+
+
