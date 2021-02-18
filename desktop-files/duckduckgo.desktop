@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Duckduckgo
+Exec=firefox -profile "/home/manjaro/Documents/phone/firefox-profiles/reddit"  --new-window https://duckduckgo.com/
+Icon=/home/manjaro/Documents/phone/icons/duckduckgo.png
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true

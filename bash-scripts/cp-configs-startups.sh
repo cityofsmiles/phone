@@ -10,6 +10,10 @@ cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf
 
 cp ~/Documents/phone/configs/bashrc ~/.bashrc
 
-#cp ~/.purple/blist.xml ~/Documents/phone/configs/blist.xml
+#cp  ~/Documents/phone/configs/blist.xml ~/.purple/blist.xml
 
-#cp ~/.purple/accounts.xml ~/Documents/phone/configs/accounts.xml
+#cp ~/Documents/phone/configs/accounts.xml ~/.purple/accounts.xml
+
+
+
+
