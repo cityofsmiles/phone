@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="fil">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <meta name="referrer" content="no-referrer">
+
+      <meta content="Ligtas na i-store at ibahagi ang iyong mga larawan, video, file, at higit pa sa cloud. Libre ang una mong 15 GB na storage sa isang Google account." name="description">
+      <meta name="google-site-verification" content="cqXadt7fWeX89GynJ90zuOnE6nb7qwS8sRiUJukU0l4">
+
+      <meta name="twitter:url" content="https://www.google.com/intl/fil/drive/">
+      <meta name="twitter:title" content="Cloud Storage para sa Trabaho at Bahay - Google Drive">
+      <meta name="twitter:image" content="https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png">
+      <meta name="twitter:description" content="Ligtas na i-store at ibahagi ang iyong mga larawan, video, file, at higit pa sa cloud. Libre ang una mong 15 GB na storage sa isang Google account.">
+      <meta name="twitter:creator" content="google">
+
+      <meta property="og:url" content="https://www.google.com/intl/fil/drive/">
+      <meta content="Cloud Storage para sa Trabaho at Bahay - Google Drive" property="og:title">
+      <meta content="https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png" property="og:image">
+      <meta content="Ligtas na i-store at ibahagi ang iyong mga larawan, video, file, at higit pa sa cloud. Libre ang una mong 15 GB na storage sa isang Google account." property="og:description">
+      <meta property="og:type" content="website">
+
+    <title>Cloud Storage para sa Trabaho at Bahay - Google Drive</title>
+    <link rel="prefetch" href="//www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png">
+    <link rel="icon" href="https://ssl.gstatic.com/images/branding/product/2x/hh_drive_36dp.png" sizes="36x36">
+    <link rel="icon" href="https://ssl.gstatic.com/images/branding/product/2x/hh_drive_24dp.png" sizes="24x24">
+    <link rel="shortcut icon" href="https://ssl.gstatic.com/images/branding/product/2x/hh_drive_36dp.png">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Google+Sans:400,500|Product+Sans:400&amp;lang=en" nonce="9doYpCMxpxW8cP4KWwGu1w">
+    <link href="/drive/static/css/index.min.css?cache=be1bffd" rel="stylesheet" nonce="9doYpCMxpxW8cP4KWwGu1w">
+    <link rel="canonical" href="https://www.google.com/intl/fil/drive/">
+
+    <script src="//www.google.com/insights/consumersurveys/async_survey?site=l3i7sndninnbynr3jnttq6ux6i" nonce="9doYpCMxpxW8cP4KWwGu1w"></script>
+    <script charset="utf-8" src="https://www.google.com/insights/consumersurveys/gk/static/hats-integration-release.js" nonce="9doYpCMxpxW8cP4KWwGu1w"></script>
+    <script async src='https://www.google-analytics.com/analytics.js' nonce="9doYpCMxpxW8cP4KWwGu1w"></script>
+    <script src="/drive/static/js/detect.min.js?cache=722d5cb" nonce="9doYpCMxpxW8cP4KWwGu1w"></script>
+    <script src="/drive/static/js/analytics.min.js?cache=f859303" nonce="9doYpCMxpxW8cP4KWwGu1w"></script>
+  </head>
+  <body>
+<header class="glue-header glue-header--single">
+  <div id="drawer" class="glue-header__bar glue-header__bar--desktop glue-header__drawer">
+    <div class="glue-header__tier">
+      <div class="glue-header__container">
+        <div class="glue-header__lock-up">
+          <div class="glue-header__logo">
+            <a class="glue-header__logo-link" href="/intl/fil_ALL/drive/" title="Google">
+              <img src="https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d" class="icon" alt="Icon">
+              <div class="glue-header__logo-container">
+                <svg role="img" alt aria-hidden="true" class="glue-header__logo-svg">
+                  <use xlink:href="/drive/static/img/glue-icons.svg#google-solid-logo"></use>
+                </svg>
+              </div>
+              <p class="glue-header__logo--product">Drive</p>
+            </a>
+          </div>
+          <a href="#page-content" class="glue-header__skip-content" aria-label="">
+            <p class="glue-header__skip-content-text"></p>
+          </a>
+         </div>
+      </div>
+
+      <div class="glue-header__container glue-header__container--flex-auto">
+        <nav class="glue-header__link-bar">
+            <ul id="list-1" class="glue-header__list">
+                <li class="glue-header__item js-nav-items">
+                    <span class="glue-header__link" tabindex="0">Mga Indibidwal</span>
+                  <ul id="list-2" class="glue-header__list glue-header__list--nested">
+                      <li class="glue-header__item js-sub-header-items"
+                          id="go-to-drive">
+                          <a class="glue-header__link js-drive-btn"
+                              href="https://accounts.google.com/ServiceLogin?service=wise&amp;passive=true&amp;continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&amp;utm_medium=button&amp;utm_campaign=web&amp;utm_content=gotodrive&amp;usp=gtd&amp;ltmpl=drive"
+                              data-event-action="Header Nav"
+                              data-event-label="Pumunta sa Drive"
+                              target="_blank" rel="noopener noreferrer"
+>
+                            Pumunta sa Drive
+                          </a>
+                      </li>
+                      <li class="glue-header__item js-sub-header-items"
+                          id="download">
+                          <a class="glue-header__link"
+                              href="/intl/fil_ALL
+/drive/download/"
+>
+                            I-download
+                          </a>
+                      </li>
+                      <li class="glue-header__item js-sub-header-items"
+                          id="google-one">
+                          <a class="glue-header__link"
+                              href="https://one.google.com/about?utm_source=drive&amp;utm_campaign=marketing_header&amp;hl=fil"
+                              target="_blank" rel="noopener noreferrer"
+>
+                            Google One
+                          </a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="glue-header__item js-nav-items">
+                    <span class="glue-header__link" tabindex="0">Mga Team</span>
+                  <ul id="list-2" class="glue-header__list glue-header__list--nested">
+                      <li class="glue-header__item js-sub-header-items"
+                          id="features">
+                          <a class="glue-header__link"
+                              href="#features
+"
+>
+                            Mga Feature
+                          </a>
+                      </li>
+                      <li class="glue-header__item js-sub-header-items"
+                          id="customers">
+                          <a class="glue-header__link"
+                              href="#customers
+"
+>
+                            Mga Customer
+                          </a>
+                      </li>
+                      <li class="glue-header__item js-sub-header-items"
+                          id="resources">
+                          <a class="glue-header__link"
+                              href="#resources
+"
+>
+                            Mga Resource
+                          </a>
+                      </li>
+                      <li class="glue-header__item js-sub-header-items"
+                          id="download">
+                          <a class="glue-header__link"
+                              href="/intl/fil_ALL
+/drive/download/"
+>
+                            I-download
+                          </a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="glue-header__item js-nav-items">
+                    <a class="glue-header__link" href="https://workspace.google.com/?utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=header&amp;hl=fil" target="_blank" rel="noopener noreferrer">Enterprise</a>
+                  <ul id="list-2" class="glue-header__list glue-header__list--nested">
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+      </div>
+
+        <div class="glue-header__container glue-header__container--cta">
+          <div class="glue-header__cta">
+            <a class="glue-button glue-button--medium-emphasis js-drive-btn"
+                href="https://accounts.google.com/ServiceLogin?service=wise&amp;passive=true&amp;continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&amp;utm_medium=button&amp;utm_campaign=web&amp;utm_content=gotodrive&amp;usp=gtd&amp;ltmpl=drive"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-event-action="Header"
+                data-event-label="Pumunta sa Drive">
+              Pumunta sa Drive
+            </a>
+            <a class="glue-button glue-button--high-emphasis"
+                href="https://workspace.google.com/essentials/?utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=trydriveforyourteam&amp;hl=fil"
+                target="_blank" rel="noopener noreferrer">
+              Subukan ang Drive para sa iyong team
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="glue-header__bar glue-header__bar--mobile">
+    <div class="glue-header__tier">
+      <div class="glue-header__container">
+        <div class="glue-header__lock-up">
+          <div class="glue-header__hamburger glue-header__hamburger--first-tier">
+            <div class="glue-header__hamburger-wrapper">
+              <button type="button" class="glue-header__drawer-toggle-btn"
+                  aria-controls="drawer" aria-expanded="false" aria-label="Open the navigation drawer">
+                <svg role="img" alt class="glue-icon glue-icon--24px"><use xlink:href="/drive/static/img/glue-icons.svg#menu"></use></svg>
+              </button>
+            </div>
+          </div>
+          <div class="glue-header__logo">
+            <a class="glue-header__logo-link" href="https://www.google.com" title="Google">
+              <img src="https://kstatic.googleusercontent.com/files/f4b4fbcc6119576da7ab3f68270196009fc1b16f1927910842d793c385115593b6dd5fbe9a1e21fe64f3cbbc509c3a02c95ebc9635f76c355282482986f1fe7d" class="icon" alt="Icon">
+              <div class="glue-header__logo-container">
+                <svg role="img" alt aria-hidden="true" class="glue-header__logo-svg">
+                  <use xlink:href="/drive/static/img/glue-icons.svg#google-solid-logo"></use>
+                </svg>
+              </div>
+              <p class="glue-header__logo--product">Drive</p>
+            </a>
+          </div>
+          <a href="#page-content" class="glue-header__skip-content" aria-label="">
+            <p class="glue-header__skip-content-text">Jump to Content</p>
+          </a>
+        </div>
+      </div>
+      <div class="glue-header__container">
+        <div class="glue-header__cta">
+          <a class="glue-button glue-button--medium-emphasis js-drive-btn"
+              href="https://accounts.google.com/ServiceLogin?service=wise&amp;passive=true&amp;continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&amp;utm_medium=button&amp;utm_campaign=web&amp;utm_content=gotodrive&amp;usp=gtd&amp;ltmpl=drive"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-event-action="Header Nav"
+              data-event-label="Pumunta sa Drive">
+            Pumunta sa Drive
+          </a>
+          <a class="glue-button glue-button--high-emphasis" href="https://workspace.google.com/essentials/?utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=trydriveforyourteam&amp;hl=fil">
+            Subukan ang Drive para sa iyong team
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="glue-header__drawer-backdrop"></div>
+</header>    <main class="glue-page" id="page-content">
+  <section class="drive">
+    <section class="drive__hero">
+        <div class="glue-grid">
+          <div class="glue-grid__col glue-grid__col--span-12 glue-grid__col--span-5-lg glue-grid__col--span-4-xl
+              glue-grid__col--align-middle">
+            <div class="drive__hero-content">
+              <h1 class="glue-headline glue-headline--headline-2 drive__hero-heading">
+                Madali at secure na access sa lahat ng iyong content
+              </h1>
+              <div class="drive__hero-description glue-mod-font-weight-regular">
+                Mag-store, magbahagi, at mag-collaborate sa mga file at folder mula sa anumang mobile device, tablet, o computer
+              </div>
+              <div class="drive__hero-buttons">
+                <a class="glue-button glue-button--medium-emphasis js-drive-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://accounts.google.com/ServiceLogin?service=wise&amp;passive=true&amp;continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&amp;utm_medium=button&amp;utm_campaign=web&amp;utm_content=gotodrive&amp;usp=gtd&amp;ltmpl=drive"
+                    data-event-action="Madali at secure na access sa lahat ng iyong content"
+                    data-event-label="Pumunta sa Drive">
+                  Pumunta sa Drive
+                </a>
+                <a class="glue-button glue-button--high-emphasis" target="_blank" rel="noopener noreferrer" href="https://workspace.google.com/essentials/?utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=trydriveforyourteam&amp;hl=fil">
+                  Subukan ang Drive para sa iyong team
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="drive__hero-image glue-grid__col glue-grid__col--span-12 glue-grid__col--span-7-lg
+              glue-grid__col--span-8-xl glue-grid__col--align-middle">
+            <img src="https://lh3.googleusercontent.com/vq6ZjR72IcEKRh3QtkVrf2BXsZIOgljo8yGevO2rSVtl3mSxSDKvWfFAGxMxCYbPLGiovGk-gk0kA2csKSPHQKog-zTmNjRtmh6VkA=s0" alt="Banner">
+          </div>
+        </div>
+    </section>
+    <section class="drive__features" id="js-features">
+        <div class="glue-grid glue-mod-spacer-7-top">
+          <div class="glue-grid__col glue-grid__col--span-12 glue-grid__col--span-6-lg glue-grid__col--span-5-xl
+              glue-mod-order-1-sm glue-mod-order-4-lg glue-mod-order-3-xl glue-mod-spacer-6-top              four-column__content">
+            <div class="drive__features-content">
+              <div class="glue-mod-spacer-3-bottom">
+                <img src="https://kstatic.googleusercontent.com/files/8317f83271acdf124799a6f1888da1313d29696309f46e1876ad3216e5ae3d5cb9049b45b58cc1f201f1293badbf9046a664652e019b5574a7e8979964bff928" alt="Icon">
+              </div>
+              <h2 class="glue-headline glue-headline--headline-3">
+                Mga cloud-native na app sa pakikipag-collaborate para mas hikayatin pa ang pagtutulungan
+              </h2>
+              <div class="drive__features-text glue-mod-font-weight-regular">
+                <p>Tuluy-tuloy na naka-integrate ang Drive sa <a href="https://www.google.com/docs/about/" rel="noopener" target="_blank">Docs</a>, <a href="https://www.google.com/sheets/about/" rel="noopener" target="_blank">Sheets</a>, at <a href="https://www.google.com/slides/about/" rel="noopener" target="_blank">Slides</a>, mga cloud-native na app na nagbibigay-daan sa iyong team na mag-collaborate nang real time sa epektibong paraan. Gumawa at magbahagi ng content sa iyong team sa simula pa lang, nang hindi na kinakailangang mag-migrate mula sa mga kasalukuyang tool.</p>
+              </div>
+              <a class="glue-button glue-button--medium-emphasis" href="/intl/fil_ALL/drive/features/#apps">Matuto pa</a>
+            </div>
+          </div>
+          <div class="glue-grid__col glue-grid__col--span-12 glue-grid__col--span-6-lg glue-grid__col--span-7-xl
+              glue-mod-order-2-sm glue-mod-order-3-lg glue-mod-order-2-xl              glue-grid__col--align-middle">
+            <img src="https://lh3.googleusercontent.com/KOWQOT_D7NGb3AlhaXBiU3nGYJ6QwKvVhKsdm6UwiIOS15T4bgx7zynlbanpvU61kFBYBV21-v_PSAG4K3do1zw69lpIT2LiISiH=s0" alt="Banner">
+          </div>
+        </div>
+        <div class="glue-grid glue-mod-spacer-7-top">
+          <div class="glue-grid__col glue-grid__col--span-12 glue-grid__col--span-6-lg glue-grid__col--span-5-xl
+              glue-mod-order-1-sm glue-mod-order-2-xl glue-mod-order-3-lg              four-column__content">
+            <div class="drive__features-content">
+              <div class="glue-mod-spacer-3-bottom">
+                <img src="https://kstatic.googleusercontent.com/files/eea6c181578777b6eeefd9042e51e9284c4443b3ea45c13e64a1f9c976af2faf69235f792329961d1495c5f49405d54c6344dd53f536c8191b5a79f87ce5d382" alt="Icon">
+              </div>
+              <h2 class="glue-headline glue-headline--headline-3">
+                Pag-integrate sa mga tool at app na ginagamit na ng iyong team
+              </h2>
+              <div class="drive__features-text glue-mod-font-weight-regular">
+                Naka-integrate at nagbibigay ng suporta ang Drive sa kasalukuyang teknolohiya ng iyong team. Mag-collaborate sa mga file ng Microsoft Office nang hindi na kailangang mag-convert ng mga format ng file, at mag-edit at mag-store ng mahigit sa 100 karagdagang uri ng file, kabilang ang mga PDF, CAD file, larawan, at higit pa.
+              </div>
+              <a class="glue-button glue-button--medium-emphasis" href="/intl/fil_ALL/drive/features/#tools">Matuto pa</a>
+            </div>
+          </div>
+          <div class="glue-grid__col glue-grid__col--span-12 glue-grid__col--span-6-lg glue-grid__col--span-7-xl
+              glue-mod-order-2-sm glue-mod-order-4-lg glue-mod-order-3-xl              glue-grid__col--align-middle">
+            <img src="https://lh3.googleusercontent.com/vR2eJFKYD-U7QZ1kFojPIUYOQsQ_yHFIioJ3mcwGmdv66FoHvnZUs4wvxxPvm0R1WxedzybK-Y-T0paASaylY9ToogLxlsl-bIgU=s0" alt="Banner">
+          </div>
+        </div>
+        <div class="glue-grid glue-mod-spacer-7-top">
+          <div class="glue-grid__col glue-grid__col--span-12 glue-grid__col--span-6-lg glue-grid__col--span-5-xl
+              glue-mod-order-1-sm glue-mod-order-4-lg glue-mod-order-3-xl glue-mod-spacer-6-top              four-column__content">
+            <div class="drive__features-content">
+              <div class="glue-mod-spacer-3-bottom">
+                <img src="https://kstatic.googleusercontent.com/files/1215f100aed56568e58a202bef5caf51ebcc316ed033a7d042d6d6c1f90f56c39e5633d0fcb521d98e3d40022e901c535be27f73510c7d95e0bf39c861bd46ff" alt="Icon">
+              </div>
+              <h2 class="glue-headline glue-headline--headline-3">
+                Nakakatulong ang teknolohiya ng AI at Search ng Google para makapagtrabaho nang mas mabilis ang iyong team
+              </h2>
+              <div class="drive__features-text glue-mod-font-weight-regular">
+                Nasa Drive ang mahuhusay na kakayahan ng Google sa paghahanap at naghahatid ito ng walang katumbas na bilis, performance, at pagiging maaasahan. At gumagamit ng AI ang mga feature gaya ng Priority para hulaan ang hinahanap mo at para maipakita ang mga pinakanauugnay na content—na nakakatulong sa iyong team na humanap ng mga file nang hanggang 50% mas mabilis.
+              </div>
+              <a class="glue-button glue-button--medium-emphasis" href="/intl/fil_ALL/drive/features/#technology">Matuto pa</a>
+            </div>
+          </div>
+          <div class="glue-grid__col glue-grid__col--span-12 glue-grid__col--span-6-lg glue-grid__col--span-7-xl
+              glue-mod-order-2-sm glue-mod-order-3-lg glue-mod-order-2-xl              glue-grid__col--align-middle">
+            <img src="https://lh3.googleusercontent.com/TIze8VGPsxhAWglK1i4ROYTGK426IFRtLQ43uzkMRYUlEZsHQKhYfXQWjVOKUFGKN1l2Cboam1lM4uo4e6kpyTsaunMM00hB5y0Pn7A=s0" alt="Banner">
+          </div>
+        </div>
+    </section>
+    <hr class="glue-mod-spacer-7-top">
+<section class="drive__platform glue-mod-text-center glue-mod-spacer-2-bottom">
+  <div class="drive__platform-image drive__platform-image--868a5ae1da41303d86ad88fef0c93ff4">
+      <style>
+        @media screen  {
+          .drive__platform-image--868a5ae1da41303d86ad88fef0c93ff4 {
+            background-image: url(https://kstatic.googleusercontent.com/files/c744ed1513f2b6754c51cc8c4630b68f83c552b799ccfac46466452fe03925112ca1c55005808c0fe6927408445b4581de3ef5501ba67cca83de3bbd52a7064d);
+          }
+        }
+          @media screen  and (min-resolution: 192dpi) {
+            .drive__platform-image--868a5ae1da41303d86ad88fef0c93ff4 {
+              background-image: url(https://kstatic.googleusercontent.com/files/c744ed1513f2b6754c51cc8c4630b68f83c552b799ccfac46466452fe03925112ca1c55005808c0fe6927408445b4581de3ef5501ba67cca83de3bbd52a7064d);
+            }
+          }
+  </style>
+
+    <h2 class="glue-headline glue-headline--headline-2">
+      Gamitin ang Drive sa anumang device
+    </h2>
+    <div class="drive__platform-subheading glue-mod-spacer-3-top">
+      <h3 class="glue-headline glue-headline--headline-6">
+        Gumagana ang Drive sa lahat ng pangunahing platform, na nagbibigay-daan sa iyong makapagtrabaho nang tuluy-tuloy sa
+browser, mobile device, tablet, at computer mo.
+      </h3>
+    </div>
+    <div class="content-icon glue-mod-spacer-3-top">
+      <a href="https://apps.apple.com/app/google-drive/id507874739" target="_blank" rel="noopener noreferrer">
+        <img src="https://kstatic.googleusercontent.com/files/540ac1df440f3a3708b6f31b7fa0c4fd7fd4471dc0614cab5482e110dee791fd6492b009e67d1bbc3467bd6ac63785f5120cb8070ab95de32830c63975290455" class="drive__platform-icon ios-download" alt="Icon">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs&amp;hl=fil" target="_blank" rel="noopener noreferrer">
+        <img src="https://kstatic.googleusercontent.com/files/6e1905e140550741a844d866fa3fd7c11f4a9d6cb84081b66fe973ee7c0afd03e548ccf9cdf7d671c9d3f301e593b53bc2050a06d900daf13acb0b267d88e691" class="drive__platform-icon gplay-download" alt="Icon">
+      </a>
+    </div>
+    <div class="glue-mod-spacer-2-top">
+      <a href="https://accounts.google.com/ServiceLogin?service=wise&amp;passive=true&amp;continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&amp;utm_medium=button&amp;utm_campaign=web&amp;utm_content=gotodrive&amp;usp=gtd&amp;ltmpl=drive"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="js-drive-btn"
+          data-event-action="Gamitin ang Drive sa anumang device"
+          data-event-label="Pumunta sa Drive">
+        Pumunta sa Google Drive
+      </a>
+    </div>
+  </div>
+</section>    <section class="drive__customers glue-mod-text-center" id="js-customers">
+      <div class="drive__customers-heading glue-mod-spacer-5-bottom">
+        <h2 class="glue-headline glue-headline--headline-2">
+          Libu-libong team na ang gumagamit ng Drive para gawing makabago ang paraan ng kanilang pagtatrabaho
+        </h2>
+      </div>
+<section class="glue-mod-spacer-5-top">
+  <div class="glue-carousel glue-carousel--simple js-customers-carousel" data-glue-pagination="carousel-simple">
+    <div class="glue-carousel__wrap">
+      <ul class="glue-carousel__list">
+          <li class="glue-carousel__item" id="glue-carousel-customers-1">
+            <div class="glue-tile__header glue-tile__header--icon">
+              <img src="https://kstatic.googleusercontent.com/files/56d87c8f379a15041193391b51180fbb5935b90f781e9fd4c986c708a7bba4feb63e4a2bedd40f59781db773aed145886961efa322e1132a0ffbd5cf89841399" alt="Icon">
+            </div>
+            <div class="content-heading">
+              <h3 class= "glue-headline glue-headline--headline-4">
+                “Hindi ako kailanman nag-aalala sa paghahanap ng dokumento. Nasa Drive na ang lahat, maa-access ko ito saanman, at talagang malaki ang naidulot nitong pagbabago.”
+              </h3>
+            </div>
+            <div class="content-link">
+              <a href="https://gsuite.google.com/customers/salesforce.html" target="_blank" rel="noopener noreferrer">Read Story</a>
+            </div>
+            </li>
+          <li class="glue-carousel__item" id="glue-carousel-customers-2">
+            <div class="glue-tile__header glue-tile__header--icon">
+              <img src="https://kstatic.googleusercontent.com/files/80c8d2dd793b6a865b5f8cac21246517692bba8fe06fdde8ff60acac370e0c882c64f2e152ab697cd32a3fcf8057a0b374aa506263d70ac45c59e2a8d9906ed3" alt="Icon">
+            </div>
+            <div class="content-heading">
+              <h3 class= "glue-headline glue-headline--headline-4">
+                “Pamilyar na sa Drive ang karamihan sa mga miyembro ng aming team, at para sa kanila, mabilis at madali itong gamitin, kaya naman kaunti lang ang naging pamamahala sa pagbabago at mabilis kaming nakapagpatuloy.”
+              </h3>
+            </div>
+            <div class="content-link">
+              <a href="https://cloud.google.com/blog/products/drive/cardinal-group-relies-on-drive-and-g-suite-to-maximize-collaboration" target="_blank" rel="noopener noreferrer">Read Story</a>
+            </div>
+            </li>
+          <li class="glue-carousel__item" id="glue-carousel-customers-3">
+            <div class="glue-tile__header glue-tile__header--icon">
+              <img src="https://kstatic.googleusercontent.com/files/bbc0f51e62b28b6d86582618198a8b59035e516a8c57c310903133492fe99ce6895132d610ce3e08f515f8546c1775a686a361196720f20aa55a5de2fc46d78a" alt="Icon">
+            </div>
+            <div class="content-heading">
+              <h3 class= "glue-headline glue-headline--headline-4">
+                “Kailangan talaga ang real-time na pakikipag-collaborate sa Google Docs at Drive... kung susubukan naming iba ang ipagamit sa mga empleyado, maraming magrereklamo—talagang magkakagulo.”
+              </h3>
+            </div>
+            <div class="content-link">
+              <a href="http://services.google.com/fh/files/misc/google_drive_customer_story_ibotta.pdf" target="_blank" rel="noopener noreferrer">Read Story</a>
+            </div>
+            </li>
+          <li class="glue-carousel__item" id="glue-carousel-customers-4">
+            <div class="glue-tile__header glue-tile__header--icon">
+              <img src="https://kstatic.googleusercontent.com/files/b5af3d693a691ac5db3db897b94c0d70678313cc3c97f2efa72e873555651b098bf66720d38387649d7f7b195ad53df50f951e3daff8d25823d561f8fb760409" alt="Icon">
+            </div>
+            <div class="content-heading">
+              <h3 class= "glue-headline glue-headline--headline-4">
+                “Ginagawang makabago ng Google ang pakikipag-collaborate at indibidwal na produktibidad sa pamamagitan ng AI. Mas mapagtutuunan ng mga empleyado ang pagsisilbi sa aming mga customer, at hindi na nila kailangang tutukan nang husto ang mga nakakabagot na gawain.”
+              </h3>
+            </div>
+            <div class="content-link">
+              <a href="https://gsuite.google.com/customers/atb-financial.html" target="_blank" rel="noopener noreferrer">Read Story</a>
+            </div>
+            </li>
+      </ul>
+
+      <div class="glue-carousel__paginate glue-pagination-previous">
+        <button type="button" class="glue-pagination__button"
+            data-glue-pagination-previous-customers="customers"
+            data-glue-pagination="carousel-simple"
+            data-glue-pagination-update-model="false"
+            title="Previous">
+          <div class="glue-carousel__paginate-wrap">
+            <div class="glue-carousel__arrow glue-carousel__arrow--left"></div>
+          </div>
+        </button>
+      </div>
+
+      <div class="glue-carousel__paginate glue-pagination-next">
+        <button type="button" class="glue-pagination__button"
+            data-glue-pagination-next-customers="customers"
+            data-glue-pagination="carousel-simple"
+            data-glue-pagination-update-model="false"
+            title="Next">
+          <div class="glue-carousel__paginate-wrap">
+            <div class="glue-carousel__arrow glue-carousel__arrow--right"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="glue-carousel__navigation glue-mod-spacer-3-bottom">
+      <ul class="glue-pagination-page-list" data-glue-pagination-page-list-customers="customers" data-glue-pagination="carousel-simple" role="tablist">
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="1">1</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="2">2</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="3">3</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="4">4</button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</section>      <div class="drive__customers-icons glue-mod-spacer-6-top">
+          <img src="https://kstatic.googleusercontent.com/files/f86032e4b76c46e9f9411776f487227f83e61f4c2769a19cb8fd7d53a6b35dd0d12d4981f7f205d69b4d397a36d604ae5f329e83d183077efff1563e0aa3ab67" alt="Icon">
+          <img src="https://kstatic.googleusercontent.com/files/29b792a68930582e72cce6abdce5910a7f6898fec14fdbf07036c725230cd613d2d1f80657fa696b85eff8c2282f98628601386805cedfb5b24d5b3f6108df4e" alt="Icon">
+          <img src="https://kstatic.googleusercontent.com/files/3663ffbbf7255f1162366ed27679f72255a34fb98098d9ea80bf278b25f0d7e339040179651973c90be939c5149dc70faf800494209f0c1bca830a1bcc2f32b7" alt="Icon">
+          <img src="https://kstatic.googleusercontent.com/files/5a6cf652e91b79403fa438b24bd679778e1063b67889da8d50ec9b4b05eceac54d3d59d49fe5853a36fefc19665f284b518b083866f3c3a63983ac9439d9bc52" alt="Icon">
+          <img src="https://kstatic.googleusercontent.com/files/23093c1b646ca8f5100d596668d21ff720ec57445cbd6cce1d546002cf54a598fafe90d14bdaf6196ff62f66c73a4dc14d29b5bcb63b9ba5026d7efaf6a5c003" alt="Icon">
+      </div>
+    </section>
+    <section class="drive__statistics glue-mod-spacer-7-top">
+      <div class="glue-grid">
+        <div class="glue-grid__col glue-grid__col--span-1 glue-grid__col--span-0-md"></div>
+        <div class="glue-grid__col glue-grid__col--span-4 glue-grid__col--span-5-md">
+          <h2 class="glue-headline glue-headline--headline-2">
+            Mas gusto ng mga user ang Drive kumpara sa mga kakumpitensyang produkto
+          </h2>
+          <p class="glue-small-text glue-mod-spacer-3-top">
+            <p class="glue-mod-text-left"><a href="https://www.g2.com/" rel="noopener" target="_blank">Source</a>: G2.com, Inc., Pebrero 2020</p>
+          </p>
+        </div>
+        <div class="glue-grid__col glue-grid__col--span-6 glue-grid__col--span-7-md">
+          <div class="glue-grid">
+              <div class="glue-grid__col glue-grid__col--span-2 glue-mod-text-right">
+                <a href="https://www.g2.com/products/google-drive/reviews" class="drive__statistics-links" target="_blank" rel="noopener noreferrer">
+                  <img src="https://kstatic.googleusercontent.com/files/5017f55c765740037897cfbd075cf8ddaf1f132af8a2546e9de6330c86e0ea31597d182f2ee763584cb45db92cea96aa4995944546c595dd5ddcb043a279ec91"
+                      alt="Icon"
+                      class="drive__statistics-icon">
+                </a>
+              </div>
+              <div class="glue-grid__col glue-grid__col--span-4 progress-bar">
+                <h3 class="glue-mod-text-right progress-value-1">4.7</h3>
+                  <div class="progress-light-blue progress-outer">
+                    <div class="progress-blue progress-inner"></div>
+                  </div>
+              </div>
+              <div class="glue-grid__col glue-grid__col--span-2 glue-mod-text-right">
+                <a href="https://www.g2.com/products/dropbox/reviews" class="drive__statistics-links" target="_blank" rel="noopener noreferrer">
+                  <img src="https://kstatic.googleusercontent.com/files/ae0cd5d1a3755f3941ee7caf636a7e7f86c1e259631a828b0b19a6a8afc5e66b011b084cb6b6a776d229001cf9dfb0d246f7701d9236cc9591825702878344ed"
+                      alt="Icon"
+                      class="drive__statistics-icon">
+                </a>
+              </div>
+              <div class="glue-grid__col glue-grid__col--span-4 progress-bar">
+                <h3 class="glue-mod-text-right progress-value-2">4.3</h3>
+                  <div class="progress-light-grey progress-outer">
+                    <div class="progress-grey progress-inner progress-bar-2"></div>
+                  </div>
+              </div>
+              <div class="glue-grid__col glue-grid__col--span-2 glue-mod-text-right">
+                <a href="https://www.g2.com/products/box/reviews" class="drive__statistics-links" target="_blank" rel="noopener noreferrer">
+                  <img src="https://kstatic.googleusercontent.com/files/66cc7c5e9c2e3c271f4bf5dda4253b3d59aa57ac9a7e1521f03c4800bb924508c07a5b1fe9b47e3456cd13698934dd3f5e40e1347200869a87ca03b97129b932"
+                      alt="Icon"
+                      class="drive__statistics-icon icon-height">
+                </a>
+              </div>
+              <div class="glue-grid__col glue-grid__col--span-4 progress-bar">
+                <h3 class="glue-mod-text-right progress-value-3">4.2</h3>
+                  <div class="progress-light-grey progress-outer">
+                    <div class="progress-grey progress-inner progress-bar-3"></div>
+                  </div>
+              </div>
+              <div class="glue-grid__col glue-grid__col--span-2 glue-mod-text-right">
+                <a href="https://www.g2.com/products/microsoft-onedrive-for-business/reviews" class="drive__statistics-links" target="_blank" rel="noopener noreferrer">
+                  <img src="https://kstatic.googleusercontent.com/files/b729ad3dc1406d936d264aa1a71a56da6fc2d98c14c37ec2237682bd67f621503cf0f5cc75718387e709add303bf343f872eda83b0d4cfd28df7fbc4e1fd27de"
+                      alt="Icon"
+                      class="drive__statistics-icon">
+                </a>
+              </div>
+              <div class="glue-grid__col glue-grid__col--span-4 progress-bar">
+                <h3 class="glue-mod-text-right progress-value-4">4.2</h3>
+                  <div class="progress-light-grey progress-outer">
+                    <div class="progress-grey progress-inner progress-bar-4"></div>
+                  </div>
+              </div>
+        </div>
+        <div class="glue-grid__col glue-grid__col--span-1 glue-grid__col--span-0-md"></div>
+      </div>
+    </section>
+    <hr class="glue-mod-spacer-7-top glue-mod-spacer-7-bottom">
+    <section class="drive__tools glue-mod-text-center glue-mod-spacer-7-top glue-mod-spacer-6-bottom">
+      <div class="drive__tools-heading">
+        <h2 class="glue-headline glue-headline--headline-2">
+          Naka-integrate ang Drive sa mga tool na ginagamit na ng iyong team
+        </h2>
+      </div>
+      <div class="glue-mod-spacer-3-top">
+        <ul class="drive__tools-company">
+            <li>
+              <a href="https://acrobat.adobe.com/us/en/business/integrations/google-drive.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://kstatic.googleusercontent.com/files/667fa0a2a1aa16fb1a877a3b3f2725cc03b156c36f458422c4279744e3cdd67fa75470b541ba1018ca6628e1126131a49c24e918f919a4e4ee10923f1d48ca8c" class="drive__tools-company-icon" alt="Icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://marketplace.atlassian.com/apps/1216484/google-drive-docs-for-confluence?hosting=cloud&amp;tab=overview" target="_blank" rel="noopener noreferrer">
+                <img src="https://kstatic.googleusercontent.com/files/686902a5a73584f00448ecb41b20642e6a67bb8a30856e62f31cec5a5658f0c230d7e4d985e6bb735be91b7bc43026e1dfc5a17abf22f20aebbfe39527b620c7" class="drive__tools-company-icon" alt="Icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://blogs.autodesk.com/autocad/autocad-2021/" target="_blank" rel="noopener noreferrer">
+                <img src="https://kstatic.googleusercontent.com/files/502e1e2bcf1d734194ada6a0404463ea623c3c5eb170ce7ca5a8b95febfce2be839280662ef8b350a6605e79e86a6254e1d9160a3ba1de29d2bd0b0506f46194" class="drive__tools-company-icon" alt="Icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.docusign.com/partner/docusign-google-drive" target="_blank" rel="noopener noreferrer">
+                <img src="https://kstatic.googleusercontent.com/files/7ab7238bb2adf87b4b0a5a4b51d04a8c00269e10761a786f6d025ad7f5f79c56d83a71251e9b8c650de502ad431cc3c2a5d60561595e6f41a3a6ff5d57247649" class="drive__tools-company-icon" alt="Icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://help.salesforce.com/articleView?id=admin_files_connect_google_xds.htm&amp;type=5" target="_blank" rel="noopener noreferrer">
+                <img src="https://kstatic.googleusercontent.com/files/29a8b6c367123fbc5365cd156b12d35427fa7640e6af546d59af38dff162fe82ee529cdcb82ea31f5a4bb8687a492966528c0222706e5017d0d0ec4b7324bd31" class="drive__tools-company-icon" alt="Icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://slack.com/apps/A6NL8MJ6Q-google-drive" target="_blank" rel="noopener noreferrer">
+                <img src="https://kstatic.googleusercontent.com/files/7f3a6ff42f9b19117c333a2cecdb09c083cdc5ef945fd616124dd56b7d740baee34b7a518ba2f7013f0f560dbed6c49cad94d6f758444822f755506cc3683e3b" class="drive__tools-company-icon" alt="Icon">
+              </a>
+            </li>
+        </ul>
+      </div>
+    </section>
+<section class="get__started">
+  <div class="get__started-heading glue-mod-spacer-5-bottom">
+    <h2 class="glue-headline glue-headline--headline-2 glue-mod-text-center">
+      Magsimula na tayo
+    </h2>
+  </div>
+  <section class="glue-mod-spacer-2-top">
+    <div class="glue-tile-set">
+        <div class="glue-tile__container glue-tile--small-height">
+          <div class="glue-tile glue-tile--small-height">
+            <div class="glue-tile__header glue-tile__header--icon">
+              <img class="glue-tile__icon" src="https://kstatic.googleusercontent.com/files/b12e6f3834aab6acea75b7cff5d1a1406d6413ba284b2bd69f3dd8a2d3c3f5ad393bcc8b0549f579d2c6294f5a367e7ca5acea7e6d821830de41df82b9f2a682" alt="Icon">
+            </div>
+            <div class="glue-tile__body">
+              <h3 class="glue-mod-font-weight-medium">
+                Mga Indibidwal
+              </h3>
+              <p class="glue-tile__description glue-mod-font-weight-regular">
+                I-store, ibahagi, at i-access ang iyong mga file at folder mula sa anumang mobile device, tablet, o computer—at libre ang una mong 15GB na storage.
+              </p>
+            </div>
+            <ul class="glue-tile__links">
+              <li class="glue-tile__link">
+                <a href="https://accounts.google.com/ServiceLogin?service=wise&amp;amp;passive=true&amp;amp;continue=http%3A%2F%2Fdrive.google.com%2F%3Futm_source%3Den&amp;amp;utm_medium=button&amp;amp;utm_campaign=web&amp;amp;utm_content=gotodrive&amp;amp;usp=gtd&amp;amp;ltmpl=drive" target="_blank" rel="noopener noreferrer"
+                    class="glue-button glue-button--low-emphasis js-drive-btn"
+                      data-event-action="Mga Indibidwal"
+                      data-event-label="Pumunta sa Drive"
+>
+                  Pumunta sa Google Drive
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="glue-tile__container glue-tile--small-height">
+          <div class="glue-tile glue-tile--small-height">
+            <div class="glue-tile__header glue-tile__header--icon">
+              <img class="glue-tile__icon" src="https://kstatic.googleusercontent.com/files/64ff889abf61c815891d25f9ac651f5f94bc7bd561eb76dd56c98bb9c9bfd5cb0594299a8455cfd644dae73d2d284acd5d54bcd1a489a6106e3e1838bff36818" alt="Icon">
+            </div>
+            <div class="glue-tile__body">
+              <h3 class="glue-mod-font-weight-medium">
+                Mga Team
+              </h3>
+              <p class="glue-tile__description glue-mod-font-weight-regular">
+                Tumulong na mas pabilisin ang pagtatrabaho ng iyong team gamit ang isang secure na cloud-based na platform para sa pakikipag-collaborate na pinapadali ang pagbabahagi, pag-store, at pag-access mo ng mga file.
+              </p>
+            </div>
+            <ul class="glue-tile__links">
+              <li class="glue-tile__link">
+                <a href="https://gsuite.google.com/essentials/?hl=fil&amp;utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=trydriveforyourteam" target="_blank" rel="noopener noreferrer"
+                    class="glue-button glue-button--low-emphasis"
+>
+                  Subukan ang Drive para sa iyong team
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="glue-tile__container glue-tile--small-height">
+          <div class="glue-tile glue-tile--small-height">
+            <div class="glue-tile__header glue-tile__header--icon">
+              <img class="glue-tile__icon" src="https://kstatic.googleusercontent.com/files/889ba0564c17f5c853c5ad8b0a404c5335075d83ef847850f91e968bf1ac4c31d040277a1c1c60b6766ec02d92eab724cb616b6721fb8683f3ec6a5176083fc5" alt="Icon">
+            </div>
+            <div class="glue-tile__body">
+              <h3 class="glue-mod-font-weight-medium">
+                Negosyo
+              </h3>
+              <p class="glue-tile__description glue-mod-font-weight-regular">
+                Protektahan at pangalagaan ang data ng iyong kumpanya gamit ang Pag-iwas sa Pagkawala ng Data, Vault para sa eDiscovery at pag-archive, at security center.
+              </p>
+            </div>
+            <ul class="glue-tile__links">
+              <li class="glue-tile__link">
+                <a href="https://gsuite.google.com/?utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=header&amp;hl=fil" target="_blank" rel="noopener noreferrer"
+                    class="glue-button glue-button--low-emphasis"
+>
+                  Matuto pa
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+</section><section class="resources" id="js-resources">
+  <div class="glue-mod-spacer-6-top glue-mod-text-center">
+    <h3 class="glue-headline glue-headline--headline-2">Mga Resource</h3>
+  </div>
+  <div class="glue-carousel glue-carousel--tile glue-mod-spacer-5-top js-resources-carousel" data-glue-pagination="carousel-tile">
+    <div class="glue-carousel__wrap">
+      <ul class="glue-carousel__list">
+          <li class="glue-carousel__item" id="glue-carousel-resources-1">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/vgpXgetJ_Ea1KErv4OX_yTjv1N-r0WhQigtvmN5w5qLsJFAxQK-YhpEJ97UswKuUszqlm_y7UUzSyXifHmadiUhHX8kYR0biPx_WWIU" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    3 Paraan Kung Paano Mapapataas ng Google Drive ang Produktibidad ng Iyong Team
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="http://services.google.com/fh/gumdrop/preview/misc/drive_team_ebook_final.pdf" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Magbasa pa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="glue-carousel__item" id="glue-carousel-resources-2">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/KghBviwrChiCfOIv3ZLzjdoP7TLw2WHGye-L6HVcD_tsH2KR8v8s6m3ATrWJNgA-z_Epf-EImqZ5q-BF1HtWZ1IcRL1OwBvJn4Nk" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    5 Paraan Kung Paano Puwedeng Magsimula ang Iyong Team sa Pakikipag-collaborate Gamit ang Google Drive
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="http://services.google.com/fh/files/misc/five_ways_your_team_can_start_collaborating_with_drive_final.pdf" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Magbasa pa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="glue-carousel__item" id="glue-carousel-resources-3">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/vcggGGHCBGfDfzLo3wVBsORCiQDAMetdIP2F5HkhSXkp8VriiHrfm5-_BAChoX5rL5F4VuJx_Xdy9gbT3-oJ03wS4Z3w9izEvqjkyyk" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    Cheat Sheet sa Mga Shared Drive
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="https://support.google.com/a/users/answer/9299714?hl=fil" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Magbasa pa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="glue-carousel__item" id="glue-carousel-resources-4">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/jUAmr0BMcLzT0mHaZIK-o_1JPcrkozgEIkgGJXfyfGD9CAvu0vuxkZ1jJ_nzRE5ZOu6VfKc7E75P4tfs282h_VS0lRceD6qris4TSbE" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    Pag-aaral ng Kaso ng Cardinal Group
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="https://cloud.google.com/blog/products/drive/cardinal-group-relies-on-drive-and-g-suite-to-maximize-collaboration" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Magbasa pa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="glue-carousel__item" id="glue-carousel-resources-5">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/gxcsIvf4xu52xUtJRZN3xyjHaFjCj8WA7tCVhueEtR7J7g7nbJ07UEE0K8_XPbOfbUTVdmxaaHQcOjP8oez4K41_rF5zLMdnr8el" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    Pag-aaral ng Kaso ng Ibotta
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="http://services.google.com/fh/files/misc/google_drive_customer_story_ibotta.pdf" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Magbasa pa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="glue-carousel__item" id="glue-carousel-resources-6">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/X2U4aJ0BTM8vVGC3Z9AfZtkT2yEbm9f0KibL6jN8FQUlXP4BK-ML-j78wwCs5k_UjcL7AxgadJSKyNCkX2l_sEqETA9vpYhoMw3f0A" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    Pagsasanay at Tulong sa Google Drive
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="https://support.google.com/a/users/answer/9282958?visit_id=637200624465812568-2693854287&amp;hl=fil&amp;rd=1" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Magbasa pa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="glue-carousel__item" id="glue-carousel-resources-7">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/aUU5FrBysAKYHEkylRE8feg9H2qn9YAifUBlrqHPeb26Pw4dqKFqneHHoC6i-dH8o4ur-b9tR5RHRbfM2BooPDGkELxnSgXI1JDT" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    Pagsisimula sa Drive
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="https://support.google.com/drive/answer/2424384?hl=fil&amp;ref_topic=14940" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Magbasa pa
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="glue-carousel__item" id="glue-carousel-resources-8">
+            <div class="glue-tile__container glue-tile--small-height">
+              <div class="glue-tile">
+                <div class="glue-tile__header">
+                  <img src="https://lh3.googleusercontent.com/7Rt8jZhq2EoBXhnDnXizU8KvjVPJpbUZXjd7fCS2ZBlytMGqLZ3UB4sovW5Rkgnaynr_m644LgC65jXRWAh3ummVbtjwuqCNbm4F" alt="Icon">
+                </div>
+                <div class="glue-tile__body">
+                  <h4 class="glue-mod-font-weight-medium glue-mod-spacer-3-top">
+                    Playlist sa YouTube ng Google Drive
+                  </h4>
+                  <ul class="glue-tile__links">
+                    <li class="glue-tile__link">
+                      <a href="https://www.youtube.com/playlist?list=PLU8ezI8GYqs5DMmx_GKEkugMqXdSocbFZ" class="glue-button glue-button--low-emphasis"
+                          target="_blank" rel="noopener noreferrer">
+                        Panoorin Ngayon
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </li>
+      </ul>
+      <div class="carousel-side-overlay"></div>
+      <div class="glue-carousel__paginate glue-pagination-previous">
+        <button type="button" class="glue-pagination__button"
+            data-glue-pagination-previous="resources-carousel"
+            data-glue-pagination="carousel-tile"
+            data-glue-pagination-update-model="false"
+            title="Nakaraan"
+            id="pagination-prev">
+          <div class="glue-carousel__paginate-wrap">
+            <div class="glue-carousel__arrow glue-carousel__arrow--left"></div>
+          </div>
+        </button>
+      </div>
+
+      <div class="glue-carousel__paginate glue-pagination-next">
+        <button type="button" class="glue-pagination__button"
+            data-glue-pagination-next="resources-carousel"
+            data-glue-pagination="carousel-tile"
+            data-glue-pagination-update-model="false"
+            title="Susunod"
+            id="pagination-next">
+          <div class="glue-carousel__paginate-wrap">
+            <div class="glue-carousel__arrow glue-carousel__arrow--right"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="glue-carousel__navigation">
+      <ul class="glue-pagination-page-list" data-glue-pagination-page-list="resources-carousel" data-glue-pagination="carousel-tile" role="tablist">
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="1" id="pagination-1">1</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="2" id="pagination-2">2</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="3" id="pagination-3">3</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="4" id="pagination-4">4</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="5" id="pagination-5">5</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="6" id="pagination-6">6</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="7" id="pagination-7">7</button>
+          </li>
+          <li class="glue-pagination__button-container glue-pagination__page-list-button-container" role="listitem">
+            <button type="button" class="glue-pagination__button glue-pagination__page-list-button" role="tab" data-glue-pagination-page="8" id="pagination-8">8</button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</section>  </section>
+    </main>
+
+<footer class="glue-footer glue-mod-spacer-7-top">
+  <nav class="glue-footer__site-links">
+    <div class="glue-expansion-panels">
+      <div class="glue-footer__site-links-grid glue-footer__site-links-grid--5-col">
+          <div class="glue-footer__site-links-column" id="column-1">
+            <div class="glue-expansion-panel">
+              <div class="glue-expansion-panel-toggle" data-glue-expansion-panel-toggle-for="panel-1">
+                <div class="glue-footer__site-links-header">
+                  <h4 class="glue-footer__site-links-header-text">I-upgrade ang Drive</h4>
+                </div>
+                <svg role="img" alt aria-hidden="true" class="glue-icon glue-expansion-panel__button-arrow">
+                  <use xlink:href="/drive/static/img/glue-icons.svg#expand-more"></use>
+                </svg>
+              </div>
+              <div class="glue-expansion-panel-content" id="panel-1">
+                <ul class="glue-footer__site-links-list glue-no-bullet" id="column-1-content">
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://one.google.com/about?utm_source=drive&amp;utm_campaign=marketing_footer&amp;hl=fil" target="_blank" rel="noopener noreferrer">Mga Indibidwal - Google One</a>
+                    </li>
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://workspace.google.com/essentials/?utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=trydriveforyourteam&amp;hl=fil" target="_blank" rel="noopener noreferrer">Mga Team - Subukan ang Drive nang libre</a>
+                    </li>
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://workspace.google.com/?utm_source=driveforwork&amp;utm_medium=et&amp;utm_content=footer&amp;hl=fil" target="_blank" rel="noopener noreferrer">Google Workspace Essentials</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="glue-footer__site-links-column" id="column-2">
+            <div class="glue-expansion-panel">
+              <div class="glue-expansion-panel-toggle" data-glue-expansion-panel-toggle-for="panel-2">
+                <div class="glue-footer__site-links-header">
+                  <h4 class="glue-footer__site-links-header-text">Mga Download</h4>
+                </div>
+                <svg role="img" alt aria-hidden="true" class="glue-icon glue-expansion-panel__button-arrow">
+                  <use xlink:href="/drive/static/img/glue-icons.svg#expand-more"></use>
+                </svg>
+              </div>
+              <div class="glue-expansion-panel-content" id="panel-2">
+                <ul class="glue-footer__site-links-list glue-no-bullet" id="column-2-content">
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://www.google.com/intl/fil/drive/download/" target="_blank" rel="noopener noreferrer">Drive para sa Mac/PC</a>
+                    </li>
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs&amp;hl=fil" target="_blank" rel="noopener noreferrer">Drive para sa Android</a>
+                    </li>
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://apps.apple.com/fil/app/google-drive/id507874739" target="_blank" rel="noopener noreferrer">Drive para sa iOS</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="glue-footer__site-links-column" id="column-3">
+            <div class="glue-expansion-panel">
+              <div class="glue-expansion-panel-toggle" data-glue-expansion-panel-toggle-for="panel-3">
+                <div class="glue-footer__site-links-header">
+                  <h4 class="glue-footer__site-links-header-text">Mga Resource</h4>
+                </div>
+                <svg role="img" alt aria-hidden="true" class="glue-icon glue-expansion-panel__button-arrow">
+                  <use xlink:href="/drive/static/img/glue-icons.svg#expand-more"></use>
+                </svg>
+              </div>
+              <div class="glue-expansion-panel-content" id="panel-3">
+                <ul class="glue-footer__site-links-list glue-no-bullet" id="column-3-content">
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://www.blog.google/products/drive/" target="_blank" rel="noopener noreferrer">Blog ng Google Drive</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="glue-footer__site-links-column" id="column-4">
+            <div class="glue-expansion-panel">
+              <div class="glue-expansion-panel-toggle" data-glue-expansion-panel-toggle-for="panel-4">
+                <div class="glue-footer__site-links-header">
+                  <h4 class="glue-footer__site-links-header-text">Suporta</h4>
+                </div>
+                <svg role="img" alt aria-hidden="true" class="glue-icon glue-expansion-panel__button-arrow">
+                  <use xlink:href="/drive/static/img/glue-icons.svg#expand-more"></use>
+                </svg>
+              </div>
+              <div class="glue-expansion-panel-content" id="panel-4">
+                <ul class="glue-footer__site-links-list glue-no-bullet" id="column-4-content">
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://support.google.com/drive?hl=fil" target="_blank" rel="noopener noreferrer">Help Center</a>
+                    </li>
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://support.google.com/drive/community?hl=fil" target="_blank" rel="noopener noreferrer">Forum ng Tulong sa Google Drive</a>
+                    </li>
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://cloud.google.com/contact" target="_blank" rel="noopener noreferrer">Makipag-ugnayan sa Amin</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="glue-footer__site-links-column" id="column-5">
+            <div class="glue-expansion-panel">
+              <div class="glue-expansion-panel-toggle" data-glue-expansion-panel-toggle-for="panel-5">
+                <div class="glue-footer__site-links-header">
+                  <h4 class="glue-footer__site-links-header-text">Higit Pang Solusyon</h4>
+                </div>
+                <svg role="img" alt aria-hidden="true" class="glue-icon glue-expansion-panel__button-arrow">
+                  <use xlink:href="/drive/static/img/glue-icons.svg#expand-more"></use>
+                </svg>
+              </div>
+              <div class="glue-expansion-panel-content" id="panel-5">
+                <ul class="glue-footer__site-links-list glue-no-bullet" id="column-5-content">
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://cloud.google.com/?hl=fil" target="_blank" rel="noopener noreferrer">Google Cloud</a>
+                    </li>
+                    <li class="glue-footer__site-links-list-item">
+                      <a class="glue-footer__link" href="https://workspace.google.com/intl/fil/" target="_blank" rel="noopener noreferrer">Google Workspace</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="glue-footer__global">
+    <div class="glue-footer__logo">
+      <a href="https://www.google.com" title="Google">
+        <svg role="img" alt aria-hidden="true" class="glue-footer__logo-img">
+          <use xlink:href="/drive/static/img/glue-icons.svg#google-solid-logo"></use>
+        </svg>
+      </a>
+    </div>
+
+    <ul class="glue-footer__global-links glue-no-bullet">
+        <li class="glue-footer__global-links-list-item">
+          <a class="glue-footer__link" href="https://www.google.com/intl/en_US/policies/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+        </li>
+        <li class="glue-footer__global-links-list-item">
+          <a class="glue-footer__link" href="https://www.google.com/intl/fil/drive/terms-of-service/" target="_blank" rel="noopener noreferrer">Mga Tuntunin</a>
+        </li>
+        <li class="glue-footer__global-links-list-item">
+          <a class="glue-footer__link" href="https://about.google/intl/fil/" target="_blank" rel="noopener noreferrer">Tungkol Dito</a>
+        </li>
+        <li class="glue-footer__global-links-list-item">
+          <a class="glue-footer__link" href="https://about.google/intl/fil/products/" target="_blank" rel="noopener noreferrer">Mga Produkto ng Google</a>
+        </li>
+    </ul>
+
+    <ul class="glue-footer__global-links glue-footer__global-links--extra glue-no-bullet">
+      <li class="glue-footer__global-links-list-item glue-footer__global-links-list-item--extra">
+        <a class="glue-footer__link" href="https://support.google.com/?hl=fil">
+          <svg role="img" alt aria-hidden="true" class="glue-icon glue-icon--24px glue-icon--footer-help">
+            <use xlink:href="/drive/static/img/glue-icons.svg#help"></use>
+          </svg>
+          Tulong
+        </a>
+      </li>
+      <li class="glue-footer__global-links-list-item
+          glue-footer__global-links-list-item--extra">
+        <label for="lang-selector" class="glue-mod-visually-hidden">
+          Change Language
+        </label>
+        <select name="lang-selector" id="lang-selector"
+            class="glue-form__dropdown glue-footer__lang-dropdown">
+            <option value="/intl/af/drive/">
+              Afrikaans
+            </option>
+            <option value="/drive/">
+              English
+            </option>
+            <option value="/intl/ar/drive/">
+              العربية
+            </option>
+            <option value="/intl/ar_bh/drive/">
+              العربية (البحرين)
+            </option>
+            <option value="/intl/ar_dz/drive/">
+              العربية (الجزائر)
+            </option>
+            <option value="/intl/ar_eg/drive/">
+              العربية (مصر)
+            </option>
+            <option value="/intl/ar_jo/drive/">
+              العربية (الأردن)
+            </option>
+            <option value="/intl/ar_kw/drive/">
+              العربية (الكويت)
+            </option>
+            <option value="/intl/ar_lb/drive/">
+              العربية (لبنان)
+            </option>
+            <option value="/intl/ar_ma/drive/">
+              العربية (المغرب)
+            </option>
+            <option value="/intl/ar_om/drive/">
+              العربية (عُمان)
+            </option>
+            <option value="/intl/ar_ps/drive/">
+              العربية (الأراضي الفلسطينية)
+            </option>
+            <option value="/intl/ar_qa/drive/">
+              العربية (قطر)
+            </option>
+            <option value="/intl/ar_sa/drive/">
+              العربية (المملكة العربية السعودية)
+            </option>
+            <option value="/intl/ar_tn/drive/">
+              العربية (تونس)
+            </option>
+            <option value="/intl/az/drive/">
+              azərbaycan dili
+            </option>
+            <option value="/intl/bg/drive/">
+              български
+            </option>
+            <option value="/intl/bn/drive/">
+              বাংলা
+            </option>
+            <option value="/intl/ca/drive/">
+              català
+            </option>
+            <option value="/intl/cs/drive/">
+              čeština
+            </option>
+            <option value="/intl/da/drive/">
+              dansk
+            </option>
+            <option value="/intl/da_gl/drive/">
+              dansk (Grønland)
+            </option>
+            <option value="/intl/de/drive/">
+              Deutsch
+            </option>
+            <option value="/intl/de_at/drive/">
+              Deutsch (Österreich)
+            </option>
+            <option value="/intl/de_ch/drive/">
+              Deutsch (Schweiz)
+            </option>
+            <option value="/intl/de_lu/drive/">
+              Deutsch (Luxemburg)
+            </option>
+            <option value="/intl/el/drive/">
+              Ελληνικά
+            </option>
+            <option value="/intl/en-GB/drive/">
+              English (United Kingdom)
+            </option>
+            <option value="/intl/en_ag/drive/">
+              English (Antigua &amp; Barbuda)
+            </option>
+            <option value="/intl/en_as/drive/">
+              English (American Samoa)
+            </option>
+            <option value="/intl/en_au/drive/">
+              English (Australia)
+            </option>
+            <option value="/intl/en_bs/drive/">
+              English (Bahamas)
+            </option>
+            <option value="/intl/en_bw/drive/">
+              English (Botswana)
+            </option>
+            <option value="/intl/en_ca/drive/">
+              English (Canada)
+            </option>
+            <option value="/intl/en_cy/drive/">
+              English (Cyprus)
+            </option>
+            <option value="/intl/en_fj/drive/">
+              English (Fiji)
+            </option>
+            <option value="/intl/en_gh/drive/">
+              English (Ghana)
+            </option>
+            <option value="/intl/en_in/drive/">
+              English (India)
+            </option>
+            <option value="/intl/en_jm/drive/">
+              English (Jamaica)
+            </option>
+            <option value="/intl/en_mu/drive/">
+              English (Mauritius)
+            </option>
+            <option value="/intl/en_na/drive/">
+              English (Namibia)
+            </option>
+            <option value="/intl/en_ng/drive/">
+              English (Nigeria)
+            </option>
+            <option value="/intl/en_nz/drive/">
+              English (New Zealand)
+            </option>
+            <option value="/intl/en_rw/drive/">
+              English (Rwanda)
+            </option>
+            <option value="/intl/en_sc/drive/">
+              English (Seychelles)
+            </option>
+            <option value="/intl/en_sg/drive/">
+              English (Singapore)
+            </option>
+            <option value="/intl/en_sl/drive/">
+              English (Sierra Leone)
+            </option>
+            <option value="/intl/en_to/drive/">
+              English (Tonga)
+            </option>
+            <option value="/intl/en_tt/drive/">
+              English (Trinidad &amp; Tobago)
+            </option>
+            <option value="/intl/en_ug/drive/">
+              English (Uganda)
+            </option>
+            <option value="/intl/en_vi/drive/">
+              English (U.S. Virgin Islands)
+            </option>
+            <option value="/intl/en_zm/drive/">
+              English (Zambia)
+            </option>
+            <option value="/intl/en_zw/drive/">
+              English (Zimbabwe)
+            </option>
+            <option value="/intl/es-419/drive/">
+              español (Latinoamérica)
+            </option>
+            <option value="/intl/es-419_ar/drive/">
+              español (Argentina)
+            </option>
+            <option value="/intl/es-419_bo/drive/">
+              español (Bolivia)
+            </option>
+            <option value="/intl/es-419_cl/drive/">
+              español (Chile)
+            </option>
+            <option value="/intl/es-419_co/drive/">
+              español (Colombia)
+            </option>
+            <option value="/intl/es-419_cr/drive/">
+              español (Costa Rica)
+            </option>
+            <option value="/intl/es-419_do/drive/">
+              español (República Dominicana)
+            </option>
+            <option value="/intl/es-419_ec/drive/">
+              español (Ecuador)
+            </option>
+            <option value="/intl/es-419_gt/drive/">
+              español (Guatemala)
+            </option>
+            <option value="/intl/es-419_hn/drive/">
+              español (Honduras)
+            </option>
+            <option value="/intl/es-419_mx/drive/">
+              español (México)
+            </option>
+            <option value="/intl/es-419_ni/drive/">
+              español (Nicaragua)
+            </option>
+            <option value="/intl/es-419_pa/drive/">
+              español (Panamá)
+            </option>
+            <option value="/intl/es-419_pe/drive/">
+              español (Perú)
+            </option>
+            <option value="/intl/es-419_pr/drive/">
+              español (Puerto Rico)
+            </option>
+            <option value="/intl/es-419_py/drive/">
+              español (Paraguay)
+            </option>
+            <option value="/intl/es-419_sv/drive/">
+              español (El Salvador)
+            </option>
+            <option value="/intl/es-419_uy/drive/">
+              español (Uruguay)
+            </option>
+            <option value="/intl/es-419_ve/drive/">
+              español (Venezuela)
+            </option>
+            <option value="/intl/es/drive/">
+              español
+            </option>
+            <option value="/intl/et/drive/">
+              eesti
+            </option>
+            <option value="/intl/eu/drive/">
+              euskara
+            </option>
+            <option value="/intl/fa/drive/">
+              فارسی
+            </option>
+            <option value="/intl/fi/drive/">
+              suomi
+            </option>
+            <option value="/intl/fil/drive/" selected>
+              Filipino
+            </option>
+            <option value="/intl/fr-CA/drive/">
+              français (Canada)
+            </option>
+            <option value="/intl/fr/drive/">
+              français
+            </option>
+            <option value="/intl/fr_be/drive/">
+              français (Belgique)
+            </option>
+            <option value="/intl/fr_bf/drive/">
+              français (Burkina Faso)
+            </option>
+            <option value="/intl/fr_bj/drive/">
+              français (Bénin)
+            </option>
+            <option value="/intl/fr_ch/drive/">
+              français (Suisse)
+            </option>
+            <option value="/intl/fr_ci/drive/">
+              français (Côte d’Ivoire)
+            </option>
+            <option value="/intl/fr_cm/drive/">
+              français (Cameroun)
+            </option>
+            <option value="/intl/fr_ga/drive/">
+              français (Gabon)
+            </option>
+            <option value="/intl/fr_gp/drive/">
+              français (Guadeloupe)
+            </option>
+            <option value="/intl/fr_ht/drive/">
+              français (Haïti)
+            </option>
+            <option value="/intl/fr_lu/drive/">
+              français (Luxembourg)
+            </option>
+            <option value="/intl/fr_ml/drive/">
+              français (Mali)
+            </option>
+            <option value="/intl/fr_ne/drive/">
+              français (Niger)
+            </option>
+            <option value="/intl/fr_sn/drive/">
+              français (Sénégal)
+            </option>
+            <option value="/intl/fr_tg/drive/">
+              français (Togo)
+            </option>
+            <option value="/intl/gl/drive/">
+              galego
+            </option>
+            <option value="/intl/gu/drive/">
+              ગુજરાતી
+            </option>
+            <option value="/intl/hi/drive/">
+              हिन्दी
+            </option>
+            <option value="/intl/hr/drive/">
+              hrvatski
+            </option>
+            <option value="/intl/hu/drive/">
+              magyar
+            </option>
+            <option value="/intl/hy/drive/">
+              հայերեն
+            </option>
+            <option value="/intl/id/drive/">
+              Indonesia
+            </option>
+            <option value="/intl/is/drive/">
+              íslenska
+            </option>
+            <option value="/intl/it/drive/">
+              italiano
+            </option>
+            <option value="/intl/it_sm/drive/">
+              italiano (San Marino)
+            </option>
+            <option value="/intl/iw/drive/">
+              עברית (ישראל)
+            </option>
+            <option value="/intl/ja/drive/">
+              日本語
+            </option>
+            <option value="/intl/ka/drive/">
+              ქართული
+            </option>
+            <option value="/intl/km/drive/">
+              ខ្មែរ
+            </option>
+            <option value="/intl/kn/drive/">
+              ಕನ್ನಡ
+            </option>
+            <option value="/intl/ko/drive/">
+              한국어
+            </option>
+            <option value="/intl/lo/drive/">
+              ລາວ
+            </option>
+            <option value="/intl/lt/drive/">
+              lietuvių
+            </option>
+            <option value="/intl/lv/drive/">
+              latviešu
+            </option>
+            <option value="/intl/ml/drive/">
+              മലയാളം
+            </option>
+            <option value="/intl/mn/drive/">
+              монгол
+            </option>
+            <option value="/intl/mr/drive/">
+              मराठी
+            </option>
+            <option value="/intl/ms/drive/">
+              Bahasa Melayu
+            </option>
+            <option value="/intl/ne/drive/">
+              नेपाली
+            </option>
+            <option value="/intl/nl/drive/">
+              Nederlands
+            </option>
+            <option value="/intl/nl_be/drive/">
+              Nederlands (België)
+            </option>
+            <option value="/intl/no/drive/">
+              norsk bokmål (Norge)
+            </option>
+            <option value="/intl/pa/drive/">
+              ਪੰਜਾਬੀ
+            </option>
+            <option value="/intl/pl/drive/">
+              polski
+            </option>
+            <option value="/intl/pt-BR/drive/">
+              português (Brasil)
+            </option>
+            <option value="/intl/pt-PT/drive/">
+              português (Portugal)
+            </option>
+            <option value="/intl/pt-PT_ao/drive/">
+              português (Angola)
+            </option>
+            <option value="/intl/pt-PT_cv/drive/">
+              português (Cabo Verde)
+            </option>
+            <option value="/intl/pt-PT_mz/drive/">
+              português (Moçambique)
+            </option>
+            <option value="/intl/ro/drive/">
+              română
+            </option>
+            <option value="/intl/ro_md/drive/">
+              română (Republica Moldova)
+            </option>
+            <option value="/intl/ru/drive/">
+              русский
+            </option>
+            <option value="/intl/ru_tj/drive/">
+              русский
+            </option>
+            <option value="/intl/si/drive/">
+              සිංහල
+            </option>
+            <option value="/intl/sk/drive/">
+              slovenčina
+            </option>
+            <option value="/intl/sl/drive/">
+              slovenščina
+            </option>
+            <option value="/intl/sr/drive/">
+              српски
+            </option>
+            <option value="/intl/sr_me/drive/">
+              srpski (latinica, Crna Gora)
+            </option>
+            <option value="/intl/sv/drive/">
+              svenska
+            </option>
+            <option value="/intl/sw/drive/">
+              Kiswahili
+            </option>
+            <option value="/intl/ta/drive/">
+              தமிழ்
+            </option>
+            <option value="/intl/te/drive/">
+              తెలుగు
+            </option>
+            <option value="/intl/th/drive/">
+              ไทย
+            </option>
+            <option value="/intl/tr/drive/">
+              Türkçe
+            </option>
+            <option value="/intl/uk/drive/">
+              українська
+            </option>
+            <option value="/intl/ur/drive/">
+              اردو
+            </option>
+            <option value="/intl/vi/drive/">
+              Tiếng Việt
+            </option>
+            <option value="/intl/zh-CN/drive/">
+              中文 (简体)
+            </option>
+            <option value="/intl/zh-HK/drive/">
+              中文
+            </option>
+            <option value="/intl/zh-TW/drive/">
+              中文 (繁體)
+            </option>
+            <option value="/intl/zu/drive/">
+              isiZulu
+            </option>
+        </select>
+      </li>
+    </ul>
+  </section>
+</footer>    <script src="https://www.gstatic.com/external_hosted/hammerjs/v2_0_2/hammer.min.js" nonce="9doYpCMxpxW8cP4KWwGu1w"></script>
+    <script src="/drive/static/js/index.min.js?cache=d01b29d" nonce="9doYpCMxpxW8cP4KWwGu1w"></script>
+  </body>
+</html>���?�      `-��`-��B�m�       O    O^partitionKey=%28https%2Cgoogle.com%29,:https://www.google.com/intl/fil/drive/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2 200 OK
+accept-ranges: bytes
+vary: Accept-Encoding
+content-type: text/html
+content-security-policy-report-only: script-src 'nonce-9doYpCMxpxW8cP4KWwGu1w' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline' http: https:; object-src 'none'; report-uri https://csp.withgoogle.com/csp/webmaster/www_google; base-uri 'none'
+cross-origin-resource-policy: cross-origin
+content-length: 82842
+date: Wed, 17 Feb 2021 23:28:27 GMT
+pragma: no-cache
+expires: Fri, 01 Jan 1990 00:00:00 GMT
+cache-control: no-cache, must-revalidate
+last-modified: Tue, 12 Jan 2021 19:30:00 GMT
+x-content-type-options: nosniff
+server: sffe
+x-xss-protection: 0
+alt-svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+X-Firefox-Spdy: h2
+ original-response-headers accept-ranges: bytes
+vary: Accept-Encoding
+content-type: text/html
+content-security-policy-report-only: script-src 'nonce-9doYpCMxpxW8cP4KWwGu1w' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline' http: https:; object-src 'none'; report-uri https://csp.withgoogle.com/csp/webmaster/www_google; base-uri 'none'
+cross-origin-resource-policy: cross-origin
+content-length: 82842
+date: Wed, 17 Feb 2021 23:28:27 GMT
+pragma: no-cache
+expires: Fri, 01 Jan 1990 00:00:00 GMT
+cache-control: no-cache, must-revalidate
+last-modified: Tue, 12 Jan 2021 19:30:00 GMT
+x-content-type-options: nosniff
+server: sffe
+x-xss-protection: 0
+alt-svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 74 net-response-time-onstop 105  C�
