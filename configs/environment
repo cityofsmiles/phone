@@ -1,0 +1,9 @@
+# /etc/environment
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+
+LC_ALL="en_US.UTF-8"
+LC_CTYPE="en_US.UTF-8"
+LANGUAGE="en_US.UTF-8"

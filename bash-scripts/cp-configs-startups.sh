@@ -14,6 +14,6 @@ cp ~/Documents/phone/configs/bashrc ~/.bashrc
 
 #cp ~/Documents/phone/configs/accounts.xml ~/.purple/accounts.xml
 
-
+#sudo cp  ~/Documents/phone/configs/environment /etc/environment 
 
 
