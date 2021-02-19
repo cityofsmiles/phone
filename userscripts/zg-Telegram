@@ -1,7 +1,9 @@
-#!/bin/sh
+#!/usr/bin/sh
 
-sh /home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh &
+source ../bash-scripts/config.sh
 
-firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/fb-personal" https://web.telegram.org 
+sh /home/$user_pine/Documents/phone/bash-scripts/feh-change-background.sh &
+
+firefox -profile "/home/$user_pine/Documents/phone/firefox-profiles/fb-personal" https://web.telegram.org 
 
 

@@ -1,10 +1,9 @@
 [Desktop Entry]
 Name=Telegram
-Exec=firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/telegram" web.telegram.org web.telegram.org 
-Icon=/home/jonathan/Documents/phone/icons/telegram.png
+Exec=firefox -profile "/home/manjaro/Documents/phone/firefox-profiles/fb-personal" web.telegram.org web.telegram.org 
+Icon=/home/manjaro/Documents/phone/icons/telegram.png
 Terminal=false
 Type=Application
 StartupNotify=true
-Hidden=true
 DBusActivatable=true
 X-GNOME-UsesNotifications=true

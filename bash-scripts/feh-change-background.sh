@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ./config.sh
+source ~/Documents/phone/bash-scripts/config.sh
 
 #img=(`find /home/jonathan/Documents/wallpapers -name '*' -exec file {} \; | grep -o -P '^.+: \w+ image' | cut -d':' -f1`)
 
