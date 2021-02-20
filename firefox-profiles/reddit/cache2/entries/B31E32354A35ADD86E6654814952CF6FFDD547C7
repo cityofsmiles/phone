@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="description" content="Pidgin is a universal chat client, allowing you to consolidate all your different messaging apps into a single tool.">
+    <link rel="icon" type="image/png" href="/images/pidgin-circle-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/pidgin-circle-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/pidgin-circle-96.png" sizes="96x96">
+    <title>Theming Pidgin :: Pidgin, the universal chat client</title>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/auto-complete.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/hugo-theme.css" rel="stylesheet">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+        :root #header+#content>#left>#rlblock_left {
+            display: none !important;
+        }
+    </style>
+    <script>
+        var isCodeToClipboardEnabled = true
+    
+  </script>
+    <link rel="stylesheet" href="/css/custom.css">
+    <!--
+    Hugo: 2021-02-19T07:51:32 &#43;0000
+    - Job:
+        n/a
+        2021-02-19T07:51:00 &#43;0000
+    - Commit: 21b2fdbe262bed20d02c3f629394d57f7e9d5d27
+    - production
+//-->
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#8451A1">
+    <meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta property="og:title" content="Theming Pidgin" />
+    <meta property="og:description" content="Pidgin&rsquo;s appearance is dictated by the interaction of three types of theme files working simultaneously at different levels:
+ Operating System theme - affecting all applications GTK theme - that GTK applications use to define their GUI elements Pidgin&rsquo;s specific theme files.  In any particular case, the level at which theming efforts should focus depends on one&rsquo;s goal, knowledge of theming of each of the above file types, the availability of time and desire to sort through numerous setting parameters and the state of bugginess of software at that time." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://pidgin.im/help/theming/" />
+    <meta property="og:image" content="https://pidgin.im/images/pidgin-circle-256.png" />
+    <meta property="article:published_time" content="2020-06-01T22:17:45-04:00" />
+    <meta property="article:modified_time" content="2020-06-01T22:17:45-04:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://pidgin.im/images/pidgin-circle-256.png" />
+    <meta name="twitter:title" content="Theming Pidgin" />
+    <meta name="twitter:description" content="Pidgin&rsquo;s appearance is dictated by the interaction of three types of theme files working simultaneously at different levels:
+ Operating System theme - affecting all applications GTK theme - that GTK applications use to define their GUI elements Pidgin&rsquo;s specific theme files.  In any particular case, the level at which theming efforts should focus depends on one&rsquo;s goal, knowledge of theming of each of the above file types, the availability of time and desire to sort through numerous setting parameters and the state of bugginess of software at that time." />
+</head>
+
+<body class="" data-url="/help/theming/">
+    <nav id="sidebar" class="">
+        <div id="header-wrapper">
+            <div id="header">
+                <a href="/"><img src="/images/logo.png" alt="pidgin logo"></a>
+            </div>
+            <div class="searchbox">
+                <label for="search-by"><i class="fas fa-search"></i></label>
+                <input data-search-input id="search-by" type="search" placeholder="Search...">
+                <span data-search-clear=""><i class="fas fa-times"></i></span>
+            </div>
+            <script type="text/javascript" src="/js/lunr.min.js"></script>
+            <script type="text/javascript" src="/js/auto-complete.js"></script>
+            <script type="text/javascript">
+                var baseurl = "https:\/\/pidgin.im\/";
+            </script>
+            <script type="text/javascript" src="/js/search.js"></script>
+        </div>
+        <div class="highlightable">
+            <ul class="topics">
+                <li data-nav-id="/install/" title="Install" class="dd-item">
+                    <a href="/install/">
+                        Install
+                    </a>
+                </li>
+                <li data-nav-id="/plugins/" title="Plugins" class="dd-item">
+                    <a href="/plugins/">
+                        Plugins
+                    </a>
+                </li>
+                <li data-nav-id="/about/" title="About" class="dd-item">
+                    <a href="/about/">
+                        About
+                    </a>
+                    <ul>
+                        <li data-nav-id="/about/community/" title="Community" class="dd-item ">
+                            <a href="/about/community/">
+                                Community
+                            </a>
+                        </li>
+                        <li data-nav-id="/about/philosophy/" title="Philosophy and Goals" class="dd-item ">
+                            <a href="/about/philosophy/">
+                                Philosophy and Goals
+                            </a>
+                        </li>
+                        <li data-nav-id="/about/supported-languages/" title="Supported Languages" class="dd-item ">
+                            <a href="/about/supported-languages/">
+                                Supported Languages
+                            </a>
+                        </li>
+                        <li data-nav-id="/about/security/" title="Security" class="dd-item">
+                            <a href="/about/security/">
+                                Security
+                            </a>
+                            <ul>
+                                <li data-nav-id="/about/security/advisories/" title="Advisories" class="dd-item">
+                                    <a href="/about/security/advisories/">
+                                        Advisories
+                                    </a>
+                                    <ul>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-nav-id="/help/" title="Help" class="dd-item parent">
+                    <a href="/help/">
+                        Help
+                    </a>
+                    <ul>
+                        <li data-nav-id="/help/protocols/" title="Services (Protocols)" class="dd-item">
+                            <a href="/help/protocols/">
+                                Services (Protocols)
+                            </a>
+                            <ul>
+                                <li data-nav-id="/help/protocols/bonjour/" title="Bonjour" class="dd-item ">
+                                    <a href="/help/protocols/bonjour/">
+                                        Bonjour
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/gadugadu/" title="Gadu-Gadu" class="dd-item ">
+                                    <a href="/help/protocols/gadugadu/">
+                                        Gadu-Gadu
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/groupwise/" title="GroupWise" class="dd-item ">
+                                    <a href="/help/protocols/groupwise/">
+                                        GroupWise
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/irc/" title="IRC" class="dd-item ">
+                                    <a href="/help/protocols/irc/">
+                                        IRC
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/sametime/" title="Sametime" class="dd-item ">
+                                    <a href="/help/protocols/sametime/">
+                                        Sametime
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/silc/" title="SILC" class="dd-item ">
+                                    <a href="/help/protocols/silc/">
+                                        SILC
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/xmpp/" title="XMPP (Jabber)" class="dd-item">
+                                    <a href="/help/protocols/xmpp/">
+                                        XMPP (Jabber)
+                                    </a>
+                                    <ul>
+                                        <li data-nav-id="/help/protocols/xmpp/supportedxep/" title="Supported XEP&#39;s" class="dd-item ">
+                                            <a href="/help/protocols/xmpp/supportedxep/">
+                                                Supported XEP&#39;s
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-nav-id="/help/protocols/zephyr/" title="Zephyr" class="dd-item ">
+                                    <a href="/help/protocols/zephyr/">
+                                        Zephyr
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/otherprotocols/" title="Other Protocols" class="dd-item ">
+                                    <a href="/help/protocols/otherprotocols/">
+                                        Other Protocols
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/help/theming/" title="Theming Pidgin" class="dd-item active">
+                            <a href="/help/theming/">
+                                Theming Pidgin
+                            </a>
+                        </li>
+                        <li data-nav-id="/help/windows/" title="Windows-Specific Questions" class="dd-item ">
+                            <a href="/help/windows/">
+                                Windows-Specific Questions
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li data-nav-id="/development/" title="Development" class="dd-item">
+                    <a href="/development/">
+                        Development
+                    </a>
+                    <ul>
+                        <li data-nav-id="/development/building/" title="Building" class="dd-item">
+                            <a href="/development/building/">
+                                Building
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/building/3.0.0/" title="3.0.0" class="dd-item">
+                                    <a href="/development/building/3.0.0/">
+                                        3.0.0
+                                    </a>
+                                </li>
+                                <li data-nav-id="/development/building/2.x.y/" title="2.x.y" class="dd-item">
+                                    <a href="/development/building/2.x.y/">
+                                        2.x.y
+                                    </a>
+                                    <ul>
+                                        <li data-nav-id="/development/building/2.x.y/windows/" title="Windows" class="dd-item ">
+                                            <a href="/development/building/2.x.y/windows/">
+                                                Windows
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/contributing/" title="Contributing" class="dd-item">
+                            <a href="/development/contributing/">
+                                Contributing
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/contributing/mercurial/" title="Using Mercurial" class="dd-item ">
+                                    <a href="/development/contributing/mercurial/">
+                                        Using Mercurial
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/gsoc/" title="Google Summer of Code" class="dd-item">
+                            <a href="/development/gsoc/">
+                                Google Summer of Code
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/gsoc/instructions/" title="GSoC Instructions" class="dd-item ">
+                                    <a href="/development/gsoc/instructions/">
+                                        GSoC Instructions
+                                    </a>
+                                </li>
+                                <li data-nav-id="/development/gsoc/ideas/" title="GSoC Ideas" class="dd-item ">
+                                    <a href="/development/gsoc/ideas/">
+                                        GSoC Ideas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/voice-and-video/" title="Voice and Video" class="dd-item">
+                            <a href="/development/voice-and-video/">
+                                Voice and Video
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/voice-and-video/voice-and-video-api/" title="Voice and Video API" class="dd-item ">
+                                    <a href="/development/voice-and-video/voice-and-video-api/">
+                                        Voice and Video API
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/version-control/" title="Version Control" class="dd-item ">
+                            <a href="/development/version-control/">
+                                Version Control
+                            </a>
+                        </li>
+                        <li data-nav-id="/development/i18n/" title="Internationalization" class="dd-item">
+                            <a href="/development/i18n/">
+                                Internationalization
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/i18n/tips/" title="Tips" class="dd-item ">
+                                    <a href="/development/i18n/tips/">
+                                        Tips
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/faq/" title="FAQ" class="dd-item ">
+                            <a href="/development/faq/">
+                                FAQ
+                            </a>
+                        </li>
+                        <li data-nav-id="/development/design-guidelines/" title="Design Guidelines" class="dd-item ">
+                            <a href="/development/design-guidelines/">
+                                Design Guidelines
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li data-nav-id="/post/" title="Blog" class="dd-item">
+                    <a href="/post/">
+                        Blog
+                    </a>
+                    <ul>
+                        <li data-nav-id="/posts/2021-02-libgnt-2.14.1-released/" title="libgnt 2.14.1 Released" class="dd-item ">
+                            <a href="/posts/2021-02-libgnt-2.14.1-released/">
+                                libgnt 2.14.1 Released
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2021-02-bintray-sunsetting/" title="Bintray Sunsetting" class="dd-item ">
+                            <a href="/posts/2021-02-bintray-sunsetting/">
+                                Bintray Sunsetting
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2020-06-2.14.1-released/" title="2.14.1 Released!" class="dd-item ">
+                            <a href="/posts/2020-06-2.14.1-released/">
+                                2.14.1 Released!
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2020-06-2.14.0-released/" title="2.14.0 Released!" class="dd-item ">
+                            <a href="/posts/2020-06-2.14.0-released/">
+                                2.14.0 Released!
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2020-01-nest-launch/" title="Nest Launch" class="dd-item ">
+                            <a href="/posts/2020-01-nest-launch/">
+                                Nest Launch
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <section id="shortcuts">
+                <h3></h3>
+                <ul>
+                    <li>
+                        <a class="padding" href="https://issues.imfreedom.org/issues/PIDGIN"><i class='fas fa-fw fa-tasks'></i> Issue Tracker</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://keep.imfreedom.org/pidgin/"><i class='fas fa-fw fa-code'></i> Repositories</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="http://webchat.freenode.net/?channels=pidgin"><i class='fas fa-fw fa-comment-dots'></i> IRC</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://discord.gg/pB9fbVC"><i class='fab fa-fw fa-discord'></i> Discord</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://www.facebook.com/pidgin.im/"><i class='fab fa-fw fa-facebook-f'></i> Facebook</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://reddit.com/r/pidgin"><i class='fab fa-fw fa-reddit-alien'></i> Reddit</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://twitter.com/impidgin"><i class='fab fa-fw fa-twitter'></i> Twitter</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://shop.spreadshirt.com/imfreedom"><i class='fas fa-fw fa-tshirt'></i> Merchandise</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="prefooter">
+                <hr />
+                <ul>
+                    <li>
+                        <a class="padding">
+                            <i class="fas fa-language fa-fw"></i>
+                            <div class="select-style">
+                                <select id="select-language" onchange="location = this.value;">
+                                    <option id="en" value="/help/theming/" selected>English (US)</option>
+                                </select>
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+                                    <g>
+                                        <g id="arrow-drop-down">
+                                            <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="footer">
+                <a href="https://imfreedom.org/donate" class="donate-button">
+                    <i class="fas fa-heart"></i> Donate
+                </a>
+            </section>
+        </div>
+    </nav>
+    <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+            <div>
+                <div id="top-bar">
+                    <div id="top-github-link">
+                        <a class="github-link" title='Edit this page' href="https://keep.imfreedom.org/pidgin/nest/file/default/hugo/content/help/theming.md" target="blank">
+                            <i class="fas fa-code-branch"></i>
+                            <span id="top-github-link-text">Edit this page</span>
+                        </a>
+                    </div>
+                    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <span id="sidebar-toggle-span">
+                            <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </span>
+                        <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                        <span class="links">
+                            <a href='/'>Pidgin</a> > <a href='/help/'>Help</a> > Theming Pidgin
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <div class="wrapper">
+                            <nav id="TableOfContents">
+                                <ul>
+                                    <li><a href="#example-1-novice-proof">Example 1: Novice Proof</a>
+                                        <ul>
+                                            <li><a href="#installation">Installation</a></li>
+                                            <li><a href="#theme-switching">Theme Switching</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#example-2-getting-your-feet-wet">Example 2: Getting Your Feet Wet</a>
+                                        <ul>
+                                            <li><a href="#installation-1">Installation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#example-3-the-comedy-of-errors">Example 3: The Comedy of Errors</a>
+                                        <ul>
+                                            <li><a href="#themexml">Theme.xml</a></li>
+                                            <li><a href="#creating-a-themexml-file">Creating a theme.xml file</a></li>
+                                            <li><a href="#installing-a-themexml-file">Installing a theme.xml file</a></li>
+                                            <li><a href="#putting-it-all-together">Putting it All Together</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#example-4-going-pro">Example 4: Going Pro</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>Theming Pidgin</h1>
+            <nav id="TableOfContents">
+                <ul>
+                    <li><a href="#example-1-novice-proof">Example 1: Novice Proof</a>
+                        <ul>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#theme-switching">Theme Switching</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#example-2-getting-your-feet-wet">Example 2: Getting Your Feet Wet</a>
+                        <ul>
+                            <li><a href="#installation-1">Installation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#example-3-the-comedy-of-errors">Example 3: The Comedy of Errors</a>
+                        <ul>
+                            <li><a href="#themexml">Theme.xml</a></li>
+                            <li><a href="#creating-a-themexml-file">Creating a theme.xml file</a></li>
+                            <li><a href="#installing-a-themexml-file">Installing a theme.xml file</a></li>
+                            <li><a href="#putting-it-all-together">Putting it All Together</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#example-4-going-pro">Example 4: Going Pro</a></li>
+                </ul>
+            </nav>
+            <div id="body-inner">
+                <p>Pidgin&rsquo;s appearance is dictated by the interaction of three types of theme files
+                    working simultaneously at different levels:</p>
+                <ol>
+                    <li>Operating System theme - affecting all applications</li>
+                    <li>GTK theme - that GTK applications use to define their GUI elements</li>
+                    <li>Pidgin&rsquo;s specific theme files.</li>
+                </ol>
+                <p>In any particular case, the level at which theming efforts should focus depends
+                    on one&rsquo;s goal, knowledge of theming of each of the above file types, the
+                    availability of time and desire to sort through numerous setting parameters and
+                    the state of bugginess of software at that time.</p>
+                <p>Please note that this content was adapted from documentation written by a Pidgin
+                    user in late 2012 or early 2013. References to things such as Windows XP may be
+                    outdated, however the overall content is still relevant. Additionally, this
+                    content focuses primarily on Windows, however, much of it will apply to other
+                    systems as well.</p>
+                <h2 id="example-1-novice-proof">Example 1: Novice Proof</h2>
+                <p><strong>Goal</strong>: To give only Pidgin a facelift for variety&rsquo;s sake.<br>
+                    <strong>Theming Experience</strong>: Zero<br>
+                    <strong>Desire to dig through configuration files</strong>: Zero<br>
+                    <strong>Time available</strong>: 15 min</p>
+                <p>By far, the simplest &ldquo;off the shelf&rdquo; solution is to download the GTK+ theme
+                    installer package which includes a large number of ready GTK themes (engines and
+                    corresponding configuration files) as well as a theme switching preference tool.</p>
+                <p><em><strong>Note</strong></em>: all package names that follow are for a Windows system and can be
+                    downloaded <a href="https://gtk-win.sourceforge.io/home/index.php/Main/Downloads">here</a></p>
+                <h3 id="installation">Installation</h3>
+                <ol>
+                    <li>Download the package: gtk2-themes-2009-09-07-ash.exe</li>
+                    <li>If Pidgin was installed in the currently standard way, GTK will be
+                        installed within it. Thus, direct the Installation to that <code>Pidgin\GTK</code>
+                        folder.</li>
+                    <li>After Installation, move <code>gtk2_prefs.exe</code> from <code>Pidgin\GTK</code> to
+                        <code>Pidgin\GTK\bin</code> subfolder. This is the preference tool (theme selector)
+                        file that the installer puts in the wrong place. If this isn&rsquo;t done, the
+                        preference tool will not see the new themes loaded.</li>
+                </ol>
+                <h3 id="theme-switching">Theme Switching</h3>
+                <ol>
+                    <li>Go to <code>Pidgin\GTK\bin</code></li>
+                    <li>Start <code>gtk2_prefs.exe</code></li>
+                    <li>Using the Preference Tool&rsquo;s GUI as a demo display, pick a theme you like</li>
+                    <li>Start Pidgin</li>
+                </ol>
+                <h2 id="example-2-getting-your-feet-wet">Example 2: Getting Your Feet Wet</h2>
+                <p><strong>Goal</strong>: To change the appearance of all of your GTK applications (Pidgin,
+                    Ekiga, The GIMP, etc.)<br>
+                    <strong>Theming Experience</strong>: Minimal<br>
+                    <strong>Desire to dig through configuration files</strong>: Minimal<br>
+                    <strong>Time available</strong>: 1 hr</p>
+                <p>If you have some time on your hands, understand the basics of GTK themes, just
+                    want a few themes you know by name and like to keep your system lean and mean
+                    (keep out anything unnecessary), you may want to get the GTK theme zip package
+                    and hand pick the elements you need. Just be aware that theme engines and
+                    configuration files are packaged in separate directories, engine names are not
+                    always identical to the config file names, one doesn&rsquo;t work without the other
+                    and so you may end up having to experiment (which is why the installer is faster
+                    and simpler).</p>
+                <p><em><strong>Note</strong></em>: Due to current bugs, there may not be binary compatibility on
+                    Windows between compile-time and runtime GTK versions, i.e.: different
+                    applications may be impossible to satisfy with a single install of GTK. In a
+                    perfect world, the following could work.</p>
+                <h3 id="installation-1">Installation</h3>
+                <ol>
+                    <li>Download the theme selector: <code>gtk2_prefs-0.4.1.bin-gtk2.10-win32.zip</code></li>
+                    <li>Download the theme package: <code>gtk2-themes-2009-09-07-win32_bin.zip</code></li>
+                    <li>If Pidgin was not installed in the currently standard way (GTK was
+                        installed not with Pidgin, but for all GTK applications system wide):
+                        <ul>
+                            <li>Move relevant components from packages to corresponding folders in that
+                                GTK Installation.</li>
+                            <li>Unzip themes and pick the ones you want. Configuration files are in
+                                <code>share</code> and engines in <code>lib</code> directories. Thus, for a theme &ldquo;Aurora&rdquo;,
+                                the folder <code>Aurora</code> would need to be moved from the package&rsquo;s
+                                <code>share\themes</code> to <code>GTK2-Runtime\share\themes</code> and the file
+                                <code>libaurora.dll</code> from the package&rsquo;s <code>lib\gtk-2.0\2.10.0\engines</code> to
+                                <code>GTK2-Runtime\lib\gtk-2.0\2.10.0\engines</code>.</li>
+                        </ul>
+                    </li>
+                    <li>Continue as above for each theme desired.</li>
+                    <li>Unzip the theme selector and move <code>gtk2_prefs.exe</code> to <code>Pidgin\GTK\bin</code>
+                        subfolder.</li>
+                </ol>
+                <h2 id="example-3-the-comedy-of-errors">Example 3: The Comedy of Errors</h2>
+                <p><strong>Goal</strong>: You spend countless hours in front of a monitor and want to reduce eye
+                    strain. To accomplish this, you need to create a dark theme (light
+                    text on a dark background) for your entire system - all applications,
+                    Pidgin included.<br>
+                    <strong>Theming Experience</strong>: Little<br>
+                    <strong>Desire to dig through configuration files</strong>: Present within reason<br>
+                    <strong>Time available</strong>: Potentially significant</p>
+                <p>If you thirst for knowledge, are not satisfied with off the shelf solutions,
+                    and/or require maximum control over the appearance of your applications, buckle
+                    up and hold onto your hat! For the author of this passage, to learn how to
+                    theme Windows XP, Thunderbird, Firefox and Pidgin took exactly one month with
+                    Pidgin being by far the most time consuming. Why is this the case? Let&rsquo;s go
+                    back to the levels at which theming is applied.</p>
+                <p>After you will have created your ultimate dark OS theme file, you will have the
+                    pleasure of seeing that many apps automatically will just have fallen into
+                    place, i.e.: without any additional theming efforts - not Pidgin! If your new OS
+                    theme produces white text on a black background, after a default Pidgin install,
+                    you will have the following settings and interaction of the three theme files.</p>
+                <ol>
+                    <li>OS - dark theme</li>
+                    <li>GTK - default theme - &ldquo;MS-Windows&rdquo;</li>
+                    <li>Pidgin - Buddy List Theme - &ldquo;Default&rdquo;</li>
+                </ol>
+                <p>In this case, the OS produces the dark theme; GTK&rsquo;s &ldquo;MS-Windows&rdquo; theme acts as a
+                    &ldquo;transparent&rdquo; layer showing what Win OS dictates and Pidgin&rsquo;s default theme
+                    similarly allows to show through what GTK is delivering. The end result is
+                    reassuring - dark windows in both buddy and chat windows with buddy group names
+                    appearing white on black. But, due to a known bug in GTK and/or the GTK
+                    MS-Windows theme, some of the OS&rsquo;s theme information isn&rsquo;t properly interpreted,
+                    resulting in buddies within groups appearing black on black - ie: invisible!
+                    (Everything looks fine with a typical &ldquo;Black on White&rdquo; theme without the need
+                    for any further action but that was not our goal.)</p>
+                <h3 id="themexml">Theme.xml</h3>
+                <p>To give users more control, Pidgin allows further customization through its own
+                    theme.xml files. Pidgin&rsquo;s Buddy List theme.xml file offers exact control of
+                    text and background colour elements in the buddy list window. BUT, as luck
+                    would have it, GTK&rsquo;s &ldquo;MS-Windows&rdquo; constrains what can be overridden (the only
+                    GTK theme to do so). Thus, theme.xml cannot work properly with it. The end
+                    result is, to make use of the fine grain control of Pidgin&rsquo;s <code>theme.xml</code>, one
+                    must not use the GTK&rsquo;s MS-Windows theme. Which is particularly problematic
+                    since it is the only GTK theme that can pass through the Windows OS appearance -
+                    all other GTK themes take over and mask it. This, regrettably, means that all
+                    the effort you&rsquo;ve invested in making a beautiful OS theme cannot be seen in
+                    Pidgin. It also means that since you cannot rely on GUI information coming from
+                    the OS, you now MUST install a GTK theme pack with a theme selector tool (as
+                    discussed above) in order to circumvent the only GTK theme that comes with
+                    Pidgin.</p>
+                <p>After downloading a theme pack, you get access to a large number of GTK themes
+                    the manifestation of which you can indirectly affect with theme.xml. Details of
+                    theme.xml file syntax, explanation of controls available as well as some sample
+                    files can be found <a href="https://developer.pidgin.im/wiki/BuddyListThemes">here</a></p>
+                <h3 id="creating-a-themexml-file">Creating a theme.xml file</h3>
+                <p>The quickest way to make your own custom theme.xml file is to download a ready
+                    made theme from the above link and edit it to suit your needs with your
+                    favourite text editor (like Vim). Alternatively, you can write one from scratch
+                    by following instructions on the wiki. If creating your own colour scheme, a
+                    convenient resource of hex colour codes can be found
+                    <a href="http://www.colour-hex.com/popular-colours.php">here</a> If you like to experiment
+                    with colours, you can use the colour wheel present in Windows for selecting your
+                    desktop colour. Once you come up with a colour you like, resulting RGB numbers
+                    can be plugged into a RGB to Hex colour converter which can be found
+                    <a href="https://www.javascripter.net/faq/rgbtohex.htm">here</a>. Finally, if making a
+                    theme to be used with a transparency plugin, remember that dark colours are less
+                    transparent than light ones. With monitor brightness set to minimum, dark
+                    backgrounds will simply look black. Thus, for the best transparency effect,
+                    have to use a light colour palette (which unfortunately is the opposite of what
+                    you want if the aim is to create a dark background; therefore, decide what&rsquo;s
+                    more important to you).</p>
+                <h3 id="installing-a-themexml-file">Installing a theme.xml file</h3>
+                <ol>
+                    <li>When the file is ready, keep one copy (in backup) under the theme name.</li>
+                    <li>Make a copy of it and rename the copy to <code>theme.xml</code></li>
+                    <li>Start Pidgin and go to: <em>Tools</em> &gt; <em>Preferences</em> &gt; <em>Themes</em></li>
+                    <li>Drag and drop <code>theme.xml</code> onto the field of the Buddy List Theme
+                        <ul>
+                            <li>Pidgin will create the necessary subdirectory structure placing the file
+                                in: <code>.purple\themes\temp\sub_folder</code></li>
+                        </ul>
+                    </li>
+                    <li>Move theme.xml from there to: <code>.purple\themes\ThemeName\purple\blist</code></li>
+                    <li>Restart Pidgin
+                        <ul>
+                            <li>The new theme will now be present in the list.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3 id="putting-it-all-together">Putting it All Together</h3>
+                <p>Now all the components are in place but there is still one more bug we have to
+                    overcome. In Pidgin&rsquo;s theme.xml file, &ldquo;blist&rdquo; - the &lsquo;colour&rsquo; attribute that
+                    sets the background colour of the entire buddy list - doesn&rsquo;t work. So if the
+                    GTK theme is light, the background colour behind buddy text is dark and the
+                    buddy list is short or groups are collapsed - the light background will show
+                    bellow the buddy list.</p>
+                <p>To hide this final problem, we have to use both a dark GTK theme and a dark
+                    theme.xml.</p>
+                <ol>
+                    <li>Using the theme selector tool choose a dark background (for example:
+                        Xcl-clarius-dark)</li>
+                    <li>Start Pidgin and go to: <em>Tools</em> &gt; <em>Preferences</em> &gt; <em>Themes</em></li>
+                    <li>Choose your dark theme from the Buddy Theme List</li>
+                    <li>Enjoy the fruits of your labor.</li>
+                </ol>
+                <h2 id="example-4-going-pro">Example 4: Going Pro</h2>
+                <p><strong>Goal</strong>: To attain complete control of GUI of your GTK dependent apps like
+                    Pidgin.<br>
+                    <strong>Theming Experience</strong>: Moderate - Advanced<br>
+                    <strong>Desire to dig through configuration files</strong>: It&rsquo;s your cup of tea!<br>
+                    <strong>Time available</strong>: You love it so who&rsquo;s counting?</p>
+                <p>If you found this journey exhilarating, are looking for a new hobby or are
+                    thinking of going pro in the field of GTK GUI development you will have to
+                    master editing GTK Theme configuration files (gtkrc&rsquo;s) directly. This is beyond
+                    the scope of this discussion; however, a good starting point for that can be
+                    found <a href="https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes">here</a></p>
+                <footer id="footline">
+                    <div class="footline-block">
+                        Modified 2020-06-01
+                        by
+                        Anon
+                    </div>
+                    <div class="footline-block footline-old-site-info">
+                        This page was migrated from the old sites. This is what it replaces:
+                        <ul>
+                            <li>
+                                <a href="https://https://developer.pidgin.im/wiki/ThemingPidgin" rel="nofollow">
+                                    https://developer.pidgin.im/wiki/ThemingPidgin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="footline-block footline-columns">
+                        <li>
+                            <a href="https://issues.imfreedom.org/issues/PIDGIN"><i class='fas fa-fw fa-tasks'></i> Issue Tracker</a>
+                        </li>
+                        <li>
+                            <a href="https://keep.imfreedom.org/pidgin/"><i class='fas fa-fw fa-code'></i> Repositories</a>
+                        </li>
+                        <li>
+                            <a href="http://webchat.freenode.net/?channels=pidgin"><i class='fas fa-fw fa-comment-dots'></i> IRC</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/pB9fbVC"><i class='fab fa-fw fa-discord'></i> Discord</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/pidgin.im/"><i class='fab fa-fw fa-facebook-f'></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://reddit.com/r/pidgin"><i class='fab fa-fw fa-reddit-alien'></i> Reddit</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/impidgin"><i class='fab fa-fw fa-twitter'></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://shop.spreadshirt.com/imfreedom"><i class='fas fa-fw fa-tshirt'></i> Merchandise</a>
+                        </li>
+                    </ul>
+                    <div class="footline-block">
+                        <section class="supporters">
+                            <b>Our Supporters</b>
+                            <div>
+                                <a href="https://digitalocean.com">
+                                    <img src="/images/badges/DO_Logo_horizontal_black.svg" alt="DigitalOcean" />
+                                </a>
+                                <a href="https://sourceforge.net">
+                                    <img src="/images/badges/source-forge-logo.svg" alt="SourceForge" style="min-width:190px" />
+                                </a>
+                                <a href="https://packagecloud.io/">
+                                    <img src="/images/badges/packagecloud.svg" alt="packagecloud" />
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <ul class="footline-block footline-columns copyright-text">
+                        <li>
+                            &copy; Pidgin
+                        </li>
+                        <li>
+                            Content - GPL3
+                        </li>
+                        <li>
+                            <a href="https://github.com/matcornic/hugo-theme-learn">Theme</a> - MIT
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+        <div id="navigation">
+        </div>
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+        <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1613721092"></script>
+    <script src="/js/perfect-scrollbar.min.js?1613721092"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1613721092"></script>
+    <script src="/js/jquery.sticky.js?1613721092"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1613721092"></script>
+    <script src="/js/highlight.pack.js?1613721092"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script src="/js/modernizr.custom.71422.js?1613721092"></script>
+    <script src="/js/learn.js?1613721092"></script>
+    <script src="/js/hugo-learn.js?1613721092"></script>
+    <script src="/js/js.cookie.min.js"></script>
+    <div id="notification-stage">
+        <div class="alert-bar notification-bar">
+            <i class="fas fa-exclamation"></i>
+            <div class="alert-bar-close-button"><i class="fas fa-times"></i></div>
+            <span>We've launched the new site. Think we're missing something?<br /><a href="/posts/2020-01-nest-launch/">Read the blog post</a> or <a href="https://old.pidgin.im">Go to the old site</a></span>
+        </div>
+    </div>
+    <script>
+        try {
+            var code = "nest-launch";
+        } catch (e) {
+            console.error("Error with cookie code", e);
+        }
+
+        if (code && code !== Cookies.get("hide-notification")) {
+            var bar = $(".notification-bar");
+            $(".padding.highlightable").prepend(bar);
+            $(".alert-bar-close-button").on("click", function(elem) {
+                Cookies.set("hide-notification", code);
+                bar.detach();
+            });
+        }
+    </script>
+    <style>
+        #notification-stage {
+            display: none;
+        }
+
+        .alert-bar {
+            font-weight: bold;
+            padding: 20px;
+            background-color: #4caf50;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .alert-bar a {
+            color: darkgreen;
+        }
+
+        .alert-bar a:hover {
+            color: black;
+        }
+
+        .alert-bar-close-button {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .alert-bar-close-button:hover {
+            color: black;
+        }
+    </style>
+</body>
+
+</html>U9GÑ≤–      `0s∫`0sºB¨^ò`0ç‰   G    O^partitionKey=%28https%2Cpidgin.im%29,:https://pidgin.im/help/theming/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+accept-ranges: bytes
+content-type: text/html; charset=utf-8
+date: Sat, 20 Feb 2021 02:28:12 GMT
+last-modified: Fri, 19 Feb 2021 07:51:46 GMT
+strict-transport-security: max-age=31536000
+x-frame-options: SAMEORIGIN
+content-length: 50620
+X-Firefox-Spdy: h2
+ original-response-headers accept-ranges: bytes
+content-type: text/html; charset=utf-8
+date: Sat, 20 Feb 2021 02:28:12 GMT
+last-modified: Fri, 19 Feb 2021 07:51:46 GMT
+strict-transport-security: max-age=31536000
+x-frame-options: SAMEORIGIN
+content-length: 50620
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 2186 net-response-time-onstop 2604   ≈º
