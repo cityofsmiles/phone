@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Personal
+Exec=/usr/bin/chromium --enable-features=UseOzonePlatform --ozone-platform=wayland --user-data-dir="/home/manjaro/Documents/phone/chromium-profiles/personal" https://mail.google.com/
+Icon=/home/manjaro/Documents/phone/icons/chromium.png
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true

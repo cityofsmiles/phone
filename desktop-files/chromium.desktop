@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Chromium
-Exec=/usr/bin/chromium --enable-features=UseOzonePlatform --ozone-platform=wayland https://duckduckgo.com/
+Exec=/usr/bin/chromium --enable-features=UseOzonePlatform --ozone-platform=wayland --user-data-dir="/home/manjaro/Documents/phone/chromium-profiles/work" https://drive.google.com/
 Icon=/home/manjaro/Documents/phone/icons/chromium.png
 Terminal=false
 Type=Application
