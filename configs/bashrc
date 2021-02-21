@@ -144,7 +144,8 @@ extract ()
 
 
 # My personal shortcuts 
-alias u='yay; flatpak update'
+alias u='yay'
+#alias u='yay; flatpak update'
 alias srb='source ~/.bashrc'
 alias in='yay -S'
 alias pr='yay -R'
