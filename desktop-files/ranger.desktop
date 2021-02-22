@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Ranger
-Exec=xfce4-terminal -e ranger --hide-borders --hide-menubar
+Exec=xfce4-terminal -e ranger --hide-borders --hide-menubar --zoom=1.5
 Icon=/home/manjaro/Documents/phone/icons/ranger.png
 Terminal=false
 Type=Application
