@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PwOSS - Wiki</title>
+  <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width">
+
+  <div class="wiki-navbar">
+    &nbsp;&nbsp;<a href="https://wiki.pwoss.org">Home</a>&nbsp;
+    <span class="pull-right">
+    <a href="https://pwoss.org">Main Website</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://git.pwoss.org">Git</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://element.pwoss.org">Matrix</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://searx.pwoss.org">Searx</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>
+  </div>
+        <link rel="shortcut icon" type="image/png" href="/public/images/wiki.png">
+
+<!--  <img id="logo" src="/images/pwoss-wiki.png"> -->
+    <center><img id="logo" src="/public/images/pwoss.svg">
+    <h1>PwOSS - Wiki</h1></center>
+
+  <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/gollum/assets/app-b205e593a30f1cc0054e2e9ed9fc8af3658d8ef4a62b9708c20f204560deefb7.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/gollum/assets/print-512498c368be0d3fb1ba105dfa84289ae48380ec9fcbef948bd4e23b0b095bfb.css" media="print">
+
+  <link rel="stylesheet" type="text/css" href="/custom.css" media="all">
+  
+
+
+  <script>
+  var criticMarkup = '';
+	var baseUrl = '';
+	var uploadDest = 'uploads';
+	var perPageUploads = 'false';
+	if (perPageUploads == 'true') {
+	  uploadDest = uploadDest + window.location.pathname.replace(/.*gollum\/[-\w]+\//, "/").replace(/\.[^/.]+$/, "").replace(baseUrl, "")
+	}
+	  var pageFullPath = 'content/mobile/linux/devices/pine64/pinephone/braveheart.md';
+    var pageFormat   = 'markdown';
+
+  </script>
+  <script src="/gollum/assets/app-6e925e38a12a40c4fa9e0400cc874e0f4f97b66fdeb90a144dea527dbb544fbd.js" type="text/javascript"></script>
+  
+
+  <title>PinePhone</title>
+</head>
+<body>
+<div class="container-lg clearfix">
+<div id="wiki-wrapper" class="page">
+<div id="head">
+	<nav class="actions pt-4">
+	
+	<div class="TableObject">
+		<div class="TableObject-item">
+	    <a class="btn" id="minibutton-home" href="/">Home</a>
+	  </div>
+
+
+  	<div class="TableObject-item TableObject-item--primary px-2" >
+			<form class="search-form" action="/gollum/search" method="get" id="search-form">
+				<input type="text" class="form-control input-block" name="q" id="search-query" placeholder="Search" aria-label="Search site" autocomplete="off">
+			</form>	  </div>
+		
+	  <div class="TableObject-item">
+	    <a class="btn" id="minibutton-overview" href="/gollum/overview">Overview</a>
+			<a class="btn" id="minibutton-latest-changes" href="/gollum/latest_changes">Latest Changes</a>
+	  </div>
+	
+		<div class="TableObject-item pl-1">
+			<a class="btn" id="minibutton-history" href="/gollum/history/content/mobile/linux/devices/pine64/pinephone/braveheart.md">Page History</a>
+		</div>
+		
+			
+	</div>
+</nav>
+</div>
+
+<div id="wiki-content">
+	<h1 class="pt-4">PinePhone</h1>
+	<div class="breadcrumb"><nav aria-label="Breadcrumb"><ol>
+<li class="breadcrumb-item"><a href="/gollum/overview/content/">content</a></li>
+<li class="breadcrumb-item"><a href="/gollum/overview/content/mobile/">mobile</a></li>
+<li class="breadcrumb-item"><a href="/gollum/overview/content/mobile/linux/">linux</a></li>
+<li class="breadcrumb-item"><a href="/gollum/overview/content/mobile/linux/devices/">devices</a></li>
+<li class="breadcrumb-item"><a href="/gollum/overview/content/mobile/linux/devices/pine64/">pine64</a></li>
+<li class="breadcrumb-item"><a href="/gollum/overview/content/mobile/linux/devices/pine64/pinephone/">pinephone</a></li>
+</ol></nav></div>
+	
+
+	<div class=" has-footer">
+	  <div id="wiki-body" class="gollum-markdown-content overflow-hidden ">
+	    <div class="markdown-body " >
+	      
+	      
+
+<center>
+Installation guide for PinePhone operating systems.
+<br />
+<a href="https://pine64.org/">pine64.org</a> <br />
+<a href="https://wiki.pine64.org/index.php/PinePhone">wiki.pine64.org</a> <br />
+
+<h2></h2>
+</center>
+
+<p></p><div class="toc"><div class="toc-title">Table of Contents</div><ul><li><a href="#postmarketos">postmarketOS</a><ul><li><a href="#sd-card">SD CARD</a><ul><li><a href="#install-pmbootstrap">Install pmbootstrap</a><ul><li><a href="#pmbootstrap-init">pmbootstrap init</a><ul><li><a href="#path">Path</a></li><li><a href="#device-vendor">Device vendor</a></li><li><a href="#device-codename">Device codename</a></li><li><a href="#device-proprietary-components">Device proprietary components</a></li><li><a href="#user">User</a></li><li><a href="#user-interfaces">User interfaces</a></li><li><a href="#build-options">Build options</a><ul><li><a href="#jobs">Jobs</a></li><li><a href="#cache">Cache</a></li></ul></li><li><a href="#additional-packages">Additional packages</a></li><li><a href="#timezone">Timezone</a></li><li><a href="#device-hostname">Device hostname</a></li><li><a href="#done">Done</a></li></ul></li></ul></li><li><a href="#install-on-sd-card">Install on SD CARD</a><ul><li><a href="#pmbootstrap-shutdown">pmbootstrap shutdown</a></li></ul></li></ul></li><li><a href="#emmc">eMMC</a><ul><li><a href="#ssh">SSH</a></li><li><a href="#packages">Packages</a><ul><li><a href="#update-system-and-pkgs">Update system and pkgs</a></li><li><a href="#necessary-pkgs">Necessary pkgs</a></li><li><a href="#pmbootstrap-init-1">pmbootstrap init</a><ul><li><a href="#path-1">Path</a></li><li><a href="#device-vendor-1">Device vendor</a></li><li><a href="#device-codename-1">Device codename</a></li><li><a href="#device-proprietary-components-1">Device proprietary components</a></li><li><a href="#user-1">User</a></li><li><a href="#user-interfaces-1">User interfaces</a></li><li><a href="#build-options-1">Build options</a><ul><li><a href="#jobs-1">Jobs</a></li><li><a href="#cache-1">Cache</a></li></ul></li><li><a href="#additional-packages-1">Additional packages</a></li><li><a href="#device-hostname-1">Device hostname</a></li><li><a href="#done-1">Done</a></li></ul></li></ul></li><li><a href="#install-on-emmc">Install on eMMC</a><ul><li><a href="#turn-off-your-phone">Turn off your phone</a></li></ul></li></ul></li></ul></li><li><a href="#ubuntu-touch">Ubuntu Touch</a><ul><li><a href="#sd-card-1">SD CARD</a><ul><li><a href="#downloads">Downloads</a></li><li><a href="#flash-the-image">Flash the image</a></li><li><a href="#resize-sd-card">Resize SD CARD</a></li></ul></li><li><a href="#emmc-1">eMMC</a><ul><li><a href="#flash-the-image-1">Flash the image</a></li><li><a href="#resize-emmc">Resize eMMC</a><ul><li><a href="#turn-off-your-phone-1">Turn off your phone</a></li></ul></li></ul></li></ul></li><li><a href="#jumpdrive">JumpDrive</a><ul><li><a href="#detailed-usage-instructions">Detailed Usage Instructions</a></li><li><a href="#resize-file-system">Resize file system</a></li></ul></li></ul></div>
+
+<h1 class="editable"><a class="anchor" id="postmarketos" href="#postmarketos"></a>postmarketOS</h1>
+
+<p><a href="https://postmarketos.org/">postmarketos.org</a><br />
+<a href="https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(pine64-pinephone)">wiki.postmarketos.org</a>  </p>
+
+<p>We are sick of not receiving updates shortly after buying new phones. Sick of the walled gardens deeply integrated into Android and iOS. That's why we are developing a sustainable, privacy and security focused free software mobile OS that is modeled after traditional Linux distributions. With privilege separation in mind. Let's keep our devices useful and safe until they physically break! </p>
+
+<p> </p>
+
+<h2 class="editable"><a class="anchor" id="sd-card" href="#sd-card"></a>SD CARD</h2>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="install-pmbootstrap" href="#install-pmbootstrap"></a>Install pmbootstrap</h3>
+
+<pre class="highlight"><code>pikaur -S pmbootstrap</code></pre>
+
+<p> </p>
+
+<h4 class="editable"><a class="anchor" id="pmbootstrap-init" href="#pmbootstrap-init"></a>pmbootstrap init</h4>
+
+<pre class="highlight"><code>pmbootstrap init</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="path" href="#path"></a>Path</h5>
+
+<p>Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.</p>
+
+<p>Default:
+</p><pre class="highlight"><code>Work path [/home/dan/.local/var/pmbootstrap]:</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-vendor" href="#device-vendor"></a>Device vendor</h5>
+
+<p>Choose your target device vendor (either an existing one, or a new one for porting).
+</p><pre class="highlight"><code>Vendor [samsung]: pine64</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-codename" href="#device-codename"></a>Device codename</h5>
+
+<pre class="highlight"><code>Device codename : pinephone</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-proprietary-components" href="#device-proprietary-components"></a>Device proprietary components</h5>
+
+<p>This is totally up to you.<br />
+Check <a href="https://pwoss.org/pinephone-shipping-misconceptions/">our post</a>. 
+</p><pre class="highlight"><code>Enable this package? (y/n) [y]: </code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="user" href="#user"></a>User</h5>
+
+<pre class="highlight"><code>Username [user]: dan</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="user-interfaces" href="#user-interfaces"></a>User interfaces</h5>
+
+<p>Choose your favourite interface.  </p>
+
+<p></p><pre class="highlight"><code>Available user interfaces (11): 
+* none: No graphical environment
+* hildon: (X11) Lightweight GTK+2 UI (optimized for single-touch touchscreens) (DISABLED FOR ARMHF, ARMV7!)
+* i3wm: (X11) Tiling WM (keyboard required)
+* kodi: (Wayland) 10-foot UI useful on TV's
+* mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)
+* phosh: (Wayland) Mobile UI developed for the Librem 5
+* plasma-mobile: (Wayland) Mobile variant of KDE Plasma, optimized for touchscreen (slow without hardware acceleration!)
+* plasma-mobile-extras: Plasma Mobile with more apps pre-installed (video and music players, pdf reader, etc.)
+* shelli: Plain console with touchscreen gesture support
+* sway: (Wayland) Tiling WM, drop-in replacement for i3wm (DOES NOT RUN WITHOUT HW ACCELERATION!)
+* weston: (Wayland) Reference compositor (demo, not a phone interface)
+* xfce4: (X11) Lightweight GTK+2 desktop (stylus recommended)</code></pre>
+<pre class="highlight"><code>User interface [weston]: plasma-mobile</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="build-options" href="#build-options"></a>Build options</h5>
+
+<p>Just showing the options. You can type <code>n</code>.
+</p><pre class="highlight"><code>Change them? (y/n) [n]: y</code></pre>
+
+<h6 class="editable"><a class="anchor" id="jobs" href="#jobs"></a>Jobs</h6>
+
+<pre class="highlight"><code>Jobs [5]: 5</code></pre>
+
+<h6 class="editable"><a class="anchor" id="cache" href="#cache"></a>Cache</h6>
+
+<p>We use ccache to speed up building the same code multiple times. How much space should the ccache folder take up per architecture? After init is through, you can check the current usage with 'pmbootstrap stats'. Answer with 0 for infinite.
+</p><pre class="highlight"><code>Ccache size [5G]: 5G</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="additional-packages" href="#additional-packages"></a>Additional packages</h5>
+
+<p>Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"
+</p><pre class="highlight"><code>Extra packages [none]: </code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="timezone" href="#timezone"></a>Timezone</h5>
+
+<pre class="highlight"><code>Use this timezone instead of GMT? (y/n) [y]: y</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-hostname" href="#device-hostname"></a>Device hostname</h5>
+
+<pre class="highlight"><code>Device hostname (short form, e.g. 'foo') [pine64-pinephone]: </code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="done" href="#done"></a>Done</h5>
+
+<p></p><div class="flash flash-warn"><svg width="24" height="24" class="octicon octicon-alert mr-2" viewbox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>WARNING: <br /> The applications in the chroots do not get updated automatically. <br /> Run <code>pmbootstrap zap</code> to delete all chroots once a day before working with pmbootstrap! <br /> It only takes a few seconds, and all packages are cached. <br /> Done!</div>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="install-on-sd-card" href="#install-on-sd-card"></a>Install on SD CARD</h3>
+
+<p>You might have to run it twice or more if you get an error.  </p>
+
+<p></p><div class="flash flash-warn"><svg width="24" height="24" class="octicon octicon-alert mr-2" viewbox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>Use numbers for your user password. This is the same password for your lock screen, which contains only numbers.</div>
+
+<pre class="highlight"><code>pmbootstrap install --sdcard=/dev/mmcblk0</code></pre>
+
+<pre class="highlight"><code>[08:40:05] *** (1/5) PREPARE NATIVE CHROOT ***  
+[08:40:06] *** (2/5) CREATE DEVICE ROOTFS ("pine64-pinephone") ***  
+[08:40:13] (rootfs_pine64-pinephone) install postmarketos-base device-pine64-pinephone device-pine64-pinephone-nonfree-firmware postmarketos-ui-phosh  
+[08:41:40] (rootfs_pine64-pinephone) write /etc/os-release  
+[08:41:40] WARNING: aarch64 package 'polkit' installed version 0.116-r1 is newer, than the version in the repositories: 0.116-r0 See also: &lt;https:&gt;  
+[08:41:40] (rootfs_pine64-pinephone) install  
+[08:41:43] (rootfs_pine64-pinephone) install  
+[08:41:47] (rootfs_pine64-pinephone) mkinitfs postmarketos-allwinner  
+[08:41:51]  *** SET LOGIN PASSWORD FOR: 'dan' ***  
+New password:  
+Retype new password:   
+passwd: password updated successfully  
+[08:53:24] NOTE: No valid keymap specified for device  
+[08:53:26] *** (3/5) PREPARE INSTALL BLOCKDEVICE ***  
+[08:53:27] (native) mount /dev/install (host: /dev/mmcblk0)  
+[08:53:27] EVERYTHING ON /dev/mmcblk0 WILL BE ERASED! CONTINUE? (y/n) [n]: y  
+[08:53:48] (native) partition /dev/install (boot: 69M, root: the rest)  
+[08:53:48] (native) format /dev/installp2  
+[08:54:13] (native) mount /dev/installp2 to /mnt/install  
+[08:54:13] (native) format /dev/installp1 (boot, ext2), mount to /mnt/install/boot  
+[08:54:14] *** (4/5) FILL INSTALL BLOCKDEVICE ***  
+[08:54:14] (native) copy rootfs_pine64-pinephone to /mnt/install/  
+[08:55:04] Embed firmware u-boot/pine64-lts/u-boot-sunxi-with-spl.bin in the SD card image at offset 8 with step size 1024  
+[08:55:42] *** (5/5) FLASHING TO DEVICE ***  
+[08:55:42] Run the following to flash your installation to the target device:  
+[08:55:42] * pmbootstrap flasher flash_kernel  
+[08:55:42]   Flashes the kernel + initramfs to your device:  
+[08:55:42]   /home/dan/Software/pmbootstrap/chroot_rootfs_pine64-pinephone/boot  
+[08:55:42] * If the above steps do not work, you can also create symlinks to the generated files with 'pmbootstrap export' and flash outside of pmbootstrap.  
+[08:55:42] NOTE: chroot is still active (use 'pmbootstrap shutdown' as necessary)  
+[08:55:42] Done  </code></pre>
+
+<h4 class="editable"><a class="anchor" id="pmbootstrap-shutdown" href="#pmbootstrap-shutdown"></a>pmbootstrap shutdown</h4>
+
+<pre class="highlight"><code>pmbootstrap shutdown</code></pre>
+
+<p>That's it. Put the SD CARD in your phone.</p>
+
+<p> </p>
+
+<h2 class="editable"><a class="anchor" id="emmc" href="#emmc"></a>eMMC</h2>
+
+<p>To install on eMMC, you must first install it on a <a href="/content/mobile/linux/devices/pine64/pinephone/braveheart#postmarketos_sd-card">SD CARD</a> <strong>or</strong>:  </p>
+
+<p> </p>
+
+<ol>
+<li>FEL mode:<br />
+</li>
+</ol>
+
+<blockquote>
+<p>Installing postmarketOS on the eMMC directly from a computer via FEL is also supported. This requires the user to <a href="https://linux-sunxi.org/FEL#Triggering_FEL_mode">enable FEL mode</a>, the <a href="https://wiki.pine64.org/index.php/NOOB#Flashing_to_eMMC_using_FEL_.28Allwinner_A64_Devices_Only.29">boot-tools</a> to mount the eMMC as mass storage are currently however not compatible.</p>
+</blockquote>
+
+<p> </p>
+
+<ol>
+<li>Serial console:<br />
+</li>
+</ol>
+
+<blockquote>
+<p>The PinePhone has a serial port in the headphone connector, it's activated by the 6th contact on the dipswitch. If the switch is on then the headphone connector is in audio mode, if it's off then it's in UART mode.  </p>
+</blockquote>
+
+<p>The uart is 115200n8  </p>
+
+<p>The pinout for the serial connector on the headphone jack is:  </p>
+
+<ul>
+<li>Tip: RX</li>
+<li>Ring: TX</li>
+<li>Sleeve: GND</li>
+</ul>
+
+<p>The serial connection is 3.3V  </p>
+
+<p>You can also buy the debug cable from <a href="https://store.pine64.org/">PINE64 Store</a> The store cable uses a 4 ring plug, as seen in the <a href="http://files.pine64.org/doc/pinebook/guide/Pinebook_Earphone_Serial_Console_Developer_Guide.pdf">PDF</a>, but a 3 ring plug works just as well.   </p>
+
+<p> </p>
+
+<p>Source: <a href="https://wiki.postmarketos.org/wiki/PINE64_PinePhone_(pine64-pinephone)#Installation">wiki.postmarketos.org</a></p>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="ssh" href="#ssh"></a>SSH</h3>
+
+<p>SSH into your phone:
+</p><pre class="highlight"><code>ssh user@ip</code></pre>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="packages" href="#packages"></a>Packages</h3>
+
+<p> </p>
+
+<h4 class="editable"><a class="anchor" id="update-system-and-pkgs" href="#update-system-and-pkgs"></a>Update system and pkgs</h4>
+
+<pre class="highlight"><code>sudo apk update &amp;&amp; sudo apk upgrade</code></pre>
+
+<p> </p>
+
+<h4 class="editable"><a class="anchor" id="necessary-pkgs" href="#necessary-pkgs"></a>Necessary pkgs</h4>
+
+<pre class="highlight"><code>sudo apk add pmbootstrap python3 coreutils procps git</code></pre>
+
+<p> </p>
+
+<h4 class="editable"><a class="anchor" id="pmbootstrap-init-1" href="#pmbootstrap-init-1"></a>pmbootstrap init</h4>
+
+<pre class="highlight"><code>pmbootstrap init</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="path-1" href="#path-1"></a>Path</h5>
+
+<p>Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.</p>
+
+<pre class="highlight"><code>Work path [/home/dan/.local/var/pmbootstrap]:</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-vendor-1" href="#device-vendor-1"></a>Device vendor</h5>
+
+<p>Choose your target device vendor (either an existing one, or a new one for porting).
+</p><pre class="highlight"><code>Vendor [samsung]: pine64</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-codename-1" href="#device-codename-1"></a>Device codename</h5>
+
+<pre class="highlight"><code>Device codename : pinephone</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-proprietary-components-1" href="#device-proprietary-components-1"></a>Device proprietary components</h5>
+
+<p>This is totally up to you.<br />
+Check '<a href="https://pwoss.org/pinephone-shipping-misconceptions/">PinePhone Shipping &amp; Misconceptions</a>'. 
+</p><pre class="highlight"><code>Enable this package? (y/n) [y]: </code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="user-1" href="#user-1"></a>User</h5>
+
+<pre class="highlight"><code>Username [user]: dan</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="user-interfaces-1" href="#user-interfaces-1"></a>User interfaces</h5>
+
+<p>Choose your favourite interface.  </p>
+
+<p></p><pre class="highlight"><code>Available user interfaces (11): 
+* none: No graphical environment
+* hildon: (X11) Lightweight GTK+2 UI (optimized for single-touch touchscreens) (DISABLED FOR ARMHF, ARMV7!)
+* i3wm: (X11) Tiling WM (keyboard required)
+* kodi: (Wayland) 10-foot UI useful on TV's
+* mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)
+* phosh: (Wayland) Mobile UI developed for the Librem 5
+* plasma-mobile: (Wayland) Mobile variant of KDE Plasma, optimized for touchscreen (slow without hardware acceleration!)
+* plasma-mobile-extras: Plasma Mobile with more apps pre-installed (video and music players, pdf reader, etc.)
+* shelli: Plain console with touchscreen gesture support
+* sway: (Wayland) Tiling WM, drop-in replacement for i3wm (DOES NOT RUN WITHOUT HW ACCELERATION!)
+* weston: (Wayland) Reference compositor (demo, not a phone interface)
+* xfce4: (X11) Lightweight GTK+2 desktop (stylus recommended)</code></pre>
+<pre class="highlight"><code>User interface [weston]: plasma-mobile</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="build-options-1" href="#build-options-1"></a>Build options</h5>
+
+<p>Just showing the options. You can type <code>n</code>.
+</p><pre class="highlight"><code>Change them? (y/n) [n]: y</code></pre>
+
+<p> </p>
+
+<h6 class="editable"><a class="anchor" id="jobs-1" href="#jobs-1"></a>Jobs</h6>
+
+<pre class="highlight"><code>Jobs [5]: 5</code></pre>
+
+<h6 class="editable"><a class="anchor" id="cache-1" href="#cache-1"></a>Cache</h6>
+
+<p>We use ccache to speed up building the same code multiple times. How much space should the ccache folder take up per architecture? After init is through, you can check the current usage with 'pmbootstrap stats'. Answer with 0 for infinite.
+</p><pre class="highlight"><code>Ccache size [5G]: 5G</code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="additional-packages-1" href="#additional-packages-1"></a>Additional packages</h5>
+
+<p>Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"
+</p><pre class="highlight"><code>Extra packages [none]: </code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="device-hostname-1" href="#device-hostname-1"></a>Device hostname</h5>
+
+<pre class="highlight"><code>Device hostname (short form, e.g. 'foo') [pine64-pinephone]: </code></pre>
+
+<p> </p>
+
+<h5 class="editable"><a class="anchor" id="done-1" href="#done-1"></a>Done</h5>
+
+<p></p><div class="flash flash-warn"><svg width="24" height="24" class="octicon octicon-alert mr-2" viewbox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>WARNING: <br /> The applications in the chroots do not get updated automatically. <br /> Run <code>pmbootstrap zap</code> to delete all chroots once a day before working with pmbootstrap! <br /> It only takes a few seconds, and all packages are cached. <br /> Done!</div>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="install-on-emmc" href="#install-on-emmc"></a>Install on eMMC</h3>
+
+<p>You might have to run it twice or more if you get an error.  </p>
+
+<p></p><div class="flash flash-warn"><svg width="24" height="24" class="octicon octicon-alert mr-2" viewbox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>Use numbers for your user password. This is the same password for your lock screen, which contains only numbers.</div>
+
+<p></p><div class="flash"><svg width="24" height="24" class="octicon octicon-info mr-2" viewbox="0 0 14 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>"See also <a href="">JumpDrive</a>.</div>
+
+<pre class="highlight"><code>pmbootstrap install --sdcard=/dev/mmcblk2</code></pre>
+
+<pre class="highlight"><code>[07:37:25] *** (1/5) PREPARE NATIVE CHROOT ***  
+[07:37:50] *** (2/5) CREATE DEVICE ROOTFS ("pine64-pinephone") ***  
+[07:40:46] WARNING: aarch64 package 'polkit' installed version 0.116-r1 is newer, than the version in the repositories: 0.116-r0 See also: &lt;https:&gt;  
+[07:40:57] (rootfs_pine64-pinephone) install  
+[07:41:09] WARNING: aarch64 package 'polkit' installed version 0.116-r1 is newer, than the version in the repositories: 0.116-r0 See also: &lt;https:&gt;  
+[07:41:10] (rootfs_pine64-pinephone) install  
+[07:41:15] (rootfs_pine64-pinephone) write /etc/os-release  
+[07:41:19] WARNING: aarch64 package 'polkit' installed version 0.116-r1 is newer, than the version in the repositories: 0.116-r0 See also: &lt;https:&gt;  
+[07:41:19] (rootfs_pine64-pinephone) install  
+[07:41:27] (rootfs_pine64-pinephone) install  
+[07:41:35] (rootfs_pine64-pinephone) mkinitfs postmarketos-allwinner  
+[07:41:42]  *** SET LOGIN PASSWORD FOR: 'dan' ***  
+New password:   
+Retype new password:   
+passwd: password updated successfully  
+[14:44:05] NOTE: No valid keymap specified for device  
+[14:44:09] *** (3/5) PREPARE INSTALL BLOCKDEVICE ***  
+[14:44:13] (native) mount /dev/install (host: /dev/mmcblk2)  
+[14:44:13] EVERYTHING ON /dev/mmcblk2 WILL BE ERASED! CONTINUE? (y/n) [n]: y  
+[14:44:17] (native) partition /dev/install (boot: 71M, root: the rest)  
+[14:44:17] (native) format /dev/installp2  
+[14:44:32] (native) mount /dev/installp2 to /mnt/install  
+[14:44:32] (native) format /dev/installp1 (boot, ext2), mount to /mnt/install/boot  
+[14:44:33] *** (4/5) FILL INSTALL BLOCKDEVICE ***  
+[14:44:33] (native) copy rootfs_pine64-pinephone to /mnt/install/  
+[14:46:13] Embed firmware u-boot/pine64-lts/u-boot-sunxi-with-spl.bin in the SD card image at offset 8 with step size 1024  
+[14:46:16] *** (5/5) FLASHING TO DEVICE ***  
+[14:46:16] Run the following to flash your installation to the target device:  
+[14:46:16] * pmbootstrap flasher flash_kernel  
+[14:46:16]   Flashes the kernel + initramfs to your device:  
+[14:46:16]   /home/dan/.local/var/pmbootstrap/chroot_rootfs_pine64-pinephone/boot  
+[14:46:16] * If the above steps do not work, you can also create symlinks to the generated files with 'pmbootstrap export' and flash outside of pmbootstrap.  
+[14:46:16] NOTE: chroot is still active (use 'pmbootstrap shutdown' as necessary)  
+[14:46:16] Done  </code></pre>
+
+<p>If it does not work, just use <code>dd</code>:
+</p><pre class="highlight"><code>sudo dd if=/dev/mmcblk0 of=/dev/mmcblk2 bs=4M</code></pre>
+
+<p></p><div class="flash"><svg width="24" height="24" class="octicon octicon-info mr-2" viewbox="0 0 14 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg><code>sudo parted /dev/mmcblk2p2 resizepart 1 100%</code> might necessary.</div>
+
+<p> </p>
+
+<h4 class="editable"><a class="anchor" id="turn-off-your-phone" href="#turn-off-your-phone"></a>Turn off your phone</h4>
+
+<pre class="highlight"><code>poweroff</code></pre>
+
+<p>That's it. Remove the SD CARD and start your phone.</p>
+
+<p> </p>
+
+<h1 class="editable"><a class="anchor" id="ubuntu-touch" href="#ubuntu-touch"></a>Ubuntu Touch</h1>
+
+<p><a href="https://ubports.com/">ubports.com</a>  </p>
+
+<p>Ubuntu Touch is made and maintained by the <a href="https://ubports.com/community/about-the-community">UBports Community</a>. A group of volunteers and passionate people across the world. With Ubuntu Touch we offer a truly unique mobile experience - an alternative to the current most popular operating systems on the market. We believe that everyone is free to use, study, share and improve all software created by the foundation without restrictions. Whenever possible, everything is distributed under free and open source licenses endorsed by the Free Software Foundation, the Open Source Initiative.  </p>
+
+<p>Ubuntu Touch is a mobile version of the Ubuntu operating system for mobile devices. However, unlike other 'flavors' of Ubuntu, it is more accurately an extract of parts of Ubuntu. It is adapted to run naturally in a mobile, touch-screen environment but is also capable of functioning as a desktop computer while in "desktop mode". This aforementioned converging of environments from device to device is where the term "Convergence" originates. You can find more technical details on our <a href="https://github.com/ubports">github page</a>.</p>
+
+<p> </p>
+
+<h2 class="editable"><a class="anchor" id="sd-card-1" href="#sd-card-1"></a>SD CARD</h2>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="downloads" href="#downloads"></a>Downloads</h3>
+
+<p>Download the <a href="https://ci.ubports.com/job/rootfs/job/rootfs-pinephone/">rootfs</a> (img.gz) and extract it. </p>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="flash-the-image" href="#flash-the-image"></a>Flash the image</h3>
+
+<p>You can use Etcher or the following command:</p>
+
+<pre class="highlight"><code>sudo dd bs=4M if=~/Downloads/ubuntu-touch-pinephone.img of=/dev/mmcblk0</code></pre>
+
+<h3 class="editable"><a class="anchor" id="resize-sd-card" href="#resize-sd-card"></a>Resize SD CARD</h3>
+
+<pre class="highlight"><code>sudo parted /dev/mmcblk0 resizepart 1 100% &amp;&amp; sudo resize2fs -p /dev/mmcblk0p1</code></pre>
+
+<p>That's it. Put the SD CARD in your phone.</p>
+
+<p> </p>
+
+<h2 class="editable"><a class="anchor" id="emmc-1" href="#emmc-1"></a>eMMC</h2>
+
+<p>To install on eMMC, you must first install it on a <a href="/content/mobile/linux/devices/pine64/pinephone/braveheart#ubuntu-touch_sd-card">SD CARD</a> and also copy the <em>ubuntu-touch-pinephone.img</em> to you SD CARD. </p>
+
+<p><strong>Or:</strong><br />
+Same as <a href="/content/mobile/linux/devices/pine64/pinephone/braveheart#postmarketos_emmc">postmarketOS</a></p>
+
+<p></p><div class="flash"><svg width="24" height="24" class="octicon octicon-info mr-2" viewbox="0 0 14 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg>"See also <a href="">JumpDrive</a>.</div>
+ 
+
+<h3 class="editable"><a class="anchor" id="flash-the-image-1" href="#flash-the-image-1"></a>Flash the image</h3>
+
+<pre class="highlight"><code>sudo dd bs=4M if=~/ubuntu-touch-pinephone.img of=/dev/mmcblk2</code></pre>
+
+<p> </p>
+
+<h3 class="editable"><a class="anchor" id="resize-emmc" href="#resize-emmc"></a>Resize eMMC</h3>
+
+<pre class="highlight"><code>sudo parted /dev/mmcblk2 resizepart 1 100%</code></pre>
+
+<p> </p>
+
+<h4 class="editable"><a class="anchor" id="turn-off-your-phone-1" href="#turn-off-your-phone-1"></a>Turn off your phone</h4>
+
+<pre class="highlight"><code>sudo shutdown now</code></pre>
+
+<p>That's it. Remove the SD CARD and start your phone.</p>
+
+<p> </p>
+
+<h1 class="editable"><a class="anchor" id="jumpdrive" href="#jumpdrive"></a>JumpDrive</h1>
+
+<p>Download <a href="https://github.com/dreemurrs-embedded/Jumpdrive/releases/">latest .img</a> and flash it with <a href="https://www.balena.io/etcher/">Etcher</a>.</p>
+
+<h2 class="editable"><a class="anchor" id="detailed-usage-instructions" href="#detailed-usage-instructions"></a>Detailed Usage Instructions</h2>
+
+<ol>
+<li>Download the Jumpdrive image</li>
+<li>Flash the Jumpdrive image to a micro SD card</li>
+<li>Boot the PinePhone from the Jumpdrive micro SD card</li>
+<li>Connect the PinePhone to your computer using USB-A -&gt; USB-C cable</li>
+<li>Flash the exposed (mounted) PinePhone drive with a chosen OS image</li>
+<li>Once the flashing process is complete, disconnect the PinePhone from your PC, power it down and remove the Jumpdrive SD card</li>
+<li>The process is now finished, and you can boot from eMMC</li>
+</ol>
+
+<p>Jumpdrive also acts as a rescue image in case if you messed up your installation. To do so, you can telnet to 172.16.42.1, mount rootfs and fix it!</p>
+
+<h2 class="editable"><a class="anchor" id="resize-file-system" href="#resize-file-system"></a>Resize file system</h2>
+
+<p>If you flash a 4G img distro (ie. phosh+debian) to your eemc, your eemc will only have a 3.7G partition on it. To use the entire 14.7G on the eemc, run the following commands:</p>
+
+<ol>
+<li>sudo cfdisk /dev/sdX</li>
+<li>Change to [Resize] in the ncurses program, resize the 3.7G partition to 14.7G, and [Write]</li>
+<li>sudo resize2fs /dev/sdXY</li>
+</ol>
+
+<p>Replace X with your drive's name. Replace Y with the paritition you resized in cfdisk. </p>
+
+<p>Source: <a href="https://wiki.pine64.org/index.php/PinePhone#Flashing_eMMC_using_Jumpdrive">wiki.pine64.org</a></p>
+
+	    </div>
+	  </div>
+	  <div id="wiki-footer" class="gollum-markdown-content">
+	    <div id="footer-content" class="Box Box-condensed markdown-body pl-2">
+	      <p><a href="/" rel="nofollow">&lt;&lt; back</a>
+</p><center>
+<a href="#" rel="nofollow">⇧UP⇧</a>
+<br />
+<br />
+<div class="toc"><div class="toc-title">Navigate Mobile - Linux</div><ul><li><a href="/content/mobile/linux/devices/pine64/pinephone/braveheart.md">devices/pine64/pinephone/braveheart.md</a></li><li><a href="/content/mobile/linux/devices/samsung/galaxy/note-4/n910f-linux.md">devices/samsung/galaxy/note-4/n910f-linux.md</a></li><li><a href="/content/mobile/linux/overview.md">overview.md</a></li></ul></div>
+</center>
+<a href="/content/mobile/linux/overview" rel="nofollow">&lt;&lt; back</a>
+
+	    </div>
+	  </div>
+
+
+	</div>
+
+
+	<div id="footer" class="pt-4">
+		  <p id="last-edit"><div class="dotted-spinner hidden"></div> <a id="page-info-toggle" data-pagepath="content/mobile/linux/devices/pine64/pinephone/braveheart.md">When was this page last modified?</a></p>
+	</div>
+
+	
+</div>
+
+<form name="rename" method="POST" action="/gollum/rename/content/mobile/linux/devices/pine64/pinephone/braveheart.md">
+  <input type="hidden" name="rename"/>
+  <input type="hidden" name="message"/>
+</form>
+
+</div>
+</div>
+</body>
+<div class="footer-links">
+  Powered by <a href="https://github.com/gollum/gollum" target="_blank">gollum</a>
+</div>
+<div class="footer-links">
+  <a href="https://pwoss.org/privacy-policy.html">Privacy Policy</a> |
+  <a href="https://pwoss.org/terms-of-use.html">Terms of Use</a>
+</div>
+</html>
+�@%��F      `7�D`7�FB�lb`7�E   w    O^partitionKey=%28https%2Cpwoss.org%29,:https://wiki.pwoss.org/content/mobile/linux/devices/pine64/pinephone/braveheart necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+server: nginx
+date: Thu, 25 Feb 2021 15:11:23 GMT
+content-type: text/html;charset=utf-8
+content-length: 36296
+x-frame-options: SAMEORIGIN, SAMEORIGIN
+x-content-type-options: nosniff, nosniff
+x-xss-protection: 1; mode=block, 1; mode=block
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+feature-policy: geolocation none;midi none;notifications none;push none;sync-xhr none;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;fullscreen self;payment none;
+referrer-policy: no-referrer
+content-security-policy: media-src 'none'; object-src 'none'; frame-src 'none'; script-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+X-Firefox-Spdy: h2
+ original-response-headers server: nginx
+date: Thu, 25 Feb 2021 15:11:23 GMT
+content-type: text/html;charset=utf-8
+content-length: 36296
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+feature-policy: geolocation none;midi none;notifications none;push none;sync-xhr none;microphone none;camera none;magnetometer none;gyroscope none;speaker self;vibrate none;fullscreen self;payment none;
+referrer-policy: no-referrer
+content-security-policy: media-src 'none'; object-src 'none'; frame-src 'none'; script-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 1166 net-response-time-onstop 1436   ��
