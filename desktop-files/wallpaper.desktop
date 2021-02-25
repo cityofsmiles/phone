@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Wallpaper
+Exec=sh /home/manjaro/Documents/phone/bash-scripts/gnome-change-background.sh
+Icon=/home/manjaro/Documents/phone/icons/wallpaper.png
+Terminal=false
+Type=Application
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true
