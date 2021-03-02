@@ -1,0 +1,306 @@
+// Sticky Plugin v1.0.4 for jQuery
+// =============
+// Author: Anthony Garand
+// Improvements by German M. Bravo (Kronuz) and Ruud Kamphuis (ruudk)
+// Improvements by Leonardo C. Daronco (daronco)
+// Created: 02/14/2011
+// Date: 07/20/2015
+// Website: http://stickyjs.com/
+// Description: Makes an element on the page stick on the screen as you scroll
+//              It will only set the 'top' and 'position' of your element, you
+//              might need to adjust the width in some cases.
+
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof module === 'object' && module.exports) {
+        // Node/CommonJS
+        module.exports = factory(require('jquery'));
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function ($) {
+    var slice = Array.prototype.slice; // save ref to original slice()
+    var splice = Array.prototype.splice; // save ref to original slice()
+
+  var defaults = {
+      topSpacing: 0,
+      bottomSpacing: 0,
+      className: 'is-sticky',
+      wrapperClassName: 'sticky-wrapper',
+      center: false,
+      getWidthFrom: '',
+      widthFromWrapper: true, // works only when .getWidthFrom is empty
+      responsiveWidth: false,
+      zIndex: 'inherit'
+    },
+    $window = $(window),
+    $document = $(document),
+    sticked = [],
+    windowHeight = $window.height(),
+    scroller = function() {
+      var scrollTop = $window.scrollTop(),
+        documentHeight = $document.height(),
+        dwh = documentHeight - windowHeight,
+        extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
+
+      for (var i = 0, l = sticked.length; i < l; i++) {
+        var s = sticked[i],
+          elementTop = s.stickyWrapper.offset().top,
+          etse = elementTop - s.topSpacing - extra;
+
+        //update height in case of dynamic content
+        s.stickyWrapper.css('height', s.stickyElement.outerHeight());
+
+        if (scrollTop <= etse) {
+          if (s.currentTop !== null) {
+            s.stickyElement
+              .css({
+                'width': '',
+                'position': '',
+                'top': '',
+                'z-index': ''
+              });
+            s.stickyElement.parent().removeClass(s.className);
+            s.stickyElement.trigger('sticky-end', [s]);
+            s.currentTop = null;
+          }
+        }
+        else {
+          var newTop = documentHeight - s.stickyElement.outerHeight()
+            - s.topSpacing - s.bottomSpacing - scrollTop - extra;
+          if (newTop < 0) {
+            newTop = newTop + s.topSpacing;
+          } else {
+            newTop = s.topSpacing;
+          }
+          if (s.currentTop !== newTop) {
+            var newWidth;
+            if (s.getWidthFrom) {
+                padding =  s.stickyElement.innerWidth() - s.stickyElement.width();
+                newWidth = $(s.getWidthFrom).width() - padding || null;
+            } else if (s.widthFromWrapper) {
+                newWidth = s.stickyWrapper.width();
+            }
+            if (newWidth == null) {
+                newWidth = s.stickyElement.width();
+            }
+            s.stickyElement
+              .css('width', newWidth)
+              .css('position', 'fixed')
+              .css('top', newTop)
+              .css('z-index', s.zIndex);
+
+            s.stickyElement.parent().addClass(s.className);
+
+            if (s.currentTop === null) {
+              s.stickyElement.trigger('sticky-start', [s]);
+            } else {
+              // sticky is started but it have to be repositioned
+              s.stickyElement.trigger('sticky-update', [s]);
+            }
+
+            if (s.currentTop === s.topSpacing && s.currentTop > newTop || s.currentTop === null && newTop < s.topSpacing) {
+              // just reached bottom || just started to stick but bottom is already reached
+              s.stickyElement.trigger('sticky-bottom-reached', [s]);
+            } else if(s.currentTop !== null && newTop === s.topSpacing && s.currentTop < newTop) {
+              // sticky is started && sticked at topSpacing && overflowing from top just finished
+              s.stickyElement.trigger('sticky-bottom-unreached', [s]);
+            }
+
+            s.currentTop = newTop;
+          }
+
+          // Check if sticky has reached end of container and stop sticking
+          var stickyWrapperContainer = s.stickyWrapper.parent();
+          var unstick = (s.stickyElement.offset().top + s.stickyElement.outerHeight() >= stickyWrapperContainer.offset().top + stickyWrapperContainer.outerHeight()) && (s.stickyElement.offset().top <= s.topSpacing);
+
+          if( unstick ) {
+            s.stickyElement
+              .css('position', 'absolute')
+              .css('top', '')
+              .css('bottom', 0)
+              .css('z-index', '');
+          } else {
+            s.stickyElement
+              .css('position', 'fixed')
+              .css('top', newTop)
+              .css('bottom', '')
+              .css('z-index', s.zIndex);
+          }
+        }
+      }
+    },
+    resizer = function() {
+      windowHeight = $window.height();
+
+      for (var i = 0, l = sticked.length; i < l; i++) {
+        var s = sticked[i];
+        var newWidth = null;
+        if (s.getWidthFrom) {
+            if (s.responsiveWidth) {
+                newWidth = $(s.getWidthFrom).width();
+            }
+        } else if(s.widthFromWrapper) {
+            newWidth = s.stickyWrapper.width();
+        }
+        if (newWidth != null) {
+            s.stickyElement.css('width', newWidth);
+        }
+      }
+    },
+    methods = {
+      init: function(options) {
+        return this.each(function() {
+          var o = $.extend({}, defaults, options);
+          var stickyElement = $(this);
+
+          var stickyId = stickyElement.attr('id');
+          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
+          var wrapper = $('<div></div>')
+            .attr('id', wrapperId)
+            .addClass(o.wrapperClassName);
+
+          stickyElement.wrapAll(function() {
+            if ($(this).parent("#" + wrapperId).length == 0) {
+                    return wrapper;
+            }
+});
+
+          var stickyWrapper = stickyElement.parent();
+
+          if (o.center) {
+            stickyWrapper.css({width:stickyElement.outerWidth(),marginLeft:"auto",marginRight:"auto"});
+          }
+
+          if (stickyElement.css("float") === "right") {
+            stickyElement.css({"float":"none"}).parent().css({"float":"right"});
+          }
+
+          o.stickyElement = stickyElement;
+          o.stickyWrapper = stickyWrapper;
+          o.currentTop    = null;
+
+          sticked.push(o);
+
+          methods.setWrapperHeight(this);
+          methods.setupChangeListeners(this);
+        });
+      },
+
+      setWrapperHeight: function(stickyElement) {
+        var element = $(stickyElement);
+        var stickyWrapper = element.parent();
+        if (stickyWrapper) {
+          stickyWrapper.css('height', element.outerHeight());
+        }
+      },
+
+      setupChangeListeners: function(stickyElement) {
+        if (window.MutationObserver) {
+          var mutationObserver = new window.MutationObserver(function(mutations) {
+            if (mutations[0].addedNodes.length || mutations[0].removedNodes.length) {
+              methods.setWrapperHeight(stickyElement);
+            }
+          });
+          mutationObserver.observe(stickyElement, {subtree: true, childList: true});
+        } else {
+          if (window.addEventListener) {
+            stickyElement.addEventListener('DOMNodeInserted', function() {
+              methods.setWrapperHeight(stickyElement);
+            }, false);
+            stickyElement.addEventListener('DOMNodeRemoved', function() {
+              methods.setWrapperHeight(stickyElement);
+            }, false);
+          } else if (window.attachEvent) {
+            stickyElement.attachEvent('onDOMNodeInserted', function() {
+              methods.setWrapperHeight(stickyElement);
+            });
+            stickyElement.attachEvent('onDOMNodeRemoved', function() {
+              methods.setWrapperHeight(stickyElement);
+            });
+          }
+        }
+      },
+      update: scroller,
+      unstick: function(options) {
+        return this.each(function() {
+          var that = this;
+          var unstickyElement = $(that);
+
+          var removeIdx = -1;
+          var i = sticked.length;
+          while (i-- > 0) {
+            if (sticked[i].stickyElement.get(0) === that) {
+                splice.call(sticked,i,1);
+                removeIdx = i;
+            }
+          }
+          if(removeIdx !== -1) {
+            unstickyElement.unwrap();
+            unstickyElement
+              .css({
+                'width': '',
+                'position': '',
+                'top': '',
+                'float': '',
+                'z-index': ''
+              })
+            ;
+          }
+        });
+      }
+    };
+
+  // should be more efficient than using $window.scroll(scroller) and $window.resize(resizer):
+  if (window.addEventListener) {
+    window.addEventListener('scroll', scroller, false);
+    window.addEventListener('resize', resizer, false);
+  } else if (window.attachEvent) {
+    window.attachEvent('onscroll', scroller);
+    window.attachEvent('onresize', resizer);
+  }
+
+  $.fn.sticky = function(method) {
+    if (methods[method]) {
+      return methods[method].apply(this, slice.call(arguments, 1));
+    } else if (typeof method === 'object' || !method ) {
+      return methods.init.apply( this, arguments );
+    } else {
+      $.error('Method ' + method + ' does not exist on jQuery.sticky');
+    }
+  };
+
+  $.fn.unstick = function(method) {
+    if (methods[method]) {
+      return methods[method].apply(this, slice.call(arguments, 1));
+    } else if (typeof method === 'object' || !method ) {
+      return methods.unstick.apply( this, arguments );
+    } else {
+      $.error('Method ' + method + ' does not exist on jQuery.sticky');
+    }
+  };
+  $(function() {
+    setTimeout(scroller, 0);
+  });
+}));
+.CBSKA      `<>m`<>nB´‹ `Exí   \    O^partitionKey=%28https%2Cpidgin.im%29,:https://www.pidgin.im/js/jquery.sticky.js?1614268832 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+accept-ranges: bytes
+content-type: text/javascript; charset=utf-8
+date: Mon, 01 Mar 2021 01:07:58 GMT
+last-modified: Wed, 02 Dec 2020 08:59:28 GMT
+strict-transport-security: max-age=31536000
+x-frame-options: SAMEORIGIN
+content-length: 10085
+X-Firefox-Spdy: h2
+ original-response-headers accept-ranges: bytes
+content-type: text/javascript; charset=utf-8
+date: Mon, 01 Mar 2021 01:07:58 GMT
+last-modified: Wed, 02 Dec 2020 08:59:28 GMT
+strict-transport-security: max-age=31536000
+x-frame-options: SAMEORIGIN
+content-length: 10085
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 687 net-response-time-onstop 695   'e

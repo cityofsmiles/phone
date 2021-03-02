@@ -1,0 +1,222 @@
+Name=Facebook
+Description=Facebook smileys for Pidgin
+Icon=smile.png
+Author=mehdevil
+
+[default]
+smile.png	:-) :) :] =)
+big-smile.png	:-D :D =D
+frown.png	:-( :( :[ =(
+crying.png	:'(
+tongue-out.png	:-P :P :-p :p =P
+angel.png	O:) O:-)
+devil.png	3:) 3:-)
+confused.png	o.O O.o
+wink.png	;-) ;)
+surprised.png	:-O :O :-o :o
+squint.png	-_-
+angry.png	>:O >:-O >:o >:-o
+kiss.png	:-* :*
+heart.png	<3
+kiki.png	^_^
+glasses.png	8-) 8) B-) B)
+sunglasses.png	8-| 8| B-| B|
+shark.png	(^^^)
+robot.png	:|]
+grumpy.png	>:( >:-(
+pacman.png	:v
+unsure.png	:/ :-/ :\ :-\
+curly-lips.png	:3
+penguin.png	<(")
+thumb-up.png	(y) 👍
+poop.png	:poop: 💩
+putnam.png	:putnam:
+cloud.png	☁
+umbrella.png	☔
+sun.png	☀
+broken-heart.png	💔
+heart2.png	❤
+blue-heart.png	💙
+green-heart.png	💚
+yellow-heart.png	💛
+purple-heart.png	💜
+triple-hearts.png	󾬑 💗
+stabbed-heart.png	💘
+cool-heart.png	💓
+gift-heart.png	💝
+sparkling-heart.png	💖
+lips.png	💋
+couple-in-love.png	💑
+passioate-couple.png	💏
+star.png	🌟
+stars.png	✨
+music-note.png	🎵
+music-notes.png	🎶
+zzz.png	💤
+purple-devil.png	👿
+peace-fingers.png	✌
+dislike.png	👎
+clenched-fist.png	✊
+ok-fingers-sign.png	👌
+high-five.png	✋ 🙋
+hands-reaching-up.png	🙌 👐
+hands-pointing-up.png	☝
+muscle-arm.png	💪
+fist.png	👊
+clapping-hands.png	👏
+hand-shaking.png	👋
+hand-up.png	🙏
+finger-up.png	👆
+finger-right.png	👉
+finger-left.png	👈
+finger-down.png	👇
+alien.png	👽
+green-monster.png	👾
+Party-popper.png	🎉
+angel2.png	👼
+beer-mug.png	🍺
+bell.png	🔔
+balloon.png	🎈
+fire.png	🔥
+thunder.png	⚡
+ghost.png	👻
+moon.png	🌙
+phone.png	📞
+champagne-glass.png	🍸
+four-leaf-clover.png	🍀
+graduation.png	🎓
+pumpkin.png	🎃
+skull.png	💀
+nail-polish.png	💅
+wave.png	🌊
+christmas-tree.png	🎄
+pine-decoration.png	🎍
+wind-bell.png	🎐
+playboy-bunny.png	👯
+ear.png	👂
+nose.png	👃
+eyes.png	👀
+mouth.png	👄
+flower-bouquet.png	💐
+tv.png	📺
+hamburger.png	🍔
+guardsman.png	💂
+man-with-turban.png	👳
+Santa-claus.png	🎅
+policeman.png	👮
+construction-worker.png	👷
+princess.png	👸
+blonde-girl.png	👱
+chinese.png	👲
+boy.png	👦
+girl.png	👧
+man.png	👨
+woman.png	👩
+bald-man.png	👴
+old-woman.png	👵
+baby-face.png	👶
+holding-hands.png	👫
+holding-hands2.png	🎎
+dancer.png	💃
+strawberry.png	🍓
+orange.png	🍊
+apple.png	🍎
+droplets.png	💦
+foot-rice.png	🌾
+palm-tree.png	🌴
+cactus.png	🌵
+maple-leaf.png	🍁
+fallen-leaf.png	🍂
+Fluttering-leaf.png	🍃
+cherry-blossom.png	🌸
+rose.png	🌹
+tulip.png	🌷
+sunflower.png	🌻
+seedling.png	🌱
+hibiscus-flower.png	🌺
+snake.png	🐍
+bug.png	🐛
+puppy.png	🐶
+teddy-bear.png	🐻
+monkey-face.png	🐵
+mouse.png	🐭
+hamster.png	🐹
+wolf.png	🐺
+tiger.png	🐯
+horse-face.png	🐴
+piggy.png	🐷
+cat.png	🐱
+bunny.png	🐰
+poodle.png	🐩
+sheep.png	🐑
+penguin-face.png	🐧
+koala.png	🐨
+cow.png	🐮
+wild-boar.png	🐗
+chicken.png	🐔
+yellow-chick.png	🐥
+bird.png	🐦
+elephant.png	🐘
+horse.png	🐎
+monkey.png	🐒
+camel.png	🐫
+octopus.png	🐙
+dolphin.png	🐬
+whale.png	🐳
+tropical-fish.png	🐠
+fish.png	🐟
+blowfish.png	🐡
+seashell.png	🐚
+frog.png	🐸
+smiling.png	😃 😺
+smiling2.png	😄
+tongue-out-winking.png	😜
+mocking.png	😝 👅
+blush.png	☺
+ashamed.png	😋
+winking-face.png	😉
+normal.png	😌 😆
+sad-face.png	😔 🙀
+unamused.png	😒
+crying2.png	😢 😿
+in-trouble.png	😓
+sweating.png	😥
+frustrated.png	😰
+scared.png	😨
+terrified-with-fear.png	😱
+in-love.png	😍 😻
+kissy.png	😚
+heart-kiss.png	😘 😽
+crying-tears-of-joy.png	😂 😹
+sleepy.png	😪
+bad-smile.png	😏
+red-angry.png	😡
+eyes-wide-open.png	😳
+astonished.png	😲
+look-of-triumph.png	😤 😸 😼 😁
+disappointed.png	😞
+tired.png	😩
+dizzy.png	😵 😣 😫
+disturbed.png	😖
+crying-big-tears.png	😭
+mad-angry.png	😠
+mask.png	😷
+gift.png	🎁
+gift2.png	󾔐
+snowman.png	⛄
+pc.png	💻
+tablet-smartphone.png	📱
+smartphone-arrow.png	📲
+fax.png	📠
+minidisc.png	💽
+disk.png	💾
+cd.png	💿
+dvd.png	📀
+carp-streamers.png	🎏
+wind.png	💨
+footprints.png	🐾
+coffee.png	☕
+anger.png	💢
+cyclone.png	🌀
+umbrella-closed.png	🌂
+

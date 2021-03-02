@@ -1,8 +1,15 @@
-2021/02/25-12:55:36.497 1cf8 Reusing MANIFEST /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/25-12:55:36.498 1cf8 Recovering log #27
-2021/02/25-12:55:36.498 1cf8 Reusing old log /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000027.log 
-2021/02/25-12:55:38.721 1cf8 Level-0 table #32: started
-2021/02/25-12:55:38.722 1cf8 Level-0 table #32: 0 bytes OK
-2021/02/25-12:55:38.742 1cf8 Delete type=0 #27
-2021/02/25-12:55:38.743 1cf8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2021/02/25-12:55:38.743 1cf8 Manual compaction at level-1 from (begin) .. (end); will stop at (end)
+2021/02/27-12:34:58.840 16e0 Reusing MANIFEST /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/27-12:34:58.842 16e0 Recovering log #38
+2021/02/27-12:34:58.844 16e0 Reusing old log /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000038.log 
+2021/02/27-12:35:12.381 16be Level-0 table #43: started
+2021/02/27-12:35:12.395 16be Level-0 table #43: 1386 bytes OK
+2021/02/27-12:35:12.403 16be Delete type=0 #38
+2021/02/27-12:35:12.404 16be Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/02/27-12:35:12.404 16be Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x02\x01\x01\x1d\x001\x000\x006\x003\x009\x000\x001\x007\x002\x002\x004\x009\x008\x005\x003\x003\x007\x004\x008\x008\x004\x00:\x001\x00:\x00#\x00:\x00r\x00i\x00d' @ 2025 : 1
+2021/02/27-12:35:12.404 16be Compacting 1@1 + 1@2 files
+2021/02/27-12:35:12.415 16be Generated table #44@1: 72 keys, 15035 bytes
+2021/02/27-12:35:12.415 16be Compacted 1@1 + 1@2 files => 15035 bytes
+2021/02/27-12:35:12.423 16be compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/02/27-12:35:12.425 16be Delete type=2 #43
+2021/02/27-12:35:12.425 16be Delete type=2 #40
+2021/02/27-12:35:12.426 16be Manual compaction at level-1 from '\x00\x01\x02\x01\x01\x1d\x001\x000\x006\x003\x009\x000\x001\x007\x002\x002\x004\x009\x008\x005\x003\x003\x007\x004\x008\x008\x004\x00:\x001\x00:\x00#\x00:\x00r\x00i\x00d' @ 2025 : 1 .. (end); will stop at (end)

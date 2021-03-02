@@ -1,3 +1,8 @@
-2021/02/24-18:37:52.838 2765 Reusing MANIFEST /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/24-18:37:52.840 2765 Recovering log #16
-2021/02/24-18:37:52.841 2765 Reusing old log /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000016.log 
+2021/02/27-09:19:14.573 197c Reusing MANIFEST /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/27-09:19:14.575 197c Recovering log #16
+2021/02/27-09:19:14.577 197c Reusing old log /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000016.log 
+2021/02/27-09:20:15.817 1a85 Level-0 table #20: started
+2021/02/27-09:20:15.817 1a85 Level-0 table #20: 0 bytes OK
+2021/02/27-09:20:15.833 1a85 Delete type=0 #16
+2021/02/27-09:20:15.834 1a85 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/02/27-09:20:15.834 1a85 Manual compaction at level-1 from (begin) .. (end); will stop at (end)
