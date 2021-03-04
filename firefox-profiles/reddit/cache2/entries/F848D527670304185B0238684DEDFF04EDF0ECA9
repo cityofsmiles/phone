@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.80.0" />
+    <meta name="description" content="Pidgin is a universal chat client, allowing you to consolidate all your different messaging apps into a single tool.">
+    <link rel="icon" type="image/png" href="/images/pidgin-circle-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/pidgin-circle-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/pidgin-circle-96.png" sizes="96x96">
+    <title>Help :: Pidgin, the universal chat client</title>
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="/css/auto-complete.css" rel="stylesheet">
+    <link href="/css/theme.css" rel="stylesheet">
+    <link href="/css/hugo-theme.css" rel="stylesheet">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+        :root #header+#content>#left>#rlblock_left {
+            display: none !important;
+        }
+    </style>
+    <script>
+        var isCodeToClipboardEnabled = true
+    
+  </script>
+    <link rel="stylesheet" href="/css/custom.css">
+    <!--
+    Hugo: 2021-02-25T16:00:32 &#43;0000
+    - Job:
+        n/a
+        2021-02-25T16:00:04 &#43;0000
+    - Commit: 494965ad04417a1d610d9726fc744777db051586
+    - production
+//-->
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#8451A1">
+    <meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta property="og:title" content="Help" />
+    <meta property="og:description" content="Pidgin is a universal chat client, allowing you to consolidate all your different messaging apps into a single tool." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pidgin.im/help/" />
+    <meta property="og:image" content="https://pidgin.im/images/pidgin-circle-256.png" />
+    <meta property="og:updated_time" content="2019-08-21T04:05:48+00:00" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://pidgin.im/images/pidgin-circle-256.png" />
+    <meta name="twitter:title" content="Help" />
+    <meta name="twitter:description" content="Pidgin is a universal chat client, allowing you to consolidate all your different messaging apps into a single tool." />
+</head>
+
+<body class="" data-url="/help/">
+    <nav id="sidebar" class="">
+        <div id="header-wrapper">
+            <div id="header">
+                <a href="/"><img src="/images/logo.png" alt="pidgin logo"></a>
+            </div>
+            <div class="searchbox">
+                <label for="search-by"><i class="fas fa-search"></i></label>
+                <input data-search-input id="search-by" type="search" placeholder="Search...">
+                <span data-search-clear=""><i class="fas fa-times"></i></span>
+            </div>
+            <script type="text/javascript" src="/js/lunr.min.js"></script>
+            <script type="text/javascript" src="/js/auto-complete.js"></script>
+            <script type="text/javascript">
+                var baseurl = "https:\/\/pidgin.im\/";
+            </script>
+            <script type="text/javascript" src="/js/search.js"></script>
+        </div>
+        <div class="highlightable">
+            <ul class="topics">
+                <li data-nav-id="/install/" title="Install" class="dd-item">
+                    <a href="/install/">
+                        Install
+                    </a>
+                </li>
+                <li data-nav-id="/plugins/" title="Plugins" class="dd-item">
+                    <a href="/plugins/">
+                        Plugins
+                    </a>
+                </li>
+                <li data-nav-id="/about/" title="About" class="dd-item">
+                    <a href="/about/">
+                        About
+                    </a>
+                    <ul>
+                        <li data-nav-id="/about/community/" title="Community" class="dd-item ">
+                            <a href="/about/community/">
+                                Community
+                            </a>
+                        </li>
+                        <li data-nav-id="/about/philosophy/" title="Philosophy and Goals" class="dd-item ">
+                            <a href="/about/philosophy/">
+                                Philosophy and Goals
+                            </a>
+                        </li>
+                        <li data-nav-id="/about/supported-languages/" title="Supported Languages" class="dd-item ">
+                            <a href="/about/supported-languages/">
+                                Supported Languages
+                            </a>
+                        </li>
+                        <li data-nav-id="/about/security/" title="Security" class="dd-item">
+                            <a href="/about/security/">
+                                Security
+                            </a>
+                            <ul>
+                                <li data-nav-id="/about/security/advisories/" title="Advisories" class="dd-item">
+                                    <a href="/about/security/advisories/">
+                                        Advisories
+                                    </a>
+                                    <ul>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li data-nav-id="/help/" title="Help" class="dd-item parent active">
+                    <a href="/help/">
+                        Help
+                    </a>
+                    <ul>
+                        <li data-nav-id="/help/protocols/" title="Services (Protocols)" class="dd-item">
+                            <a href="/help/protocols/">
+                                Services (Protocols)
+                            </a>
+                            <ul>
+                                <li data-nav-id="/help/protocols/bonjour/" title="Bonjour" class="dd-item ">
+                                    <a href="/help/protocols/bonjour/">
+                                        Bonjour
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/gadugadu/" title="Gadu-Gadu" class="dd-item ">
+                                    <a href="/help/protocols/gadugadu/">
+                                        Gadu-Gadu
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/groupwise/" title="GroupWise" class="dd-item ">
+                                    <a href="/help/protocols/groupwise/">
+                                        GroupWise
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/irc/" title="IRC" class="dd-item ">
+                                    <a href="/help/protocols/irc/">
+                                        IRC
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/sametime/" title="Sametime" class="dd-item ">
+                                    <a href="/help/protocols/sametime/">
+                                        Sametime
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/silc/" title="SILC" class="dd-item ">
+                                    <a href="/help/protocols/silc/">
+                                        SILC
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/xmpp/" title="XMPP (Jabber)" class="dd-item">
+                                    <a href="/help/protocols/xmpp/">
+                                        XMPP (Jabber)
+                                    </a>
+                                    <ul>
+                                        <li data-nav-id="/help/protocols/xmpp/supportedxep/" title="Supported XEP&#39;s" class="dd-item ">
+                                            <a href="/help/protocols/xmpp/supportedxep/">
+                                                Supported XEP&#39;s
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-nav-id="/help/protocols/zephyr/" title="Zephyr" class="dd-item ">
+                                    <a href="/help/protocols/zephyr/">
+                                        Zephyr
+                                    </a>
+                                </li>
+                                <li data-nav-id="/help/protocols/otherprotocols/" title="Other Protocols" class="dd-item ">
+                                    <a href="/help/protocols/otherprotocols/">
+                                        Other Protocols
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/help/theming/" title="Theming Pidgin" class="dd-item ">
+                            <a href="/help/theming/">
+                                Theming Pidgin
+                            </a>
+                        </li>
+                        <li data-nav-id="/help/windows/" title="Windows-Specific Questions" class="dd-item ">
+                            <a href="/help/windows/">
+                                Windows-Specific Questions
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li data-nav-id="/development/" title="Development" class="dd-item">
+                    <a href="/development/">
+                        Development
+                    </a>
+                    <ul>
+                        <li data-nav-id="/development/building/" title="Building" class="dd-item">
+                            <a href="/development/building/">
+                                Building
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/building/3.0.0/" title="3.0.0" class="dd-item">
+                                    <a href="/development/building/3.0.0/">
+                                        3.0.0
+                                    </a>
+                                </li>
+                                <li data-nav-id="/development/building/2.x.y/" title="2.x.y" class="dd-item">
+                                    <a href="/development/building/2.x.y/">
+                                        2.x.y
+                                    </a>
+                                    <ul>
+                                        <li data-nav-id="/development/building/2.x.y/windows/" title="Windows" class="dd-item ">
+                                            <a href="/development/building/2.x.y/windows/">
+                                                Windows
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/contributing/" title="Contributing" class="dd-item">
+                            <a href="/development/contributing/">
+                                Contributing
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/contributing/mercurial/" title="Using Mercurial" class="dd-item ">
+                                    <a href="/development/contributing/mercurial/">
+                                        Using Mercurial
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/gsoc/" title="Google Summer of Code" class="dd-item">
+                            <a href="/development/gsoc/">
+                                Google Summer of Code
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/gsoc/instructions/" title="GSoC Instructions" class="dd-item ">
+                                    <a href="/development/gsoc/instructions/">
+                                        GSoC Instructions
+                                    </a>
+                                </li>
+                                <li data-nav-id="/development/gsoc/ideas/" title="GSoC Ideas" class="dd-item ">
+                                    <a href="/development/gsoc/ideas/">
+                                        GSoC Ideas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/voice-and-video/" title="Voice and Video" class="dd-item">
+                            <a href="/development/voice-and-video/">
+                                Voice and Video
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/voice-and-video/voice-and-video-api/" title="Voice and Video API" class="dd-item ">
+                                    <a href="/development/voice-and-video/voice-and-video-api/">
+                                        Voice and Video API
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/version-control/" title="Version Control" class="dd-item ">
+                            <a href="/development/version-control/">
+                                Version Control
+                            </a>
+                        </li>
+                        <li data-nav-id="/development/i18n/" title="Internationalization" class="dd-item">
+                            <a href="/development/i18n/">
+                                Internationalization
+                            </a>
+                            <ul>
+                                <li data-nav-id="/development/i18n/tips/" title="Tips" class="dd-item ">
+                                    <a href="/development/i18n/tips/">
+                                        Tips
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-nav-id="/development/faq/" title="FAQ" class="dd-item ">
+                            <a href="/development/faq/">
+                                FAQ
+                            </a>
+                        </li>
+                        <li data-nav-id="/development/design-guidelines/" title="Design Guidelines" class="dd-item ">
+                            <a href="/development/design-guidelines/">
+                                Design Guidelines
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li data-nav-id="/post/" title="Blog" class="dd-item">
+                    <a href="/post/">
+                        Blog
+                    </a>
+                    <ul>
+                        <li data-nav-id="/posts/2021-02-libgnt-2.14.1-released/" title="libgnt 2.14.1 Released" class="dd-item ">
+                            <a href="/posts/2021-02-libgnt-2.14.1-released/">
+                                libgnt 2.14.1 Released
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2021-02-bintray-sunsetting/" title="Bintray Sunsetting" class="dd-item ">
+                            <a href="/posts/2021-02-bintray-sunsetting/">
+                                Bintray Sunsetting
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2020-06-2.14.1-released/" title="2.14.1 Released!" class="dd-item ">
+                            <a href="/posts/2020-06-2.14.1-released/">
+                                2.14.1 Released!
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2020-06-2.14.0-released/" title="2.14.0 Released!" class="dd-item ">
+                            <a href="/posts/2020-06-2.14.0-released/">
+                                2.14.0 Released!
+                            </a>
+                        </li>
+                        <li data-nav-id="/posts/2020-01-nest-launch/" title="Nest Launch" class="dd-item ">
+                            <a href="/posts/2020-01-nest-launch/">
+                                Nest Launch
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <section id="shortcuts">
+                <h3></h3>
+                <ul>
+                    <li>
+                        <a class="padding" href="https://issues.imfreedom.org/issues/PIDGIN"><i class='fas fa-fw fa-tasks'></i> Issue Tracker</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://keep.imfreedom.org/pidgin/"><i class='fas fa-fw fa-code'></i> Repositories</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="http://webchat.freenode.net/?channels=pidgin"><i class='fas fa-fw fa-comment-dots'></i> IRC</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://discord.gg/pB9fbVC"><i class='fab fa-fw fa-discord'></i> Discord</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://www.facebook.com/pidgin.im/"><i class='fab fa-fw fa-facebook-f'></i> Facebook</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://reddit.com/r/pidgin"><i class='fab fa-fw fa-reddit-alien'></i> Reddit</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://twitter.com/impidgin"><i class='fab fa-fw fa-twitter'></i> Twitter</a>
+                    </li>
+                    <li>
+                        <a class="padding" href="https://shop.spreadshirt.com/imfreedom"><i class='fas fa-fw fa-tshirt'></i> Merchandise</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="prefooter">
+                <hr />
+                <ul>
+                    <li>
+                        <a class="padding">
+                            <i class="fas fa-language fa-fw"></i>
+                            <div class="select-style">
+                                <select id="select-language" onchange="location = this.value;">
+                                    <option id="en" value="/help/" selected>English (US)</option>
+                                </select>
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+                                    <g>
+                                        <g id="arrow-drop-down">
+                                            <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="footer">
+                <a href="https://imfreedom.org/donate" class="donate-button">
+                    <i class="fas fa-heart"></i> Donate
+                </a>
+            </section>
+        </div>
+    </nav>
+    <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+            <div>
+                <div id="top-bar">
+                    <div id="top-github-link">
+                        <a class="github-link" title='Edit this page' href="https://keep.imfreedom.org/pidgin/nest/file/default/hugo/content/help/_index.md" target="blank">
+                            <i class="fas fa-code-branch"></i>
+                            <span id="top-github-link-text">Edit this page</span>
+                        </a>
+                    </div>
+                    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <span id="sidebar-toggle-span">
+                            <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </span>
+                        <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                        <span class="links">
+                            <a href='/'>Pidgin</a> > Help
+                        </span>
+                    </div>
+                    <div class="progress">
+                        <div class="wrapper">
+                            <nav id="TableOfContents"></nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>Help</h1>
+            <div id="body-inner">
+                <p>We get asked questions about Pidgin a lot. Many of those questions are actually
+                    the same questions over and over. Here we assemble a lot of them for your
+                    benefit, hoping that these questions and answers allow you to help yourself
+                    quickly.</p>
+                <footer id="footline">
+                    <div class="footline-block">
+                        Modified 2019-08-21
+                    </div>
+                    <div class="footline-block footline-old-site-info">
+                        To see content from the old wiki visit a
+                        <a href="https://old.pidgin.im" rel="nofollow">
+                            old.pidgin.im
+                        </a>
+                    </div>
+                    <ul class="footline-block footline-columns">
+                        <li>
+                            <a href="https://issues.imfreedom.org/issues/PIDGIN"><i class='fas fa-fw fa-tasks'></i> Issue Tracker</a>
+                        </li>
+                        <li>
+                            <a href="https://keep.imfreedom.org/pidgin/"><i class='fas fa-fw fa-code'></i> Repositories</a>
+                        </li>
+                        <li>
+                            <a href="http://webchat.freenode.net/?channels=pidgin"><i class='fas fa-fw fa-comment-dots'></i> IRC</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/pB9fbVC"><i class='fab fa-fw fa-discord'></i> Discord</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/pidgin.im/"><i class='fab fa-fw fa-facebook-f'></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://reddit.com/r/pidgin"><i class='fab fa-fw fa-reddit-alien'></i> Reddit</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/impidgin"><i class='fab fa-fw fa-twitter'></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://shop.spreadshirt.com/imfreedom"><i class='fas fa-fw fa-tshirt'></i> Merchandise</a>
+                        </li>
+                    </ul>
+                    <div class="footline-block">
+                        <section class="supporters">
+                            <b>Our Supporters</b>
+                            <div>
+                                <a href="https://digitalocean.com">
+                                    <img src="/images/badges/DO_Logo_horizontal_black.svg" alt="DigitalOcean" />
+                                </a>
+                                <a href="https://sourceforge.net">
+                                    <img src="/images/badges/source-forge-logo.svg" alt="SourceForge" style="min-width:190px" />
+                                </a>
+                                <a href="https://packagecloud.io/">
+                                    <img src="/images/badges/packagecloud.svg" alt="packagecloud" />
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <ul class="footline-block footline-columns copyright-text">
+                        <li>
+                            &copy; Pidgin
+                        </li>
+                        <li>
+                            Content - GPL3
+                        </li>
+                        <li>
+                            <a href="https://github.com/matcornic/hugo-theme-learn">Theme</a> - MIT
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+        <div id="navigation">
+        </div>
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+        <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1614268832"></script>
+    <script src="/js/perfect-scrollbar.min.js?1614268832"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1614268832"></script>
+    <script src="/js/jquery.sticky.js?1614268832"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1614268832"></script>
+    <script src="/js/highlight.pack.js?1614268832"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script src="/js/modernizr.custom.71422.js?1614268832"></script>
+    <script src="/js/learn.js?1614268832"></script>
+    <script src="/js/hugo-learn.js?1614268832"></script>
+    <script src="/js/js.cookie.min.js"></script>
+    <div id="notification-stage">
+        <div class="alert-bar notification-bar">
+            <i class="fas fa-exclamation"></i>
+            <div class="alert-bar-close-button"><i class="fas fa-times"></i></div>
+            <span>We've launched the new site. Think we're missing something?<br /><a href="/posts/2020-01-nest-launch/">Read the blog post</a> or <a href="https://old.pidgin.im">Go to the old site</a></span>
+        </div>
+    </div>
+    <script>
+        try {
+            var code = "nest-launch";
+        } catch (e) {
+            console.error("Error with cookie code", e);
+        }
+
+        if (code && code !== Cookies.get("hide-notification")) {
+            var bar = $(".notification-bar");
+            $(".padding.highlightable").prepend(bar);
+            $(".alert-bar-close-button").on("click", function(elem) {
+                Cookies.set("hide-notification", code);
+                bar.detach();
+            });
+        }
+    </script>
+    <style>
+        #notification-stage {
+            display: none;
+        }
+
+        .alert-bar {
+            font-weight: bold;
+            padding: 20px;
+            background-color: #4caf50;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .alert-bar a {
+            color: darkgreen;
+        }
+
+        .alert-bar a:hover {
+            color: black;
+        }
+
+        .alert-bar-close-button {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .alert-bar-close-button:hover {
+            color: black;
+        }
+    </style>
+</body>
+
+</html>5©tÙh      `?
+Â`?
+ÁB∂{û`?ƒù   ?    O^partitionKey=%28https%2Cpidgin.im%29,:https://pidgin.im/help/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+accept-ranges: bytes
+content-type: text/html; charset=utf-8
+date: Wed, 03 Mar 2021 04:04:54 GMT
+last-modified: Thu, 25 Feb 2021 16:00:47 GMT
+strict-transport-security: max-age=31536000
+x-frame-options: SAMEORIGIN
+content-length: 30231
+X-Firefox-Spdy: h2
+ original-response-headers accept-ranges: bytes
+content-type: text/html; charset=utf-8
+date: Wed, 03 Mar 2021 04:04:54 GMT
+last-modified: Thu, 25 Feb 2021 16:00:47 GMT
+strict-transport-security: max-age=31536000
+x-frame-options: SAMEORIGIN
+content-length: 30231
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 1799 net-response-time-onstop 2097   v

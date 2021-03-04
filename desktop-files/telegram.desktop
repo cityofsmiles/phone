@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Telegram
-Exec=firefox -profile "/home/manjaro/Documents/phone/firefox-profiles/fb-personal" web.telegram.org web.telegram.org 
+Exec=firefox -profile "/home/manjaro/Documents/phone/firefox-profiles/fb-personal" web.telegram.org #web.telegram.org 
 Icon=/home/manjaro/Documents/phone/icons/telegram.png
 Terminal=false
 Type=Application
