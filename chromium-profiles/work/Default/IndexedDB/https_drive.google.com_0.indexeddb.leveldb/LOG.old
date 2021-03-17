@@ -1,15 +1,3 @@
-2021/03/03-09:11:37.762 1d5a Reusing MANIFEST /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/03-09:11:37.766 1d5a Recovering log #46
-2021/03/03-09:11:37.767 1d5a Reusing old log /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000046.log 
-2021/03/03-09:11:54.164 1d54 Level-0 table #51: started
-2021/03/03-09:11:54.180 1d54 Level-0 table #51: 1412 bytes OK
-2021/03/03-09:11:54.198 1d54 Delete type=0 #46
-2021/03/03-09:11:54.199 1d54 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2021/03/03-09:11:54.200 1d54 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x02\x02\x01\x1d\x001\x000\x006\x003\x009\x000\x001\x007\x002\x002\x004\x009\x008\x005\x003\x003\x007\x004\x008\x008\x004\x00:\x001\x00:\x00#\x00:\x00r\x00i\x00d' @ 2088 : 1
-2021/03/03-09:11:54.200 1d54 Compacting 1@1 + 1@2 files
-2021/03/03-09:11:54.213 1d54 Generated table #52@1: 72 keys, 15033 bytes
-2021/03/03-09:11:54.213 1d54 Compacted 1@1 + 1@2 files => 15033 bytes
-2021/03/03-09:11:54.229 1d54 compacted to: files[ 0 0 1 0 0 0 0 ]
-2021/03/03-09:11:54.231 1d54 Delete type=2 #48
-2021/03/03-09:11:54.231 1d54 Delete type=2 #51
-2021/03/03-09:11:54.236 1d38 Manual compaction at level-1 from '\x00\x01\x02\x02\x01\x1d\x001\x000\x006\x003\x009\x000\x001\x007\x002\x002\x004\x009\x008\x005\x003\x003\x007\x004\x008\x008\x004\x00:\x001\x00:\x00#\x00:\x00r\x00i\x00d' @ 2088 : 1 .. (end); will stop at (end)
+2021/03/04-08:31:29.725 1a0f Reusing MANIFEST /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/04-08:31:29.730 1a0f Recovering log #50
+2021/03/04-08:31:29.731 1a0f Reusing old log /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000050.log 

@@ -1,0 +1,1690 @@
+webpackJsonp([21],{
+
+/***/ 1793:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+
+var _extends2 = __webpack_require__(7);
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _getPrototypeOf = __webpack_require__(5);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(1);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(2);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(3);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(4);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _dec, _dec2, _class;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBodyClassname = __webpack_require__(32);
+
+var _reactBodyClassname2 = _interopRequireDefault(_reactBodyClassname);
+
+var _reactRedux = __webpack_require__(10);
+
+var _classnames = __webpack_require__(14);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _reactHelmet = __webpack_require__(47);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
+var _reactRouter = __webpack_require__(16);
+
+var _reactSvgInline = __webpack_require__(13);
+
+var _reactSvgInline2 = _interopRequireDefault(_reactSvgInline);
+
+var _GifViews = __webpack_require__(720);
+
+var _GifViews2 = _interopRequireDefault(_GifViews);
+
+var _IframePlayer = __webpack_require__(1834);
+
+var _IframePlayer2 = _interopRequireDefault(_IframePlayer);
+
+var _trackPageViews = __webpack_require__(292);
+
+var _trackPageViews2 = _interopRequireDefault(_trackPageViews);
+
+var _selectors = __webpack_require__(11);
+
+var _meta = __webpack_require__(2028);
+
+var _meta2 = _interopRequireDefault(_meta);
+
+__webpack_require__(2030);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Iframe = (_dec = (0, _trackPageViews2.default)('pageview_iframe'), _dec2 = (0, _reactRedux.connect)(function (state, _ref) {
+  var params = _ref.params;
+
+  var gfyId = params.gfyId.toLowerCase();
+  return {
+    gfyId: gfyId,
+    gfyItem: (0, _selectors.getGifFromCache)(state, gfyId)
+  };
+}), _dec(_class = _dec2(_class = function (_Component) {
+  (0, _inherits3.default)(Iframe, _Component);
+
+  function Iframe(props) {
+    (0, _classCallCheck3.default)(this, Iframe);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (Iframe.__proto__ || (0, _getPrototypeOf2.default)(Iframe)).call(this, props));
+
+    var query = _this.props.location.query;
+
+    _this.playerProps = (0, _IframePlayer.parseQueryParams)(query);
+    return _this;
+  }
+
+  (0, _createClass3.default)(Iframe, [{
+    key: 'render',
+    value: function render() {
+      var gfyItem = this.props.gfyItem;
+      var gfyId = gfyItem.gfyId,
+          hasTransparency = gfyItem.hasTransparency,
+          views = gfyItem.views;
+
+
+      return _react2.default.createElement(
+        _reactBodyClassname2.default,
+        { className: 'iframe' },
+        _react2.default.createElement(
+          'div',
+          {
+            className: (0, _classnames2.default)('iframe-container', {
+              'has-transparency': hasTransparency
+            })
+          },
+          _react2.default.createElement(_reactHelmet2.default, (0, _meta2.default)((0, _extends3.default)({}, gfyItem))),
+          _react2.default.createElement(
+            _react2.default.Fragment,
+            null,
+            _react2.default.createElement(_IframePlayer2.default, (0, _extends3.default)({ gfyItem: gfyItem }, this.playerProps))
+          )
+        )
+      );
+    }
+  }]);
+  return Iframe;
+}(_react.Component)) || _class) || _class);
+exports.default = Iframe;
+
+/***/ }),
+
+/***/ 1834:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.parseQueryParams = undefined;
+
+var _IframePlayer = __webpack_require__(1852);
+
+var _IframePlayer2 = _interopRequireDefault(_IframePlayer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _IframePlayer2.default;
+exports.parseQueryParams = _IframePlayer.parseQueryParams;
+
+/***/ }),
+
+/***/ 1852:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.parseQueryParams = exports.default = undefined;
+
+var _extends2 = __webpack_require__(7);
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _getPrototypeOf = __webpack_require__(5);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(1);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(2);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(3);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(4);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _dec, _class, _class2, _temp; /* global playerjs */
+
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactRedux = __webpack_require__(10);
+
+var _classnames = __webpack_require__(14);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _reactSvgInline = __webpack_require__(13);
+
+var _reactSvgInline2 = _interopRequireDefault(_reactSvgInline);
+
+var _Player = __webpack_require__(696);
+
+var _Media = __webpack_require__(112);
+
+var _ShareOverlay = __webpack_require__(294);
+
+var _ShareOverlay2 = _interopRequireDefault(_ShareOverlay);
+
+var _SoundControl = __webpack_require__(473);
+
+var _SoundControl2 = _interopRequireDefault(_SoundControl);
+
+var _ProfileInfoOverview = __webpack_require__(694);
+
+var _ProfileInfoOverview2 = _interopRequireDefault(_ProfileInfoOverview);
+
+var _is360Gif = __webpack_require__(296);
+
+var _is360Gif2 = _interopRequireDefault(_is360Gif);
+
+var _OSDetection = __webpack_require__(469);
+
+var _canonical = __webpack_require__(103);
+
+__webpack_require__(1853);
+
+var _ic_send = __webpack_require__(476);
+
+var _ic_send2 = _interopRequireDefault(_ic_send);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var IFRAME_MESSAGE_PLAY = 'play';
+var IFRAME_MESSAGE_PAUSE = 'pause';
+
+var IframePlayer = (_dec = (0, _reactRedux.connect)(function (state) {
+  return {
+    mobile: state.renderConfig.mobile
+  };
+}), _dec(_class = (_temp = _class2 = function (_Component) {
+  (0, _inherits3.default)(IframePlayer, _Component);
+
+  function IframePlayer(props) {
+    (0, _classCallCheck3.default)(this, IframePlayer);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (IframePlayer.__proto__ || (0, _getPrototypeOf2.default)(IframePlayer)).call(this, props));
+
+    _this.handlePlayerClick = function () {
+      if (_this.props.controls && !_this.props.mobile) {
+        var decoratedGfyId = (0, _canonical.generateDecoratedGfyId)(_this.props.gfyItem);
+        var contentUrl = 'https://redgifs.com/watch/' + decoratedGfyId;
+        window.open(contentUrl, '_blank');
+      }
+
+      if (_this.props.mobile && _this.state.muted) {
+        _this.handleShareOpen();
+      }
+    };
+
+    _this.handleShareOpen = function () {
+      _this.setState({ shareOpened: true });
+      if (_this.video) _this.video.pause();
+    };
+
+    _this.handleShareClose = function () {
+      _this.setState({ shareOpened: false });
+      if (_this.video) _this.video.play();
+    };
+
+    _this.handlePlayerStateChange = function (newState) {
+      var controlsVisible = newState.controlsVisible;
+
+
+      if (_this.state.userVisible !== controlsVisible) {
+        _this.setState({ userVisible: controlsVisible });
+      }
+    };
+
+    _this.getRef = function (video) {
+      _this.video = video;
+      var getRef = _this.props.getRef;
+
+      if (getRef) getRef(video);
+      if (_this.video) {
+        _this.initEmbedlyReceiver();
+      }
+    };
+
+    _this.handleWindowMessage = function (event) {
+      var data = event.data;
+
+      if (data) {
+        switch (data) {
+          case IFRAME_MESSAGE_PLAY:
+            if (_this.video) _this.video.play();
+            break;
+
+          case IFRAME_MESSAGE_PAUSE:
+            if (_this.video) _this.video.pause();
+            break;
+
+          default:
+            break;
+        }
+      }
+    };
+
+    _this.handleSoundControlClick = function (event, _ref) {
+      var muted = _ref.muted;
+
+      _this.video.muted = muted;
+      _this.setState({ muted: muted });
+    };
+
+    _this.initEmbedlyReceiver = function () {
+      if (typeof playerjs === 'undefined') return;
+
+      _this.receiver = new playerjs.Receiver();
+
+      _this.receiver.on('play', function () {
+        _this.video.play();
+        _this.receiver.emit('play');
+      });
+
+      _this.receiver.on('pause', function () {
+        _this.video.pause();
+        _this.receiver.emit('pause');
+      });
+
+      _this.receiver.on('getCurrentTime', function (callback) {
+        return callback(_this.video.currentTime);
+      });
+
+      _this.receiver.on('setCurrentTime', function (value) {
+        _this.video.currentTime = value;
+      });
+
+      _this.receiver.on('getPaused', function (callback) {
+        return callback(_this.video.paused);
+      });
+
+      _this.receiver.on('getDuration', function (callback) {
+        return callback(_this.video.duration);
+      });
+
+      _this.receiver.on('getVolume', function (callback) {
+        return callback(_this.video.volume * 100);
+      });
+
+      _this.receiver.on('setVolume', function (value) {
+        return _this.video.volume = value / 100;
+      });
+
+      _this.receiver.on('mute', function () {
+        return _this.video.mute = true;
+      });
+
+      _this.receiver.on('unmute', function () {
+        return _this.video.mute = false;
+      });
+
+      _this.receiver.on('getMuted', function (callback) {
+        return callback(_this.video.mute);
+      });
+
+      _this.receiver.on('getLoop', function (callback) {
+        return callback(_this.video.loop);
+      });
+
+      _this.receiver.on('setLoop', function (value) {
+        return _this.video.loop = value;
+      });
+
+      _this.video.addEventListener('ended', function () {
+        return _this.receiver.emit('ended');
+      });
+
+      _this.video.addEventListener('timeupdate', function () {
+        _this.receiver.emit('timeupdate', {
+          seconds: _this.video.currentTime,
+          duration: _this.video.duration
+        });
+      });
+
+      _this.receiver.ready();
+    };
+
+    _this.user = function () {
+      var _this$props = _this.props,
+          controls = _this$props.controls,
+          gfyItem = _this$props.gfyItem;
+      var userVisible = _this.state.userVisible;
+      var published = gfyItem.published,
+          userData = gfyItem.userData;
+
+
+      if (!userData) return null;
+
+      var shouldRender = controls && parseInt(published, 10);
+
+      return shouldRender ? _react2.default.createElement(
+        'div',
+        {
+          key: 'iframe-top',
+          className: (0, _classnames2.default)('iframe-top', {
+            visible: userVisible
+          })
+        },
+        _react2.default.createElement(_ProfileInfoOverview2.default, { user: userData, target: '_blank' })
+      ) : null;
+    };
+
+    _this.state = {
+      muted: true,
+      userVisible: _this.props.controls,
+      shareOpened: false
+    };
+    return _this;
+  }
+
+  (0, _createClass3.default)(IframePlayer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.addEventListener('message', this.handleWindowMessage);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      window.removeEventListener('message', this.handleWindowMessage);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _state = this.state,
+          muted = _state.muted,
+          shareOpened = _state.shareOpened;
+      var _props = this.props,
+          autoPlay = _props.autoPlay,
+          backgroundColor = _props.backgroundColor,
+          controls = _props.controls,
+          forceVideo = _props.forceVideo,
+          gfyItem = _props.gfyItem,
+          hd = _props.hd,
+          logo = _props.logo,
+          loop = _props.loop,
+          mobile = _props.mobile,
+          playbackRate = _props.playbackRate;
+      var gfyId = gfyItem.gfyId,
+          hasAudio = gfyItem.hasAudio;
+
+
+      var cornerButton = hasAudio && mobile ? muted ? _react2.default.createElement(_SoundControl2.default, { gfyId: gfyId, onClick: this.handleSoundControlClick }) : _react2.default.createElement(_reactSvgInline2.default, {
+        className: (0, _classnames2.default)('ic ic-send', {
+          low: !(0, _OSDetection.isAndroid)()
+        }),
+        svg: _ic_send2.default,
+        onClick: this.handleShareOpen
+      }) : null;
+
+      var VideoComponent = (0, _is360Gif2.default)(gfyItem) ? _Media.Video360 : _Media.Video;
+
+      var player = !forceVideo && gfyItem.hasTransparency ? !mobile ? _react2.default.createElement(_Player.ImagePlayer, {
+        backgroundColor: backgroundColor || 'transparent',
+        gfyItem: gfyItem,
+        controls: controls,
+        fullscreenElement: this.iframeContainer,
+        onStateChange: this.handlePlayerStateChange,
+        onClick: this.handlePlayerClick
+      }) : _react2.default.createElement(_Media.Image, {
+        backgroundColor: backgroundColor || 'transparent',
+        gfyItem: gfyItem,
+        onClick: this.handlePlayerClick
+      }) : !mobile ? _react2.default.createElement(_Player.VideoPlayer, {
+        autoPlay: autoPlay,
+        backgroundColor: backgroundColor || '#000000',
+        controls: controls,
+        fullscreenElement: this.iframeContainer,
+        getRef: this.getRef,
+        gfyItem: gfyItem,
+        hd: hd,
+        loop: loop,
+        logo: logo,
+        onClick: this.handlePlayerClick,
+        onStateChange: this.handlePlayerStateChange,
+        show360: true,
+        playbackRate: playbackRate
+      }) : _react2.default.createElement(VideoComponent, {
+        highQuality: hd,
+        loop: loop,
+        backgroundColor: backgroundColor || '#000000',
+        getRef: this.getRef,
+        gfyItem: gfyItem,
+        controls: !muted,
+        onClick: this.handlePlayerClick
+      });
+
+      var ui = !mobile ? this.user() : shareOpened ? _react2.default.createElement(_ShareOverlay2.default, {
+        gfyItem: gfyItem,
+        onCloseButtonClick: this.handleShareClose
+      }) : null;
+
+      return _react2.default.createElement(
+        'div',
+        {
+          className: 'iframe-player-container',
+          onClick: this.handleClick,
+          ref: function ref(el) {
+            return _this2.iframeContainer = el;
+          }
+        },
+        player,
+        ui,
+        cornerButton
+      );
+    }
+  }]);
+  return IframePlayer;
+}(_react.Component), _class2.defaultProps = {
+  autoPlay: true,
+  controls: true,
+  forceVideo: false,
+  hd: false,
+  logo: true,
+  loop: true,
+  playbackRate: 1
+}, _temp)) || _class);
+
+/**
+ * Helper method for parsing query parameters
+ */
+
+exports.default = IframePlayer;
+var parseQueryParams = exports.parseQueryParams = function parseQueryParams(query) {
+  var autoPlay = query.autoplay !== '0';
+
+  return (0, _extends3.default)({}, typeof query.autoplay !== 'undefined' && {
+    autoPlay: autoPlay
+  }, typeof query.controls !== 'undefined' && autoPlay && {
+    controls: query.controls !== '0',
+    userVisible: query.controls !== '0'
+  }, typeof query.speed !== 'undefined' && !isNaN(parseFloat(query.speed)) && {
+    playbackRate: parseFloat(query.speed)
+  }, typeof query.loops !== 'undefined' && !isNaN(parseInt(query.loops, 10)) && {
+    loops: parseInt(query.loops, 10)
+  }, typeof query.hd !== 'undefined' && parseInt(query.hd, 10) === 1 && {
+    hd: true
+  });
+};
+
+/***/ }),
+
+/***/ 1853:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"colorVarBlue":"#2475ff","colorVarLightBlue":"#3aa8ff","colorVarViolet":"#8c18f1","colorVarAlmostBlack":"#090a0b"};
+
+/***/ }),
+
+/***/ 2028:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _stringify = __webpack_require__(147);
+
+var _stringify2 = _interopRequireDefault(_stringify);
+
+var _freeze = __webpack_require__(46);
+
+var _freeze2 = _interopRequireDefault(_freeze);
+
+var _meta = __webpack_require__(27);
+
+var _schema = __webpack_require__(470);
+
+var _isRedGIFsContent = __webpack_require__(2029);
+
+var _isRedGIFsContent2 = _interopRequireDefault(_isRedGIFsContent);
+
+var _TemplateLayout = __webpack_require__(167);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var meta = function meta(gfyItem) {
+  var createDate = gfyItem.createDate,
+      extraLemmas = gfyItem.extraLemmas,
+      frameRate = gfyItem.frameRate,
+      gatekeeper = gfyItem.gatekeeper,
+      gfyId = gfyItem.gfyId,
+      gfyName = gfyItem.gfyName,
+      gfySlug = gfyItem.gfySlug,
+      height = gfyItem.height,
+      _gfyItem$languageCate = gfyItem.languageCategories,
+      languageCategories = _gfyItem$languageCate === undefined ? [] : _gfyItem$languageCate,
+      languageText = gfyItem.languageText,
+      max5mbGif = gfyItem.max5mbGif,
+      mobilePosterUrl = gfyItem.mobilePosterUrl,
+      mobileUrl = gfyItem.mobileUrl,
+      nsfw = gfyItem.nsfw,
+      numFrames = gfyItem.numFrames,
+      subreddit = gfyItem.subreddit,
+      _gfyItem$tags = gfyItem.tags,
+      tags = _gfyItem$tags === undefined ? [] : _gfyItem$tags,
+      thumb100PosterUrl = gfyItem.thumb100PosterUrl,
+      title = gfyItem.title,
+      userData = gfyItem.userData,
+      userName = gfyItem.userName,
+      views = gfyItem.views,
+      width = gfyItem.width;
+
+
+  var robots = (0, _isRedGIFsContent2.default)({ gatekeeper: gatekeeper }) ? 'index' : 'noindex,noarchive,nosnippet,noodp,noydir,nocache';
+
+  var adjustedTitle = title && title.toLowerCase() != 'untitled' ? title : null;
+
+  var titleString = (0, _meta.getTitleString)({
+    title: adjustedTitle,
+    tags: tags,
+    languageCategories: languageCategories,
+    userData: userData
+  });
+
+  var newTags = (0, _meta.tagsArray)({ tags: tags, languageText: languageText });
+
+  var description = (0, _meta.getDescriptionString)({
+    title: adjustedTitle,
+    tags: tags,
+    userData: userData,
+    languageCategories: languageCategories
+  });
+
+  var keywordsString = (0, _meta.keywords)({
+    subreddit: subreddit,
+    languageCategories: languageCategories,
+    tags: tags
+  });
+
+  var restrictedWidth = width <= 640 ? width : 640;
+  var restrictedHeight = width <= 640 ? height : parseInt(restrictedWidth / width * height, 10);
+
+  var pageUrl = 'https://redgifs.com/ifr/' + gfyName;
+  var canonicalUrl = 'https://redgifs.com/watch/' + gfyId;
+
+  var duration = (0, _meta.getDuration)({ frameRate: frameRate, numFrames: numFrames });
+
+  var schema = (0, _schema.gifSchema)('https://redgifs.com/ifr/' + gfyName, gfyItem);
+
+  return (0, _freeze2.default)({
+    title: titleString,
+    meta: [{ name: 'robots', content: robots }, { name: 'description', content: description }, { name: 'keywords', content: keywordsString },
+
+    // Twitter card
+    { name: 'twitter:card', content: 'player' }, { name: 'twitter:title', content: (0, _TemplateLayout.titleTemplate)(titleString) }, { name: 'twitter:url', content: pageUrl }, { name: 'twitter:image', content: max5mbGif }, { name: 'twitter:image:src', content: max5mbGif }, { name: 'twitter:player', content: pageUrl }, { name: 'twitter:player:width', content: width }, { name: 'twitter:player:height', content: height }, { name: 'twitter:description', content: description },
+
+    // Open Graph data
+    { property: 'og:type', content: 'video' }, { property: 'og:url', content: max5mbGif }, { property: 'og:title', content: (0, _TemplateLayout.titleTemplate)(titleString) }, { property: 'og:description', content: description }, { property: 'og:image', content: max5mbGif }, { property: 'og:image:width', content: restrictedWidth }, { property: 'og:image:height', content: restrictedHeight }, { property: 'og:image:secure_url', content: max5mbGif }, { property: 'og:image', content: mobilePosterUrl }, { property: 'og:image:width', content: restrictedWidth }, { property: 'og:image:height', content: restrictedHeight }, { property: 'og:image', content: thumb100PosterUrl }, { property: 'og:video', content: mobileUrl }, { property: 'og:video:secure_url', content: mobileUrl }, { property: 'og:video:type', content: 'video/mp4' }, { property: 'og:video:width', content: restrictedWidth }, { property: 'og:video:height', content: restrictedHeight }, { property: 'og:video:duration', content: duration }, { property: 'og:video:iframe', content: pageUrl }],
+    link: [{ rel: 'canonical', href: canonicalUrl }],
+    script: [{
+      type: 'application/javascript',
+      src: '//cdn.embed.ly/player-0.1.0.min.js'
+    }, {
+      type: 'application/ld+json',
+      innerHTML: (0, _stringify2.default)(schema)
+    },
+    // Google Tag Manager
+    {
+      type: 'application/javascript',
+      innerHTML: '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n    new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n    \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,\'script\',\'dataLayer\',\'GTM-5SCT9DN\');'
+    }]
+  });
+};
+
+exports.default = meta;
+
+/***/ }),
+
+/***/ 2029:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (_ref) {
+  var gatekeeper = _ref.gatekeeper;
+
+  return gatekeeper && parseInt(gatekeeper) == 12;
+};
+
+/***/ }),
+
+/***/ 2030:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"colorVarBlue":"#2475ff","colorVarLightBlue":"#3aa8ff","colorVarViolet":"#8c18f1","colorVarAlmostBlack":"#090a0b"};
+
+/***/ })
+
+});           20210223130857-8l0‹W  webpackJsonp([21],{
+
+/***/ 1793:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+
+var _extends2 = __webpack_require__(7);
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _getPrototypeOf = __webpack_require__(5);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(1);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(2);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(3);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(4);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _dec, _dec2, _class;
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactBodyClassname = __webpack_require__(32);
+
+var _reactBodyClassname2 = _interopRequireDefault(_reactBodyClassname);
+
+var _reactRedux = __webpack_require__(10);
+
+var _classnames = __webpack_require__(14);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _reactHelmet = __webpack_require__(47);
+
+var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
+
+var _reactRouter = __webpack_require__(16);
+
+var _reactSvgInline = __webpack_require__(13);
+
+var _reactSvgInline2 = _interopRequireDefault(_reactSvgInline);
+
+var _GifViews = __webpack_require__(720);
+
+var _GifViews2 = _interopRequireDefault(_GifViews);
+
+var _IframePlayer = __webpack_require__(1834);
+
+var _IframePlayer2 = _interopRequireDefault(_IframePlayer);
+
+var _trackPageViews = __webpack_require__(292);
+
+var _trackPageViews2 = _interopRequireDefault(_trackPageViews);
+
+var _selectors = __webpack_require__(11);
+
+var _meta = __webpack_require__(2028);
+
+var _meta2 = _interopRequireDefault(_meta);
+
+__webpack_require__(2030);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Iframe = (_dec = (0, _trackPageViews2.default)('pageview_iframe'), _dec2 = (0, _reactRedux.connect)(function (state, _ref) {
+  var params = _ref.params;
+
+  var gfyId = params.gfyId.toLowerCase();
+  return {
+    gfyId: gfyId,
+    gfyItem: (0, _selectors.getGifFromCache)(state, gfyId)
+  };
+}), _dec(_class = _dec2(_class = function (_Component) {
+  (0, _inherits3.default)(Iframe, _Component);
+
+  function Iframe(props) {
+    (0, _classCallCheck3.default)(this, Iframe);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (Iframe.__proto__ || (0, _getPrototypeOf2.default)(Iframe)).call(this, props));
+
+    var query = _this.props.location.query;
+
+    _this.playerProps = (0, _IframePlayer.parseQueryParams)(query);
+    return _this;
+  }
+
+  (0, _createClass3.default)(Iframe, [{
+    key: 'render',
+    value: function render() {
+      var gfyItem = this.props.gfyItem;
+      var gfyId = gfyItem.gfyId,
+          hasTransparency = gfyItem.hasTransparency,
+          views = gfyItem.views;
+
+
+      return _react2.default.createElement(
+        _reactBodyClassname2.default,
+        { className: 'iframe' },
+        _react2.default.createElement(
+          'div',
+          {
+            className: (0, _classnames2.default)('iframe-container', {
+              'has-transparency': hasTransparency
+            })
+          },
+          _react2.default.createElement(_reactHelmet2.default, (0, _meta2.default)((0, _extends3.default)({}, gfyItem))),
+          _react2.default.createElement(
+            _react2.default.Fragment,
+            null,
+            _react2.default.createElement(_IframePlayer2.default, (0, _extends3.default)({ gfyItem: gfyItem }, this.playerProps))
+          )
+        )
+      );
+    }
+  }]);
+  return Iframe;
+}(_react.Component)) || _class) || _class);
+exports.default = Iframe;
+
+/***/ }),
+
+/***/ 1834:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.parseQueryParams = undefined;
+
+var _IframePlayer = __webpack_require__(1852);
+
+var _IframePlayer2 = _interopRequireDefault(_IframePlayer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _IframePlayer2.default;
+exports.parseQueryParams = _IframePlayer.parseQueryParams;
+
+/***/ }),
+
+/***/ 1852:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.parseQueryParams = exports.default = undefined;
+
+var _extends2 = __webpack_require__(7);
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+var _getPrototypeOf = __webpack_require__(5);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(1);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(2);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(3);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(4);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _dec, _class, _class2, _temp; /* global playerjs */
+
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactRedux = __webpack_require__(10);
+
+var _classnames = __webpack_require__(14);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _reactSvgInline = __webpack_require__(13);
+
+var _reactSvgInline2 = _interopRequireDefault(_reactSvgInline);
+
+var _Player = __webpack_require__(696);
+
+var _Media = __webpack_require__(112);
+
+var _ShareOverlay = __webpack_require__(294);
+
+var _ShareOverlay2 = _interopRequireDefault(_ShareOverlay);
+
+var _SoundControl = __webpack_require__(473);
+
+var _SoundControl2 = _interopRequireDefault(_SoundControl);
+
+var _ProfileInfoOverview = __webpack_require__(694);
+
+var _ProfileInfoOverview2 = _interopRequireDefault(_ProfileInfoOverview);
+
+var _is360Gif = __webpack_require__(296);
+
+var _is360Gif2 = _interopRequireDefault(_is360Gif);
+
+var _OSDetection = __webpack_require__(469);
+
+var _canonical = __webpack_require__(103);
+
+__webpack_require__(1853);
+
+var _ic_send = __webpack_require__(476);
+
+var _ic_send2 = _interopRequireDefault(_ic_send);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var IFRAME_MESSAGE_PLAY = 'play';
+var IFRAME_MESSAGE_PAUSE = 'pause';
+
+var IframePlayer = (_dec = (0, _reactRedux.connect)(function (state) {
+  return {
+    mobile: state.renderConfig.mobile
+  };
+}), _dec(_class = (_temp = _class2 = function (_Component) {
+  (0, _inherits3.default)(IframePlayer, _Component);
+
+  function IframePlayer(props) {
+    (0, _classCallCheck3.default)(this, IframePlayer);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (IframePlayer.__proto__ || (0, _getPrototypeOf2.default)(IframePlayer)).call(this, props));
+
+    _this.handlePlayerClick = function () {
+      if (_this.props.controls && !_this.props.mobile) {
+        var decoratedGfyId = (0, _canonical.generateDecoratedGfyId)(_this.props.gfyItem);
+        var contentUrl = 'https://redgifs.com/watch/' + decoratedGfyId;
+        window.open(contentUrl, '_blank');
+      }
+
+      if (_this.props.mobile && _this.state.muted) {
+        _this.handleShareOpen();
+      }
+    };
+
+    _this.handleShareOpen = function () {
+      _this.setState({ shareOpened: true });
+      if (_this.video) _this.video.pause();
+    };
+
+    _this.handleShareClose = function () {
+      _this.setState({ shareOpened: false });
+      if (_this.video) _this.video.play();
+    };
+
+    _this.handlePlayerStateChange = function (newState) {
+      var controlsVisible = newState.controlsVisible;
+
+
+      if (_this.state.userVisible !== controlsVisible) {
+        _this.setState({ userVisible: controlsVisible });
+      }
+    };
+
+    _this.getRef = function (video) {
+      _this.video = video;
+      var getRef = _this.props.getRef;
+
+      if (getRef) getRef(video);
+      if (_this.video) {
+        _this.initEmbedlyReceiver();
+      }
+    };
+
+    _this.handleWindowMessage = function (event) {
+      var data = event.data;
+
+      if (data) {
+        switch (data) {
+          case IFRAME_MESSAGE_PLAY:
+            if (_this.video) _this.video.play();
+            break;
+
+          case IFRAME_MESSAGE_PAUSE:
+            if (_this.video) _this.video.pause();
+            break;
+
+          default:
+            break;
+        }
+      }
+    };
+
+    _this.handleSoundControlClick = function (event, _ref) {
+      var muted = _ref.muted;
+
+      _this.video.muted = muted;
+      _this.setState({ muted: muted });
+    };
+
+    _this.initEmbedlyReceiver = function () {
+      if (typeof playerjs === 'undefined') return;
+
+      _this.receiver = new playerjs.Receiver();
+
+      _this.receiver.on('play', function () {
+        _this.video.play();
+        _this.receiver.emit('play');
+      });
+
+      _this.receiver.on('pause', function () {
+        _this.video.pause();
+        _this.receiver.emit('pause');
+      });
+
+      _this.receiver.on('getCurrentTime', function (callback) {
+        return callback(_this.video.currentTime);
+      });
+
+      _this.receiver.on('setCurrentTime', function (value) {
+        _this.video.currentTime = value;
+      });
+
+      _this.receiver.on('getPaused', function (callback) {
+        return callback(_this.video.paused);
+      });
+
+      _this.receiver.on('getDuration', function (callback) {
+        return callback(_this.video.duration);
+      });
+
+      _this.receiver.on('getVolume', function (callback) {
+        return callback(_this.video.volume * 100);
+      });
+
+      _this.receiver.on('setVolume', function (value) {
+        return _this.video.volume = value / 100;
+      });
+
+      _this.receiver.on('mute', function () {
+        return _this.video.mute = true;
+      });
+
+      _this.receiver.on('unmute', function () {
+        return _this.video.mute = false;
+      });
+
+      _this.receiver.on('getMuted', function (callback) {
+        return callback(_this.video.mute);
+      });
+
+      _this.receiver.on('getLoop', function (callback) {
+        return callback(_this.video.loop);
+      });
+
+      _this.receiver.on('setLoop', function (value) {
+        return _this.video.loop = value;
+      });
+
+      _this.video.addEventListener('ended', function () {
+        return _this.receiver.emit('ended');
+      });
+
+      _this.video.addEventListener('timeupdate', function () {
+        _this.receiver.emit('timeupdate', {
+          seconds: _this.video.currentTime,
+          duration: _this.video.duration
+        });
+      });
+
+      _this.receiver.ready();
+    };
+
+    _this.user = function () {
+      var _this$props = _this.props,
+          controls = _this$props.controls,
+          gfyItem = _this$props.gfyItem;
+      var userVisible = _this.state.userVisible;
+      var published = gfyItem.published,
+          userData = gfyItem.userData;
+
+
+      if (!userData) return null;
+
+      var shouldRender = controls && parseInt(published, 10);
+
+      return shouldRender ? _react2.default.createElement(
+        'div',
+        {
+          key: 'iframe-top',
+          className: (0, _classnames2.default)('iframe-top', {
+            visible: userVisible
+          })
+        },
+        _react2.default.createElement(_ProfileInfoOverview2.default, { user: userData, target: '_blank' })
+      ) : null;
+    };
+
+    _this.state = {
+      muted: true,
+      userVisible: _this.props.controls,
+      shareOpened: false
+    };
+    return _this;
+  }
+
+  (0, _createClass3.default)(IframePlayer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.addEventListener('message', this.handleWindowMessage);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      window.removeEventListener('message', this.handleWindowMessage);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _state = this.state,
+          muted = _state.muted,
+          shareOpened = _state.shareOpened;
+      var _props = this.props,
+          autoPlay = _props.autoPlay,
+          backgroundColor = _props.backgroundColor,
+          controls = _props.controls,
+          forceVideo = _props.forceVideo,
+          gfyItem = _props.gfyItem,
+          hd = _props.hd,
+          logo = _props.logo,
+          loop = _props.loop,
+          mobile = _props.mobile,
+          playbackRate = _props.playbackRate;
+      var gfyId = gfyItem.gfyId,
+          hasAudio = gfyItem.hasAudio;
+
+
+      var cornerButton = hasAudio && mobile ? muted ? _react2.default.createElement(_SoundControl2.default, { gfyId: gfyId, onClick: this.handleSoundControlClick }) : _react2.default.createElement(_reactSvgInline2.default, {
+        className: (0, _classnames2.default)('ic ic-send', {
+          low: !(0, _OSDetection.isAndroid)()
+        }),
+        svg: _ic_send2.default,
+        onClick: this.handleShareOpen
+      }) : null;
+
+      var VideoComponent = (0, _is360Gif2.default)(gfyItem) ? _Media.Video360 : _Media.Video;
+
+      var player = !forceVideo && gfyItem.hasTransparency ? !mobile ? _react2.default.createElement(_Player.ImagePlayer, {
+        backgroundColor: backgroundColor || 'transparent',
+        gfyItem: gfyItem,
+        controls: controls,
+        fullscreenElement: this.iframeContainer,
+        onStateChange: this.handlePlayerStateChange,
+        onClick: this.handlePlayerClick
+      }) : _react2.default.createElement(_Media.Image, {
+        backgroundColor: backgroundColor || 'transparent',
+        gfyItem: gfyItem,
+        onClick: this.handlePlayerClick
+      }) : !mobile ? _react2.default.createElement(_Player.VideoPlayer, {
+        autoPlay: autoPlay,
+        backgroundColor: backgroundColor || '#000000',
+        controls: controls,
+        fullscreenElement: this.iframeContainer,
+        getRef: this.getRef,
+        gfyItem: gfyItem,
+        hd: hd,
+        loop: loop,
+        logo: logo,
+        onClick: this.handlePlayerClick,
+        onStateChange: this.handlePlayerStateChange,
+        show360: true,
+        playbackRate: playbackRate
+      }) : _react2.default.createElement(VideoComponent, {
+        highQuality: hd,
+        loop: loop,
+        backgroundColor: backgroundColor || '#000000',
+        getRef: this.getRef,
+        gfyItem: gfyItem,
+        controls: !muted,
+        onClick: this.handlePlayerClick
+      });
+
+      var ui = !mobile ? this.user() : shareOpened ? _react2.default.createElement(_ShareOverlay2.default, {
+        gfyItem: gfyItem,
+        onCloseButtonClick: this.handleShareClose
+      }) : null;
+
+      return _react2.default.createElement(
+        'div',
+        {
+          className: 'iframe-player-container',
+          onClick: this.handleClick,
+          ref: function ref(el) {
+            return _this2.iframeContainer = el;
+          }
+        },
+        player,
+        ui,
+        cornerButton
+      );
+    }
+  }]);
+  return IframePlayer;
+}(_react.Component), _class2.defaultProps = {
+  autoPlay: true,
+  controls: true,
+  forceVideo: false,
+  hd: false,
+  logo: true,
+  loop: true,
+  playbackRate: 1
+}, _temp)) || _class);
+
+/**
+ * Helper method for parsing query parameters
+ */
+
+exports.default = IframePlayer;
+var parseQueryParams = exports.parseQueryParams = function parseQueryParams(query) {
+  var autoPlay = query.autoplay !== '0';
+
+  return (0, _extends3.default)({}, typeof query.autoplay !== 'undefined' && {
+    autoPlay: autoPlay
+  }, typeof query.controls !== 'undefined' && autoPlay && {
+    controls: query.controls !== '0',
+    userVisible: query.controls !== '0'
+  }, typeof query.speed !== 'undefined' && !isNaN(parseFloat(query.speed)) && {
+    playbackRate: parseFloat(query.speed)
+  }, typeof query.loops !== 'undefined' && !isNaN(parseInt(query.loops, 10)) && {
+    loops: parseInt(query.loops, 10)
+  }, typeof query.hd !== 'undefined' && parseInt(query.hd, 10) === 1 && {
+    hd: true
+  });
+};
+
+/***/ }),
+
+/***/ 1853:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"colorVarBlue":"#2475ff","colorVarLightBlue":"#3aa8ff","colorVarViolet":"#8c18f1","colorVarAlmostBlack":"#090a0b"};
+
+/***/ }),
+
+/***/ 2028:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _stringify = __webpack_require__(147);
+
+var _stringify2 = _interopRequireDefault(_stringify);
+
+var _freeze = __webpack_require__(46);
+
+var _freeze2 = _interopRequireDefault(_freeze);
+
+var _meta = __webpack_require__(27);
+
+var _schema = __webpack_require__(470);
+
+var _isRedGIFsContent = __webpack_require__(2029);
+
+var _isRedGIFsContent2 = _interopRequireDefault(_isRedGIFsContent);
+
+var _TemplateLayout = __webpack_require__(167);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var meta = function meta(gfyItem) {
+  var createDate = gfyItem.createDate,
+      extraLemmas = gfyItem.extraLemmas,
+      frameRate = gfyItem.frameRate,
+      gatekeeper = gfyItem.gatekeeper,
+      gfyId = gfyItem.gfyId,
+      gfyName = gfyItem.gfyName,
+      gfySlug = gfyItem.gfySlug,
+      height = gfyItem.height,
+      _gfyItem$languageCate = gfyItem.languageCategories,
+      languageCategories = _gfyItem$languageCate === undefined ? [] : _gfyItem$languageCate,
+      languageText = gfyItem.languageText,
+      max5mbGif = gfyItem.max5mbGif,
+      mobilePosterUrl = gfyItem.mobilePosterUrl,
+      mobileUrl = gfyItem.mobileUrl,
+      nsfw = gfyItem.nsfw,
+      numFrames = gfyItem.numFrames,
+      subreddit = gfyItem.subreddit,
+      _gfyItem$tags = gfyItem.tags,
+      tags = _gfyItem$tags === undefined ? [] : _gfyItem$tags,
+      thumb100PosterUrl = gfyItem.thumb100PosterUrl,
+      title = gfyItem.title,
+      userData = gfyItem.userData,
+      userName = gfyItem.userName,
+      views = gfyItem.views,
+      width = gfyItem.width;
+
+
+  var robots = (0, _isRedGIFsContent2.default)({ gatekeeper: gatekeeper }) ? 'index' : 'noindex,noarchive,nosnippet,noodp,noydir,nocache';
+
+  var adjustedTitle = title && title.toLowerCase() != 'untitled' ? title : null;
+
+  var titleString = (0, _meta.getTitleString)({
+    title: adjustedTitle,
+    tags: tags,
+    languageCategories: languageCategories,
+    userData: userData
+  });
+
+  var newTags = (0, _meta.tagsArray)({ tags: tags, languageText: languageText });
+
+  var description = (0, _meta.getDescriptionString)({
+    title: adjustedTitle,
+    tags: tags,
+    userData: userData,
+    languageCategories: languageCategories
+  });
+
+  var keywordsString = (0, _meta.keywords)({
+    subreddit: subreddit,
+    languageCategories: languageCategories,
+    tags: tags
+  });
+
+  var restrictedWidth = width <= 640 ? width : 640;
+  var restrictedHeight = width <= 640 ? height : parseInt(restrictedWidth / width * height, 10);
+
+  var pageUrl = 'https://redgifs.com/ifr/' + gfyName;
+  var canonicalUrl = 'https://redgifs.com/watch/' + gfyId;
+
+  var duration = (0, _meta.getDuration)({ frameRate: frameRate, numFrames: numFrames });
+
+  var schema = (0, _schema.gifSchema)('https://redgifs.com/ifr/' + gfyName, gfyItem);
+
+  return (0, _freeze2.default)({
+    title: titleString,
+    meta: [{ name: 'robots', content: robots }, { name: 'description', content: description }, { name: 'keywords', content: keywordsString },
+
+    // Twitter card
+    { name: 'twitter:card', content: 'player' }, { name: 'twitter:title', content: (0, _TemplateLayout.titleTemplate)(titleString) }, { name: 'twitter:url', content: pageUrl }, { name: 'twitter:image', content: max5mbGif }, { name: 'twitter:image:src', content: max5mbGif }, { name: 'twitter:player', content: pageUrl }, { name: 'twitter:player:width', content: width }, { name: 'twitter:player:height', content: height }, { name: 'twitter:description', content: description },
+
+    // Open Graph data
+    { property: 'og:type', content: 'video' }, { property: 'og:url', content: max5mbGif }, { property: 'og:title', content: (0, _TemplateLayout.titleTemplate)(titleString) }, { property: 'og:description', content: description }, { property: 'og:image', content: max5mbGif }, { property: 'og:image:width', content: restrictedWidth }, { property: 'og:image:height', content: restrictedHeight }, { property: 'og:image:secure_url', content: max5mbGif }, { property: 'og:image', content: mobilePosterUrl }, { property: 'og:image:width', content: restrictedWidth }, { property: 'og:image:height', content: restrictedHeight }, { property: 'og:image', content: thumb100PosterUrl }, { property: 'og:video', content: mobileUrl }, { property: 'og:video:secure_url', content: mobileUrl }, { property: 'og:video:type', content: 'video/mp4' }, { property: 'og:video:width', content: restrictedWidth }, { property: 'og:video:height', content: restrictedHeight }, { property: 'og:video:duration', content: duration }, { property: 'og:video:iframe', content: pageUrl }],
+    link: [{ rel: 'canonical', href: canonicalUrl }],
+    script: [{
+      type: 'application/javascript',
+      src: '//cdn.embed.ly/player-0.1.0.min.js'
+    }, {
+      type: 'application/ld+json',
+      innerHTML: (0, _stringify2.default)(schema)
+    },
+    // Google Tag Manager
+    {
+      type: 'application/javascript',
+      innerHTML: '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n    new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n    \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,\'script\',\'dataLayer\',\'GTM-5SCT9DN\');'
+    }]
+  });
+};
+
+exports.default = meta;
+
+/***/ }),
+
+/***/ 2029:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (_ref) {
+  var gatekeeper = _ref.gatekeeper;
+
+  return gatekeeper && parseInt(gatekeeper) == 12;
+};
+
+/***/ }),
+
+/***/ 2030:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"colorVarBlue":"#2475ff","colorVarLightBlue":"#3aa8ff","colorVarViolet":"#8c18f1","colorVarAlmostBlack":"#090a0b"};
+
+/***/ })
+
+});  =   https://www.redgifs.com/assets/iframe.99ce1253e3a227079bd7.js    2  n       áÌØÄ         webpackJsonp   WIx        1793   ,∆Ë        exports    Å˘Hm        __webpack_require__    œ—|¯
+        __esModule     ¶$j	        _extends2      _ûB	        _extends3      ]:),        _interopRequireDefault     πGP        _getPrototypeOf	    Fx   	     _getPrototypeOf2
+   èﬁ–   
+     _classCallCheck2   ÷dôw        _classCallCheck3   ºëS»        _createClass2      uãf        _createClass3      ∆Z        _possibleConstructorReturn2    îR¯        _possibleConstructorReturn3    *,™
+        _inherits2     „òcH
+        _inherits3     ‚„[:        _dec   ç=ÏV        _dec2      !¿∆∏        _class     ◊˛        _react     %√û‰        _react2    QY8„        _reactBodyClassname    Ùj        _reactBodyClassname2   πXn†        _reactRedux    fWπ}        _classnames    ’◊c∏        _classnames2   ,Ù        _reactHelmet   LÂp—        _reactHelmet2      ≈ãÚ        _reactRouter   "’{        _reactSvgInline     ı{.^         _reactSvgInline2!   Á[*h	   !     _GifViews"      '§{˜
+   "     _GifViews2#     ® {∑   #     _IframePlayer$      K   $     _IframePlayer2%     ;t:   %     _trackPageViews&    m˘π_   &     _trackPageViews2'   Æ4ÇG
+   '     _selectors(     f!}z   (     _meta)      ’C˜   )     _meta2+     ©nò   +     Iframe,     B÷0a   ,     pageview_iframe-    1è‹   -     connect6    § œ   6     _this:      Ö$π   :     parseQueryParams<   ‘ÍÕ˜   <     renderF     ≤xi	   F     ComponentG      K◊€d   G     1834H   GÏ∫9   H     1852I   ùD   I     _class2J    ;Jk   J     _tempK      [&‡£
+   K     _propTypesL     ñ˚î√   L     _propTypes2M    ˚‚/`   M     _PlayerN    v)c∏   N     _MediaO     åbÁ8   O     _ShareOverlayP      ÕòH›   P     _ShareOverlay2Q     ÿ%qÿ   Q     _SoundControlR      °°–   R     _SoundControl2S     %àñ   S     _ProfileInfoOverviewT   ‡LÔ≤   T     _ProfileInfoOverview2U      ã7«	   U     _is360GifV      zX∂l
+   V     _is360Gif2W     ør(   W     _OSDetectionX   †s˜◊
+   X     _canonicalY     âÜÍo   Y     _ic_sendZ   g∆ÁQ	   Z     _ic_send2[      8/∫˙   [     IFRAME_MESSAGE_PLAY\    «SBö   \     play]   ,''   ]     IFRAME_MESSAGE_PAUSE^   œÃFW   ^     pause_      X¿d   _     IframePlayerc   Ñ,s   c     controlsé   e™»`   é     loopú   dJ∆   ú     componentDidMountù      4„#   ù     componentWillUnmountü   3)—¯   ü     _this2¢     †Ób   ¢     autoPlay§   ˘·â
+   §     forceVideo•     êf›   •     logo¶   ˝z∂   ¶     playbackRateø   VF'   ø     ref¿    ?5)+   ¿     defaultPropsƒ   érÉõ   ƒ     1853≈   àù·∂   ≈     colorVarBlue∆   ’˚†/   ∆     #2475ff«    ÇFXï   «     colorVarLightBlue»      7æï   »     #3aa8ff…    %ÑÉ   …     colorVarViolet      Ø/9:         #8c18f1À    "–D   À     colorVarAlmostBlackÃ    PÔ=.   Ã     #090a0bÕ    …Ü   Õ     2028Œ   t•XL
+   Œ     _stringifyœ     #®µ<   œ     _stringify2–    |ò2˙   –     _freeze—    ö8   —     _freeze2“   )2<   “     _schema”     πVº   ”     _isRedGIFsContent‘      ˝6\∫   ‘     _isRedGIFsContent2’     u—≤   ’     _TemplateLayout%   â‡Á   %    2029&  ˆ?«€   &    2030(  π“—   (    1793/_dec2<)   µ÷f   )    1793/_class<,  àvó
+   ,    1852/_dec<-    ‡£¶%   -    1852/_class2<1     ‘ÿ±¥   1    2029/exports.default    2á  
+                                                                  	                  +                 ,                  /                  1                           )           P      P(        P  P  P  )  P&      $  P  P
+      P  !  %    P      P"    #  P     +  '  P  	  P                      #  $             /           P    O  K    PV  PT  P  X  P    PY  Q    PW  PL    M  P      P_  
+  P  P  S  R  P  P  ]  P    PJ  N  P   P  [  PU  Z  P:  	  P  I                                     Œ  œ  P–  —  P(  P“  P”  ‘  P’  P  ¯                                                     Ä¯ˇ #      Ä* Ä< Ä= ÄÏ ÄÌ ÄÓ Ä    π        π        π   #     ¢  c  §  M •  é  ¶      ≈  «  …  À         π        π        ≈  «  …  À  2   X   ?                              
+     ∂   {   6   5   f   ;*f   ;<f   ;=f   ;Ïf   ;Ìf	   ;Óf
+   ;s ’†`Pî@ IÄ  é IÄ  § IÄ = IÄ E IÄ ¿ IÄ “ I  PDÄ ⁄ P È  Ü                            4    f   ƒ  ’∂   ◊F   ⁄∑    5   8   s ’∑ ∂   I   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ	  ’∏   ∏	  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈ 	  ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑   o ƒ  ’∏   ∏  o ≈ 
+  ’∑  
+o ƒ  ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  /o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ
+  ’∑  o ƒ   ’∏   ∏   o ƒ  ’∑  –o ƒ  ’∏   ∏  o ƒ  ’∑  *o ≈   ’∏   π   o ≈   ’∑  $o ƒ  ’∏   ∏  o ƒ  ’∑  o ≈   ’∑  Ïo ƒ  ’∏   ∏  o ≈   ’∑  Ós ’’∏  F    	   o ƒ  ’’∏  F
+    f   o ƒ  ’∏   ∏   f    ∏  F   o ƒ  o ò   í1   ’∏  í1   ƒ  o ò   í3   ’∏  í3   ƒ  ’∑ ∏  I   ’†J@`Pô0 F PD`PN
+ `P&PH `P)PI `P&PH `P)PI `P%PH `P)PI `P&PH `P)PI "`P&PH "`P)PI `P&PH  `P)PI"@$ `P%PH& `P)PI( `P&PH* `P)PI, `P&PH. `P&PH0 `P)PI2 `P&PH4 `P)PI6 `P&PH8 `P&PH: `P)PH< `P'PH> `P)PH@ `P'PIB `P*PID `P'PHF `P)PHH `P&PIJ `P'PHL `P)PIN`P'PDR `P "/P( 	"/PHZ ê@Ä  Ü)PGZ PNÄ  ÜMZ PNÄ  Ü>`P=0 P       Ä   7                      	           f   ƒ  ’∂   ◊F   ⁄∑    5   8   s ’∑ ∂   I   ’∑  <o ƒ   ’∏   ∏   o ƒ  ’∑ ∏  F	   I	   ’∑ ∏   F   I   ’†J@`Pô0 F PD`PN
+ `P'PH `P)PH`Pí0`Pí@ P     H  ª                            =    f   ƒ  ’∂   ◊F   ⁄∑    5   8   s ’∑ ∑ ∂   I   I	   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ
+  ’∏   ∏
+  o ≈   ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ	  ’∏   ∏	  o ≈   ’∑  o ƒ  ’∏   ∏  o ƒ  ’∑  
+o ƒ  ’∑  o ƒ  ’∏   ∏  o ≈   ’∑  o ƒ   ’∏   ∏   o ≈   ’∑  ∏o ≈ 
+  ’∑  po ≈   ’∑  &o ƒ  ’∏   ∏  o ≈   ’∑  Ÿo ƒ  ’∏   ∏  o ≈   ’∑  ∂o ƒ  ’∏   ∏  o ≈   ’∑  (o ƒ  ’∏   ∏  o ≈   ’∑  ’o ≈ 	  ’∑  go ≈   ’∑  =s ’∑  ‹o ƒ  ’∏   ∏  o ≈   ’
+   ≈   ’   ≈   ’’∏  F    f   o ƒ  ’∏   f    ∏	  F   o ƒ  ƒ  ’∏  5   8   8   8   8   8   8   8   I   ’∏  ƒ  o ò   í;   ’∏  í;   ƒ  ’∑ ∏  I   ’∑ f   I	   ƒ  ’†J@`Pô0 F PD`Pñ@
+ `P&PH `P)PI `P&PH `P)PI `P%PH `P)PI `P&PH `P)PI "`P&PH "`P)PI `P&PH  `P)PI"@% `P%PH' `P)PI) `P&PH+ `P)PH- `P&PH/ `P&PH1 `P)PI3 `P&PH5 `P)PI7 `P'PI9 `P&PI; `P'PH= `P)PI? `P'PHA `P)PIC `P'PHE `P)PIG `P'PHI `P)PIK `P'PIM `P&PIO`P'PDQ `P'PHS `P)PIW `P; `PKZ `P "/PH^ %FÄ v)P,9 6 6 6 6 6 6 < H^ PNÄ ~NÄ Ñ`P= `Pí@Ä ñ P                                     7                                     ∑  5      8      8      8      8	   H
+   ’†@`P(***ê@ P  ÷   q                                 f   ƒ  ’∂   ◊F   ⁄∑    5   8   s ’∑  ì o ƒ   ’∏   ∏   o ≈   ’∑  .o ƒ  ’∏   ∏  o ≈   ’∑  o ≈   ’∑  ÷o ≈   ’∑  Ìo ƒ  ’∏   ∏  o ≈   ’∑  ß o ≈   ’f   ƒ  ’∑ ∏  I   ’†J@`Pô0 F PD	 `P'PH `P)PI `P&PH `P)PI `P&PI `P'PI `P'PH `P)PI `P'PI `PJv`PMx P    2                                     ∂   ◊F   ⁄∑    5   8   s ’∑ f   I   ’†@@`Pô0 F PD	`PN P  7                                     ∑  5      8      8      8      8	   H
+   ’†@`P(***ê@ P     p  p+    p  p  p  p  p  p  p  p  p  p   p!  p"  p#  p$  p  p  p  p  p  p  p  p  p%  p6  )  pü    p&  p'  p(  p_    `  pË  U       @π  —  S   ,  -    p  pF    `  pË  U       @π  —  :  S     `
+  pË  U       @π  —  S   :  \  ^  -    p  pF    @¢  c  §  M •  é  ¶  ¿  *  p  `  @∆  ≈  »  «     …  Ã  À      `-  pË  U       @π  .  pS     `Ë  U       @π  0  pS     `	  @∆  ≈  »  «     …  Ã  À       `      @  @  p  p	  p+  p,  p/  p1  p    |                     #            †
+                  †              (    †            )    †             +      †               <      †      1   
+   G      †
+                  †      ;      H      †
+                  †              ,    †           -    †        
+   _      †                       †                      †                      †                      †                      †                      †                      †                    †                      †                      †                      †                      †                      †                      †                      †                      †                      †                      †                      †                      †                      †                      †                      †                      †              ú      †              ù      †            <      †              ø      †              :     †     U      ƒ      †
+     `   	   Õ      †
+                  †              ¯      †     i      %     †
+             1    †     q      &     †
+ 2   ¿      ‹W      ‹W             @ 0   E  (   E             ·  !  ¬  !  T           î  I	  ã  I	  V   q      @ r	  ¯  i	  ¯  ^   *       ¬	    ≥	    a          k  ﬁ  \  ﬁ  n            d  A  \  A  ê           í  “  s  “  û         @ `  ]?  X  ]?  ¶           ù  ›  ~  ›  ˚           c  §  Z  §     =      @ —  Ö;  »  Ö;    .      B -  .    .            2  ©  )  ©    '         —  4  »  4    %         ]  ¿  T  ¿    &           µ  Á  µ  "  -        ‘  ç   À  ç   +          π   "  ∞   "  5  )        L"  …"  C"  …"  H  -        ı"  ï*  Ï"  ï*  O  )         à#  ’#  #  ’#  T  )         $  R$  ˙#  R$  Y  *         â$  œ$  Ä$  œ$  ^  3        %  @%  ˝$  @%  b  3        r%  ≥%  i%  ≥%  f  .        Á%  *&  ﬁ%  *&  j  0        \&  £&  S&  £&  n  .        ’&  '  Ã&  '  r  .        D'  x'  ;'  x'  v  )         ß'  ‹'  û'  ‹'  z  +         (  L(  (  L(  ~  -        |(  ª(  s(  ª(  Ç  ,        Î(  %)  ‚(  %)  Ü  ,        ^)  ó)  U)  ó)  ä  5         ’)  n*  Ã)  n*  é  :         ≤*  ~-  ©*  ~-  ò          y.  «.  _.  «.  ª  %        /  i/  ˚.  i/  ¿  (       B û/  e;  è/  e;  ≈           ÿ:  ;  Ã:  ;            ‡<  S?  «<  S?  +  K        |?  I@  t?  I@  ?        @ h@  »U  `@  »U  G          ∏B  ¯B  ôB  ¯B  b          C  •U  C  •U  d          ÁU  ÍV  ﬂU  ÍV  ¬          ~V  ‡V  uV  ‡V  À          	W  ÷W  W  ÷W  ‘                  ]:),         _interopRequireDefault     ﬂN#9        obj    œ—|¯
+        __esModule‚                                                 S    F                                     ∑  ó   í   ’∑  F   í   ï   í   ∑  î   í   5   ∑  8   í   ù† `P∑ '-Q       `     @S                     †            ]:),         _interopRequireDefault     ﬂN#9        obj    œ—|¯
+        __esModuleû                                                 S    F                                     ∑  ó   í   ’∑  F   í   ï   í   ∑  î   í   5   ∑  8   í   ù† `P∑ '-Q       `     @S                     †            ‡£¶%         1852/_class2<      ïé
+        _Component     X¿d        IframePlayer   B¸ø;        key    dJ∆        componentDidMount      4„#        componentWillUnmount   ‘ÍÕ˜        render“                                          P 
+        π   
+      π   
+      π   †   K                                  f   ≈   ’’π  F    π   ∑  s ’’π  F    π   a   5      8   f   8   b    5   	   8   f
+   8   b   5      8   f   8   b   s ’π   ù†; `P"ì PDÄ  µ `P"ï &5 : ?00 5 : ?00 5 : OÄ  µ PDÄ  `P5Q      `  pS      @      pπ    @    p  @    p                  †                   †                    †                   †                   †           X¿d         IframePlayer    ¶        props      § œ        _this      .n·ã        handlePlayerClick      QöÎ!        handleShareOpen    k è≥        handleShareClose	   Iè˙   	     handlePlayerStateChange
+    Vé   
+     getRef     °‚√∏        handleWindowMessage    IDÿA        handleSoundControlClick    àÃ        initEmbedlyReceiver    ÈÜƒª        user   wãì        muted      ªS·ª        userVisible    Ñ,s        controls   ≠®T—        shareOpened    £Í$        IframePlayer/_this.handlePlayerClick   xNˇ"        IframePlayer/_this.handleShareOpen      Æü#        IframePlayer/_this.handleShareClose    pRíã*        IframePlayer/_this.handlePlayerStateChange     Å5G        IframePlayer/_this.getRef      sﬁé&        IframePlayer/_this.handleWindowMessage     |[.ª*        IframePlayer/_this.handleSoundControlClick     ï≤Ãá&        IframePlayer/_this.initEmbedlyReceiver     0@˚2        IframePlayer/_this.user.  
+                                      P_                 A  Ü                                ‘ƒ   ’’π  F    ∏   π  s ’’π  F    ∏   π  F   ò    í   ’’π  F    π  o í   ◊F   ⁄∏   ∑  r o ≈   ’π   f   I   ’π   f   I   ’π   f   I	   ’π   f
+   I   ’π   f   I   ’π   f   I   ’π   f   I   ’π   f   I   ’π   f   I   ’π   5   8   π   F   F   8   8   I   ’π   ù†6 `P"î PD `P"§ G"ê Pñ P#ˇˇˇ±PI `Pê@ `Pê@ `Pê@ `Pê@$ `Pê@. `Pê@A `Pê@H `Pê@Ä  ë `Pê@Ä  ™ `P: 6 î0 <0 `P5 Q       `S   F  +     p    p    p    p	    p
+    p    p    p  	  p     @          v                    †                    †                   †                   †                   †                   †                   †                   †                   †                   †           ]:),         _interopRequireDefault     ﬂN#9        obj    œ—|¯
+        __esModuleì                                                 S    F                                     ∑  ó   í   ’∑  F   í   ï   í   ∑  î   í   5   ∑  8   í   ù† `P∑ '-Q       `     @S                     †            ]:),         _interopRequireDefault     ﬂN#9        obj    œ—|¯
+        __esModuleπB                                                 S    F                                     ∑  ó   í   ’∑  F   í   ï   í   ∑  î   í   5   ∑  8   í   ù† `P∑ '-Q       `     @S                     †  	          µ÷f         1793/_class<   ïé
+        _Component     ©nò        Iframe     B¸ø;        key    ‘ÍÕ˜        renders	                                          P 
+        π   d   +                                  f   ≈   ’’π  F    π   ∑  s ’’π	  F    π   a   5      8   f   8   b    s ’π   ù†; `P"ì PD `P"ï  5 : O PD+ `P5Q     `  pS      @      pπ                    †                   †                    †           ©nò         Iframe      ¶        props      § œ        _this      XN_ˇ        query      0+QA        location    ≥Æ        playerProps
+    Ö$π   
+     parseQueryParams√	   	                                      _    µ   F                     
+           ‘ƒ  ’’π  F    ∏  π   s ’’π  F    ∏  π   F   ò    í   ’’π  F    π   o í   ◊F   ⁄∏  ∑  r o ƒ   ’∏   F   F   F   ƒ  ’∏   ’π  F    ∏  o I   ’∏   ù†6 `P"î PD `P"§ A"ê Pñ 
+P#ˇˇˇΩPH `Pò@ `P$"/P9 `P4 Q        `S   F  +         
+            	          †            π“—         1793/_dec2<    O]Ω÷        _ref   ÀÀ&<        params     õŸ        gfyId      RâDo        toLowerCase    7Á˝        gfyItem    Úæı        getGifFromCacheï                                      v         
+           Q   &                             	    ∑ F   ƒ   ’∏   F   ◊F   ⁄o  ƒ  ’5   ∏  8   ’π   F    ∑  ∏  o 8   ù†0 `PM `Pê P8 `P5 9  
+"í PHQ    `         @                      † 
+   	       Ö$π         parseQueryParams   XN_ˇ        query      †Ób        autoPlay   I†y€        autoplay   Ñ,s        controls   ªS·ª        userVisible    y4§         speed      ˝z∂        playbackRate	   'Ù¢W   	     loops·<                                                                                    
+                      	        M  ⁄  i                            B    ∑  F      ƒ   ’’π   F    5   ∑  F      ó   í   ’5   ∏   8   í
+   ∑  F	      óE   í   ’∏   ó6   í   ’5
+   ∑  F	      8	   ∑  F	      8   í   ∑  F      óX   í   ’∂   {   ∂   {   ∑  F   o o ó*   í!   ’5   ∂   {   ∑  F   o 8   í&   ∑  F      ó\   í*   ’∂   {   ∂   {   ∑  F   
+o o ó,   í1   ’5   ∂   {   ∑  F   
+o 8   í6   ∑  F      ó:   í:   ’∂   {   ∑  F   
+o ó   í?   ’5   8   íA   o ù†0 `Pì@ `P "ê ü0 > Æ0 ì0 ò0 ö &ú P#ˇˇˇ˙Pî0 í P= ö &û P#ˇˇˇ˙Pî0 î P= Æ #Pï0 K PCQ       `  `  0  S      @—    @      @    €   5    @  	  6    @M   @                  †           ‘ÍÕ˜         render     7Á˝        gfyItem     ¶        props      õŸ        gfyId      áÓC]        hasTransparency    p∫n        views      DC        createElement	      6CY>	   	     className
+      ·7ªµ   
+     iframe     ú≥ÊŸ        div    Ÿ˛Ïö        iframe-container   cb™Ì        has-transparency   Mkc        Fragment    ≥Æ        playerPropsl                                                                              _          	        	                       h                             +     ‘ƒ  ’∏  F   F   ƒ   ’∏   F   ƒ  ’∏   F   ƒ  ’∏   F   ƒ  ’π  F   ◊F   ⁄π
+  F   5	   
+   8   π  F   ◊F   ⁄   5   ’π  F       5   ∏  8   o 8   π  F   ◊F   ⁄π  F   ’π  F    ’π  F    5   ∏   o o o π  F   ◊F   ⁄π  F   F   π  F   ◊F   ⁄π  F   ’π  F    5   ∏   8   ∏  F   o o o o o ù†6 `Pì0 `P> `P> `PN `Pë0:%
+:ë055  "ï0 I 0PHõ @"+"î P#ˇˇˇÈP#ˇˇˇ»P3ë0?1õ C"ê í ˇˇˇ˝P#ˇˇˇƒPC PC
+ PC PC Q      `  `          S        @
+  	      @    @    @    @                    † _   Y       7Á˝         gfyItem    R%j
+        createDate     è±P’        extraLemmas    è¨´	        frameRate      ˝	ßJ
+        gatekeeper     õŸ        gfyId      îªÙ¸        gfyName    zø        gfySlug    ∑…≈        height	     ≈W¸   	     _gfyItem$languageCate
+      ùÿ"5   
+     languageCategories     Y√L        languageText   NçX	        max5mbGif      uÎ≤j        mobilePosterUrl    ©Çñß	        mobileUrl      ©IÓ{        nsfw   6ya	        numFrames      _@z&	        subreddit      ≤MŒÉ        _gfyItem$tags      É¥m        tags   ‘ıü        thumb100PosterUrl      “E        title      ÕÅT        userData   ÔGG        userName   p∫n        views      ÎƒJ˚        width      Úé±        robots     ."x˜0        noindex,noarchive,nosnippet,noodp,noydir,nocache   Á•:!        adjustedTitle      RâDo        toLowerCase    ‡|òS        untitled    ¸…!2         titleString"    πÒ®ü   "     getTitleString#     ç"æ   #     newTags$    naú	   $     tagsArray%      Ñàö   %     description&    ÇÂÿª   &     getDescriptionString'   ∫RK   '     keywordsString(     P˛Üﬂ   (     keywords)   ·7ÅL   )     restrictedWidth*    ó≠±   *     restrictedHeight+   €Æ˛:   +     pageUrl,    ´$\   ,     https://redgifs.com/ifr/-   Ø∫Ê   -     canonicalUrl.   4¡¥¿   .     https://redgifs.com/watch//     ¿
+7   /     duration0   í¯Ás   0     getDuration1    x3∏—   1     schema3     Gø	   3     gifSchema5      4W»   5     content6    (˜—   6     twitter:card7   w!·   7     player8     H5o`   8     twitter:title:      Ω»è   :     titleTemplate;      £∆z   ;     twitter:url<    ;^2Ò   <     twitter:image=      beïr   =     twitter:image:src>      Ω·o   >     twitter:player?     9EËÕ   ?     twitter:player:width@   8·¯   @     twitter:player:heightA      ø‡Û\   A     twitter:descriptionB    …⁄É   B     propertyC   ¿—{:   C     og:typeD    >äj…   D     videoE      J˝ﬂ°   E     og:urlF     ¡NQ˛   F     og:titleG   [•ÎJ   G     og:descriptionH     miP   H     og:imageI   e˜I∫   I     og:image:widthJ     ‘eQ“   J     og:image:heightK    Z®e   K     og:image:secure_urlL    ‚qùî   L     og:videoM   6/ +   M     og:video:secure_urlN    Œ”A   N     og:video:typeO      K&Œ^	   O     video/mp4P      ¸ëÖ~   P     og:video:widthQ     ≈˘“   Q     og:video:heightR    î®¬»   R     og:video:durationS      l–º   S     og:video:iframeT    ¸IÎ’   T     linkU   ¨Êí‹   U     relV    ≠X≥%	   V     canonicalW      ª©`X   W     hrefX   ¢ƒﬁ±   X     application/javascriptY     ú∑»õ   Y     srcZ    ˆÃﬁ"   Z     //cdn.embed.ly/player-0.1.0.min.js[     Ãç   [     application/ld+json\    Q√:	   \     innerHTML^      ‘Ø3#e  ^     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5SCT9DN');C  Ä  *                                               ¯   %         &                       /  )          #  
+          1  -      *      '        +    %    	                       
+     
+                     
+           
+     
+              ¯   T  ]   
+        5   
+      5   
+      5   
+      5   
+      5   
+      5   
+      5   
+      5   
+      5   
+      5   
+      5   
+      5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    B  5   
+    U  W   
+    ö  Y   
+    ö  \   
+    ö  \   E  N                  %   -      Õ    ∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ"  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ$  ’∑  F	   ƒ   ’∑  F
+   ƒ#  ’∏#  ∂   ï   í   a    î   í   ∏#  í   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∏  ∂   ï   í   a    î   í   ∏  í   ƒ  ’∑  F   ƒ  ’∑  F   ƒ  ’∑  F   ƒ   ’∑  F   ƒ  ’∑  F   ƒ
+  ’∑  F   ƒ  ’’π   F    5   ∏  8   o ï   í$      î   í$      í$   ƒ  ’∏  ó   í%   ’∏  ◊F   ⁄o     í(   ï   í)   ∏  î   í)   í)   ƒ  ’’π   F     5!   ∏  8   ∏  8   ∏  8
+   ∏   8   o ƒ  ’’π   F"    5#   ∏  8   ∏  8   o ƒ  ’’π   F$    5%   ∏  8   ∏  8   ∏   8   ∏  8
+   o ƒ!  ’’π   F&    5'   ∏  8   ∏  8
+   ∏  8   o ƒ  ’∏  Äï   íD   ∏  î   íD   ÄíD   ƒ	  ’∏  Äï   íF   ∏   î'   íF   ∂(   {(   ∏	  ∏  *∏   )
+o íJ   ƒ  ’)   ∏  %ƒ  ’*   ∏  %ƒ  ’’π   F+    5,   ∏"  8   ∏  8   o ƒ  ’’π   F-    )   ∏  %∑  o ƒ  ’’π   F    5.   ∏  8   a   5/   0   81   ∏  82   b    53   4   81   ∏!  82   b   55   &   81   ∏  82   b   56   7   81   8   82   b   59   :   81   ’π   F;    ∏  o 82   b   5<   =   81   ∏  82   b   5>   ?   81   ∏  82   b   5@   A   81   ∏  82   b   5B   C   81   ∏  82   b   5D   E   81   ∏  82   b	   5F   G   81   ∏   82   b
+   5H   I   81   ∏!  82   b   5J   K   8L   M   82   b   5N   O   8L   ∏  82   b   5P   Q   8L   ’π   F;    ∏  o 82   b   5R   S   8L   ∏!  82   b   5T   U   8L   ∏  82   b   5V   W   8L   ∏	  82   b   5X   Y   8L   ∏  82   b   5Z   [   8L   ∏  82   b   5\   U   8L   ∏  82   b   5]   W   8L   ∏	  82   b   5^   Y   8L   ∏  82   b   5_   U   8L   ∏  82   b   5`   a   8L   ∏  82   b   5b   c   8L   ∏  82   b   5d   e   8L   f   82   b   5g   h   8L   ∏	  82   b   5i   j   8L   ∏  82   b   5k   l   8L   ∏  82   b   5m   n   8L   ∏  82   b   8o   a   5p   q   8r   ∏  8s   b    8t   a   5u   v   8w   x   8y   b    5z   {   8w   ’π   F    ∏  o 8|   b   5}   v   8w   ~   8|   b   8   o ù†0 `P= `P= `P= `P= `P= `P= `P= `P= `P= `P±0 `P= `P= `P= `P= `P= `P= `P= `P= `P±0 `P= `P= `P= `P= `P= `PM `P"ê )ˇˇˇ˝P´@ `Pö P±@  `P"ê0 9 9 9 I  -PH' `P"ê ))ˇˇˇÒPH) `P"ê0 9 9 9 I) 3PH0 `P"ê0 9 9 I0 *PH6 `P≠0 `P∫ PM9 `P? `PO< `P"ê ))ˇˇˇÁPH> `P"ò PH@ `P "ê0 9 %%*.%*.%*NE %*/%* 
+"/P-%*.%*.%*.%*.%*.%*.%*NH %*/%*.%* 
+"/P-%*.%*.%*.%*.%*!.%*.%*.%*.%*.%*.%*!.%*/%*.%*.%*.%*ì0 %%*ì0 %	5 : ? 5 :  "/PMR 5 : î@@ PCWQ       `  `                
+  —                              S      @¿         "    @$    @&    @(    @6  ,  .  0    @3    @  @    5    @%  	  @
+  @6  7    @8  :    @;    @<    @=    @>    @?    @@    @A    @C  B  D    @E    @F    @G    @H    @I    @J    @K    @  @  @  @  @L     @M  !  @N  O  "  @P  #  @Q  $  @R  %  @S  ¯   &  @V  U  W  T  '  @X  ö  Z  Y  (  @[  \  )  @^  ]          Ä   ¯       †           ‘ÿ±¥         2029/exports.default   O]Ω÷        _ref   ˝	ßJ
+        gatekeeperV                                          7                                    ∑  F   ƒ   ’∏   ó   í   ’∂   {   ∏   o í   ù†0 `PM `Pù P;Q        `  6                    †           àvó
+         1852/_dec<     
+Le        mobile     ïy€        renderConfigd                                      v                                                 5   ∑  F   F   8   ù†0 `P5 í@Q      `   @                      † @   5       ‘ÍÕ˜         render     3)—¯        _this2     –!Å        _state     wãì        muted      ≠®T—        shareOpened    @&$ã        _props      ¶        props      †Ób        autoPlay   ∂Cõ        backgroundColor	    Ñ,s   	     controls
+   ˘·â
+   
+     forceVideo     7Á˝        gfyItem    êf›        logo   e™»`        loop   
+Le        mobile     ˝z∂        playbackRate   õŸ        gfyId      ì€∆        hasAudio   æΩç        cornerButton   DC        createElement      ;ã¢Ô        onClick    IDÿA        handleSoundControlClick    6CY>	        className      =¡>
+        ic ic-send     ã°‡        low    È;#√	        isAndroid      aáﬁå        svg!    QöÎ!   !     handleShareOpen"    i˘Ï¢   "     VideoComponent%     ì#»D   %     Video360&   G˚≥Ñ   &     Video'      w!·   '     player(     áÓC]   (     hasTransparency*    ë¨]∞   *     ImagePlayer+    l≈=Ñ   +     transparent,    q˘√   ,     fullscreenElement-      ëYƒ   -     iframeContainer.    Ú~ﬁ®   .     onStateChange/      Iè˙   /     handlePlayerStateChange0    .n·ã   0     handlePlayerClick1      û“   1     Image2      k÷iú   2     VideoPlayer3    á)m   3     #0000004    Vé   4     getRef5     Rå!   5     show3606    ˜Ã   6     highQuality7    ÈÜƒª   7     user9   n´tU   9     onCloseButtonClick:     k è≥   :     handleShareClose;   ú≥ÊŸ   ;     div<    ßôt}   <     iframe-player-container=    bô¶à   =     handleClick>    VF'   >     refü/  =  	                                                                   P            	  
+    M               "  '  í _    
+                                     	  ,  .                A       	  ,  4    M       .  5     #     6      4    	     
+     9           >   ä  ]                          ä     ‘ƒ  ’∏  ≈   ’∏  F   ƒ   ’∏   F   ƒ  ’∏   F   ƒ  ’∏  F   ƒ  ’∏  F   ƒ  ’∏  F   ƒ  ’∏  F   ƒ  ’∏  F	   ƒ  ’∏  F
+   ƒ  ’∏  F   ƒ	  ’∏  F   ƒ
+  ’∏  F   ƒ  ’∏  F   ƒ  ’∏  F   ƒ  ’∏  F   ƒ  ’∏  F   ƒ  ’∏  ó   í   ’∏  í   ï€   í   ∏  ïI   í   π  F   ◊F   ⁄π  F   5   ∏  8   ∏  F   8   o î   í   π  F   ◊F   ⁄π  F   5   ’π  F       5   ’π	  F    o  8   o 8   π  F   8   ∏  F   8   o í,   î   í,   í,   ƒ  ’’π  F    ∏  o ï   í/   π  F   î   í0   π  F    í1   ƒ  ’∏  ó   í3   ’∏  F!   í4   ï  í5   ∏  ñå   í6   π  F   ◊F   ⁄π
+  F"   5#   ∏  ò   í;   ’$   í;   8   ∏  8
+   ∏  8   ∏  F%   8&   ∏  F'   8(   ∏  F)   8   o îb   íE   π  F   ◊F   ⁄π  F*   5+   ∏  ò   íJ   ’$   íJ   8   ∏  8
+   ∏  F)   8   o íO   î\  íO   ∏  ñÕ   íP   π  F   ◊F   ⁄π
+  F,   5-   ∏  8   ∏  ò   íV   ’.   íV   8   ∏  8   ∏  F%   8&   ∏  F/   8/   ∏  8
+   ∏	  8   ∏  8   ∏
+  8   ∏  F)   8   ∏  F'   8(   80   ∏  8   o îÜ   íg   π  F   ◊F   ⁄∏  51   ∏	  82   ∏  8   ∏  ò   ím   ’.   ím   8   ∏  F/   8/   ∏  8
+   ∏  8   ∏  F)   8   o ív   ƒ  ’∏  ñ   íw   ∏  ◊F3   ⁄o  î]   íy   ∏  ïI   íz   π  F   ◊F   ⁄π  F   54   ∏  8
+   ∏  F5   86   o î   íÇ   íÇ   ƒ  ’π  F   ◊F   ⁄7   58   9   8   ∏  F:   8   f;   8<   ∏  ∏  ∏  o ù†6 `PJ `P> `P> `P> `P> `P> `P> `P> `P> `P> `P> `P> `P> `P> `P> `P> `PN `P– U).ˇˇˇ P≠0  "ï0 
+  "+PI ,PH ? N Ä  ∑Pí@K `P"/Pµ@ `P÷0 û0 9 9 > > N VPM&†0 û0 9 N& Pí@*Æ0 9 û0 9 > > 9 9 9 9 > > 6 I* %PM8ö0 9 9 û0 > 9  
+: N8 PMB `Pô Pª0 9 NB EPMEKG `Pë055 
+: 
+> 
+JP44DG PCT Q          `  `v            	  
+    M             S        @      @    @        !  %  &  (  *    @+  -  ,  /  .  0  1    @2    @3  4  5    @6  7    @:  9  ;    @<  =    p>          =          †             >     †           Å5G         IframePlayer/_this.getRef      >äj…        video      Vé        getRef      ¶        props      àÃ        initEmbedlyReceiver’                                         k   ,                             	    π   ∑  I   ’π   F   F   ƒ   ’∏   ï   í   ∏    ∑  s ’í   π   F   ï   í   π   ◊F   ⁄s  ’í	   †0 `P> `Pî@ 
+`P.`P(P9 
+`Pî0 `P,PI P      `                          †           ï≤Ãá&         IframePlayer/_this.initEmbedlyReceiver     Nc∫        playerjs   ﬁ&U        receiver   Â¸Á        Receiver   «SBö        play   œÃFW        pause      U¶=ë        getCurrentTime     ∏•Å        setCurrentTime	     ¨b–V	   	     getPaused
+      í¯Ás   
+     getDuration    e©˛(	        getVolume      l·êt	        setVolume      ŒŒ+Z        mute   <ö[„        unmute     ¿GMi        getMuted    ﬁ…r        getLoop    À„zÿ        setLoop    >äj…        video       rO        addEventListener   Àbk        ended      ⁄ÿŸ≠
+        timeupdate     ¢Ñ
+        ready      Ì‚Ä%(        IframePlayer/_this.initEmbedlyReceiver/<ˆ"   '                                     !  æ                              8     ∂      ï   í    ùí   π   ∂   F   }Ÿ  ~  I   ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f	   s ’π   F   ◊F   ⁄
+   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F   ◊F   ⁄   f   s ’π   F    ◊F!   ⁄"   f#   s ’π   F    ◊F!   ⁄$   f%   s ’π   F   ◊F&   ⁄s  ’†0 
+`Pñ !`PAG F `Pî PI `Põ PD
+ `Põ PD `Põ PD `Põ PD `Põ PD `Põ PD `Põ PD# `Põ PD' `Põ PD+ `Põ PD/ `Põ PD3 `Põ PD7 `Põ PD; `Põ PD? `Põ PDF `Pë P4 P       `  —           p    p    p    p	    p
+    p    p    p  	  p  
+  p    p    p    p        p    p          '          †                   †                   †                   †                   †                   †                   †                   †                   †                   †                   †                   †                   †                   †                   †                   †           VF'         ref    ëYƒ        iframeContainerŸ:                                                                   ï                                      π   ∑  I   ù†0 `P= 
+Q        `  `                    †           dJ∆         componentDidMount      ¯2áâ        window      rO        addEventListener   °‚√∏        handleWindowMessagez.                                                                    _    %                                   ‘ƒ   ’∂   ◊F   ⁄   ∏   F   s ’†6 `Pö P4 P      `  `    ˜                       † 	          Ì‚Ä%(         IframePlayer/_this.initEmbedlyReceiver/<   ﬁ&U        receiver   (ø|V        emit   ⁄ÿŸ≠
+        timeupdate     O  j        seconds    >äj…        video      Ëﬂ        currentTime    ¿
+7        duration÷)  	                                        
+           H                                 
+     π   F   ◊F   ⁄   5   π   F   F   8   π   F   F   8   s ’†0 `Põ0 
+î0 
+î@ PD P      `         @                	          † ﬂpÈ€+      
+`M√Q`M√QB√∂≈`Vˆ   f    O^partitionKey=%28https%2Creddit.com%29,:https://www.redgifs.com/assets/iframe.99ce1253e3a227079bd7.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2 200 OK
+date: Sun, 14 Mar 2021 07:39:20 GMT
+content-type: application/javascript; charset=utf-8
+cache-control: max-age=2592000, public, no-transform
+expires: Thu, 01 Apr 2021 11:43:11 GMT
+strict-transport-security: max-age=15552000
+x-cache-status: HIT
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+cf-cache-status: HIT
+age: 1022169
+cf-request-id: 08d145f3220000c98916ab9000000001
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+vary: Accept-Encoding
+server: cloudflare
+cf-ray: 62fbd8fe9e48c989-SEA
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+X-Firefox-Spdy: h2
+ original-response-headers date: Sun, 14 Mar 2021 07:39:20 GMT
+content-type: application/javascript; charset=utf-8
+set-cookie: __cfduid=d035bbd56ce3bb72f5f8e3563d1907fd11615707560; expires=Tue, 13-Apr-21 07:39:20 GMT; path=/; domain=.redgifs.com; HttpOnly; SameSite=Lax; Secure
+cache-control: max-age=2592000
+cache-control: public, no-transform
+expires: Thu, 01 Apr 2021 11:43:11 GMT
+strict-transport-security: max-age=15552000
+x-cache-status: HIT
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+cf-cache-status: HIT
+age: 1022169
+cf-request-id: 08d145f3220000c98916ab9000000001
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+vary: Accept-Encoding
+server: cloudflare
+cf-ray: 62fbd8fe9e48c989-SEA
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+X-Firefox-Spdy: h2
+ ctid 2 uncompressed-len 0 net-response-time-onstart 327 net-response-time-onstop 337 alt-data 1;22492,javascript/moz-bytecode-20210223130857-8l0 alt-data-from-child 1  <l

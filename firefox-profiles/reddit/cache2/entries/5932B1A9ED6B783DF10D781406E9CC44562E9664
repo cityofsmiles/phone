@@ -1,0 +1,339 @@
+/*  Snowfall jquery plugin
+
+	====================================================================
+	LICENSE
+	====================================================================
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	   Unless required by applicable law or agreed to in writing, software
+	   distributed under the License is distributed on an "AS IS" BASIS,
+	   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	   See the License for the specific language governing permissions and
+	   limitations under the License.
+	====================================================================
+
+	Version 1.51 Dec 2nd 2012
+	// fixed bug where snow collection didn't happen if a valid doctype was declared.
+	
+	Version 1.5 Oct 5th 2011
+	Added collecting snow! Uses the canvas element to collect snow. In order to initialize snow collection use the following
+	
+	$(document).snowfall({collection : 'element'});
+
+    element = any valid jquery selector.
+
+	The plugin then creates a canvas above every element that matches the selector, and collects the snow. If there are a varrying amount of elements the 
+	flakes get assigned a random one on start they will collide.
+
+	Version 1.4 Dec 8th 2010
+	Fixed issues (I hope) with scroll bars flickering due to snow going over the edge of the screen. 
+	Added round snowflakes via css, will not work for any version of IE. - Thanks to Luke Barker of http://www.infinite-eye.com/
+	Added shadows as an option via css again will not work with IE. The idea behind shadows, is to show flakes on lighter colored web sites - Thanks Yutt
+ 
+	Version 1.3.1 Nov 25th 2010
+	Updated script that caused flakes not to show at all if plugin was initialized with no options, also added the fixes that Han Bongers suggested 
+	
+	Developed by Jason Brown for any bugs or questions email me at loktar69@hotmail
+	info on the plugin is located on Somethinghitme.com
+	
+	values for snow options are
+	
+	flakeCount,
+	flakeColor,
+	flakeIndex,
+	minSize,
+	maxSize,
+	minSpeed,
+	maxSpeed,
+	round, 		true or false, makes the snowflakes rounded if the browser supports it.
+	shadow		true or false, gives the snowflakes a shadow if the browser supports it.
+	
+	Example Usage :
+	$(document).snowfall({flakeCount : 100, maxSpeed : 10});
+	
+	-or-
+	
+	$('#element').snowfall({flakeCount : 800, maxSpeed : 5, maxSize : 5});
+	
+	-or with defaults-
+	
+	$(document).snowfall();
+	
+	- To clear -
+	$('#element').snowfall('clear');
+*/
+
+(function($){
+	$.snowfall = function(element, options){
+		var	defaults = {
+				flakeCount : 35,
+				flakeColor : '#ffffff',
+				flakeIndex: 999999,
+				minSize : 1,
+				maxSize : 2,
+				minSpeed : 1,
+				maxSpeed : 5,
+				round : false,
+				shadow : false,
+				collection : false,
+				collectionHeight : 40,
+				deviceorientation : false
+			},
+			options = $.extend(defaults, options),
+			random = function random(min, max){
+				return Math.round(min + Math.random()*(max-min)); 
+			};
+			
+			$(element).data("snowfall", this);			
+			
+			// Snow flake object
+			function Flake(_x, _y, _size, _speed, _id)
+			{
+				// Flake properties
+				this.id = _id; 
+				this.x  = _x;
+				this.y  = _y;
+				this.size = _size;
+				this.speed = _speed;
+				this.step = 0;
+				this.stepSize = random(1,10) / 100;
+	
+				if(options.collection){
+					this.target = canvasCollection[random(0,canvasCollection.length-1)];
+				}
+				
+				var flakeMarkup = $(document.createElement("div")).attr({'class': 'snowfall-flakes', 'id' : 'flake-' + this.id}).css({'width' : this.size, 'height' : this.size, 'background' : options.flakeColor, 'position' : 'absolute', 'top' : this.y, 'left' : this.x, 'fontSize' : 0, 'zIndex' : options.flakeIndex});
+				
+				if($(element).get(0).tagName === $(document).get(0).tagName){
+					$('body').append(flakeMarkup);
+					element = $('body');
+				}else{
+					$(element).append(flakeMarkup);
+				}
+				
+				this.element = document.getElementById('flake-' + this.id);
+				
+				// Update function, used to update the snow flakes, and checks current snowflake against bounds
+				this.update = function(){
+					this.y += this.speed;
+					
+					if(this.y > (elHeight) - (this.size  + 6)){
+						this.reset();
+					}
+					
+					this.element.style.top = this.y + 'px';
+					this.element.style.left = this.x + 'px';
+					
+					this.step += this.stepSize;
+
+					if (doRatio === false) {
+						this.x += Math.cos(this.step);
+					} else {
+						this.x += (doRatio + Math.cos(this.step));
+					}
+
+					// Pileup check
+					if(options.collection){
+						if(this.x > this.target.x && this.x < this.target.width + this.target.x && this.y > this.target.y && this.y < this.target.height + this.target.y){
+							var ctx = this.target.element.getContext("2d"),
+								curX = this.x - this.target.x,
+								curY = this.y - this.target.y,
+								colData = this.target.colData;
+								
+								if(colData[parseInt(curX)][parseInt(curY+this.speed+this.size)] !== undefined || curY+this.speed+this.size > this.target.height){
+									if(curY+this.speed+this.size > this.target.height){
+										while(curY+this.speed+this.size > this.target.height && this.speed > 0){
+											this.speed *= .5;
+										}
+
+										ctx.fillStyle = "#fff";
+										
+										if(colData[parseInt(curX)][parseInt(curY+this.speed+this.size)] == undefined){
+											colData[parseInt(curX)][parseInt(curY+this.speed+this.size)] = 1;
+											ctx.fillRect(curX, (curY)+this.speed+this.size, this.size, this.size);
+										}else{
+											colData[parseInt(curX)][parseInt(curY+this.speed)] = 1;
+											ctx.fillRect(curX, curY+this.speed, this.size, this.size);
+										}
+										this.reset();
+									}else{
+										// flow to the sides
+										this.speed = 1;
+										this.stepSize = 0;
+									
+										if(parseInt(curX)+1 < this.target.width && colData[parseInt(curX)+1][parseInt(curY)+1] == undefined ){
+											// go left
+											this.x++;
+										}else if(parseInt(curX)-1 > 0 && colData[parseInt(curX)-1][parseInt(curY)+1] == undefined ){
+											// go right
+											this.x--;
+										}else{
+											//stop
+											ctx.fillStyle = "#fff";
+											ctx.fillRect(curX, curY, this.size, this.size);
+											colData[parseInt(curX)][parseInt(curY)] = 1;
+											this.reset();
+										}
+									}
+								}
+						}
+					}
+					
+					if(this.x > (elWidth) - widthOffset || this.x < widthOffset){
+						this.reset();
+					}
+				}
+				
+				// Resets the snowflake once it reaches one of the bounds set
+				this.reset = function(){
+					this.y = 0;
+					this.x = random(widthOffset, elWidth - widthOffset);
+					this.stepSize = random(1,10) / 100;
+					this.size = random((options.minSize * 100), (options.maxSize * 100)) / 100;
+					this.speed = random(options.minSpeed, options.maxSpeed);
+				}
+			}
+		
+			// Private vars
+			var flakes = [],
+				flakeId = 0,
+				i = 0,
+				elHeight = $(element).height(),
+				elWidth = $(element).width(),
+				widthOffset = 0,
+				snowTimeout = 0;
+		
+			// Collection Piece ******************************
+			if(options.collection !== false){
+				var testElem = document.createElement('canvas');
+				if(!!(testElem.getContext && testElem.getContext('2d'))){
+					var canvasCollection = [],
+						elements = $(options.collection),
+						collectionHeight = options.collectionHeight;
+					
+					for(var i =0; i < elements.length; i++){
+							var bounds = elements[i].getBoundingClientRect(),
+								canvas = document.createElement('canvas'),
+								collisionData = [];
+
+							if(bounds.top-collectionHeight > 0){									
+								document.body.appendChild(canvas);
+								canvas.style.position = 'absolute';
+								canvas.height = collectionHeight;
+								canvas.width = bounds.width;
+								canvas.style.left = bounds.left + 'px';
+								canvas.style.top = bounds.top-collectionHeight + 'px';
+								
+								for(var w = 0; w < bounds.width; w++){
+									collisionData[w] = [];
+								}
+								
+								canvasCollection.push({element :canvas, x : bounds.left, y : bounds.top-collectionHeight, width : bounds.width, height: collectionHeight, colData : collisionData});
+							}
+					}
+				}else{
+					// Canvas element isnt supported
+					options.collection = false;
+				}
+			}
+			// ************************************************
+			
+			// This will reduce the horizontal scroll bar from displaying, when the effect is applied to the whole page
+			if($(element).get(0).tagName === $(document).get(0).tagName){
+				widthOffset = 25;
+			}
+			
+			// Bind the window resize event so we can get the innerHeight again
+			$(window).bind("resize", function(){  
+				elHeight = $(element).height();
+				elWidth = $(element).width();
+			}); 
+			
+
+			// initialize the flakes
+			for(i = 0; i < options.flakeCount; i+=1){
+				flakeId = flakes.length;
+				flakes.push(new Flake(random(widthOffset,elWidth - widthOffset), random(0, elHeight), random((options.minSize * 100), (options.maxSize * 100)) / 100, random(options.minSpeed, options.maxSpeed), flakeId));
+			}
+
+			// This adds the style to make the snowflakes round via border radius property 
+			if(options.round){
+				$('.snowfall-flakes').css({'-moz-border-radius' : options.maxSize, '-webkit-border-radius' : options.maxSize, 'border-radius' : options.maxSize});
+			}
+			
+			// This adds shadows just below the snowflake so they pop a bit on lighter colored web pages
+			if(options.shadow){
+				$('.snowfall-flakes').css({'-moz-box-shadow' : '1px 1px 1px #555', '-webkit-box-shadow' : '1px 1px 1px #555', 'box-shadow' : '1px 1px 1px #555'});
+			}
+
+			// On newer Macbooks Snowflakes will fall based on deviceorientation
+			var doRatio = false;
+			if (options.deviceorientation) {
+				$(window).bind('deviceorientation', function(event) {
+					doRatio = event.originalEvent.gamma * 0.1;
+				});
+			}
+
+			// this controls flow of the updating snow
+			function snow(){
+				for( i = 0; i < flakes.length; i += 1){
+					flakes[i].update();
+				}
+				
+				snowTimeout = setTimeout(function(){snow()}, 30);
+			}
+			
+			snow();
+		
+		// Public Methods
+		
+		// clears the snowflakes
+		this.clear = function(){
+						$(element).children('.snowfall-flakes').remove();
+						flakes = [];
+						clearTimeout(snowTimeout);
+					};
+	};
+	
+	// Initialize the options and the plugin
+	$.fn.snowfall = function(options){
+		if(typeof(options) == "object" || options == undefined){		
+				 return this.each(function(i){
+					(new $.snowfall(this, options)); 
+				});	
+		}else if (typeof(options) == "string") {
+			return this.each(function(i){
+				var snow = $(this).data('snowfall');
+				if(snow){
+					snow.clear();
+				}
+			});
+		}
+	};
+})(jQuery);‡ÇÅ0           `OÿBÂ<`QP–   –    O^partitionKey=%28https%2Cpine64.org%29,:https://www.pine64.org/wp-content/plugins/weather-effect/assets/js/christmas-snow/christmas-snow.js?ver=5.6.2 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Server: nginx/1.17.10 (Ubuntu)
+Date: Tue, 16 Mar 2021 00:43:08 GMT
+Content-Type: application/javascript
+Content-Length: 11089
+Last-Modified: Thu, 14 Jan 2021 09:59:53 GMT
+ETag: "60001619-2b51"
+Expires: Wed, 17 Mar 2021 00:43:08 GMT
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+ original-response-headers Server: nginx/1.17.10 (Ubuntu)
+Date: Tue, 16 Mar 2021 00:43:08 GMT
+Content-Type: application/javascript
+Content-Length: 11089
+Connection: keep-alive
+Last-Modified: Thu, 14 Jan 2021 09:59:53 GMT
+ETag: "60001619-2b51"
+Expires: Wed, 17 Mar 2021 00:43:08 GMT
+Cache-Control: max-age=86400
+Accept-Ranges: bytes
+Access-Control-Allow-Origin: *
+ ctid 2 uncompressed-len 0 net-response-time-onstart 6814 net-response-time-onstop 6817   +Q

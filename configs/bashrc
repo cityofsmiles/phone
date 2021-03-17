@@ -180,6 +180,7 @@ alias cleanzip='unzip "*.zip" && rm *.zip'
 alias mb='mousepad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 
 alias rb='reboot'
+alias po='poweroff'
 
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 
