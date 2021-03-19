@@ -2,6 +2,6 @@
 
 sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 
-xfce4-terminal --command='bash -l ranger'
+xfce4-terminal --zoom=1.5 --command='bash -l ranger'
 
 #xfce4-terminal --zoom=4 --command='ash -l -c ranger'
