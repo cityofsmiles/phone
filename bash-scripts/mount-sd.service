@@ -1,0 +1,8 @@
+[Unit]
+Description=Script
+
+[Service]
+ExecStart=/usr/bin/mount-sd
+
+[Install]
+WantedBy=multi-user.target 
