@@ -2,6 +2,6 @@
 
 sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 
-#telegram-desktop
+telegram-desktop
 
-firefox -profile "/home/alarm/Documents/phone/firefox-profiles/reddit" -new-window web.telegram.org 
+#firefox -profile "/home/alarm/Documents/phone/firefox-profiles/reddit" -new-window web.telegram.org 
