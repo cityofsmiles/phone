@@ -1,7 +1,7 @@
 #!/bin/sh
 
-userscripts_dir="/home/jonathan/.config/sxmo/userscripts"
-myscripts_dir="/home/jonathan/Documents/phone"
+userscripts_dir="/home/alarm/.config/sxmo/userscripts"
+myscripts_dir="/home/alarm/Documents/phone"
 
 if [ -d "$userscripts_dir" ]; then
   ### Take action if $DIR exists ###

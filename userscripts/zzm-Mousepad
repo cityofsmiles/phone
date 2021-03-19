@@ -2,4 +2,4 @@
 
 sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 
-xfce4-terminal --hide-menubar --zoom=4 --command='finch' 
+mousepad

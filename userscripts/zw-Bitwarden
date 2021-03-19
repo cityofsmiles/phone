@@ -1,8 +1,0 @@
-#!/bin/sh
-
-sh /home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh &
-
-#flatpak run com.bitwarden.desktop
-
-firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/bitwarden" --kiosk https://vault.bitwarden.com/
-

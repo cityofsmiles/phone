@@ -1,5 +1,0 @@
-#!/bin/sh
-
-sh /home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh &
-
-pidgin

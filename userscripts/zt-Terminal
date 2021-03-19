@@ -1,6 +1,0 @@
-#!/bin/sh
-
-sh /home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh &
-
-xfce4-terminal --zoom=4 --command='ash -l' 
-

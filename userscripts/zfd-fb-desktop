@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sh /home/jonathan/Documents/phone/bash-scripts/feh-change-background.sh &
+sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 
-firefox -profile "/home/jonathan/Documents/phone/firefox-profiles/desktop" https://www.facebook.com/messages/
+firefox -profile "/home/alarm/Documents/phone/firefox-profiles/desktop" https://www.facebook.com/messages/
 
