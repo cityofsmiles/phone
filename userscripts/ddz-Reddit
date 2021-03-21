@@ -1,0 +1,7 @@
+#!/bin/sh
+
+sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
+
+quickddit
+
+#firefox -profile "/home/alarm/Documents/phone/firefox-profiles/reddit" -new-window www.reddit.com

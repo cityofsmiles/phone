@@ -184,6 +184,12 @@ alias po='poweroff'
 
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 
+alias ta='transmission-daemon --download-dir "/mnt/sdcard/Downloads" && transmission-remote -w "/mnt/sdcard/Downloads" -a'
+
+alias tra='transmission-remote -t all -r'
+
+alias tl='transmission-remote -l'
+
 
 export EDITOR=mousepad
 
@@ -204,6 +210,6 @@ up(){
   cd $d
 }
 
-
+function trt { transmission-remote -t $1 -r;}
 
 
