@@ -2,10 +2,10 @@ classify-client.services.mozilla.com:HSTS	12	18707	1647831632450,1,0,2
 external.xx.fbcdn.net^partitionKey=%28http%2Cfacebook.com%29:HSTS	0	18705	1647690834896,1,1,2
 m.facebook.com:HSTS	2	18670	1628671679700,1,1,2
 commons.deped.gov.ph^partitionKey=%28http%2Cdeped.gov.ph%29:HSTS	0	18703	1679043774644,1,1,2
-firefox.settings.services.mozilla.com:HSTS	19	18707	1647831376868,1,0,2
+firefox.settings.services.mozilla.com:HSTS	21	18709	1648004139156,1,0,2
 services.addons.mozilla.org:HSTS	6	18706	1647741442184,1,0,2
 stats.g.doubleclick.net^partitionKey=%28http%2Cdeped.gov.ph%29:HSTS	0	18703	1626858168855,1,1,2
-m.facebook.com^partitionKey=%28http%2Cfacebook.com%29:HSTS	15	18707	1631847654696,1,1,2
+m.facebook.com^partitionKey=%28http%2Cfacebook.com%29:HSTS	17	18709	1632020142463,1,1,2
 www.facebook.com:HSTS	0	18663	1628112587812,1,0,2
 incoming.telemetry.mozilla.org:HSTS	1	18706	1632002062480,1,0,2
 static.xx.fbcdn.net^partitionKey=%28http%2Cfacebook.com%29:HSTS	8	18706	1647741454687,1,1,2
@@ -15,7 +15,7 @@ www.google-analytics.com^partitionKey=%28http%2Cdeped.gov.ph%29:HSTS	0	18703	162
 static.xx.fbcdn.net:HSTS	2	18670	1644640366120,1,1,2
 location.services.mozilla.com:HSTS	5	18703	1647507767840,1,1,2
 aus5.mozilla.org:HSTS	14	18707	1647831578985,1,0,2
-shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	19	18707	1647831384889,1,1,2
+shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	20	18708	1647911558793,1,1,2
 cdn.jsdelivr.net^partitionKey=%28http%2Cdeped.gov.ph%29:HSTS	0	18703	1647507795538,1,1,2
 ac.duckduckgo.com^firstPartyDomain=ddg.search.suggestions.mozilla:HSTS	0	18705	1647690638772,1,0,2
 fonts.googleapis.com^partitionKey=%28http%2Cdeped.gov.ph%29:HSTS	0	18703	1647485786709,1,0,2

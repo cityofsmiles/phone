@@ -186,10 +186,14 @@ alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/con
 
 alias ta='transmission-daemon --download-dir "/mnt/sdcard/Downloads" && transmission-remote -w "/mnt/sdcard/Downloads" -a'
 
+alias td='transmission-daemon --download-dir "/mnt/sdcard/Downloads"'
+
 alias tra='transmission-remote -t all -r'
 
-alias tl='transmission-remote -l'
+alias tsa='transmission-remote -t all -s'
 
+alias tl='transmission-remote -l'
+alias tra='transmission-remote -t all -r'
 
 export EDITOR=mousepad
 
