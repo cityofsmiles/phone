@@ -12,6 +12,8 @@ sudo mkdir -p /mnt/sdcard/Documents
 
 sudo mkdir -p /mnt/sdcard/Downloads
 
+sudo mkdir -p /mnt/sdcard/.h
+
 sudo chown -R $user_pine /mnt/sdcard
 
 #sudo mkdir -p /media/mmcblk0p1/Documents 
@@ -30,5 +32,7 @@ rm -r ~/Downloads
 ln -s /mnt/sdcard/Documents ~/Documents
 
 ln -s /mnt/sdcard/Downloads ~/Downloads
+
+ln -s /mnt/sdcard/.h ~/.h
 
 cp -r ~/phone ~/Documents
