@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
+
+flatpak run com.gitlab.newsflash
+

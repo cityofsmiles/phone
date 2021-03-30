@@ -1,7 +1,8 @@
 #!/bin/sh
 
-sudo apk add flatpak
+sudo yay -S flatpak
+#sudo apk add flatpak
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-sudo flatpak install flathub org.libreoffice.LibreOffice
+#sudo flatpak install flathub org.libreoffice.LibreOffice
