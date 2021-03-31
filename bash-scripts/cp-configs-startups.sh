@@ -16,4 +16,6 @@ cp ~/Documents/phone/configs/bashrc ~/.bashrc
 
 #sudo cp  ~/Documents/phone/configs/environment /etc/environment 
 
+cp ~/Documents/phone/configs/Xresources ~/.Xresources
 
+cp ~/Documents/phone/configs/xinit ~/.config/sxmo/xinit

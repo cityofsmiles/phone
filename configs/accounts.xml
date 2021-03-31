@@ -121,58 +121,59 @@
 		<alias>globe</alias>
 		<statuses/>
 		<settings>
-			<setting name='last-server-id/1056252781' type='int'>1009</setting>
-			<setting name='last-server-id/1326053527' type='int'>30</setting>
-			<setting name='last-server-id/1438419624' type='int'>65</setting>
+			<setting name='last-server-id/1056252781' type='int'>1011</setting>
+			<setting name='last-server-id/1326053527' type='int'>32</setting>
+			<setting name='last-server-id/1438419624' type='int'>67</setting>
 			<setting name='last-server-id/1058316875' type='int'>5266</setting>
-			<setting name='last-server-id/1227991010' type='int'>1538</setting>
-			<setting name='last-server-id/1258738216' type='int'>30</setting>
-			<setting name='last-server-id/1208313404' type='int'>197</setting>
-			<setting name='last-server-id/1068104404' type='int'>1218</setting>
+			<setting name='last-server-id/1227991010' type='int'>1540</setting>
+			<setting name='last-server-id/1323192445' type='int'>912</setting>
+			<setting name='last-server-id/1258738216' type='int'>32</setting>
+			<setting name='last-server-id/1034987004' type='int'>5268</setting>
+			<setting name='last-server-id/1068104404' type='int'>1220</setting>
 			<setting name='media-size-threshold' type='int'>32768</setting>
-			<setting name='last-server-id/1194772451' type='int'>34</setting>
-			<setting name='last-server-id/1482273055' type='int'>206</setting>
+			<setting name='buddy_icon_timestamp' type='int'>1616150623</setting>
+			<setting name='last-server-id/1482273055' type='int'>225</setting>
 			<setting name='media-handling-behavior' type='string'>ask</setting>
-			<setting name='last-server-id/1376999057' type='int'>128</setting>
-			<setting name='last-server-id/1385942433' type='int'>32</setting>
-			<setting name='last-server-id/1371826859' type='int'>2</setting>
+			<setting name='last-server-id/1376999057' type='int'>134</setting>
+			<setting name='last-server-id/1385942433' type='int'>34</setting>
+			<setting name='last-server-id/1472046724' type='int'>159</setting>
 			<setting name='last-server-id/1373058415' type='int'>189</setting>
-			<setting name='last-server-id/1005640892' type='int'>33</setting>
-			<setting name='last-server-id/1099634184' type='int'>7402</setting>
-			<setting name='last-server-id/1034987004' type='int'>5228</setting>
+			<setting name='last-server-id/1005640892' type='int'>35</setting>
+			<setting name='last-server-id/1099634184' type='int'>7410</setting>
+			<setting name='last-server-id/1231690290' type='int'>8</setting>
 			<setting name='inactive-days-offline' type='int'>7</setting>
-			<setting name='last-server-id/1231690290' type='int'>3</setting>
 			<setting name='display-read-notifications' type='bool'>0</setting>
-			<setting name='last-server-id/1026239413' type='int'>6787</setting>
-			<setting name='last-server-id/1245972462' type='int'>200</setting>
-			<setting name='last-server-id/1301504897' type='int'>3</setting>
+			<setting name='last-server-id/1026239413' type='int'>6967</setting>
+			<setting name='last-server-id/1301504897' type='int'>5</setting>
 			<setting name='compat-verification' type='bool'>0</setting>
-			<setting name='buddy_icon_timestamp' type='int'>0</setting>
-			<setting name='last-server-id/1007985985' type='int'>173</setting>
+			<setting name='last-server-id/1007985985' type='int'>182</setting>
 			<setting name='auto-join-group-chats' type='bool'>1</setting>
 			<setting name='ipv6' type='bool'>0</setting>
-			<setting name='last-server-id/1472046724' type='int'>159</setting>
 			<setting name='last-server-id/1000798864' type='int'>5427</setting>
-			<setting name='accept-secret-chats' type='string'>ask</setting>
 			<setting name='last-server-id/1191817844' type='int'>14</setting>
+			<setting name='last-server-id/1371826859' type='int'>12</setting>
 			<setting name='send-read-notifications' type='bool'>1</setting>
+			<setting name='last-server-id/1194772451' type='int'>36</setting>
+			<setting name='last-server-id/1245972462' type='int'>201</setting>
+			<setting name='last-server-id/1290046469' type='int'>366</setting>
 			<setting name='last-server-id/1072804191' type='int'>4175</setting>
-			<setting name='last-server-id/1290046469' type='int'>364</setting>
+			<setting name='accept-secret-chats' type='string'>ask</setting>
 			<setting name='use-global-buddyicon' type='bool'>1</setting>
 			<setting name='history-retrieve-days' type='int'>14</setting>
 			<setting name='last-server-id/1280271845' type='int'>19537</setting>
 			<setting name='last-server-id/1075490389' type='int'>2788</setting>
 			<setting name='last-server-id/1021345616' type='int'>2216</setting>
-			<setting name='last-server-id/1051999595' type='int'>3883</setting>
 			<setting name='last-server-id/1134067984' type='int'>1516</setting>
-			<setting name='last-server-id/1323192445' type='int'>910</setting>
 			<setting name='last-server-id/1394086956' type='int'>2674</setting>
-			<setting name='last-server-id/1245432493' type='int'>238</setting>
-			<setting name='last-server-id/1123181356' type='int'>35</setting>
-			<setting name='last-server-id/1231770021' type='int'>6669</setting>
 			<setting name='last-server-id/1109034259' type='int'>19823</setting>
-			<setting name='last-server-id/1385873084' type='int'>221</setting>
-			<setting name='last-server-id/1008635019' type='int'>15666</setting>
+			<setting name='last-server-id/1008635019' type='int'>15840</setting>
+			<setting name='last-server-id/1245432493' type='int'>240</setting>
+			<setting name='last-server-id/1123181356' type='int'>37</setting>
+			<setting name='last-server-id/1208313404' type='int'>199</setting>
+			<setting name='last-server-id/1231770021' type='int'>6727</setting>
+			<setting name='buddy_icon' type='string'>fa73075e6da67cfa9605e1a2eafbde56877c7278.png</setting>
+			<setting name='last-server-id/1385873084' type='int'>223</setting>
+			<setting name='last-server-id/1051999595' type='int'>3883</setting>
 		</settings>
 		<settings ui='gtk-gaim'>
 			<setting name='auto-login' type='bool'>0</setting>
@@ -185,61 +186,63 @@
 		<alias>personal telegram</alias>
 		<statuses/>
 		<settings>
-			<setting name='last-server-id/1035030390' type='int'>6119</setting>
+			<setting name='last-server-id/1035030390' type='int'>6133</setting>
 			<setting name='media-handling-behavior' type='string'>ask</setting>
 			<setting name='last-server-id/1301504897' type='int'>45</setting>
-			<setting name='last-server-id/1026239413' type='int'>6793</setting>
-			<setting name='last-server-id/1010149736' type='int'>176</setting>
-			<setting name='last-server-id/1258738216' type='int'>33</setting>
 			<setting name='last-server-id/1072804191' type='int'>4252</setting>
-			<setting name='buddy_icon_timestamp' type='int'>0</setting>
+			<setting name='last-server-id/1258738216' type='int'>33</setting>
+			<setting name='last-server-id/1010149736' type='int'>193</setting>
+			<setting name='last-server-id/1026239413' type='int'>6793</setting>
+			<setting name='buddy_icon_timestamp' type='int'>1616150623</setting>
 			<setting name='last-server-id/1371826859' type='int'>41</setting>
 			<setting name='last-server-id/1075490389' type='int'>2761</setting>
 			<setting name='last-server-id/1264823914' type='int'>27</setting>
-			<setting name='last-server-id/1323192445' type='int'>928</setting>
+			<setting name='last-server-id/1014746736' type='int'>346</setting>
 			<setting name='last-server-id/1405350600' type='int'>50</setting>
 			<setting name='last-server-id/1191817844' type='int'>14</setting>
 			<setting name='last-server-id/1041229131' type='int'>102</setting>
 			<setting name='last-server-id/1482273055' type='int'>229</setting>
 			<setting name='last-server-id/1058316875' type='int'>5228</setting>
-			<setting name='last-server-id/1014746736' type='int'>332</setting>
+			<setting name='last-server-id/1323192445' type='int'>973</setting>
 			<setting name='display-read-notifications' type='bool'>0</setting>
-			<setting name='last-server-id/1006313407' type='int'>2174</setting>
+			<setting name='last-server-id/1006313407' type='int'>2199</setting>
 			<setting name='last-server-id/1231770021' type='int'>6645</setting>
 			<setting name='last-server-id/1005980967' type='int'>5694</setting>
 			<setting name='last-server-id/1482226582' type='int'>209</setting>
 			<setting name='last-server-id/1134067984' type='int'>1574</setting>
-			<setting name='last-server-id/1134482823' type='int'>1307</setting>
+			<setting name='last-server-id/1134482823' type='int'>1320</setting>
 			<setting name='last-server-id/1231690290' type='int'>52</setting>
-			<setting name='last-server-id/1227991010' type='int'>1556</setting>
-			<setting name='last-server-id/1274202276' type='int'>4365</setting>
-			<setting name='last-server-id/1267571487' type='int'>1721</setting>
-			<setting name='last-server-id/1005962126' type='int'>491</setting>
+			<setting name='last-server-id/1227991010' type='int'>1601</setting>
+			<setting name='last-server-id/1274202276' type='int'>4478</setting>
+			<setting name='last-server-id/1267571487' type='int'>1767</setting>
+			<setting name='last-server-id/1005962126' type='int'>505</setting>
 			<setting name='last-server-id/1383883665' type='int'>1038</setting>
-			<setting name='last-server-id/1009061307' type='int'>1143</setting>
-			<setting name='last-server-id/1271741444' type='int'>51</setting>
+			<setting name='last-server-id/1009061307' type='int'>1156</setting>
+			<setting name='last-server-id/1271741444' type='int'>62</setting>
+			<setting name='last-server-id/1499408794' type='int'>2</setting>
 			<setting name='last-server-id/1011547230' type='int'>765</setting>
 			<setting name='last-server-id/1362867227' type='int'>7</setting>
 			<setting name='last-server-id/1432353396' type='int'>23</setting>
 			<setting name='use-global-buddyicon' type='bool'>1</setting>
 			<setting name='accept-secret-chats' type='string'>ask</setting>
 			<setting name='ipv6' type='bool'>0</setting>
-			<setting name='last-server-id/1202054555' type='int'>105</setting>
+			<setting name='last-server-id/1008635019' type='int'>15592</setting>
 			<setting name='last-server-id/1373058415' type='int'>185</setting>
 			<setting name='last-server-id/1056252781' type='int'>1042</setting>
-			<setting name='last-server-id/1022144348' type='int'>957</setting>
-			<setting name='last-server-id/1007018300' type='int'>721</setting>
+			<setting name='last-server-id/1022144348' type='int'>971</setting>
 			<setting name='last-server-id/1405035303' type='int'>89</setting>
+			<setting name='buddy_icon' type='string'>fa73075e6da67cfa9605e1a2eafbde56877c7278.png</setting>
 			<setting name='last-server-id/1351029246' type='int'>26</setting>
 			<setting name='last-server-id/1034987004' type='int'>5246</setting>
-			<setting name='last-server-id/1008635019' type='int'>15592</setting>
-			<setting name='last-server-id/1326053527' type='int'>48</setting>
+			<setting name='last-server-id/1202054555' type='int'>105</setting>
+			<setting name='last-server-id/1326053527' type='int'>76</setting>
 			<setting name='last-server-id/1068104404' type='int'>1166</setting>
-			<setting name='last-server-id/1245432493' type='int'>256</setting>
+			<setting name='last-server-id/1245432493' type='int'>301</setting>
 			<setting name='last-server-id/1449522955' type='int'>73</setting>
 			<setting name='last-server-id/1099634184' type='int'>7397</setting>
-			<setting name='last-server-id/1310465695' type='int'>47</setting>
-			<setting name='last-server-id/1292553611' type='int'>53</setting>
+			<setting name='last-server-id/1007018300' type='int'>734</setting>
+			<setting name='last-server-id/1310465695' type='int'>90</setting>
+			<setting name='last-server-id/1292553611' type='int'>57</setting>
 			<setting name='last-server-id/1359626271' type='int'>31</setting>
 			<setting name='last-server-id/1109034259' type='int'>19658</setting>
 			<setting name='last-server-id/1308120093' type='int'>34</setting>
@@ -253,32 +256,33 @@
 			<setting name='last-server-id/1178879987' type='int'>7075</setting>
 			<setting name='last-server-id/1005640892' type='int'>32</setting>
 			<setting name='last-server-id/1208313404' type='int'>215</setting>
-			<setting name='last-server-id/1385942433' type='int'>51</setting>
+			<setting name='last-server-id/1385942433' type='int'>76</setting>
 			<setting name='last-server-id/1021345616' type='int'>2255</setting>
 			<setting name='auto-join-group-chats' type='bool'>1</setting>
 			<setting name='last-server-id/1472046724' type='int'>177</setting>
 			<setting name='last-server-id/1000798864' type='int'>5384</setting>
 			<setting name='last-server-id/1051999595' type='int'>3917</setting>
-			<setting name='last-server-id/1048724761' type='int'>2843</setting>
-			<setting name='last-server-id/1007929526' type='int'>2758</setting>
+			<setting name='last-server-id/1048724761' type='int'>2858</setting>
+			<setting name='last-server-id/1007929526' type='int'>2772</setting>
 			<setting name='last-server-id/1194772451' type='int'>3</setting>
 			<setting name='last-server-id/1123181356' type='int'>37</setting>
-			<setting name='last-server-id/1105984492' type='int'>665</setting>
-			<setting name='last-server-id/1010154692' type='int'>3873</setting>
-			<setting name='last-server-id/1150229170' type='int'>217</setting>
-			<setting name='last-server-id/1290046469' type='int'>375</setting>
+			<setting name='last-server-id/1105984492' type='int'>680</setting>
+			<setting name='last-server-id/1328252641' type='int'>538</setting>
+			<setting name='last-server-id/1010154692' type='int'>3887</setting>
+			<setting name='last-server-id/1150229170' type='int'>266</setting>
+			<setting name='last-server-id/1290046469' type='int'>420</setting>
 			<setting name='last-server-id/1376999057' type='int'>156</setting>
-			<setting name='last-server-id/1011395846' type='int'>375</setting>
+			<setting name='last-server-id/1011395846' type='int'>397</setting>
 			<setting name='last-server-id/1394086956' type='int'>2639</setting>
 			<setting name='last-server-id/1007985985' type='int'>164</setting>
 			<setting name='last-server-id/1046147825' type='int'>1044</setting>
 			<setting name='last-server-id/1306136214' type='int'>17</setting>
 			<setting name='last-server-id/1280271845' type='int'>19321</setting>
-			<setting name='last-server-id/1421059407' type='int'>251</setting>
+			<setting name='last-server-id/1421059407' type='int'>264</setting>
 			<setting name='last-server-id/1469697614' type='int'>34</setting>
-			<setting name='last-server-id/1006028707' type='int'>612</setting>
+			<setting name='last-server-id/1006028707' type='int'>625</setting>
 			<setting name='last-server-id/1283949026' type='int'>26</setting>
-			<setting name='last-server-id/1496099324' type='int'>50</setting>
+			<setting name='last-server-id/1496099324' type='int'>71</setting>
 		</settings>
 		<settings ui='gtk-gaim'>
 			<setting name='auto-login' type='bool'>1</setting>
@@ -319,8 +323,9 @@
 		<settings>
 			<setting name='custom_smileys' type='bool'>1</setting>
 			<setting name='check-mail' type='bool'>1</setting>
-			<setting name='buddy_icon_timestamp' type='int'>0</setting>
+			<setting name='buddy_icon_timestamp' type='int'>1616150623</setting>
 			<setting name='use-global-buddyicon' type='bool'>1</setting>
+			<setting name='buddy_icon' type='string'>1e4aad541ba20de4cf3eab2e770538801a304957.png</setting>
 			<setting name='connection_security' type='string'>require_tls</setting>
 			<setting name='port' type='int'>5222</setting>
 			<setting name='silence-suppression' type='bool'>0</setting>

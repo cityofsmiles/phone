@@ -144,7 +144,8 @@ extract ()
 
 
 # My personal shortcuts 
-alias u='yay'
+#alias u='yay'
+alias u='sudo ~/sxmo-alarm/sxmo-alarm'
 #alias u='yay; flatpak update'
 alias srb='source ~/.bashrc'
 alias in='yay -S'
@@ -200,6 +201,10 @@ alias tra='transmission-remote -t all -r'
 alias la='ls -la'
 
 alias cast='dms -friendlyName mydlna'
+
+alias restartx='sudo systemctl restart display-manager'
+
+#alias suspend='systemctl suspend'
 
 export EDITOR=mousepad
 
