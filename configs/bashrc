@@ -204,7 +204,7 @@ alias cast='dms -friendlyName mydlna'
 
 alias restartx='sudo systemctl restart display-manager'
 
-#alias suspend='systemctl suspend'
+#alias zipsend='systemctl suspend'
 
 export EDITOR=mousepad
 
@@ -227,4 +227,4 @@ up(){
 
 function trt { transmission-remote -t $1 -r;}
 
-
+function zipsend { zip -r $1 * && telegram-send -f $1; }
