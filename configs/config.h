@@ -1,0 +1,33 @@
+
+	{ 0, MODKEY|ControlMask,        XK_space,      spawn,          SHCMD("xfce4-terminal") },
+	{ 0, MODKEY|ControlMask,        XK_r,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='bash -l ranger'") },
+	{ 0, MODKEY|ControlMask,        XK_p,          spawn,          SHCMD("pidgin") },
+	{ 0, MODKEY|ControlMask,        XK_s,          spawn,          SHCMD("systemctl suspend") },
+	{ 0, MODKEY|ControlMask,        XK_t,          spawn,          SHCMD("telegram-desktop") },
+	{ 0, MODKEY|ControlMask,        XK_q,          spawn,          SHCMD("quickddit") },
+	{ 0, MODKEY|ControlMask,        XK_n,          spawn,          SHCMD("flatpak run com.gitlab.newsflash") },
+	{ 0, MODKEY|ControlMask,        XK_f,          spawn,          SHCMD("firefox") },
+	{ 0, MODKEY|ControlMask,        XK_e,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-personal' https://m.facebook.com/messages/") },
+	{ 0, MODKEY|ControlMask,        XK_l,          spawn,          SHCMD("libreoffice") },
+	{ 0, MODKEY|ControlMask,        XK_y,          spawn,          SHCMD("smtube") },
+	{ 0, MODKEY|ControlMask,        XK_g,          spawn,          SHCMD("chromium --user-data-dir='/home/alarm/Documents/phone/chromium-profiles/personal'") },
+	{ 0, MODKEY|ControlMask,        XK_d,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/desktop' https://www.facebook.com/messages/") },
+	{ 0, MODKEY|ControlMask,        XK_k,          spawn,          SHCMD("chromium --user-data-dir='/home/alarm/Documents/phone/chromium-profiles/work'") },
+	{ 0, MODKEY|ControlMask,        XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-work' https://m.facebook.com/messages/") },
+	{ 0, MODKEY|ControlMask,        XK_m,          spawn,          SHCMD("mousepad") },
+	{ 0, MODKEY|ControlMask,        XK_u,          spawn,          SHCMD("xfce4-terminal --command='yay'") },
+	{ 0, MODKEY|ControlMask,        XK_v,          spawn,          SHCMD("vlc") },
+	{ 0, MODKEY|ControlMask,        XK_o,          spawn,          SHCMD("okular") },
+	{ 0, MODKEY|ControlMask,        XK_b,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/bitwarden' --kiosk https://vault.bitwarden.com/") },
+	{ 0, MODKEY|ControlMask,        XK_i,          spawn,          SHCMD("texstudio") },	
+	{ 0, MODKEY|ControlMask,        XK_c,          spawn,          SHCMD("xfce4-terminal --command='xset dpms force off'") },
+	{ 0, MODKEY|ControlMask,        XK_x,          spawn,          SHCMD("xfce4-terminal --command='poweroff'") },
+	{ 0, MODKEY|ControlMask,        XK_z,          spawn,          SHCMD("xfce4-terminal --command='reboot'") },
+	{ 0, MODKEY|ControlMask,        XK_a,          spawn,          SHCMD("xfce4-terminal --command='cal'") },
+
+	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
+	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
+	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
+
+
+

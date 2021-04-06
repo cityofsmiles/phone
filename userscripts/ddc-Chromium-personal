@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
+
+chromium --user-data-dir="/home/alarm/Documents/phone/chromium-profiles/personal"

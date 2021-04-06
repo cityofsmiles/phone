@@ -2,4 +2,4 @@
 
 sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 
-texmaker
+texstudio

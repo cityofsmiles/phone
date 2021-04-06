@@ -1,15 +1,15 @@
-2021/03/04-17:01:36.673 17ec Reusing MANIFEST /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/04-17:01:36.674 17ec Recovering log #50
-2021/03/04-17:01:36.677 17ec Reusing old log /media/mmcblk0p1/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000050.log 
-2021/03/04-17:13:59.212 189d Level-0 table #55: started
-2021/03/04-17:13:59.232 189d Level-0 table #55: 139481 bytes OK
-2021/03/04-17:13:59.240 189d Delete type=0 #50
-2021/03/04-17:13:59.241 189d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2021/03/04-17:13:59.242 189d Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x00\x00\xc8\x0a\x00t\x00y\x00p\x00e\x00-\x00s\x00t\x00o\x00r\x00e' @ 2360 : 1
-2021/03/04-17:13:59.242 189d Compacting 1@1 + 1@2 files
-2021/03/04-17:13:59.256 189d Generated table #56@1: 98 keys, 15810 bytes
-2021/03/04-17:13:59.256 189d Compacted 1@1 + 1@2 files => 15810 bytes
-2021/03/04-17:13:59.263 189d compacted to: files[ 0 0 1 0 0 0 0 ]
-2021/03/04-17:13:59.264 189d Delete type=2 #55
-2021/03/04-17:13:59.265 189d Delete type=2 #52
-2021/03/04-17:13:59.266 189d Manual compaction at level-1 from '\x00\x02\x00\x00\xc8\x0a\x00t\x00y\x00p\x00e\x00-\x00s\x00t\x00o\x00r\x00e' @ 2360 : 1 .. (end); will stop at (end)
+2021/04/05-16:32:24.118 5b31 Reusing MANIFEST /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/04/05-16:32:24.120 5b31 Recovering log #62
+2021/04/05-16:32:24.120 5b31 Reusing old log /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000062.log 
+2021/04/05-16:53:33.120 78df Level-0 table #67: started
+2021/04/05-16:53:33.151 78df Level-0 table #67: 195891 bytes OK
+2021/04/05-16:53:33.159 78df Delete type=0 #62
+2021/04/05-16:53:33.161 78df Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/04/05-16:53:33.162 7eea Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x03\x03\x01'\x006\x00e\x00c\x000\x00d\x00d\x003\x006\x00d\x000\x006\x004\x00e\x00c\x00b\x005\x00a\x004\x009\x000\x003\x00d\x002\x00c\x002\x00a\x00b\x008\x003\x003\x005\x002\x00_\x003\x00_\x001\x00:\x000\x000' @ 3537 : 0
+2021/04/05-16:53:33.162 7eea Compacting 1@1 + 1@2 files
+2021/04/05-16:53:33.180 7eea Generated table #68@1: 98 keys, 16407 bytes
+2021/04/05-16:53:33.180 7eea Compacted 1@1 + 1@2 files => 16407 bytes
+2021/04/05-16:53:33.185 7eea compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/04/05-16:53:33.187 7eea Delete type=2 #67
+2021/04/05-16:53:33.187 7eea Delete type=2 #64
+2021/04/05-16:53:33.189 7eea Manual compaction at level-1 from '\x00\x01\x03\x03\x01'\x006\x00e\x00c\x000\x00d\x00d\x003\x006\x00d\x000\x006\x004\x00e\x00c\x00b\x005\x00a\x004\x009\x000\x003\x00d\x002\x00c\x002\x00a\x00b\x008\x003\x003\x005\x002\x00_\x003\x00_\x001\x00:\x000\x000' @ 3537 : 0 .. (end); will stop at (end)

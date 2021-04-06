@@ -1,0 +1,61 @@
+{
+   "checksum": "76469e35bf75315cf3188b75031b1219",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13258293920931541",
+            "guid": "7f383f07-3e62-4135-bd46-b3162b2e2b61",
+            "id": "5",
+            "name": "My Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/my-drive"
+         }, {
+            "date_added": "13258294210894383",
+            "guid": "c75c9d73-c6ab-4b55-b96a-0e84cacf119d",
+            "id": "6",
+            "name": "Classes",
+            "type": "url",
+            "url": "https://classroom.google.com/h"
+         }, {
+            "date_added": "13258789102221897",
+            "guid": "5125becf-b700-4c68-a72d-114a6c7699df",
+            "id": "8",
+            "name": "Meet ",
+            "type": "url",
+            "url": "https://meet.google.com/rfs-egcq-ogw"
+         }, {
+            "date_added": "13258874119753375",
+            "guid": "193f5935-8b37-4372-b5e0-e9dda82784c0",
+            "id": "10",
+            "name": "Grade8Lessons",
+            "type": "url",
+            "url": "https://github.com/cityofsmiles/Grade8Lessons"
+         } ],
+         "date_added": "13258293770257255",
+         "date_modified": "13258874119753375",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13258293770257270",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13258293770257278",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
