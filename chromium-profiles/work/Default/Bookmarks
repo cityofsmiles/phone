@@ -1,5 +1,5 @@
 {
-   "checksum": "1fe52e71f216cd4173f30ee15a1c39d0",
+   "checksum": "35070ed5cd79534b1f970a9eb4dd53bc",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -20,7 +20,7 @@
             "date_added": "13258874119753375",
             "guid": "193f5935-8b37-4372-b5e0-e9dda82784c0",
             "id": "10",
-            "name": "Grade8Lessons",
+            "name": "Lessons",
             "type": "url",
             "url": "https://github.com/cityofsmiles/Grade8Lessons"
          }, {
