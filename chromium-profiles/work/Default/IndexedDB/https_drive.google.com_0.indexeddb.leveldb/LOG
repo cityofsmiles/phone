@@ -1,3 +1,15 @@
-2021/04/07-07:43:43.515 2e1a7 Reusing MANIFEST /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/04/07-07:43:43.516 2e1a7 Recovering log #66
-2021/04/07-07:43:43.530 2e1a7 Reusing old log /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000066.log 
+2021/04/10-16:01:42.706 89d8 Reusing MANIFEST /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/04/10-16:01:42.708 89d8 Recovering log #70
+2021/04/10-16:01:42.708 89d8 Reusing old log /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000070.log 
+2021/04/10-16:15:21.692 902d Level-0 table #75: started
+2021/04/10-16:15:21.723 902d Level-0 table #75: 75034 bytes OK
+2021/04/10-16:15:21.729 902d Delete type=0 #70
+2021/04/10-16:15:21.730 902d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/04/10-16:15:21.730 902d Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x03\x03\x01'\x006\x00e\x00c\x000\x00d\x00d\x003\x006\x00d\x000\x006\x004\x00e\x00c\x00b\x005\x00a\x004\x009\x000\x003\x00d\x002\x00c\x002\x00a\x00b\x008\x003\x003\x005\x002\x00_\x003\x00_\x001\x00:\x000\x000' @ 6342 : 0
+2021/04/10-16:15:21.731 902d Compacting 1@1 + 1@2 files
+2021/04/10-16:15:21.745 902d Generated table #76@1: 98 keys, 16723 bytes
+2021/04/10-16:15:21.745 902d Compacted 1@1 + 1@2 files => 16723 bytes
+2021/04/10-16:15:21.757 902d compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/04/10-16:15:21.758 902d Delete type=2 #75
+2021/04/10-16:15:21.759 902d Delete type=2 #72
+2021/04/10-16:15:21.760 902d Manual compaction at level-1 from '\x00\x01\x03\x03\x01'\x006\x00e\x00c\x000\x00d\x00d\x003\x006\x00d\x000\x006\x004\x00e\x00c\x00b\x005\x00a\x004\x009\x000\x003\x00d\x002\x00c\x002\x00a\x00b\x008\x003\x003\x005\x002\x00_\x003\x00_\x001\x00:\x000\x000' @ 6342 : 0 .. (end); will stop at (end)

@@ -19,3 +19,5 @@ cp ~/Documents/phone/configs/bashrc ~/.bashrc
 cp ~/Documents/phone/configs/Xresources ~/.Xresources
 
 cp ~/Documents/phone/configs/xinit ~/.config/sxmo/xinit
+
+cp ~/Documents/phone/configs/arch-profile ~/.profile

@@ -1,0 +1,7 @@
+export BROWSER=firefox
+
+export EDITOR='/usr/bin/mousepad'
+
+export PATH=/home/alarm/Documents/phone/userscripts:$PATH
+
+

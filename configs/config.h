@@ -25,9 +25,13 @@
 	{ 0, MODKEY|ControlMask,        XK_z,          spawn,          SHCMD("xfce4-terminal --command='reboot'") },
 	{ 0, MODKEY|ControlMask,        XK_a,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/startup-scripts.sh") },
 	{ 0, MODKEY|ControlMask,        XK_j,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/bat-notify.sh") },
+	{ 0, MODKEY|ControlMask,        XK_comma,      spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/screenshot.sh") },
+	
+	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
+	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
+	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
+	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
 
-	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
-	{ 0, MODKEY|ControlMask,        XK_,          spawn,          SHCMD("") },
 
 
 
