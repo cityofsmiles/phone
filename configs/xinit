@@ -72,3 +72,5 @@ command -v mousepad && export EDITOR=mousepad
 command -v xfce4-terminal && export TERM=xfce4-terminal
 
 sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
+
+xsetroot -cursor_name left_ptr &
