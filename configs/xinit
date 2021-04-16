@@ -9,7 +9,7 @@
 #  finishes will the window manager be loaded
 
 # Set a pretty wallpaper
-feh --bg-fill /usr/share/sxmo/background.jpg
+#feh --bg-fill /usr/share/sxmo/background.jpg
 
 # Show conky (the clock)
 conky -c /usr/share/sxmo/appcfg/conky.conf -d #12 hour clock (am/pm)
@@ -46,7 +46,7 @@ mpv --quiet --no-video /usr/share/sxmo/startup.ogg &
 command -v firefox && export BROWSER=firefox
 
 # Prepopulate Subreddits menu with custom subreddits
-#export SXMO_SUBREDDITS="postmarketos pinephoneOfficial pinephone unixporn"
+export SXMO_SUBREDDITS="postmarketos pinephoneOfficial pinephone unixporn"
 
 # Temporarily wake every 5 minutes during sleep
 #(useful for getting notifications)
@@ -67,5 +67,8 @@ command -v firefox && export BROWSER=firefox
 # Or, enable vibration feedback on keypress
 export KEYBOARD_ARGS="-o | clickclack -v"
 
-
 command -v mousepad && export EDITOR=mousepad
+
+command -v xfce4-terminal && export TERM=xfce4-terminal
+
+sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
