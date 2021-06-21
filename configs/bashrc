@@ -147,6 +147,7 @@ extract ()
 #alias u='yay'
 alias u='sudo ~/sxmo-alarm/sxmo-alarm'
 #alias u='yay; flatpak update'
+alias compile='cd /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm; sudo make clean install'
 alias srb='source ~/.bashrc'
 alias in='yay -S'
 alias pr='yay -R'
@@ -173,7 +174,7 @@ alias cpcn='sh ~/Documents/phone/bash-scripts/cp-configs-startups.sh'
 alias gcal='python /home/jonathan/gencal/calculators/gen_cal_v2/gen_cal_v2.py'
 alias r='ranger'
 alias m='mousepad'
-
+alias ll='exa'
 alias nn='nano'
 
 alias cleanzip='unzip "*.zip" && rm *.zip'

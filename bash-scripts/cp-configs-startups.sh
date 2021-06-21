@@ -6,6 +6,8 @@
 
 cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf
 
+cp ~/Documents/phone/configs/rifle.conf ~/.config/ranger/rifle.conf
+
 #sudo cp -r ~/Documents/phone/pmos-init-files/* /etc/init.d/
 
 cp ~/Documents/phone/configs/bashrc ~/.bashrc
@@ -23,3 +25,5 @@ sudo cp ~/Documents/phone/configs/xinit ~/.config/sxmo/xinit
 sudo cp ~/Documents/phone/configs/conky.conf ~/.config/sxmo/conky.conf
 
 cp ~/Documents/phone/configs/arch-profile ~/.profile
+
+sudo cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm/config.h

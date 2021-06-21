@@ -1,0 +1,6 @@
+2021/05/09-16:44:47.293 117a Creating DB /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb since it was missing.
+2021/05/09-16:44:47.327 117a Reusing MANIFEST /mnt/sdcard/Documents/phone/chromium-profiles/work/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/05/09-16:45:19.463 1d27 Level-0 table #5: started
+2021/05/09-16:45:19.483 1d27 Level-0 table #5: 1233 bytes OK
+2021/05/09-16:45:19.488 1d27 Delete type=0 #3
+2021/05/09-16:45:19.490 1d27 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

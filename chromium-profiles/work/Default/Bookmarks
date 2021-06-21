@@ -1,5 +1,5 @@
 {
-   "checksum": "35070ed5cd79534b1f970a9eb4dd53bc",
+   "checksum": "f5658921d9962d55fbddadbd7f2ef552",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -37,9 +37,16 @@
             "name": "3rd",
             "type": "url",
             "url": "https://drive.google.com/drive/folders/1uBQOvfytZkKEkgt2lIJebdUikh96ijiu"
+         }, {
+            "date_added": "13267060679526130",
+            "guid": "bbc02c85-8271-47eb-b393-1b24b66b527c",
+            "id": "15",
+            "name": "My Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/my-drive"
          } ],
          "date_added": "13258293770257255",
-         "date_modified": "13262085950075225",
+         "date_modified": "13267060679526130",
          "guid": "00000000-0000-4000-a000-000000000002",
          "id": "1",
          "name": "Bookmarks bar",
