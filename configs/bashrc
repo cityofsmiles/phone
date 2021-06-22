@@ -175,7 +175,8 @@ alias gcal='python /home/jonathan/gencal/calculators/gen_cal_v2/gen_cal_v2.py'
 alias r='ranger'
 alias m='mousepad'
 alias ll='exa'
-alias nn='nano'
+alias mc='micro'
+alias n='nano'
 
 alias cleanzip='unzip "*.zip" && rm *.zip'
 
