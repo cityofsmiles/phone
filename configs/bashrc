@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
-
+ 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -181,9 +181,10 @@ alias n='nano'
 alias cleanzip='unzip "*.zip" && rm *.zip'
 
 alias mb='mousepad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
-
+alias mcb='micro ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias rb='reboot'
 alias po='poweroff'
+alias mcc='micro ~/Documents/phone/configs/config.h'
 
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 
@@ -207,6 +208,8 @@ alias cast='dms -friendlyName mydlna'
 alias restartx='sudo systemctl restart display-manager'
 
 alias bat='cat /sys/class/power_supply/axp20x-battery/capacity'
+
+alias watchrun='sh /home/alarm/Documents/phone/bash-scripts/watch-run.sh *.tex'
 
 export EDITOR=mousepad
 
