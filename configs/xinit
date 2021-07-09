@@ -46,7 +46,7 @@ mpv --quiet --no-video /usr/share/sxmo/startup.ogg &
 command -v firefox && export BROWSER=firefox
 
 # Prepopulate Subreddits menu with custom subreddits
-export SXMO_SUBREDDITS="pinephoneOfficial pinephone unixporn"
+export SXMO_SUBREDDITS="pinephoneOfficial,pinephone,unixporn"
 
 # Temporarily wake every 5 minutes during sleep
 #(useful for getting notifications)
@@ -73,6 +73,17 @@ command -v xfce4-terminal && export TERM=xfce4-terminal
 
 sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 
+sh /home/alarm/Documents/phone/bash-scripts/rsync-docs2cp.sh &
+
+sh /home/alarm/Documents/phone/bash-scripts/rsync-latex2cp.sh &
+
+sh /home/alarm/Documents/phone/bash-scripts/rsync-excel2cp.sh &
+
+sh /home/alarm/Documents/phone/bash-scripts/rsync-scripts2cp.sh &
+
 clipit &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+
+
+export DEFAULT_COUNTRY=PH

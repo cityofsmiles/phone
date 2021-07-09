@@ -6,9 +6,9 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *defaultfonts[]          = {
-  "monospace:size=15", /* PP default start index */
+  "monospace:size=16", /* PP default start index */
 };
-static const char dmenufont[]       = "monospace:size=11";
+static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -33,13 +33,15 @@ static const Rule rules[] = {
 	{ "st",       NULL,       NULL,       0,            0,           1,         1,        -1,  0},
 	{ "Pidgin",   NULL,       NULL,       1 << 3,       0,           0,         1,        -1,  0},
 	{ "okular",   NULL,       NULL,       1 << 2,       0,           0,         1,        -1,  0},
+	/*{ "firefox",  NULL,       NULL,       1 << 3,       0,           0,         1,        -1,  0},*/
 	{ "TelegramDesktop", NULL,       NULL,       1 << 2,       0,           0,         1,        -1,  0},
 	{ "Mousepad", NULL,       NULL,       1 << 1,       0,           0,         1,        -1,  0},
+	{ "micro",    NULL,       NULL,       1 << 1,       0,           1,         1,        -1,  0},
 	{ "svkbd",    NULL,       NULL,       TAGMASK,      1,           1,         0,        -1,  1},
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
@@ -89,11 +91,14 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 #include <X11/XF86keysym.h>
 static Key keys[] = {
   /* PP */
-	{1,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_one") },
+/*	{1,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_one") },*/
+	{1,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("pidof $KEYBOARD || $KEYBOARD &") },
 	{2,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_two") },
 	{3,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_three") },
-	{1,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_one") },
-	{2,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_two") },
+/*	{1,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_one") },*/
+	{1,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("pkill -9 -f $KEYBOARD") },
+	{2,  0,  XF86XK_AudioLowerVolume, killclient,    {0} },
+/*	{2,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_two") },*/
 	{3,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_three") },
 	{4,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_four") },
 	//{3,  0,  XF86XK_AudioLowerVolume, killclient, {0} },
@@ -110,7 +115,7 @@ static Key keys[] = {
 
 	/* PBP */
 	{ 0, MODKEY,                    XK_p,      spawn,          SHCMD("dmenu_run -c -fn Terminus-14 -l 20") },
-	{ 0, MODKEY,                    XK_d,      spawn,          SHCMD("dmenu_run -c -fn Terminus-13 -l 20") },
+	{ 0, MODKEY,                    XK_d,      spawn,          SHCMD("dmenu_run -c -fn Terminus-13 -l 15") },
 
 	{ 0, MODKEY|ShiftMask,          XK_Return, spawn,          SHCMD("st") },
 	{ 0, MODKEY,                    XK_b,      togglebar,      {0} },
@@ -120,35 +125,40 @@ static Key keys[] = {
 	{ 0, MODKEY|ShiftMask,          XK_j,      pushdown,    {.i = +1 } },
 	{ 0, MODKEY|ShiftMask,          XK_k,      pushup,    {.i = -1 } },
 
-	{ 0, MODKEY,                    XK_x,          spawn,          SHCMD("xfce4-terminal --zoom=1.5") },
-	{ 0, MODKEY|ShiftMask,          XK_d,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='bash -l ranger'") },
-	{ 0, MODKEY|ShiftMask,          XK_p,          spawn,          SHCMD("pidgin") },
-	{ 0, MODKEY|ShiftMask,          XK_s,          spawn,          SHCMD("systemctl suspend") },
-	{ 0, MODKEY,                    XK_t,          spawn,          SHCMD("telegram-desktop") },
-	{ 0, MODKEY|ControlMask,        XK_q,          spawn,          SHCMD("mousepad /home/alarm/Documents/phone/configs/bashrc") },
-	{ 0, MODKEY,                    XK_q,          spawn,          SHCMD("mousepad /home/alarm/Documents/phone/configs/config.h") },
-	{ 0, MODKEY,                    XK_n,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/notes'") },
-	{ 0, MODKEY|ShiftMask,          XK_n,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/new-note.sh") },
-	{ 0, MODKEY|ShiftMask,          XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-personal' https://m.facebook.com/messages/") },
-	{ 0, MODKEY|ShiftMask,          XK_l,          spawn,          SHCMD("libreoffice") },
-	{ 0, MODKEY,                    XK_g,          spawn,          SHCMD("chromium --user-data-dir='/home/alarm/Documents/phone/chromium-profiles/personal'") },
-	{ 0, MODKEY|ShiftMask,          XK_g,          spawn,          SHCMD("chromium --user-data-dir='/home/alarm/Documents/phone/chromium-profiles/work'") },
-	{ 0, MODKEY|ControlMask,        XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-work' https://m.facebook.com/messages/") },
-	{ 0, MODKEY|ShiftMask,          XK_m,          spawn,          SHCMD("mousepad") },
-	{ 0, MODKEY,                    XK_u,          spawn,          SHCMD("xfce4-terminal --command='yay'") },
-	{ 0, MODKEY|ShiftMask,          XK_u,          spawn,          SHCMD("xfce4-terminal --command='sudo sh /home/alarm/sxmo-alarm/sxmo-alarm'") },
-	{ 0, MODKEY|ShiftMask,          XK_b,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/bitwarden' --kiosk https://vault.bitwarden.com/") },
-	{ 0, MODKEY|ShiftMask,          XK_t,          spawn,          SHCMD("texstudio") },	
-	{ 0, MODKEY,                    XK_c,          spawn,          SHCMD("xfce4-terminal --command='xset dpms force off'") },
-	{ 0, MODKEY|ControlMask,        XK_c,          spawn,          SHCMD("xfce4-terminal --command='poweroff'") },
-	{ 0, MODKEY|ShiftMask|ControlMask,  XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/desktop' https://www.facebook.com/messages/") },
-	{ 0, MODKEY,                    XK_w,          spawn,          SHCMD("firefox") },
-	{ 0, MODKEY|ShiftMask,          XK_z,          spawn,          SHCMD("xfce4-terminal --command='reboot'") },
-	{ 0, MODKEY,                    XK_z,          spawn,          SHCMD("xfce4-terminal --command='sudo systemctl restart display-manager'") },
-	{ 0, MODKEY|ControlMask,        XK_g,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/croc-receive.sh") },
 	{ 0, MODKEY,                    XK_a,          spawn,          SHCMD("sh /home/alarm/texpander-master/texpander.sh") },
 	{ 0, MODKEY|ShiftMask,          XK_a,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/new-texpander-entry.sh") },
 	{ 0, MODKEY|ControlMask,        XK_a,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/notes/texpander'") },
+	{ 0, MODKEY,                    XK_c,          spawn,          SHCMD("xfce4-terminal --command='xset dpms force off'") },
+	{ 0, MODKEY|ShiftMask,          XK_c,          spawn,          SHCMD("caja") },
+	{ 0, MODKEY|ShiftMask,          XK_d,          spawn,          SHCMD("xfce4-terminal --command='sh /home/alarm/Documents/phone/bash-scripts/calendar.sh 1'") },
+	{ 0, MODKEY|ControlMask,        XK_d,          spawn,          SHCMD("xfce4-terminal --command='sh /home/alarm/Documents/phone/bash-scripts/calendar.sh 2'") },
+	{ 0, MODKEY,                    XK_g,          spawn,          SHCMD("chromium") },
+	{ 0, MODKEY|ShiftMask,          XK_g,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/croc-receive.sh") },
+	{ 0, MODKEY|ShiftMask,          XK_l,          spawn,          SHCMD("libreoffice") },
+	{ 0, MODKEY|ShiftMask,          XK_m,          spawn,          SHCMD("mousepad") },
+	{ 0, MODKEY,                    XK_n,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/notes'") },
+	{ 0, MODKEY|ShiftMask,          XK_n,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/new-note.sh") },
+	{ 0, MODKEY|ControlMask,        XK_n,          spawn,          SHCMD("xfce4-terminal --command='snownews'") },
+	{ 0, MODKEY,                    XK_q,          spawn,          SHCMD("mousepad /home/alarm/Documents/phone/configs/rc.conf /home/alarm/Documents/phone/configs/rifle.conf /home/alarm/Documents/phone/configs/bashrc /home/alarm/Documents/phone/configs/config.h") },
+	{ 0, MODKEY|ShiftMask,          XK_s,          spawn,          SHCMD("mousepad /home/alarm/Documents/notes/keybinds.txt") },
+	{ 0, MODKEY|ShiftMask,          XK_t,          spawn,          SHCMD("pidgin") },
+	{ 0, MODKEY|ControlMask,        XK_t,          spawn,          SHCMD("texstudio") },
+	{ 0, MODKEY,                    XK_t,          spawn,          SHCMD("telegram-desktop") },
+	{ 0, MODKEY,                    XK_u,          spawn,          SHCMD("xfce4-terminal --command='yay -Syu --noconfirm'") },
+	{ 0, MODKEY|ShiftMask,          XK_u,          spawn,          SHCMD("xfce4-terminal --command='sudo sh /home/alarm/sxmo-alarm/sxmo-alarm'") },
+	{ 0, MODKEY|ShiftMask|ControlMask,  XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/desktop' https://www.facebook.com/messages/") },
+	{ 0, MODKEY,                    XK_w,          spawn,          SHCMD("firefox") },
+	{ 0, MODKEY|ControlMask,        XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-work' https://m.facebook.com/messages") },
+	{ 0, MODKEY|ShiftMask,          XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-personal'") },
+	{ 0, MODKEY,                    XK_x,          spawn,          SHCMD("xfce4-terminal") },
+	{ 0, MODKEY|ControlMask,        XK_x,          spawn,          SHCMD("systemctl suspend") },
+	{ 0, MODKEY|ShiftMask,          XK_x,          spawn,          SHCMD("xfce4-terminal --command='poweroff'") },
+	{ 0, MODKEY|ShiftMask,          XK_y,          spawn,          SHCMD("xfce4-terminal --command='reboot'") },
+	{ 0, MODKEY,                    XK_y,          spawn,          SHCMD("xfce4-terminal --command='sudo systemctl restart display-manager'") },
+	{ 0, MODKEY,        	        XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm'") },
+	{ 0, MODKEY|ControlMask,        XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/h'") },
+	/*{ 0, MODKEY,        	        XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/latex/20-21/beamer-presentations/lessons/4th-grading'") },*/
+	{ 0, MODKEY|ShiftMask,          XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/phone/bash-scripts'") },
 	
 
 	{ 0, 0,                         XF86XK_MonBrightnessUp,  spawn, SHCMD("sxmo_brightness.sh up") },

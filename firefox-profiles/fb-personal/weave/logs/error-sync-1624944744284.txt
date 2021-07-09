@@ -1,0 +1,118 @@
+1624944099670	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1624944150502	Sync.RemoteTabs	INFO	Generating tab list with filter
+1624944150503	Sync.RemoteTabs	DEBUG	Processing client: {"id":"ZB2XOiegcmwi","type":"client","name":"jonathan’s Firefox on manjaro","clientType":"desktop","lastModified":1624866758090,"tabs":[]}
+1624944150504	Sync.RemoteTabs	INFO	Final tab list has 1 clients with 1 tabs.
+1624944699675	Sync.Service	DEBUG	User-Agent: Firefox/89.0.2 (Linux aarch64) FxSync/1.91.0.20210623132525.desktop
+1624944699676	Sync.Service	INFO	Starting sync at 2021-06-29 13:31:39 in browser session t8HG97HU7w10
+1624944699679	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1624944699716	Sync.Status	INFO	Resetting Status.
+1624944699716	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1624944699724	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1624944699724	FirefoxAccounts	DEBUG	getOAuthToken enter
+1624944699732	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1624944699733	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1624944699736	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1624944713408	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1624944718358	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/158373954/info/collections
+1624944718361	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/158373954/info/configuration
+1624944722423	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/158373954/info/configuration
+1624944722428	Sync.Service	DEBUG	Fetching global metadata record
+1624944722428	Sync.Service	DEBUG	Weave Version: 1.91.0 Local Storage: 5 Remote Storage: 5
+1624944722429	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1624944722429	Sync.Service	INFO	Testing info/collections: {"bookmarks":1624803875.02,"tabs":1624944092.66,"meta":1624137074.29,"passwords":1624780306.09,"prefs":1624780304.7,"forms":1624801369.93,"addons":1624781806,"history":1624944099.5,"extension-storage":1624943343.99,"crypto":1544924366.18,"clients":1624943315.04}
+1624944722429	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1544924366.18
+1624944722430	Sync.Synchronizer	DEBUG	Refreshing client list.
+1624944722435	Sync.Engine.Clients	INFO	0 outgoing items pre-reconciliation
+1624944722437	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1624944722800	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/158373954/storage/clients?full=1&limit=1000
+1624944722832	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 2 reconciled.
+1624944722834	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1624944722843	Sync.BulkKeyBundle	INFO	BulkKeyBundle being created for undefined
+1624944722896	Sync.Synchronizer	INFO	Updating enabled engines: 2 clients.
+1624944722905	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1624944722911	Sync.Engine.Prefs	INFO	0 outgoing items pre-reconciliation
+1624944722924	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944722945	Sync.Engine.Passwords	INFO	0 outgoing items pre-reconciliation
+1624944722953	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944722966	Sync.Engine.Tabs	INFO	1 outgoing items pre-reconciliation
+1624944722974	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944723052	Sync.Engine.Tabs	INFO	Posting 1 records of 1190 bytes with batch=true
+1624944723064	Sync.Collection	DEBUG	POST Length: 1190
+1624944724060	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/158373954/storage/tabs?batch=true&commit=true
+1624944724112	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID DWd6oLdpuLb7 matches existing
+1624944724170	Sync.Engine.Bookmarks	INFO	0 outgoing items pre-reconciliation
+1624944724202	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944724213	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1624944724303	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1624944724417	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1624944724424	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1624944724429	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1624944724434	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 219.861ms
+1624944724435	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1624944724467	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1624944724479	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1624944724479	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1624944724494	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Ctrl+Number to switch tabs (version=1.0.1, id={84601290-bec9-494a-b11c-1baa897a9683})
+1624944724496	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DoH Roll-Out (version=2.0.0, id=doh-rollout@mozilla.org)
+1624944724499	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0.1, id=formautofill@mozilla.org)
+1624944724501	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=39.0.1, id=screenshots@mozilla.org)
+1624944724503	Sync.AddonsReconciler	DEBUG	Rectifying state for addon WebCompat Reporter (version=1.4.2, id=webcompat-reporter@mozilla.org)
+1624944724505	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compatibility Interventions (version=22.2.0, id=webcompat@mozilla.org)
+1624944724507	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Picture-In-Picture (version=1.0.0, id=pictureinpicture@mozilla.org)
+1624944724509	Sync.AddonsReconciler	DEBUG	Rectifying state for addon System theme (version=1.2, id=default-theme@mozilla.org)
+1624944724511	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Light (version=1.2, id=firefox-compact-light@mozilla.org)
+1624944724513	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark (version=1.2, id=firefox-compact-dark@mozilla.org)
+1624944724516	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Alpenglow (version=1.4, id=firefox-alpenglow@mozilla.org)
+1624944724519	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Google (version=1.1, id=google@search.mozilla.org)
+1624944724521	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Amazon.com (version=1.3, id=amazondotcom@search.mozilla.org)
+1624944724523	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Wikipedia (en) (version=1.1, id=wikipedia@search.mozilla.org)
+1624944724525	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bing (version=1.3, id=bing@search.mozilla.org)
+1624944724526	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo (version=1.1, id=ddg@search.mozilla.org)
+1624944724528	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Reset Search Defaults (version=2.0.0, id=reset-search-defaults@mozilla.com)
+1624944724529	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Psychedelic Glass Squared (version=2.0, id={52b92fe9-753c-4514-851f-63689f4427f2})
+1624944724531	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Facebook Container (version=2.2.1, id=@contain-facebook)
+1624944724532	Sync.AddonsReconciler	DEBUG	Rectifying state for addon HTTPS Everywhere (version=2021.4.15, id=https-everywhere@eff.org)
+1624944724535	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo Privacy Essentials (version=2021.6.2, id=jid1-ZAdIEUB7XOzOJw@jetpack)
+1624944724537	Sync.AddonsReconciler	DEBUG	Rectifying state for addon uBlock Origin (version=1.36.0, id=uBlock0@raymondhill.net)
+1624944724538	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bitwarden - Free Password Manager (version=1.50.0, id={446900e4-71c2-419f-a6a7-df9c091e268b})
+1624944724540	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 Video Codec provided by Cisco Systems, Inc. (version=null, id=gmp-gmpopenh264)
+1624944724548	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1624944724569	Sync.Engine.Addons	INFO	0 outgoing items pre-reconciliation
+1624944724576	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944724584	Sync.Engine.CreditCards	DEBUG	First sync, uploading all items
+1624944724585	Sync.Engine.CreditCards	INFO	0 outgoing items pre-reconciliation
+1624944724590	Sync.Engine.CreditCards	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944724598	Sync.Engine.Forms	INFO	0 outgoing items pre-reconciliation
+1624944724603	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944724611	Sync.Engine.History	DEBUG	Checking if server sync ID BG7WprpHShDr matches existing
+1624944724637	Sync.Engine.History	INFO	10 outgoing items pre-reconciliation
+1624944724649	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944724902	Sync.Engine.History	INFO	Posting 10 records of 5258 bytes with batch=true
+1624944724917	Sync.Collection	DEBUG	POST Length: 5258
+1624944741004	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398862 - NS_ERROR_NET_TIMEOUT
+1624944741006	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1624944741007	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1624944741008	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1624944741009	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1624944741010	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_NET_TIMEOUT\"  nsresult: \"0x804b000e (NS_ERROR_NET_TIMEOUT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1624944744169	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/158373954/storage/history?batch=true&commit=true
+1624944744182	Sync.Engine.Extension-Storage	INFO	0 outgoing items pre-reconciliation
+1624944744197	Sync.Engine.Extension-Storage	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1624944744238	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1624944744239	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1624944744239	Sync.Doctor	INFO	Skipping check of tabs - disabled via preferences
+1624944744239	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1624944744239	Sync.Doctor	INFO	Skipping check of addons - disabled via preferences
+1624944744239	Sync.Doctor	INFO	Skipping check of creditcards - disabled via preferences
+1624944744240	Sync.Doctor	INFO	Skipping check of forms - disabled via preferences
+1624944744240	Sync.Doctor	INFO	Skipping check of history - disabled via preferences
+1624944744240	Sync.Doctor	INFO	Skipping check of extension-storage - disabled via preferences
+1624944744240	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1624944744240	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1624944744241	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1624944744243	Sync.Synchronizer	INFO	Sync completed at 2021-06-29 13:32:24 after 44.53 secs.
+1624944744246	Sync.Declined	DEBUG	Handling remote declined: []
+1624944744247	Sync.Declined	DEBUG	Handling local declined: []
+1624944744247	Sync.Declined	DEBUG	Declined changed? false
+1624944744248	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1624944744254	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)

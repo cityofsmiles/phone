@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<opml version="2.0">
+    <head>
+	<title>snownews subscriptions</title>
+    </head>
+    <body>
+	<outline text="debugpoint.com" xmlUrl="https://www.debugpoint.com/feed/"/>
+	<outline text="linuxandubuntu.com" xmlUrl="https://www.linuxandubuntu.com/feed"/>
+	<outline text="2DayGeek" xmlUrl="https://www.2daygeek.com/feed/"/>
+	<outline text="FOSS Linux" xmlUrl="https://www.fosslinux.com/feed"/>
+	<outline text="LinuxTechi" xmlUrl="https://www.linuxtechi.com/feed/"/>
+	<outline text="OSTechNix" xmlUrl="https://ostechnix.com/feed/"/>
+	<outline text="LinOxide" xmlUrl="https://linoxide.com/feed/"/>
+	<outline text="Linux Hint" xmlUrl="https://linuxhint.com/feed/"/>
+	<outline text="Arch Linux" xmlUrl="https://archlinux.org/feeds/news/"/>
+	<outline text="It's FOSS" xmlUrl="https://itsfoss.com/feed/"/>
+	<outline text="Linux Magazine" xmlUrl="https://www.linux-magazine.com/rss/feed/lmi_full"/>
+	<outline text="Linux Journal" xmlUrl="https://www.linuxjournal.com/node/feed"/>
+	<outline text="Linux Foundation" xmlUrl="https://www.linuxfoundation.org/feed/"/>
+	<outline text="Tecmint" xmlUrl="https://www.tecmint.com/feed"/>
+	<outline text="nixCraft" xmlUrl="https://www.cyberciti.biz/feed/"/>
+	<outline text="Linux.com" xmlUrl="https://www.linux.com/feed/"/>
+	<outline text="Slashdot: Linux" xmlUrl="http://rss.slashdot.org/Slashdot/slashdotLinux"/>
+	<outline text="suckless news" xmlUrl="https://suckless.org/atom.xml"/>
+    </body>
+</opml>

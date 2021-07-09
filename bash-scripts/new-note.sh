@@ -2,5 +2,5 @@
 
 cd /home/jonathan/Old-Docs/txt/notes/
 
-mousepad note.txt
+xfce4-terminal --zoom=1.5 --command='micro'
 

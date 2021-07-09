@@ -1,8 +1,11 @@
 #!/usr/bin/bash
 
+#file=$( ls *.tex )
 file="$1"
+
 name="${file%.*}"
 
+#micro $file &
 mousepad $file &
 
 if [ -f $name.pdf ];then
@@ -18,3 +21,4 @@ pdflatex $file &&
 notify-send "Pdf created"
 
 done
+

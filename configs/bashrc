@@ -1,7 +1,7 @@
 #
 # ~/.bashrc
 #
- 
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -147,10 +147,10 @@ extract ()
 #alias u='yay'
 alias u='sudo ~/sxmo-alarm/sxmo-alarm'
 #alias u='yay; flatpak update'
-alias compile='cd /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm; sudo make clean install'
+alias compile='sudo cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm/config.h && cd /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm; sudo make clean install'
 alias srb='source ~/.bashrc'
 alias in='yay -S'
-alias pr='yay -R'
+alias pr='yay -Rsn'
 alias sound='alsamixer'
 alias bright='xrandr --output LVDS-1 --brightness'
 alias sr='yay -Ss'
@@ -168,7 +168,7 @@ alias gpm='git push -u origin master'
 alias gpa='git push -u origin assets'
 alias gpc='git push -u origin calendar'
 alias gromit-mpx='/home/jonathan/gromit-mpx-1.3.1/build/gromit-mpx'
-alias cl='sudo yay -Yc'
+alias cl='sudo pacman -Scc; rm -rf ~/.cache/*; sudo pacman -R $(pacman -Qdtq)'
 alias gpmn='git push -u origin main'
 alias cpcn='sh ~/Documents/phone/bash-scripts/cp-configs-startups.sh'
 alias gcal='python /home/jonathan/gencal/calculators/gen_cal_v2/gen_cal_v2.py'
@@ -177,9 +177,9 @@ alias m='mousepad'
 alias ll='exa'
 alias mc='micro'
 alias n='nano'
-
+alias gacpams='sh /home/alarm/Documents/phone/bash-scripts/git-add-commit-push-assets-master.sh'
 alias cleanzip='unzip "*.zip" && rm *.zip'
-
+alias xl2jpg='sh /home/alarm/Documents/laptop/myscripts/bash-scripts/xl2jpg.sh'
 alias mb='mousepad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias mcb='micro ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias rb='reboot'
@@ -203,13 +203,19 @@ alias tra='transmission-remote -t all -r'
 
 alias la='ls -la'
 
+alias cdh='cd ~'
+
 alias cast='dms -friendlyName mydlna'
 
 alias restartx='sudo systemctl restart display-manager'
 
 alias bat='cat /sys/class/power_supply/axp20x-battery/capacity'
 
-alias watchrun='sh /home/alarm/Documents/phone/bash-scripts/watch-run.sh *.tex'
+alias wr='sh /home/alarm/Documents/phone/bash-scripts/watch-run.sh'
+
+alias sshphone='ssh -p 8022 192.168.1.248'
+
+alias sshlaptop='ssh jonathan@192.168.1.249'
 
 export EDITOR=mousepad
 
@@ -228,6 +234,11 @@ up(){
     d=..
   fi
   cd $d
+}
+
+cdl(){
+  cd $1
+  ls
 }
 
 function trt { transmission-remote -t $1 -r;}

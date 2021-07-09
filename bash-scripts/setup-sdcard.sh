@@ -25,6 +25,8 @@ rm -r ~/Documents
 
 rm -r ~/Downloads
 
+rm -r ~/Music
+
 #ln -s /media/mmcblk0p1/Documents ~/Documents
 
 #ln -s /media/mmcblk0p1/Downloads ~/Downloads
@@ -32,6 +34,8 @@ rm -r ~/Downloads
 ln -s /mnt/sdcard/Documents ~/Documents
 
 ln -s /mnt/sdcard/Downloads ~/Downloads
+
+ln -s /mnt/sdcard/Music ~/Music
 
 ln -s /mnt/sdcard/.h ~/.h
 
