@@ -144,7 +144,7 @@ extract ()
 
 
 # My personal shortcuts 
-alias u='yay; cd /home/alarm/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
+alias u='yay -Syu --noconfirm; cd /home/alarm/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
 #alias u='sudo ~/sxmo-alarm/sxmo-alarm'
 #alias u='yay; flatpak update'
 alias call='cd /home/alarm/sxmo-build; ./sxmo_build_all.sh'
