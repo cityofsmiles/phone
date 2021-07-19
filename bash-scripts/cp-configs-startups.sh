@@ -28,4 +28,5 @@ cp ~/Documents/phone/configs/xinit ~/.config/sxmo/xinit
 
 cp ~/Documents/phone/configs/arch-profile ~/.profile
 
-#sudo cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm/config.h
+cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h
+

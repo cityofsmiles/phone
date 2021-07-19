@@ -31,13 +31,12 @@ static const char *tags[] = { "1", "2", "3", "4" };
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   isterminal noswallow monitor */
 	{ "st",       NULL,       NULL,       0,            0,           1,         1,        -1,  0},
+	{ "svkbd",    NULL,       NULL,       TAGMASK,      1,           1,         0,        -1,  1},
 	{ "Pidgin",   NULL,       NULL,       1 << 3,       0,           0,         1,        -1,  0},
 	{ "okular",   NULL,       NULL,       1 << 2,       0,           0,         1,        -1,  0},
-	/*{ "firefox",  NULL,       NULL,       1 << 3,       0,           0,         1,        -1,  0},*/
+	{ NULL,       NULL,       "Choose Files",       0,       0,           0,         1,        -1,  0},
 	{ "TelegramDesktop", NULL,       NULL,       1 << 2,       0,           0,         1,        -1,  0},
 	{ "Mousepad", NULL,       NULL,       1 << 1,       0,           0,         1,        -1,  0},
-	{ "micro",    NULL,       NULL,       1 << 1,       0,           1,         1,        -1,  0},
-	{ "svkbd",    NULL,       NULL,       TAGMASK,      1,           1,         0,        -1,  1},
 };
 
 /* layout(s) */
@@ -59,6 +58,7 @@ static const Layout ppcyclelayouts[] = {
 	{ "",      monocle },
 	{ "",      bstack },   /* first entry is default */
 	{ "",      tile },
+	
 };
 
 
@@ -78,8 +78,7 @@ static const Layout layouts[] = {
 	{0, MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{0, MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
 	{0, MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
-	{0, MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} }, \
-	{0, Mod4Mask,                     KEY,      toggletag,      {.ui = 1 << TAG} },
+	{0, MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} }, 
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
@@ -91,16 +90,12 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 #include <X11/XF86keysym.h>
 static Key keys[] = {
   /* PP */
-/*	{1,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_one") },*/
-	{1,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("pidof $KEYBOARD || $KEYBOARD &") },
+	{1,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_one") },
 	{2,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_two") },
 	{3,  0,  XF86XK_AudioRaiseVolume, spawn, SHCMD("sxmo_inputhandler.sh volup_three") },
-/*	{1,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_one") },*/
-	{1,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("pkill -9 -f $KEYBOARD") },
-	{2,  0,  XF86XK_AudioLowerVolume, killclient,    {0} },
-/*	{2,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_two") },*/
+	{1,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_one") },
+	{2,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_two") },
 	{3,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_three") },
-	{4,  0,  XF86XK_AudioLowerVolume, spawn, SHCMD("sxmo_inputhandler.sh voldown_four") },
 	//{3,  0,  XF86XK_AudioLowerVolume, killclient, {0} },
 
 	{1,  0,  XF86XK_PowerOff, spawn, SHCMD("sxmo_inputhandler.sh powerbutton_one") },
@@ -125,6 +120,11 @@ static Key keys[] = {
 	{ 0, MODKEY|ShiftMask,          XK_j,      pushdown,    {.i = +1 } },
 	{ 0, MODKEY|ShiftMask,          XK_k,      pushup,    {.i = -1 } },
 
+	{ 0, 0,                         XF86XK_MonBrightnessUp,  spawn, SHCMD("sxmo_brightness.sh up") },
+	{ 0, 0,                         XF86XK_MonBrightnessDown,  spawn, SHCMD("sxmo_brightness.sh down") },
+	{ 0, MODKEY|ShiftMask,          XK_Down,      spawn,    SHCMD("sxmo_vol.sh down") },
+	{ 0, MODKEY|ShiftMask,          XK_Up,      spawn,    SHCMD("sxmo_vol.sh up") },
+
 	{ 0, MODKEY,                    XK_a,          spawn,          SHCMD("sh /home/alarm/texpander-master/texpander.sh") },
 	{ 0, MODKEY|ShiftMask,          XK_a,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/new-texpander-entry.sh") },
 	{ 0, MODKEY|ControlMask,        XK_a,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/notes/texpander'") },
@@ -141,7 +141,9 @@ static Key keys[] = {
 	{ 0, MODKEY,                    XK_n,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/notes'") },
 	{ 0, MODKEY|ShiftMask,          XK_n,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/new-note.sh") },
 	{ 0, MODKEY|ControlMask,        XK_n,          spawn,          SHCMD("xfce4-terminal --command='snownews'") },
-	{ 0, MODKEY,                    XK_q,          spawn,          SHCMD("xfce4-terminal --command='xset dpms force off'") },
+	{ 0, MODKEY,                    XK_q,          spawn,          SHCMD("xset dpms force off") },
+	{ 0, MODKEY|ControlMask,        XK_q,          spawn,          SHCMD("sxmo_screenlock.sh off") },
+	{ 0, MODKEY|ShiftMask|ControlMask,   XK_q,          spawn,          SHCMD("sxmo_screenlock.sh crust") },
 	{ 0, MODKEY|ShiftMask,          XK_s,          spawn,          SHCMD("mousepad /home/alarm/Documents/notes/keybinds.txt") },
 	{ 0, MODKEY|ShiftMask,          XK_t,          spawn,          SHCMD("pidgin") },
 	{ 0, MODKEY|ControlMask,        XK_t,          spawn,          SHCMD("texstudio") },
@@ -159,14 +161,8 @@ static Key keys[] = {
 	{ 0, MODKEY,                    XK_y,          spawn,          SHCMD("xfce4-terminal --command='sudo systemctl restart display-manager'") },
 	{ 0, MODKEY,        	        XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm'") },
 	{ 0, MODKEY|ControlMask,        XK_z,          spawn,          SHCMD("caja") },
-	/*{ 0, MODKEY,        	        XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/latex/20-21/beamer-presentations/lessons/4th-grading'") },*/
 	{ 0, MODKEY|ShiftMask,          XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/phone/bash-scripts'") },
 	
-
-	{ 0, 0,                         XF86XK_MonBrightnessUp,  spawn, SHCMD("sxmo_brightness.sh up") },
-	{ 0, 0,                         XF86XK_MonBrightnessDown,  spawn, SHCMD("sxmo_brightness.sh down") },
-	{ 0, MODKEY|ShiftMask,          XK_Down,      spawn,    SHCMD("sxmo_vol.sh down") },
-	{ 0, MODKEY|ShiftMask,          XK_Up,      spawn,    SHCMD("sxmo_vol.sh up") },
 
 	{ 0, MODKEY,                    XK_i,      incnmaster,     {.i = +1 } },
 	{ 0, MODKEY,                    XK_o,      incnmaster,     {.i = -1 } },
@@ -185,8 +181,6 @@ static Key keys[] = {
 	{ 2, MODKEY,                       XK_s, transferall,    {0} },
 
 
-	/* float */
-	{ 0, MODKEY,                    XK_space,  setlayout,      {0} },
 	/* monocle */
 	{ 0, MODKEY,                    XK_m,      setlayout,      {.v = &layouts[3]} },
 	/* deck double */
@@ -201,7 +195,9 @@ static Key keys[] = {
 	{ 0, MODKEY,                       XK_f,  togglefloating, {0} },
 	{ 0, MODKEY|ShiftMask,             XK_f,  unfloatvisible, {0} },
 
-	{ 0, MODKEY,                    XK_space,  setlayout,      {0} },
+	/* cycle through the layouts in ppcyclelayouts */
+	{ 0, MODKEY,                    XK_space,  cyclelayout,    {.i = +1} },
+
 	{ 0, MODKEY|ShiftMask,          XK_space,  togglefloating, {0} },
 	{ 0, MODKEY,                    XK_0,      view,           {.ui = ~0 } },
 	{ 0, MODKEY|ShiftMask,          XK_0,      tag,            {.ui = ~0 } },
@@ -225,7 +221,7 @@ static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkTagBar,            0,              Button1,        view,           {0} },
 	{ ClkLtSymbol,          0,              Button1,        cyclelayout,    {.i = +1} },
-	{ ClkClientWin,         Mod4Mask,       Button1,        movemouse,      {0} },
-	{ ClkClientWin,         Mod4Mask,       Button3,        resizemouse,    {0} },
+	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
+	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
 };
 

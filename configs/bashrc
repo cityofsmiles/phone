@@ -144,10 +144,11 @@ extract ()
 
 
 # My personal shortcuts 
-#alias u='yay'
-alias u='sudo ~/sxmo-alarm/sxmo-alarm'
+alias u='yay; cd /home/alarm/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
+#alias u='sudo ~/sxmo-alarm/sxmo-alarm'
 #alias u='yay; flatpak update'
-alias compile='sudo cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm/config.h && cd /home/alarm/sxmo-alarm/build-sxmo-dev/sxmo-dwm; sudo make clean install'
+alias call='cd /home/alarm/sxmo-build; ./sxmo_build_all.sh'
+alias cdwm='cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h; cd /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm; sudo make install'
 alias srb='source ~/.bashrc'
 alias in='yay -S'
 alias pr='yay -Rsn'
@@ -185,11 +186,11 @@ alias mcb='micro ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/config
 alias rb='reboot'
 alias po='poweroff'
 alias mcc='micro ~/Documents/phone/configs/config.h'
-
+alias smc='sudo micro config.h'
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
-
+alias smci='sudo make clean install'
 alias ta='transmission-remote -w "/home/alarm/Downloads" -a'
-
+alias smi='sudo make install'
 alias td='transmission-daemon'
 
 alias tap='transmission-remote -w "/home/alarm/.h" -a'
