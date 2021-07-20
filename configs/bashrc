@@ -190,7 +190,7 @@ alias smc='sudo micro config.h'
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 alias smci='sudo make clean install'
 alias ta='transmission-remote -w "/home/alarm/Downloads" -a'
-alias smi='sudo make install'
+alias smi='make; sudo make install'
 alias td='transmission-daemon'
 
 alias tap='transmission-remote -w "/home/alarm/.h" -a'
