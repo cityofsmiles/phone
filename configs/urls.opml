@@ -1,26 +1,135 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
-    <head>
-	<title>snownews subscriptions</title>
-    </head>
-    <body>
-	<outline text="debugpoint.com" xmlUrl="https://www.debugpoint.com/feed/"/>
-	<outline text="linuxandubuntu.com" xmlUrl="https://www.linuxandubuntu.com/feed"/>
-	<outline text="2DayGeek" xmlUrl="https://www.2daygeek.com/feed/"/>
-	<outline text="FOSS Linux" xmlUrl="https://www.fosslinux.com/feed"/>
-	<outline text="LinuxTechi" xmlUrl="https://www.linuxtechi.com/feed/"/>
-	<outline text="OSTechNix" xmlUrl="https://ostechnix.com/feed/"/>
-	<outline text="LinOxide" xmlUrl="https://linoxide.com/feed/"/>
-	<outline text="Linux Hint" xmlUrl="https://linuxhint.com/feed/"/>
-	<outline text="Arch Linux" xmlUrl="https://archlinux.org/feeds/news/"/>
-	<outline text="It's FOSS" xmlUrl="https://itsfoss.com/feed/"/>
-	<outline text="Linux Magazine" xmlUrl="https://www.linux-magazine.com/rss/feed/lmi_full"/>
-	<outline text="Linux Journal" xmlUrl="https://www.linuxjournal.com/node/feed"/>
-	<outline text="Linux Foundation" xmlUrl="https://www.linuxfoundation.org/feed/"/>
-	<outline text="Tecmint" xmlUrl="https://www.tecmint.com/feed"/>
-	<outline text="nixCraft" xmlUrl="https://www.cyberciti.biz/feed/"/>
-	<outline text="Linux.com" xmlUrl="https://www.linux.com/feed/"/>
-	<outline text="Slashdot: Linux" xmlUrl="http://rss.slashdot.org/Slashdot/slashdotLinux"/>
-	<outline text="suckless news" xmlUrl="https://suckless.org/atom.xml"/>
-    </body>
+  <head>
+    <title>Subscriptions</title>
+  </head>
+  <body>
+
+            <outline
+                title="Hacker News: Front Page"
+                text="Hacker News RSS"
+                type="rss"
+                xmlUrl="https://hnrss.org/frontpage"
+                htmlUrl="https://news.ycombinator.com/"
+                category=""
+            />
+        
+            <outline
+                title="DebugPoint.com"
+                text="We Feel Software"
+                type="rss"
+                xmlUrl="https://www.debugpoint.com/feed/"
+                htmlUrl="https://www.debugpoint.com"
+                category=""
+            />
+        
+            <outline
+                title="Linux Tutorials, FOSS Reviews, Security News"
+                text=""
+                type="rss"
+                xmlUrl="https://www.linuxandubuntu.com/feed"
+                htmlUrl="https://www.linuxandubuntu.com"
+                category=""
+            />
+        
+            <outline
+                title="2DayGeek"
+                text="Linux and Unix, Open Source, Linux Howtos"
+                type="rss"
+                xmlUrl="https://www.2daygeek.com/feed/"
+                htmlUrl="https://www.2daygeek.com"
+                category=""
+            />
+        
+            <outline
+                title="FOSS Linux"
+                text="Enhance your Linux experience."
+                type="rss"
+                xmlUrl="https://www.fosslinux.com/feed"
+                htmlUrl="https://www.fosslinux.com"
+                category=""
+            />
+        
+            <outline
+                title="LinuxTechi"
+                text=""
+                type="rss"
+                xmlUrl="https://www.linuxtechi.com/feed/"
+                htmlUrl="https://www.linuxtechi.com"
+                category=""
+            />
+        
+            <outline
+                title="LinOxide"
+                text="Linux Howto Tutorials"
+                type="rss"
+                xmlUrl="https://linoxide.com/feed/"
+                htmlUrl="https://linoxide.com"
+                category=""
+            />
+        
+            <outline
+                title="OSTechNix"
+                text="Open Source | Technology | Linux And Unix"
+                type="rss"
+                xmlUrl="https://ostechnix.com/feed/"
+                htmlUrl="https://ostechnix.com"
+                category=""
+            />
+        
+            <outline
+                title="Arch Linux: Recent news updates"
+                text="The latest and greatest news from the Arch Linux distribution."
+                type="rss"
+                xmlUrl="https://archlinux.org/feeds/news/"
+                htmlUrl="https://archlinux.org/news/"
+                category=""
+            />
+        
+            <outline
+                title="It's FOSS"
+                text="A Linux and Open Source Web Portal"
+                type="rss"
+                xmlUrl="https://itsfoss.com/feed/"
+                htmlUrl="https://itsfoss.com"
+                category=""
+            />
+        
+            <outline
+                title="Linux Hint"
+                text="Exploring and Master Linux Ecosystem"
+                type="rss"
+                xmlUrl="https://linuxhint.com/feed/"
+                htmlUrl="https://linuxhint.com"
+                category=""
+            />
+        
+            <outline
+                title="Linux Journal - The Original Magazine of the Linux Community"
+                text=""
+                type="rss"
+                xmlUrl="https://www.linuxjournal.com/node/feed"
+                htmlUrl="https://www.linuxjournal.com/node/feed"
+                category=""
+            />
+        
+            <outline
+                title="Linux Foundation"
+                text="Decentralized innovation, built on trust."
+                type="rss"
+                xmlUrl="https://www.linuxfoundation.org/feed/"
+                htmlUrl="https://www.linuxfoundation.org"
+                category=""
+            />
+        
+            <outline
+                title="Linux Magazine Full Feed"
+                text="Linux Magazine Full Feed"
+                type="rss"
+                xmlUrl="https://www.linux-magazine.com/rss/feed/lmi_full"
+                htmlUrl="http://www.linux-magazine.com/"
+                category=""
+            />
+        
+  </body>
 </opml>

@@ -2,6 +2,6 @@ export BROWSER=firefox
 
 export EDITOR='/usr/bin/mousepad'
 
-export PATH=/home/alarm/Documents/phone/userscripts:$PATH
+export PATH=/home/alarm/.local/bin:/home/alarm/Documents/phone/userscripts:$PATH
 
 

@@ -189,10 +189,10 @@ alias mcc='micro ~/Documents/phone/configs/config.h'
 alias smc='sudo micro config.h'
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 alias smci='sudo make clean install'
-alias ta='transmission-remote -w "/home/alarm/Downloads" -a'
+alias ta='transmission-remote -w "/home/alarm/Downloads/Movies" -a'
 alias smi='make; sudo make install'
 alias td='transmission-daemon'
-
+alias ts='torpar -t 4 -q'
 alias tap='transmission-remote -w "/home/alarm/.h" -a'
 
 alias tra='transmission-remote -t all -r'
@@ -206,8 +206,6 @@ alias la='ls -la'
 
 alias cdh='cd ~'
 
-alias cast='dms -friendlyName mydlna'
-
 alias restartx='sudo systemctl restart display-manager'
 
 alias bat='cat /sys/class/power_supply/axp20x-battery/capacity'
@@ -220,10 +218,13 @@ alias sshlaptop='ssh jonathan@192.168.1.249'
 
 alias vnc='x11vnc -display :0 -usepw'
 
+alias lower='/home/alarm/Documents/laptop/myscripts/common-scripts/make-lowercase.sh'
+
 export EDITOR=mousepad
 
 shopt -s extglob
 
+export PATH=/home/alarm/Documents/phone/bash-scripts:go/bin:/home/alarm/.local/bin:$PATH
 
 up(){
   local d=""
