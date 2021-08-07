@@ -14,13 +14,13 @@ cp ~/Documents/phone/configs/bashrc ~/.bashrc
 
 cp ~/Documents/phone/configs/Xmodmap ~/.Xmodmap
 
-#cp  ~/Documents/phone/configs/blist.xml ~/.purple/blist.xml
+cp  ~/Documents/phone/configs/blist.xml ~/.purple/blist.xml
 
-#cp ~/Documents/phone/configs/accounts.xml ~/.purple/accounts.xml
+cp ~/Documents/phone/configs/accounts.xml ~/.purple/accounts.xml
 
 #sudo cp  ~/Documents/phone/configs/environment /etc/environment 
 
-cp ~/Documents/phone/configs/Xresources ~/.Xresources
+#cp ~/Documents/phone/configs/Xresources ~/.Xresources
 
 cp ~/Documents/phone/configs/xinit ~/.config/sxmo/xinit
 
@@ -28,5 +28,5 @@ cp ~/Documents/phone/configs/xinit ~/.config/sxmo/xinit
 
 cp ~/Documents/phone/configs/arch-profile ~/.profile
 
-cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h
+#cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h
 

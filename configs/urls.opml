@@ -6,15 +6,6 @@
   <body>
 
             <outline
-                title="Hacker News: Front Page"
-                text="Hacker News RSS"
-                type="rss"
-                xmlUrl="https://hnrss.org/frontpage"
-                htmlUrl="https://news.ycombinator.com/"
-                category=""
-            />
-        
-            <outline
                 title="DebugPoint.com"
                 text="We Feel Software"
                 type="rss"
@@ -33,11 +24,11 @@
             />
         
             <outline
-                title="2DayGeek"
-                text="Linux and Unix, Open Source, Linux Howtos"
+                title="Hacker News: Front Page"
+                text="Hacker News RSS"
                 type="rss"
-                xmlUrl="https://www.2daygeek.com/feed/"
-                htmlUrl="https://www.2daygeek.com"
+                xmlUrl="https://hnrss.org/frontpage"
+                htmlUrl="https://news.ycombinator.com/"
                 category=""
             />
         
@@ -51,11 +42,11 @@
             />
         
             <outline
-                title="LinuxTechi"
-                text=""
+                title="2DayGeek"
+                text="Linux and Unix, Open Source, Linux Howtos"
                 type="rss"
-                xmlUrl="https://www.linuxtechi.com/feed/"
-                htmlUrl="https://www.linuxtechi.com"
+                xmlUrl="https://www.2daygeek.com/feed/"
+                htmlUrl="https://www.2daygeek.com"
                 category=""
             />
         
@@ -65,6 +56,15 @@
                 type="rss"
                 xmlUrl="https://linoxide.com/feed/"
                 htmlUrl="https://linoxide.com"
+                category=""
+            />
+        
+            <outline
+                title="LinuxTechi"
+                text=""
+                type="rss"
+                xmlUrl="https://www.linuxtechi.com/feed/"
+                htmlUrl="https://www.linuxtechi.com"
                 category=""
             />
         
@@ -105,15 +105,6 @@
             />
         
             <outline
-                title="Linux Journal - The Original Magazine of the Linux Community"
-                text=""
-                type="rss"
-                xmlUrl="https://www.linuxjournal.com/node/feed"
-                htmlUrl="https://www.linuxjournal.com/node/feed"
-                category=""
-            />
-        
-            <outline
                 title="Linux Foundation"
                 text="Decentralized innovation, built on trust."
                 type="rss"
@@ -123,11 +114,29 @@
             />
         
             <outline
+                title="Linux Journal - The Original Magazine of the Linux Community"
+                text=""
+                type="rss"
+                xmlUrl="https://www.linuxjournal.com/node/feed"
+                htmlUrl="https://www.linuxjournal.com/node/feed"
+                category=""
+            />
+        
+            <outline
                 title="Linux Magazine Full Feed"
                 text="Linux Magazine Full Feed"
                 type="rss"
                 xmlUrl="https://www.linux-magazine.com/rss/feed/lmi_full"
                 htmlUrl="http://www.linux-magazine.com/"
+                category=""
+            />
+        
+            <outline
+                title="https://xnux.eu/log/rss.xml"
+                text=""
+                type="rss"
+                xmlUrl="https://xnux.eu/log/rss.xml"
+                htmlUrl=""
                 category=""
             />
         
