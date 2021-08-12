@@ -144,11 +144,12 @@ extract ()
 
 
 # My personal shortcuts 
-alias u='yay -Syu --noconfirm; cd /home/alarm/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
-#alias u='sudo ~/sxmo-alarm/sxmo-alarm'
+#alias u='yay -Syu --noconfirm; cd /home/jonathan/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
+alias u='sudo ~/sxmo-alarm/sxmo-alarm --force' 
 #alias u='yay; flatpak update'
-alias call='cd /home/alarm/sxmo-build; ./sxmo_build_all.sh'
-alias cdwm='cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h; cd /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm; sudo make install'
+alias call='cd /home/jonathan/sxmo-build; ./sxmo_build_all.sh'
+#alias cdwm='cp /home/jonathan/Documents/phone/configs/config.h /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h; cd /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm; sudo make install'
+alias cdwm='sudo cp /home/jonathan/Documents/phone/configs/config.h /home/jonathan/build-sxmo-dev/sxmo-dwm/config.h; cd /home/jonathan/build-sxmo-dev/sxmo-dwm; sudo make install'
 alias srb='source ~/.bashrc'
 alias in='yay -S'
 alias pr='yay -Rsn'
@@ -163,7 +164,7 @@ alias gaa='git add --all'
 alias gcm='git commit -m'
 alias gac='git add --all && git commit -m'
 alias gacp='sh ~/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
-alias gacpm='sh /home/alarm/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
+alias gacpm='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-main.sh'
 alias gacpa='sh /home/jonathan/Documents/myscripts/bash-scripts/git-add-commit-push-assets.sh'
 alias gpm='git push -u origin master'
 alias gpa='git push -u origin assets'
@@ -178,27 +179,29 @@ alias m='mousepad'
 alias ll='exa'
 alias mc='micro'
 alias n='nano'
-alias gacpams='sh /home/alarm/Documents/phone/bash-scripts/git-add-commit-push-assets-main.sh'
+alias gacpams='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-assets-main.sh'
 alias cleanzip='unzip "*.zip" && rm *.zip'
-alias xl2jpg='sh /home/alarm/Documents/laptop/myscripts/bash-scripts/xl2jpg.sh'
+alias xl2jpg='sh /home/jonathan/Documents/laptop/myscripts/bash-scripts/xl2jpg.sh'
 alias mb='mousepad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias mcb='micro ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
-alias rb='reboot'
-alias po='poweroff'
+alias rb='sudo reboot'
+alias po='sudo poweroff'
 alias mcc='micro ~/Documents/phone/configs/config.h'
 alias smc='sudo micro config.h'
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 alias smci='sudo make clean install'
-alias ta='transmission-remote -w "/home/alarm/Downloads/Movies" -a'
+alias ta='transmission-remote -w "/home/jonathan/Downloads/Movies" -a'
 alias smi='make; sudo make install'
 alias td='transmission-daemon'
 alias ts='torpar -t 4 -q'
-alias tap='transmission-remote -w "/home/alarm/.h" -a'
-
+alias tap='transmission-remote -w "/mnt/sdcard/.h" -a'
+alias cast='sudo systemctl start ums@jonathan.service'
+alias stopcast='sudo systemctl stop ums@jonathan.service'
 alias tra='transmission-remote -t all -r'
-
+alias smb='sudo systemctl start smb.service; sudo systemctl start nmb.service'
+alias stopsmb='sudo systemctl stop smb.service; sudo systemctl stop nmb.service'
 alias tsa='transmission-remote -t all -s'
-
+alias tsta='transmission-remote -t all -S'
 alias tl='transmission-remote -l'
 alias tra='transmission-remote -t all -r'
 
@@ -210,21 +213,24 @@ alias restartx='sudo systemctl restart display-manager'
 
 alias bat='cat /sys/class/power_supply/axp20x-battery/capacity'
 
-alias wr='sh /home/alarm/Documents/phone/bash-scripts/watch-run.sh'
+alias wr='sh /home/jonathan/Documents/phone/bash-scripts/watch-run.sh'
 
 alias sshphone='ssh -p 8022 192.168.1.248'
 
-alias sshlaptop='ssh jonathan@192.168.1.249'
+alias sshl='ssh jonathan@192.168.1.249'
 
 alias vnc='x11vnc -display :0 -usepw'
 
-alias lower='/home/alarm/Documents/laptop/myscripts/common-scripts/make-lowercase.sh'
+alias lower='/home/jonathan/Documents/laptop/myscripts/common-scripts/make-lowercase.sh'
 
 export EDITOR=mousepad
 
 shopt -s extglob
 
-export PATH=/home/alarm/Documents/phone/bash-scripts:go/bin:/home/alarm/.local/bin:$PATH
+export PATH=/home/jonathan/Documents/phone/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
+export TERM=xterm
+export SSHPASS=bacolod1987
+export TERMINFO=/bin/sh
 
 up(){
   local d=""

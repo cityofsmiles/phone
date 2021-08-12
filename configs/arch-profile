@@ -4,4 +4,6 @@ export EDITOR='/usr/bin/mousepad'
 
 export PATH=/home/alarm/.local/bin:/home/alarm/Documents/phone/userscripts:$PATH
 
+export TERM=xterm
 
+export TERMINFO=/bin/sh

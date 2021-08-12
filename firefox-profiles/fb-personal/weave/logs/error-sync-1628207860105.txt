@@ -1,0 +1,54 @@
+1628207795277	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1628207795591	FirefoxAccounts	TRACE	initializing new storage manager
+1628207795591	FirefoxAccounts	TRACE	starting fetch of json user data
+1628207795596	FirefoxAccounts	TRACE	initializing of new storage manager done
+1628207804917	Sync.Status	INFO	Resetting Status.
+1628207804918	Sync.Status	DEBUG	Status.service: undefined => success.status_ok
+1628207804976	Sync.SyncScheduler	TRACE	Setting SyncScheduler policy values to defaults.
+1628207804977	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1628207804981	Sync.Service	INFO	Loading Weave 1.92.0
+1628207804987	Sync.Engine.Clients	DEBUG	Engine constructed
+1628207804990	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1628207805006	Sync.Engine.Addons	DEBUG	Engine constructed
+1628207806307	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1628207806323	Sync.AddonsReconciler	DEBUG	Failed to load json: {"operation":"open","path":"/mnt/sdcard/Documents/phone/firefox-profiles/fb-personal/weave/addonsreconciler.json","unixErrno":13}
+1628207806325	Sync.AddonsReconciler	DEBUG	No data seen in loaded file: addonsreconciler
+1628207806351	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1628207807508	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1628207807520	Sync.Engine.Forms	DEBUG	Engine constructed
+1628207807778	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1628207807785	Sync.Engine.History	DEBUG	Engine constructed
+1628207808576	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1628207808582	Sync.Engine.Passwords	DEBUG	Engine constructed
+1628207808837	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1628207808845	Sync.Engine.Prefs	DEBUG	Engine constructed
+1628207809013	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1628207809019	Sync.Engine.Tabs	DEBUG	Engine constructed
+1628207809079	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1628207809080	Sync.Engine.Tabs	DEBUG	Resetting tabs last sync time
+1628207809090	Sync.Engine.CreditCards	DEBUG	Engine constructed
+1628207809797	Sync.Engine.CreditCards	DEBUG	SyncEngine initialized: creditcards
+1628207809815	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1628207810018	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1628207810020	Sync.Service	INFO	Mozilla/5.0 (Android 9; Mobile; rv:78.0) Gecko/78.0 Firefox/78.0
+1628207810026	Sync.AddonsReconciler	INFO	Registering as Add-on Manager listener.
+1628207810027	Sync.AddonsReconciler	DEBUG	Adding change listener.
+1628207810029	Sync.Engine.History.Tracker	INFO	Adding Places observer.
+1628207811867	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1628207814051	Sync.SyncScheduler	DEBUG	Next sync in 596951 ms. (why=startup)
+1628207860038	Sync.RemoteTabs	INFO	Doing a tab sync.
+1628207860039	Sync.Service	DEBUG	User-Agent: Firefox/90.0.2 (Linux aarch64) FxSync/1.92.0.20210723064703.desktop
+1628207860043	Sync.Service	INFO	Starting sync at 2021-08-06 07:57:40 in browser session _PbBIxhPrfdt
+1628207860043	Sync.Service	DEBUG	In sync: should login.
+1628207860045	Sync.Service	INFO	User logged in successfully - verifying login.
+1628207860046	Sync.RemoteTabs	INFO	Generating tab list with filter
+1628207860046	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1628207860064	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState has no FxA user
+1628207860065	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.no_username
+1628207860066	Sync.Status	DEBUG	Status.service: success.status_ok => service.client_not_configured
+1628207860067	Sync.Service	DEBUG	Fetching unlocked auth state returned error.login.reason.no_username
+1628207860069	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1628207860071	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1628207860074	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1628207860080	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.no_username(resource://services-sync/service.js:1038:15) JS Stack trace: onNotify@service.js:1038:15
+1628207860084	Sync.Service	DEBUG	Not syncing: login returned false.

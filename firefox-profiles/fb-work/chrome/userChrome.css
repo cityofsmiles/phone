@@ -2,7 +2,7 @@
    It will be overwritten on upgrade. You should edit the file located in
    /etc/mobile-config-firefox/ instead (most package managers won't replace
    files under /etc if they've been edited) */
-/* Copyright 2020 Oliver Smith
+/* Copyright 2021 Oliver Smith
    SPDX-License-Identifier: GPL-3.0-or-later */
 
 @media (max-width: 700px) {
@@ -50,7 +50,7 @@
 	  display: none;
 	}
 }
-/* Copyright 2020 Oliver Smith
+/* Copyright 2021 Oliver Smith
    SPDX-License-Identifier: GPL-3.0-or-later */
 
 @media (max-width: 700px) {
@@ -77,7 +77,7 @@
 	  display: none;
 	}
 }
-/* Copyright 2020 Oliver Smith
+/* Copyright 2021 Oliver Smith
    SPDX-License-Identifier: GPL-3.0-or-later */
 
 @media (max-width: 700px) {
@@ -110,14 +110,14 @@
 	  font-size: 4pt;
 	}
 }
-/* Copyright 2020 Oliver Smith
+/* Copyright 2021 Oliver Smith
    SPDX-License-Identifier: GPL-3.0-or-later */
 
 /* Reduce minimum window width */
 :root {
   min-width: 300px !important;
 }
-/* Copyright 2020 Oliver Smith
+/* Copyright 2021 Oliver Smith
    SPDX-License-Identifier: GPL-3.0-or-later */
 
 /* Reduce minimum window width */

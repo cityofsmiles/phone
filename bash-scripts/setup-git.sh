@@ -2,7 +2,7 @@
 
 ssh-keygen -t rsa -C "cityofsmiles@gmail.com"
 
-val "$(ssh-agent -s)"
+eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/id_rsa
 
