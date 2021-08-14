@@ -145,7 +145,8 @@ extract ()
 
 # My personal shortcuts 
 #alias u='yay -Syu --noconfirm; cd /home/jonathan/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
-alias u='sudo ~/sxmo-alarm/sxmo-alarm --force' 
+alias uu='sudo ~/sxmo-alarm/sxmo-alarm --force' 
+alias u='yay -Syu --noconfirm' 
 #alias u='yay; flatpak update'
 alias call='cd /home/jonathan/sxmo-build; ./sxmo_build_all.sh'
 #alias cdwm='cp /home/jonathan/Documents/phone/configs/config.h /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h; cd /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm; sudo make install'
@@ -204,12 +205,12 @@ alias tsa='transmission-remote -t all -s'
 alias tsta='transmission-remote -t all -S'
 alias tl='transmission-remote -l'
 alias tra='transmission-remote -t all -r'
-
+alias gdrive='rclone mount depedgdrive:/ /mnt/sdcard/GDrive &' 
 alias la='ls -la'
 
 alias cdh='cd ~'
 
-alias restartx='sudo systemctl restart display-manager'
+alias rx='sudo systemctl restart display-manager'
 
 alias bat='cat /sys/class/power_supply/axp20x-battery/capacity'
 

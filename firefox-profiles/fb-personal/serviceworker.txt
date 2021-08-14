@@ -1,4 +1,4 @@
-8
+9
 
 https://web.telegram.org/
 https://web.telegram.org/service_worker.js
@@ -8,6 +8,8 @@ true
 1613353314623589
 1613353314668359
 1613353306352766
+0
+true
 #
 
 https://mobile.twitter.com/
@@ -18,6 +20,8 @@ true
 1614401486312606
 1614401488627654
 1614401462377962
+0
+true
 #
 
 https://www.vice.com/
@@ -28,6 +32,8 @@ true
 1613728556771960
 1613728557549715
 1613728550448159
+0
+true
 #
 
 https://www.bloomberg.com/
@@ -38,6 +44,8 @@ false
 1613777204303681
 1613777205911716
 1613777201249114
+0
+true
 #
 
 https://forums.puri.sm/
@@ -48,6 +56,8 @@ true
 1613815651087677
 1613815651308236
 1613815637522025
+0
+true
 #
 
 https://www.zdnet.com/
@@ -58,6 +68,8 @@ true
 1613816184926287
 1613816184979060
 1613816183656210
+0
+true
 #
 
 https://www.bbc.com/culture/
@@ -68,6 +80,8 @@ true
 1613927108229332
 1613927108314651
 1613927098253785
+0
+true
 #
 
 https://blog.oisinaylward.me/
@@ -78,6 +92,8 @@ true
 1613961524054935
 1613961525349625
 1613961522537696
+0
+true
 #
 
 https://www.bbc.com/future/
@@ -88,6 +104,8 @@ true
 1614230662468970
 1614230662618983
 1614230651625560
+0
+true
 #
 
 https://www.nytimes.com/vi-assets/static-assets/
@@ -98,14 +116,18 @@ true
 1614402765019660
 1614402765184496
 1614402753732312
+0
+true
 #
 
 https://drive.google.com/_/AppsNotifyUi/106390172249853374884
 https://drive.google.com/_/AppsNotifyUi/serviceworker.js
 true
-{45e4cca4-0c89-48d1-91dd-eba147eec5eb}
+{9634b683-fc1b-43b6-96a8-766985c97b15}
 0
-1628229462415444
-1628229462688893
-1628229440021599
+1628925358092964
+1628925358361407
+1628925351078258
+0
+true
 #

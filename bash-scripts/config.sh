@@ -4,7 +4,7 @@ ip_pine="192.168.1.247"
 
 user_cp='u0_a295'
 user_pc='jonathan'
-user_pine='alarm'
+user_pine='jonathan'
 
 port_cp='8022'
 port_pc='22'

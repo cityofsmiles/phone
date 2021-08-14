@@ -12,6 +12,10 @@ sudo mkdir -p /mnt/sdcard/Documents
 
 sudo mkdir -p /mnt/sdcard/Downloads
 
+sudo mkdir -p /mnt/sdcard/Downloads/Movies
+
+sudo mkdir -p /mnt/sdcard/GDrive
+
 sudo mkdir -p /mnt/sdcard/.h
 
 sudo chown -R $user_pine /mnt/sdcard
@@ -27,6 +31,8 @@ rm -r ~/Downloads
 
 rm -r ~/Music
 
+rm -r ~/Videos
+
 #ln -s /media/mmcblk0p1/Documents ~/Documents
 
 #ln -s /media/mmcblk0p1/Downloads ~/Downloads
@@ -37,6 +43,8 @@ ln -s /mnt/sdcard/Downloads ~/Downloads
 
 ln -s /mnt/sdcard/Music ~/Music
 
-ln -s /mnt/sdcard/.h ~/.h
+ln -s /mnt/sdcard/Movies ~/Videos
+
+ln -s /mnt/sdcard/GDrive ~/GDrive
 
 cp -r ~/phone ~/Documents

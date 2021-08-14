@@ -12,6 +12,9 @@ sudo mkdir -p ~/Documents/notes
 
 sudo mkdir -p ~/Documents/word/20-21
 
+sudo mkdir -p ~/Downloads/Movies
+
 sudo chown -R $user_pine /media/mmcblk0p1
 
 sudo chown -R $user_pine /mnt/sdcard
+

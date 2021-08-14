@@ -85,6 +85,7 @@ clipit &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
+#rclone mount depedgdrive:/ /mnt/sdcard/GDrive
 
 export DEFAULT_COUNTRY=PH
 export SVKBD_HEIGHTFACTOR=12
