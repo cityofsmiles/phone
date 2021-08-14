@@ -145,8 +145,12 @@ extract ()
 
 # My personal shortcuts 
 #alias u='yay -Syu --noconfirm; cd /home/jonathan/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
+<<<<<<< HEAD
 alias uu='sudo ~/sxmo-alarm/sxmo-alarm --force' 
 alias u='yay -Syu --noconfirm' 
+=======
+alias u='sudo ~/sxmo-alarm/sxmo-alarm --force' 
+>>>>>>> dd5097a9bc6e112c75b0b68ca95d8daf1288679b
 #alias u='yay; flatpak update'
 alias call='cd /home/jonathan/sxmo-build; ./sxmo_build_all.sh'
 #alias cdwm='cp /home/jonathan/Documents/phone/configs/config.h /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h; cd /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm; sudo make install'
@@ -195,9 +199,14 @@ alias ta='transmission-remote -w "/home/jonathan/Downloads/Movies" -a'
 alias smi='make; sudo make install'
 alias td='transmission-daemon'
 alias ts='torpar -t 4 -q'
+<<<<<<< HEAD
 alias tap='transmission-remote -w "/mnt/sdcard/.h" -a'
 alias cast='sudo systemctl start ums@jonathan.service'
 alias stopcast='sudo systemctl stop ums@jonathan.service'
+=======
+alias tap='transmission-remote -w "/home/jonathan/.h" -a'
+
+>>>>>>> dd5097a9bc6e112c75b0b68ca95d8daf1288679b
 alias tra='transmission-remote -t all -r'
 alias smb='sudo systemctl start smb.service; sudo systemctl start nmb.service'
 alias stopsmb='sudo systemctl stop smb.service; sudo systemctl stop nmb.service'
@@ -230,7 +239,11 @@ shopt -s extglob
 
 export PATH=/home/jonathan/Documents/phone/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
 export TERM=xterm
+<<<<<<< HEAD
 export SSHPASS=bacolod1987
+=======
+
+>>>>>>> dd5097a9bc6e112c75b0b68ca95d8daf1288679b
 export TERMINFO=/bin/sh
 
 up(){
