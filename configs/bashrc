@@ -227,7 +227,7 @@ export EDITOR=mousepad
 
 shopt -s extglob
 
-export PATH=/home/jonathan/Documents/phone/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
+export PATH=/mnt/sdcard/Documents/phone/bin:/home/jonathan/Documents/phone/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
 export TERM=xterm
 export SSHPASS=bacolod1987
 

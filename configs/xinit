@@ -81,11 +81,12 @@ sh /home/alarm/Documents/phone/bash-scripts/rsync-excel2cp.sh &
 
 sh /home/alarm/Documents/phone/bash-scripts/rsync-scripts2cp.sh &
 
-clipit &
+#clipit &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 #rclone mount depedgdrive:/ /mnt/sdcard/GDrive
 
+/usr/bin/clipmenud &
 export DEFAULT_COUNTRY=PH
 export SVKBD_HEIGHTFACTOR=12

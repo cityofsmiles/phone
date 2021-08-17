@@ -155,6 +155,7 @@ static Key keys[] = {
 	{ 0, Mod4Mask|ShiftMask,        XK_t,          spawn,          SHCMD("texstudio") },
 	{ 0, Mod4Mask,                  XK_u,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='sh /home/jonathan/Documents/phone/bash-scripts/update.sh'") },
 	{ 0, Mod4Mask|ShiftMask,        XK_u,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='sh /home/jonathan/Documents/phone/bash-scripts/update-compile.sh'") },
+	{ 0, Mod4Mask,                  XK_v,          spawn,          SHCMD("clipmenu") },
 	{ 0, MODKEY|Mod4Mask,           XK_v,          spawn,          SHCMD("sh /home/jonathan/Documents/laptop/myscripts/common-scripts/croc-receive-paste.sh") },
 	{ 0, Mod4Mask,                  XK_w,          spawn,          SHCMD("firefox") },
 	{ 0, Mod4Mask|ControlMask,      XK_w,          spawn,          SHCMD("firefox -profile '/mnt/sdcard/firefox-profiles/fb-work'") },

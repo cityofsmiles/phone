@@ -18,6 +18,9 @@ sudo mkdir -p /mnt/sdcard/GDrive
 
 sudo mkdir -p /mnt/sdcard/.h
 
+sudo mkdir -p /mnt/sdcard/firefox-profiles/fb-personal
+sudo mkdir -p /mnt/sdcard/firefox-profiles/fb-work
+
 sudo chown -R $user_pine /mnt/sdcard
 
 #sudo mkdir -p /media/mmcblk0p1/Documents 
