@@ -89,7 +89,7 @@ sh /home/alarm/Documents/phone/bash-scripts/rsync-scripts2cp.sh &
 
 /usr/bin/clipmenud &
 
-sxmo_keyboard.sh open &
+sxmo_keyboard.sh open 
 
 export DEFAULT_COUNTRY=PH
 export SVKBD_HEIGHTFACTOR=12

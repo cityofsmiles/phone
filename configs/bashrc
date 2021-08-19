@@ -224,13 +224,20 @@ alias vnc='x11vnc -display :0 -usepw'
 alias lower='/home/jonathan/Documents/laptop/myscripts/common-scripts/make-lowercase.sh'
 
 export EDITOR=mousepad
-
+export VISUAL=mousepad
 shopt -s extglob
 
 export PATH=/mnt/sdcard/Documents/phone/bin:/home/jonathan/Documents/phone/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
 export TERM=xterm
 export SSHPASS=bacolod1987
 export TERMINFO=/bin/sh
+
+export VISUAL=mousepad
+export EDITOR=mousepad
+export NNN_PLUG='m:-!&mousepad $nnn*;n:-!sudo -E micro $nnn*;o:-!&mousepad;p:preview-tui'
+
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_BMS="d:$HOME/Documents;h:$HOME;s:/mnt/sdcard/Documents/phone;z:$HOME/Downloads/"
 
 
 up(){

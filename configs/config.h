@@ -167,7 +167,7 @@ static Key keys[] = {
 	{ 0, Mod4Mask,                  XK_y,          spawn,          SHCMD("st sudo systemctl restart display-manager") },
 	{ 0, Mod4Mask,                  XK_z,          spawn,          SHCMD("st ranger /home/jonathan") },
 	{ 0, Mod4Mask|ControlMask,      XK_z,          spawn,          SHCMD("pcmanfm") },
-	{ 0, Mod4Mask|ShiftMask,        XK_z,          spawn,          SHCMD("st nnn") },        	       
+	{ 0, Mod4Mask|ShiftMask,        XK_z,          spawn,          SHCMD("st -e /mnt/sdcard/Documents/phone/bash-scripts/nnn.sh") },        	       
 	/*{ 0, Mod4Mask|ShiftMask,        XK_z,          spawn,          SHCMD("st ranger /home/jonathan/Documents/phone/bash-scripts") }, */       	       
 	{ 0, Mod4Mask,                  XK_period,     spawn,          SHCMD("sh /home/jonathan/Documents/laptop/myscripts/common-scripts/right-click.sh") },	
 

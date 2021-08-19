@@ -30,5 +30,5 @@ cp ~/Documents/phone/configs/arch-profile ~/.profile
 
 #cp /home/alarm/Documents/phone/configs/config.h /home/alarm/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h
 
-sudo cp ~/Documents/phone/configs/nnn-vars.sh /etc/profile.d/nnn-vars.sh
+#sudo cp ~/Documents/phone/configs/nnn-vars.sh /etc/profile.d/nnn-vars.sh
 
