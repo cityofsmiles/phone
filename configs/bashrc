@@ -230,8 +230,8 @@ shopt -s extglob
 export PATH=/mnt/sdcard/Documents/phone/bin:/home/jonathan/Documents/phone/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
 export TERM=xterm
 export SSHPASS=bacolod1987
-
 export TERMINFO=/bin/sh
+
 
 up(){
   local d=""

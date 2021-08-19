@@ -1,12 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */ 
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *defaultfonts[]          = {
-  "monospace:size=16", /* PP default start index */
+  "monospace:size=12", /* PP default start index */
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
@@ -34,8 +34,9 @@ static const Rule rules[] = {
 	{ "svkbd",    NULL,       NULL,       TAGMASK,      1,           1,         0,        -1,  1},
 	{ "Pidgin",   NULL,       NULL,       1 << 3,       0,           0,         1,        -1,  0},
 	{ "okular",   NULL,       NULL,       1 << 2,       0,           0,         1,        -1,  0},
-	{ NULL,       NULL,       "Choose Files",       0,       0,           0,         1,        -1,  0},
-	{ "TelegramDesktop", NULL,       NULL,       1 << 2,       0,           0,         1,        -1,  0},
+	{ "TelegramDesktop",  "Choose Files",  NULL,        0,           0,         1,        -1,        -1,  0},
+	{ "firefox",  "File Upload", NULL,    0,            0,           0,         1,        -1,  0},
+	{ "TelegramDesktop",NULL, NULL,       1 << 2,       0,           0,         1,        -1,  0},
 	{ "Mousepad", NULL,       NULL,       1 << 1,       0,           0,         1,        -1,  0},
 };
 
@@ -110,7 +111,7 @@ static Key keys[] = {
 
 	/* PBP */
 	{ 0, MODKEY,                    XK_p,      spawn,          SHCMD("dmenu_run -c -fn Terminus-14 -l 20") },
-	{ 0, MODKEY,                    XK_d,      spawn,          SHCMD("dmenu_run -c -fn Terminus-13 -l 15") },
+	{ 0, MODKEY,                    XK_d,      spawn,          SHCMD("dmenu_run -c -fn Terminus-13 -l 10") },
 
 	{ 0, MODKEY|ShiftMask,          XK_Return, spawn,          SHCMD("st") },
 	{ 0, MODKEY,                    XK_b,      togglebar,      {0} },
@@ -125,45 +126,50 @@ static Key keys[] = {
 	{ 0, MODKEY|ShiftMask,          XK_Down,      spawn,    SHCMD("sxmo_vol.sh down") },
 	{ 0, MODKEY|ShiftMask,          XK_Up,      spawn,    SHCMD("sxmo_vol.sh up") },
 
-	{ 0, MODKEY,                    XK_a,          spawn,          SHCMD("sh /home/alarm/texpander-master/texpander.sh") },
-	{ 0, MODKEY|ShiftMask,          XK_a,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/new-texpander-entry.sh") },
-	{ 0, MODKEY|ControlMask,        XK_a,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/notes/texpander'") },
-	{ 0, MODKEY,                    XK_c,          spawn,          SHCMD("mousepad /home/alarm/Documents/phone/configs/config.h") },
-	{ 0, MODKEY|ShiftMask,          XK_c,          spawn,          SHCMD("mousepad /home/alarm/Documents/phone/configs/bashrc") },
-	{ 0, MODKEY|ControlMask,        XK_c,          spawn,          SHCMD("mousepad /home/alarm/Documents/phone/configs/rifle.conf") },
-	{ 0, MODKEY|ShiftMask|ControlMask,    XK_c,    spawn,          SHCMD("mousepad /home/alarm/Documents/phone/configs/rc.conf") },
-	{ 0, MODKEY|ShiftMask,          XK_d,          spawn,          SHCMD("xfce4-terminal --command='sh /home/alarm/Documents/phone/bash-scripts/calendar.sh 1'") },
-	{ 0, MODKEY|ControlMask,        XK_d,          spawn,          SHCMD("xfce4-terminal --command='sh /home/alarm/Documents/phone/bash-scripts/calendar.sh 2'") },
-	{ 0, MODKEY,                    XK_g,          spawn,          SHCMD("chromium") },
-	{ 0, MODKEY|ShiftMask,          XK_g,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/croc-receive.sh") },
-	{ 0, MODKEY|ShiftMask,          XK_l,          spawn,          SHCMD("libreoffice") },
-	{ 0, MODKEY|ShiftMask,          XK_m,          spawn,          SHCMD("mousepad") },
-	{ 0, MODKEY,                    XK_n,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/notes'") },
-	{ 0, MODKEY|ShiftMask,          XK_n,          spawn,          SHCMD("sh /home/alarm/Documents/phone/bash-scripts/new-note.sh") },
-	{ 0, MODKEY|ControlMask,        XK_n,          spawn,          SHCMD("xfce4-terminal --command='snownews'") },
-	{ 0, MODKEY,                    XK_q,          spawn,          SHCMD("xset dpms force off") },
-	{ 0, MODKEY|ControlMask,        XK_q,          spawn,          SHCMD("sxmo_screenlock.sh off") },
-	{ 0, MODKEY|ShiftMask|ControlMask,   XK_q,     spawn,          SHCMD("sxmo_screenlock.sh crust") },
-	{ 0, MODKEY|ShiftMask|ControlMask,   XK_r,     spawn,          SHCMD("sxmo_rotate.sh") },
-	{ 0, MODKEY|ShiftMask,          XK_s,          spawn,          SHCMD("mousepad /home/alarm/Documents/notes/keybinds.txt") },
-	{ 0, MODKEY|ShiftMask,          XK_t,          spawn,          SHCMD("pidgin") },
-	{ 0, MODKEY|ControlMask,        XK_t,          spawn,          SHCMD("texstudio") },
-	{ 0, MODKEY,                    XK_t,          spawn,          SHCMD("telegram-desktop") },
-	{ 0, MODKEY,                    XK_u,          spawn,          SHCMD("xfce4-terminal --command='sh /home/alarm/Documents/phone/bash-scripts/update.sh'") },
-	{ 0, MODKEY|ShiftMask,          XK_u,          spawn,          SHCMD("xfce4-terminal --command='sh /home/alarm/Documents/phone/bash-scripts/update-compile.sh'") },
-	{ 0, MODKEY,                    XK_w,          spawn,          SHCMD("firefox") },
-	{ 0, MODKEY|ControlMask,        XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-work' https://m.facebook.com/messages") },
-	{ 0, MODKEY|ShiftMask,          XK_w,          spawn,          SHCMD("firefox -profile '/home/alarm/Documents/phone/firefox-profiles/fb-personal'") },
-	{ 0, MODKEY,                    XK_x,          spawn,          SHCMD("xfce4-terminal") },
-	{ 0, MODKEY|ControlMask,        XK_x,          spawn,          SHCMD("systemctl suspend") },
-	{ 0, MODKEY|ShiftMask,          XK_x,          spawn,          SHCMD("xfce4-terminal --command='poweroff'") },
-	{ 0, MODKEY|ShiftMask,          XK_y,          spawn,          SHCMD("xfce4-terminal --command='reboot'") },
-	{ 0, MODKEY,                    XK_y,          spawn,          SHCMD("xfce4-terminal --command='sudo systemctl restart display-manager'") },
-	{ 0, MODKEY,        	        XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm'") },
-	{ 0, MODKEY|ControlMask,        XK_z,          spawn,          SHCMD("caja") },
-	{ 0, MODKEY|ShiftMask,          XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm/Documents/phone/bash-scripts'") },
-	{ 0, Mod4Mask,        	        XK_z,          spawn,          SHCMD("xfce4-terminal --zoom=1.5 --command='ranger /home/alarm'") },
-	
+	{ 0, Mod4Mask,                  XK_a,          spawn,          SHCMD("sh /home/jonathan/texpander/texpander.sh") },
+	{ 0, Mod4Mask|ShiftMask,        XK_a,          spawn,          SHCMD("sh /home/jonathan/Documents/phone/bash-scripts/new-texpander-entry.sh") },
+	{ 0, Mod4Mask|ControlMask,      XK_a,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='nnn /home/jonathan/Documents/notes/texpander'") },
+	{ 0, Mod4Mask,                  XK_b,          spawn,          SHCMD("sh /home/jonathan/Documents/phone/bash-scripts/bitwarden.sh") },
+	{ 0, Mod4Mask,                  XK_c,          spawn,          SHCMD("mousepad /home/jonathan/Documents/phone/configs/config.h") },
+	{ 0, MODKEY|Mod4Mask,           XK_c,          spawn,          SHCMD("sh /home/jonathan/Documents/laptop/myscripts/common-scripts/croc-copy-send.sh") },
+	{ 0, Mod4Mask|ShiftMask,        XK_c,          spawn,          SHCMD("mousepad /home/jonathan/Documents/phone/configs/bashrc") },
+	{ 0, Mod4Mask|ControlMask,      XK_c,          spawn,          SHCMD("mousepad /home/jonathan/Documents/phone/configs/rc.conf") },
+	{ 0, MODKEY|Mod4Mask,           XK_c,          spawn,          SHCMD("mousepad /home/jonathan/Documents/phone/configs/rifle.conf") },
+	{ 0, Mod4Mask,                  XK_d,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='sh /home/jonathan/Documents/phone/bash-scripts/calendar.sh 1'") },
+	{ 0, Mod4Mask|ShiftMask,        XK_d,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='sh /home/jonathan/Documents/phone/bash-scripts/calendar.sh 2'") },
+	{ 0, Mod4Mask,                  XK_g,          spawn,          SHCMD("chromium") },
+	{ 0, Mod4Mask,                  XK_l,          spawn,          SHCMD("libreoffice") },
+	{ 0, Mod4Mask,                  XK_m,          spawn,          SHCMD("mousepad") },
+	{ 0, Mod4Mask,                  XK_n,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='nnn /home/jonathan/Documents/notes'") },
+	{ 0, Mod4Mask|ShiftMask,        XK_n,          spawn,          SHCMD("sh /home/jonathan/Documents/phone/bash-scripts/new-note.sh") },
+	{ 0, Mod4Mask|ControlMask,      XK_n,          spawn,          SHCMD("gfeeds") },
+	{ 0, Mod4Mask,                  XK_p,          spawn,          SHCMD("pidgin") },	
+	{ 0, Mod4Mask,                  XK_q,          spawn,          SHCMD("xset dpms force off") },
+	{ 0, Mod4Mask|ShiftMask,        XK_q,          spawn,          SHCMD("sxmo_screenlock.sh off") },
+	{ 0, Mod4Mask|ControlMask,      XK_q,          spawn,          SHCMD("sxmo_inputhandler.sh volup_three") },
+	{ 0, Mod4Mask,                  XK_r,          spawn,          SHCMD("sh /home/jonathan/Documents/laptop/myscripts/common-scripts/croc-receive.sh") },
+	{ 0, Mod4Mask|ShiftMask,        XK_r,          spawn,          SHCMD("sxmo_rotate.sh") },
+	{ 0, Mod4Mask|ControlMask,      XK_r,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='nnn /home/jonathan/Documents/notes/recipes'") },
+	{ 0, Mod4Mask,                  XK_s,          spawn,          SHCMD("sh /home/jonathan/Documents/phone/bash-scripts/select-copy.sh") },
+	{ 0, Mod4Mask,                  XK_t,          spawn,          SHCMD("telegram-desktop") },
+	{ 0, Mod4Mask|ShiftMask,        XK_t,          spawn,          SHCMD("texstudio") },
+	{ 0, Mod4Mask,                  XK_u,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='sh /home/jonathan/Documents/phone/bash-scripts/update.sh'") },
+	{ 0, Mod4Mask|ShiftMask,        XK_u,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='sh /home/jonathan/Documents/phone/bash-scripts/update-compile.sh'") },
+	{ 0, Mod4Mask,                  XK_v,          spawn,          SHCMD("clipmenu") },
+	{ 0, MODKEY|Mod4Mask,           XK_v,          spawn,          SHCMD("sh /home/jonathan/Documents/laptop/myscripts/common-scripts/croc-receive-paste.sh") },
+	{ 0, Mod4Mask,                  XK_w,          spawn,          SHCMD("firefox") },
+	{ 0, Mod4Mask|ControlMask,      XK_w,          spawn,          SHCMD("firefox -profile '/mnt/sdcard/firefox-profiles/fb-work'") },
+	{ 0, Mod4Mask|ShiftMask,        XK_w,          spawn,          SHCMD("firefox -profile '/mnt/sdcard/firefox-profiles/fb-personal'") },
+	{ 0, Mod4Mask,                  XK_x,          spawn,          SHCMD("xfce4-terminal --hide-menubar") },
+	{ 0, Mod4Mask|ShiftMask,        XK_x,          spawn,          SHCMD("xfce4-terminal --hide-menubar") },
+	{ 0, Mod4Mask|ControlMask,      XK_x,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='poweroff'") },
+	{ 0, Mod4Mask|ShiftMask,        XK_y,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='reboot'") },
+	{ 0, Mod4Mask,                  XK_y,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='sudo systemctl restart display-manager'") },
+	{ 0, Mod4Mask,                  XK_z,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='ranger /home/jonathan'") },
+	{ 0, Mod4Mask|ControlMask,      XK_z,          spawn,          SHCMD("pcmanfm") },
+	{ 0, Mod4Mask|ShiftMask,        XK_z,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='nnn'") },        	       
+	/*{ 0, Mod4Mask|ShiftMask,        XK_z,          spawn,          SHCMD("xfce4-terminal --hide-menubar --command='ranger /home/jonathan/Documents/phone/bash-scripts'") }, */       	       
+	{ 0, Mod4Mask,                  XK_period,     spawn,          SHCMD("sh /home/jonathan/Documents/laptop/myscripts/common-scripts/right-click.sh") },	
 
 	{ 0, MODKEY,                    XK_i,      incnmaster,     {.i = +1 } },
 	{ 0, MODKEY,                    XK_o,      incnmaster,     {.i = -1 } },

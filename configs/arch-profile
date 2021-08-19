@@ -7,3 +7,6 @@ export PATH=/home/alarm/.local/bin:/home/alarm/Documents/phone/userscripts:$PATH
 export TERM=xterm
 
 export TERMINFO=/bin/sh
+
+export NNN_PLUG='m:-!&mousepad $nnn*;n:-!sudo -E micro $nnn*'
+
