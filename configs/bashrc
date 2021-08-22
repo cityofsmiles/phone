@@ -191,7 +191,7 @@ alias smc='sudo micro config.h'
 alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 alias smci='sudo make clean install'
 alias ta='transmission-remote -w "/home/jonathan/Downloads/Movies" -a'
-alias smi='make; sudo make install'
+alias smi='sudo make; sudo make install'
 alias td='transmission-daemon'
 alias ts='torpar -t 4 -q'
 alias tap='transmission-remote -w "/mnt/sdcard/.h" -a'
@@ -234,10 +234,12 @@ export TERMINFO=/bin/sh
 
 export VISUAL=mousepad
 export EDITOR=mousepad
-export NNN_PLUG='m:-!&mousepad $nnn*;n:-!sudo -E micro $nnn*;o:-!&mousepad;p:preview-tui'
-
-export NNN_FIFO=/tmp/nnn.fifo
-export NNN_BMS="d:$HOME/Documents;h:$HOME;s:/mnt/sdcard/Documents/phone;z:$HOME/Downloads/"
+export NNN_PLUG='m:-!&mousepad $nnn*;n:-!sudo -E micro $nnn*;o:-!&mousepad;p:preview-tui;q:preview-tabbed'
+#export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
+export NNN_FIFO='/tmp/nnn.fifo'
+export NNN_BMS='d:$HOME/Documents;h:$HOME;s:/mnt/sdcard/Documents/phone;z:$HOME/Downloads/'
+#export NNN_COLORS='#0a1b2c3d;1234'
+export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
 
 
 up(){

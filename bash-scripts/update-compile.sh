@@ -8,4 +8,5 @@
 
 sudo ~/sxmo-alarm/sxmo-alarm --force
 
-sleep 5s
+read -r
+#sleep 5s
