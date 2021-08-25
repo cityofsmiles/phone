@@ -87,20 +87,11 @@
             />
         
             <outline
-                title="It's FOSS"
-                text="A Linux and Open Source Web Portal"
+                title="Linux Journal - The Original Magazine of the Linux Community"
+                text=""
                 type="rss"
-                xmlUrl="https://itsfoss.com/feed/"
-                htmlUrl="https://itsfoss.com"
-                category=""
-            />
-        
-            <outline
-                title="Linux Hint"
-                text="Exploring and Master Linux Ecosystem"
-                type="rss"
-                xmlUrl="https://linuxhint.com/feed/"
-                htmlUrl="https://linuxhint.com"
+                xmlUrl="https://www.linuxjournal.com/node/feed"
+                htmlUrl="https://www.linuxjournal.com/node/feed"
                 category=""
             />
         
@@ -110,15 +101,6 @@
                 type="rss"
                 xmlUrl="https://www.linuxfoundation.org/feed/"
                 htmlUrl="https://www.linuxfoundation.org"
-                category=""
-            />
-        
-            <outline
-                title="Linux Journal - The Original Magazine of the Linux Community"
-                text=""
-                type="rss"
-                xmlUrl="https://www.linuxjournal.com/node/feed"
-                htmlUrl="https://www.linuxjournal.com/node/feed"
                 category=""
             />
         
@@ -137,6 +119,24 @@
                 type="rss"
                 xmlUrl="https://xnux.eu/log/rss.xml"
                 htmlUrl=""
+                category=""
+            />
+        
+            <outline
+                title="It's FOSS"
+                text="A Linux and Open Source Web Portal"
+                type="rss"
+                xmlUrl="https://itsfoss.com/feed/"
+                htmlUrl="https://itsfoss.com"
+                category=""
+            />
+        
+            <outline
+                title="Linux Smartphones"
+                text=""
+                type="rss"
+                xmlUrl="https://linuxsmartphones.com/feed/"
+                htmlUrl="https://linuxsmartphones.com"
                 category=""
             />
         
