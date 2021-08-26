@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh-keygen -t rsa -C "cityofsmiles@gmail.com"
+#ssh-keygen -t rsa -C "cityofsmiles@gmail.com"
 
 eval "$(ssh-agent -s)"
 
