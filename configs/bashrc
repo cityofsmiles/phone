@@ -206,11 +206,11 @@ alias tl='transmission-remote -l'
 alias tra='transmission-remote -t all -r'
 alias gdrive='rclone mount depedgdrive:/ /mnt/sdcard/GDrive &' 
 alias la='ls -la'
-
+alias usb='sudo mount /dev/sda /home/jonathan/usb'
 alias cdh='cd ~'
-
+alias usbout='sudo umount /dev/sda'
 alias rx='sudo systemctl restart display-manager'
-
+alias upl='cd .. && ls'
 alias bat='cat /sys/class/power_supply/axp20x-battery/capacity'
 
 alias wr='sh /home/jonathan/Documents/phone/bash-scripts/watch-run.sh'

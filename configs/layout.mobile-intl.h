@@ -1,7 +1,7 @@
 #define KEYS 61
 
 static Key keys_en[KEYS] = {
-	{ "Es", "", XK_Escape, 1 },
+	{ "↩️", "", XK_Escape, 1 },
 	{ "1", "!", XK_1, 1 },
 	{ "2", "@", XK_2, 1 },
 	{ "3", "#", XK_3, 1 },
@@ -117,7 +117,7 @@ static Key keys_minimal[KEYS] = {
 	{ "↲ Enter", 0, XK_Return, 2 },
 };
 
-#define OVERLAYS 226
+#define OVERLAYS 227
 static Key overlay[OVERLAYS] = {
 	{ 0, 0, XK_a }, //Overlay for a
 	{ "à", 0, XK_agrave },
@@ -359,6 +359,7 @@ static Key keys_symbols[KEYS] = {
 	{ "F8", 0, XK_F8, 1 },
 	{ "F9", 0, XK_F9, 1 },
 	{ "F10", 0, XK_F10, 1 },
+	{ "F11", 0, XK_F11, 1 },
 	{ 0 }, /* New row */
 
 	{ "'\"", 0, XK_apostrophe, 1 },

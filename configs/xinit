@@ -19,7 +19,7 @@ conky -c /usr/share/sxmo/appcfg/conky.conf -d #12 hour clock (am/pm)
 # and set a sane default volume
 sxmo_audioout.sh Speaker
 amixer sset 'Line Out Source' 'Mono Differential','Mono Differential'
-amixer set "Line Out" 50%
+amixer set "Line Out" 0%
 
 # Play a funky startup tune
 mpv --quiet --no-video /usr/share/sxmo/startup.ogg &
@@ -34,7 +34,10 @@ mpv --quiet --no-video /usr/share/sxmo/startup.ogg &
 # Note: if the modemmonitor is not on you can
 # not receive texts/calls!
 #sleep 22 && sxmo_modemmonitortoggle.sh on &
+sxmo_modemmonitortoggle.sh restart &
 
+# Auto hide cursor with touchscreen, Show it with a mouse
+unclutter-xfixes --hide-on-touch --start-hidden &
 
 
 ### Configuration Parameters ###
@@ -46,7 +49,7 @@ mpv --quiet --no-video /usr/share/sxmo/startup.ogg &
 command -v firefox && export BROWSER=firefox
 
 # Prepopulate Subreddits menu with custom subreddits
-export SXMO_SUBREDDITS="pinephoneOfficial,pinephone,unixporn"
+#export SXMO_SUBREDDITS="pinephoneOfficial,pinephone,unixporn"
 
 # Temporarily wake every 5 minutes during sleep
 #(useful for getting notifications)
@@ -59,13 +62,17 @@ export SXMO_LOCK_SCREEN_OFF=1
 export SXMO_LOCK_SUSPEND=1
 
 # When scrolling past the beginning or end of a menu, wrap it around:
-#export DMENU_WRAP_AROUND=1
+export DMENU_WRAP_AROUND=1
 
 # Enable audio feedback on keypress
 #export KEYBOARD_ARGS="-o | clickclack -f /usr/share/sxmo/keypress.wav"
 
 # Or, enable vibration feedback on keypress
 #export KEYBOARD_ARGS="-o | clickclack -v"
+
+
+# Change the default terminal command
+# export TERMCMD="st -e"
 
 command -v mousepad && export EDITOR=mousepad
 
@@ -82,6 +89,8 @@ sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 #sh /home/alarm/Documents/phone/bash-scripts/rsync-scripts2cp.sh &
 
 #clipit &
+
+syncthing &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 

@@ -3,6 +3,7 @@
 yay -Syu --noconfirm
 
 read -r
+
 #cd /home/alarm/sxmo-build
 
 #git pull https://git.sr.ht/~mil/sxmo-build/
