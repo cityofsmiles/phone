@@ -12,4 +12,5 @@ sh /home/jonathan/Documents/myscripts/bash-scripts/rsync-excel2cp.sh &
 #sh /home/jonathan/Documents/myscripts/bash-scripts/rsync-notes2cp.sh &
 sh /home/jonathan/Documents/myscripts/bash-scripts/rsync-word2cp.sh &
 sh /home/jonathan/Documents/myscripts/bash-scripts/word2pine.sh &
-clipit &
+#clipit &
+#st ranger &

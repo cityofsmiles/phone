@@ -145,11 +145,11 @@ extract ()
 
 # My personal shortcuts 
 #alias u='yay -Syu --noconfirm; cd /home/jonathan/sxmo-build; git pull https://git.sr.ht/~mil/sxmo-build/; cd ~'
-alias uu='sudo ~/sxmo-alarm/sxmo-alarm --force' 
+alias uu='echo 282634 | sudo -S ~/sxmo-alarm/sxmo-alarm --force' 
 alias u='yay -Syu --noconfirm' 
 alias call='cd /home/jonathan/sxmo-build; ./sxmo_build_all.sh'
 #alias cdwm='cp /home/jonathan/Documents/phone/configs/config.h /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm/config.h; cd /home/jonathan/sxmo-build/build-sxmo-dev/sxmo-dwm; sudo make install'
-alias cdwm='sudo cp /home/jonathan/Documents/phone/configs/config.h /home/jonathan/build-sxmo-dev/sxmo-dwm/config.h; cd /home/jonathan/build-sxmo-dev/sxmo-dwm; sudo make install'
+alias cdwm='echo 282634 | sudo -S cp /home/jonathan/Documents/phone/configs/config.h /home/jonathan/build-sxmo-dev/sxmo-dwm/config.h; cd /home/jonathan/build-sxmo-dev/sxmo-dwm; sudo make install'
 alias srb='source ~/.bashrc'
 alias in='yay -S'
 alias pr='yay -Rsn'
@@ -175,41 +175,41 @@ alias gpmn='git push -u origin main'
 alias cpcn='sh ~/Documents/phone/bash-scripts/cp-configs-startups.sh'
 alias gcal='python /home/jonathan/gencal/calculators/gen_cal_v2/gen_cal_v2.py'
 alias r='ranger'
-alias m='mousepad'
+alias m='leafpad'
 alias ll='exa'
 alias mc='micro'
 alias n='nano'
 alias gacpams='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-assets-main.sh'
 alias cleanzip='unzip "*.zip" && rm *.zip'
 alias xl2jpg='sh /home/jonathan/Documents/laptop/myscripts/bash-scripts/xl2jpg.sh'
-alias mb='mousepad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
+alias mb='leafpad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias mcb='micro ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias rb='sudo reboot'
 alias po='sudo poweroff'
 alias mcc='micro ~/Documents/phone/configs/config.h'
-alias smc='sudo micro config.h'
-alias mr='mousepad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
-alias smci='sudo make clean install'
+alias smc='echo 282634 | sudo -S micro config.h'
+alias mr='leafpad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
+alias smci='echo 282634 | sudo -S make clean install'
 alias ta='transmission-remote -w "/home/jonathan/Downloads/Movies" -a'
-alias smi='sudo make; sudo make install'
+alias smi='echo 282634 | sudo -S make; echo 282634 | sudo -S make install'
 alias td='transmission-daemon'
 alias ts='torpar -t 4 -q'
 alias tap='transmission-remote -w "/mnt/sdcard/.h" -a'
-alias cast='sudo systemctl start ums@jonathan.service'
-alias stopcast='sudo systemctl stop ums@jonathan.service'
+alias cast='echo 282634 | sudo -S systemctl start ums@jonathan.service'
+alias stopcast='echo 282634 | sudo -S systemctl stop ums@jonathan.service'
 alias tra='transmission-remote -t all -r'
-alias smb='sudo systemctl start smb.service; sudo systemctl start nmb.service'
-alias smbstop='sudo systemctl stop smb.service; sudo systemctl stop nmb.service'
+alias smb='echo 282634 | sudo -S systemctl start smb.service; sudo systemctl start nmb.service'
+alias smbstop='echo 282634 | sudo -S systemctl stop smb.service; sudo systemctl stop nmb.service'
 alias tsa='transmission-remote -t all -s'
 alias tsta='transmission-remote -t all -S'
 alias tl='transmission-remote -l'
 alias tra='transmission-remote -t all -r'
 alias gdrive='rclone mount depedgdrive:/ /mnt/sdcard/GDrive &' 
 alias la='ls -la'
-alias usb='sudo mount /dev/sda /home/jonathan/usb'
+alias usb='echo 282634 | sudo -S mount /dev/sda /home/jonathan/usb'
 alias cdh='cd ~'
-alias usbout='sudo umount /dev/sda'
-alias rx='sudo systemctl restart display-manager'
+alias usbout='echo 282634 | sudo -S umount /dev/sda'
+alias rx='echo 282634 | sudo -S systemctl restart display-manager'
 alias upl='cd .. && ls'
 alias bat='cat /sys/class/power_supply/axp20x-battery/capacity'
 
@@ -223,11 +223,11 @@ alias vnc='x11vnc -display :0 -usepw'
 
 alias lower='/home/jonathan/Documents/laptop/myscripts/common-scripts/make-lowercase.sh'
 
-export EDITOR=leafpad
+export EDITOR=micro
 export VISUAL=leafpad
 shopt -s extglob
 
-export PATH=/mnt/sdcard/Documents/phone/bin:/home/jonathan/Documents/phone/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
+export PATH=/mnt/sdcard/Documents/phone/bin:/home/jonathan/Documents/phone/bash-scripts:/mnt/sdcard/Documents/laptop/scripts/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH
 export TERM=xterm
 export SSHPASS=bacolod1987
 export TERMINFO=/bin/sh

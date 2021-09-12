@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-yay -Syu --noconfirm
+echo 282634 | sudo -S yay -Syu --noconfirm
 
 read -r
 

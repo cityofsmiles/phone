@@ -17,9 +17,13 @@ conky -c /usr/share/sxmo/appcfg/conky.conf -d #12 hour clock (am/pm)
 
 # Force audio over the main speaker
 # and set a sane default volume
-sxmo_audioout.sh Speaker
-amixer sset 'Line Out Source' 'Mono Differential','Mono Differential'
-amixer set "Line Out" 0%
+#sxmo_audioout.sh Speaker
+#amixer sset 'Line Out Source' 'Mono Differential','Mono Differential'
+#amixer set "Line Out" 0%
+
+# Force audio over the main speaker
+# and set a sane default volume
+sxmo_hooks.sh audiostart
 
 # Play a funky startup tune
 mpv --quiet --no-video /usr/share/sxmo/startup.ogg &
@@ -91,6 +95,8 @@ sh /home/alarm/Documents/phone/bash-scripts/feh-change-background.sh &
 #clipit &
 
 syncthing &
+
+#st ranger &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 

@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sxmo_keyboard.sh close
+
 cd /home/jonathan/Pictures
 
 if [ "$1" = "selection" ]; then
@@ -8,12 +10,7 @@ else
 	scrot -e 'echo $f | xsel -i -b' -d 1 -q 1 
 fi
 
-origname="$( xsel -b -o )"
+sxmo_keyboard.sh open
 
-clear
+st /mnt/sdcard/Documents/phone/bash-scripts/get-input.sh
 
-echo 'Type filename'
-
-read filename
-
-mv $origname $filename.png && notify-send "screenshot saved"

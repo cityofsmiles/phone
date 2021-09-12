@@ -6,7 +6,7 @@
 
 #sleep 5s
 
-sudo ~/sxmo-alarm/sxmo-alarm --force
+echo 282634 | sudo -S ~/sxmo-alarm/sxmo-alarm --force
 
 read -r
 #sleep 5s
