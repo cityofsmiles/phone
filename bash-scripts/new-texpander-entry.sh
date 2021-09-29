@@ -4,6 +4,6 @@ cd /home/alarm/.texpander
 
 #xfce4-terminal --zoom=1 --command='micro'
 
-#leafpad
+#featherpad
 
 st micro

@@ -12,4 +12,5 @@ read -r
 
 #sleep 5s
 
-
+cd st
+git pull https://github.com/siduck76/st

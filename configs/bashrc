@@ -175,20 +175,20 @@ alias gpmn='git push -u origin main'
 alias cpcn='sh ~/Documents/phone/bash-scripts/cp-configs-startups.sh'
 alias gcal='python /home/jonathan/gencal/calculators/gen_cal_v2/gen_cal_v2.py'
 alias r='ranger'
-alias m='leafpad'
+alias m='featherpad'
 alias ll='exa'
 alias mc='micro'
 alias n='nano'
 alias gacpams='sh /home/jonathan/Documents/phone/bash-scripts/git-add-commit-push-assets-main.sh'
 alias cleanzip='unzip "*.zip" && rm *.zip'
 alias xl2jpg='sh /home/jonathan/Documents/laptop/myscripts/bash-scripts/xl2jpg.sh'
-alias mb='leafpad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
+alias mb='featherpad ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias mcb='micro ~/Documents/phone/configs/bashrc && cp ~/Documents/phone/configs/bashrc ~/.bashrc && source ~/.bashrc'
 alias rb='sudo reboot'
 alias po='sudo poweroff'
 alias mcc='micro ~/Documents/phone/configs/config.h'
 alias smc='echo 282634 | sudo -S micro config.h'
-alias mr='leafpad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
+alias mr='featherpad ~/Documents/phone/configs/rc.conf && cp ~/Documents/phone/configs/rc.conf ~/.config/ranger/rc.conf'
 alias smci='echo 282634 | sudo -S make clean install'
 alias ta='transmission-remote -w "/home/jonathan/Downloads/Movies" -a'
 alias smi='echo 282634 | sudo -S make; echo 282634 | sudo -S make install'
@@ -224,7 +224,7 @@ alias vnc='x11vnc -display :0 -usepw'
 alias lower='/home/jonathan/Documents/laptop/myscripts/common-scripts/make-lowercase.sh'
 
 export EDITOR=micro
-export VISUAL=leafpad
+export VISUAL=featherpad
 shopt -s extglob
 
 export PATH=/mnt/sdcard/Documents/phone/bin:/home/jonathan/Documents/phone/bash-scripts:/mnt/sdcard/Documents/laptop/scripts/bash-scripts:go/bin:/home/jonathan/.local/bin:$PATH

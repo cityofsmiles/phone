@@ -6,7 +6,7 @@ file="$1"
 name="${file%.*}"
 
 #micro $file &
-mousepad $file &
+featherpad $file &
 
 if [ -f $name.pdf ];then
     okular $name.pdf &

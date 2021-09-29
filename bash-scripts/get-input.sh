@@ -2,7 +2,7 @@
 
 cd /home/jonathan/Pictures
 
-#sxmo_keyboard.sh open 
+day=$( date +"%F_%H-%M-%S" )
 
 origname="$( xsel -b -o )"
 
@@ -10,7 +10,7 @@ echo 'Type filename'
 
 read filename
 
-mv $origname $filename.png && notify-send "screenshot saved"
+mv $origname $filename-$day.png && notify-send "screenshot saved"
 
 
 

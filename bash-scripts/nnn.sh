@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-tmux new-session nnn -P p -e
+tmux new-session ranger -P p -e

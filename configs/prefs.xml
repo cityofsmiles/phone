@@ -36,10 +36,10 @@
 			</pref>
 		</pref>
 		<pref name='savedstatus'>
-			<pref name='default' type='int' value='1616144266'/>
+			<pref name='default' type='int' value='1628202072'/>
 			<pref name='startup' type='int' value='0'/>
 			<pref name='startup_current_status' type='bool' value='1'/>
-			<pref name='idleaway' type='int' value='1616145853'/>
+			<pref name='idleaway' type='int' value='1628217936'/>
 			<pref name='isidleaway' type='bool' value='0'/>
 		</pref>
 		<pref name='conversations'>
@@ -63,9 +63,9 @@
 			<pref name='turn_port_tcp' type='int' value='3478'/>
 			<pref name='turn_username' type='string' value=''/>
 			<pref name='turn_password' type='string' value=''/>
-			<pref name='auto_ip' type='bool' value='1'/>
+			<pref name='auto_ip' type='bool' value='0'/>
 			<pref name='public_ip' type='string' value=''/>
-			<pref name='map_ports' type='bool' value='1'/>
+			<pref name='map_ports' type='bool' value='0'/>
 			<pref name='ports_range_use' type='bool' value='0'/>
 			<pref name='ports_range_start' type='int' value='1024'/>
 			<pref name='ports_range_end' type='int' value='2048'/>
@@ -97,11 +97,10 @@
 				</pref>
 			</pref>
 			<pref name='core-plugin_pack-autoaccept'>
-				<pref name='path' type='string' value='/home/alarm/.purple/autoaccept'/>
+				<pref name='path' type='string' value='/home/jonathan/.purple/autoaccept'/>
 				<pref name='notify' type='bool' value='1'/>
 				<pref name='newdir' type='bool' value='1'/>
 				<pref name='escape' type='bool' value='1'/>
-				<pref name='stranger' type='int' value='0'/>
 			</pref>
 			<pref name='joinpart'>
 				<pref name='delay' type='int' value='10'/>
@@ -174,11 +173,7 @@
 			</pref>
 		</pref>
 		<pref name='lopl'/>
-		<pref name='prpl'>
-			<pref name='oscar'>
-				<pref name='recent_buddies' type='bool' value='0'/>
-			</pref>
-		</pref>
+		<pref name='prpl'/>
 		<pref name='gtk'>
 			<pref name='gtk-plugin_pack-convcolors'>
 				<pref name='ignore_incoming' type='bool' value='1'/>
@@ -386,15 +381,11 @@
 		</pref>
 		<pref name='plugins'>
 			<pref name='loaded' type='pathlist'>
-				<item value='/usr/lib/purple-2/autoaccept.so'/>
+				<item value='/usr/lib/pidgin/enhancedhist.so'/>
 				<item value='/usr/lib/pidgin/history.so'/>
 				<item value='/usr/lib/purple-2/ssl-nss.so'/>
-				<item value='/usr/lib/purple-2/offlinemsg.so'/>
-				<item value='/usr/lib/purple-2/psychic.so'/>
 				<item value='/usr/lib/purple-2/ssl.so'/>
 				<item value='/usr/lib/pidgin/sendbutton.so'/>
-				<item value='/usr/lib/pidgin/switchspell.so'/>
-				<item value='/usr/lib/pidgin/timestamp.so'/>
 			</pref>
 			<pref name='gtk-plugin_pack-irssi'>
 				<pref name='textfmt' type='bool' value='1'/>
@@ -404,10 +395,10 @@
 		<pref name='filelocations'>
 			<pref name='last_save_folder' type='path' value=''/>
 			<pref name='last_open_folder' type='path' value=''/>
-			<pref name='last_icon_folder' type='path' value='/home/alarm/Documents/phone/icons'/>
+			<pref name='last_icon_folder' type='path' value=''/>
 		</pref>
 		<pref name='smileys'>
-			<pref name='theme' type='string' value='Facebook'/>
+			<pref name='theme' type='string' value='Default'/>
 		</pref>
 		<pref name='vvconfig'>
 			<pref name='audio'>
@@ -484,7 +475,7 @@
 				<pref name='got_attention' type='path' value=''/>
 			</pref>
 			<pref name='theme' type='string' value=''/>
-			<pref name='conv_focus' type='bool' value='0'/>
+			<pref name='conv_focus' type='bool' value='1'/>
 			<pref name='mute' type='bool' value='1'/>
 			<pref name='command' type='path' value=''/>
 			<pref name='method' type='string' value='automatic'/>
@@ -495,7 +486,7 @@
 				<pref name='width' type='int' value='520'/>
 				<pref name='height' type='int' value='321'/>
 			</pref>
-			<pref name='buddyicon' type='path' value='/home/alarm/Documents/phone/icons/fb.jpeg'/>
+			<pref name='buddyicon' type='path' value=''/>
 		</pref>
 		<pref name='blist'>
 			<pref name='show_buddy_icons' type='bool' value='1'/>
@@ -509,7 +500,7 @@
 			<pref name='x' type='int' value='0'/>
 			<pref name='y' type='int' value='40'/>
 			<pref name='width' type='int' value='718'/>
-			<pref name='height' type='int' value='884'/>
+			<pref name='height' type='int' value='798'/>
 			<pref name='theme' type='string' value=''/>
 		</pref>
 		<pref name='conversations'>
@@ -536,7 +527,7 @@
 			<pref name='scrollback_lines' type='int' value='4000'/>
 			<pref name='chat'>
 				<pref name='entry_height' type='int' value='54'/>
-				<pref name='userlist_width' type='int' value='82'/>
+				<pref name='userlist_width' type='int' value='80'/>
 				<pref name='x' type='int' value='0'/>
 				<pref name='y' type='int' value='0'/>
 				<pref name='width' type='int' value='340'/>
@@ -546,12 +537,12 @@
 				<pref name='x' type='int' value='0'/>
 				<pref name='y' type='int' value='40'/>
 				<pref name='width' type='int' value='718'/>
-				<pref name='height' type='int' value='884'/>
+				<pref name='height' type='int' value='798'/>
 				<pref name='animate_buddy_icons' type='bool' value='1'/>
 				<pref name='entry_height' type='int' value='54'/>
 				<pref name='show_buddy_icons' type='bool' value='1'/>
 				<pref name='hide_new' type='string' value='never'/>
-				<pref name='close_immediately' type='bool' value='0'/>
+				<pref name='close_immediately' type='bool' value='1'/>
 			</pref>
 			<pref name='toolbar'>
 				<pref name='wide' type='bool' value='0'/>

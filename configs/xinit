@@ -78,7 +78,7 @@ export DMENU_WRAP_AROUND=1
 # Change the default terminal command
 # export TERMCMD="st -e"
 
-command -v leafpad && export EDITOR=leafpad
+command -v featherpad && export EDITOR=featherpad
 
 #command -v xfce4-terminal && export TERM=xfce4-terminal
 
@@ -100,7 +100,7 @@ syncthing &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
-#rclone mount depedgdrive:/ /mnt/sdcard/GDrive
+sleep 10m && rclone mount depedgdrive:/ /mnt/sdcard/GDrive &
 
 /usr/bin/clipmenud &
 

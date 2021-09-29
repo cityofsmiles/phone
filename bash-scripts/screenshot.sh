@@ -1,6 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 sxmo_keyboard.sh close
+
+xdotool key --clearmodifiers F11 Alt+b
 
 cd /home/jonathan/Pictures
 
@@ -14,3 +16,4 @@ sxmo_keyboard.sh open
 
 st /mnt/sdcard/Documents/phone/bash-scripts/get-input.sh
 
+xdotool key --clearmodifiers F11 Alt+b

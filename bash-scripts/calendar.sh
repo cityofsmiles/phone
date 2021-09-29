@@ -1,7 +1,7 @@
 #!/bin/sh
 
 case $1 in
-  1) cal && sleep 7s ;;
-  2) cal -3 && sleep 10s ;;
-  *) cal && sleep 7s ;;
+  1) cal && read -r ;;
+  2) cal -3 && read -r ;;
+  *) cal && read -r ;;
 esac
