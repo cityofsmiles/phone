@@ -49,6 +49,7 @@ parse_params() {
   # default values of variables set from params
   flag=0
   dir=''
+  out=''
 
   while :; do
     case "${1-}" in
@@ -56,8 +57,10 @@ parse_params() {
     -v | --verbose) set -x ;;
     --no-color) NO_COLOR=1 ;;
     -f | --flag) flag=1 ;; # example flag
-    -d | --dir) # example named parameter
-      dir="${2-}"
+    -d | --dir) dir="${2-}" 
+      shift
+      ;; 
+    -o | --out) out="${2-}" # example named parameter
       shift
       ;;
     -?*) die "Unknown option: $1" ;;
@@ -70,7 +73,8 @@ parse_params() {
 
   # check required params and arguments
   [[ -z "${dir-}" ]] && die "Missing required parameter: dir"
-  [[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
+  [[ -z "${out-}" ]] && die "Missing required parameter: out"
+ # [[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
 
   return 0
 }
@@ -80,10 +84,11 @@ setup_colors
 
 # script logic here
 echo ${dir}
-
+echo ${out}
 
 msg "${RED}Read parameters:${NOFORMAT}"
 msg "- flag: ${flag}"
 msg "- dir: ${dir}"
+msg "- out: ${out}"
 msg "- arguments: ${args[*]-}"
 

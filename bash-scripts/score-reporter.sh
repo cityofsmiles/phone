@@ -13,10 +13,11 @@ Script description here.
 
 Available options:
 
--h, --help      Print this help and exit
--v, --verbose   Print script debug info
--f, --flag      Some flag description
--p, --param     Some param description
+-h, --help           Print this help and exit
+-v, --verbose        Print script debug info
+-i, --inputdir       Directory for input zipped files
+-o, --outputdir      Directory for outputs
+-g, --gradingperiod  The current grading period, e.g., '1st-Grading'
 EOF
   exit
 }
@@ -24,9 +25,9 @@ EOF
 cleanup() {
   trap - SIGINT SIGTERM ERR EXIT
   # script cleanup here
-  cd $curdir
+  cd ${inputdir}
   rm *.csv
-  rm "$zipfile"
+  rm *.zip
 }
 
 setup_colors() {
@@ -51,16 +52,25 @@ die() {
 parse_params() {
   # default values of variables set from params
   flag=0
-  dir=''
+  inputdir='/home/jonathan/Downloads'
+  outputdir='/home/jonathan/Documents/excel/21-22/Class-Records/outputs'
+  gradingperiod='Current-Grading-Period'
 
   while :; do
     case "${1-}" in
     -h | --help) usage ;;
     -v | --verbose) set -x ;;
     --no-color) NO_COLOR=1 ;;
-    -f | --flag) flag=1 ;; # example flag
-    -d | --dir) # example named parameter
-      dir="${2-}"
+    -i | --inputdir) 
+      inputdir="${2-}" 
+      shift
+      ;;
+    -o | --outputdir) 
+      outputdir="${2-}"
+      shift
+      ;;
+    -g | --gradingperiod) 
+      gradingperiod="${2-}"
       shift
       ;;
     -?*) die "Unknown option: $1" ;;
@@ -72,8 +82,11 @@ parse_params() {
   args=("$@")
 
   # check required params and arguments
- # [[ -z "${dir-}" ]] && die "Missing required parameter: dir"
-  [[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
+  [[ -z "${inputdir-}" ]] && die "Missing required parameter: inputdir"
+  [[ -z "${outputdir-}" ]] && die "Missing required parameter: outputdir"
+  [[ -z "${gradingperiod-}" ]] && die "Missing required parameter: gradingperiod"
+
+ # [[ ${#args[@]} -eq 0 ]] && die "Missing script arguments"
 
   return 0
 }
@@ -82,20 +95,17 @@ parse_params "$@"
 setup_colors
 
 # script logic here
+cd ${inputdir}
 
-curdir=$(pwd)
+outdir="${outputdir}"
 
-cd $curdir
-
-outdir="$1"
-
-grading="$2"
+grading="${gradingperiod}"
 
 unzip "*.zip"
 
 for csvfile in *.csv;
 do
-  sed 's/\bMale\b/Boy/g;s/\bMALE\b/BOY/g' "$csvfile" | tail -n+2 | cut --delimiter=, -f2,3,6,9 | sort --field-separator=',' -k4 -k2 -k3  > out-"$csvfile" ;
+  sed 's/\bMale\b/Boy/g;s/\bMALE\b/BOY/g' "$csvfile" | tail -n+2 | cut --delimiter=, -f2,3,6,9 | sort --field-separator=',' -k4 -k2 -k3  > out-"$csvfile" 
 
   filename="${csvfile%.*}"  
 
@@ -112,9 +122,7 @@ do
   section=$(echo $filename | cut -d')' -f 1)
   section=$(echo $section | cut -d'(' -f 2)
 
-  if [ -d $outdir/$grading/$section/summary ];then
-    echo "Output folder exists."
-  else
+  if [ ! -d $outdir/$grading/$section/summary ];then
     mkdir -p $outdir/$grading/$section/summary
   fi
 
@@ -126,13 +134,15 @@ cd $outdir/$grading
 for dir in *
 do
   cd $outdir/$grading/$dir
-  qpdf --empty --pages *.pdf -- ./summary/summary.pdf
+  qpdf --empty --pages *.pdf -- ./summary/summary-$grading.pdf
 done
 
-notify-send "Done!"
+/usr/bin/rclone sync --copy-links --progress "/home/jonathan/Documents/excel/21-22/" "depedgdrive:documents/excel/21-22" && notify-send "Score reporting done!"
 
 msg "${RED}Read parameters:${NOFORMAT}"
 msg "- flag: ${flag}"
-msg "- dir: ${dir}"
+msg "- inputdir: ${inputdir}"
+msg "- outputdir: ${outputdir}"
+msg "- gradingperiod: ${gradingperiod}"
 msg "- arguments: ${args[*]-}"
 
